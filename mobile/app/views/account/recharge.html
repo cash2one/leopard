@@ -1,0 +1,52 @@
+<ion-view title="账户充值">
+  <ion-nav-buttons side="right">
+      <a class="button button-clear icon ion-ios7-plus-empty" href="#/truffle/account/bankcard"></a>
+  </ion-nav-buttons>
+
+  <ion-content>
+
+    <form class="list" form-produce="formControls.conf">
+
+      <div class="list">
+          <label class="item item-input item-select">
+          <div class="input-label">
+          充值平台:
+          </div>
+         <select ng-model="depositData.platform" ng-options="platform as platform.name for platform in depositData.platformList"></select>
+      </div>
+      <label class="item item-input">
+        <span class="input-label">充值信息:</span>
+        <spam type="text" ng-bind="depositData.platform.description"></span>
+      </label>
+      <label class="item item-input" ng-if="depositData.platform.logic == 'Offline'">
+        <span class="input-label">流水账号:</span>
+        <input placeholder="流水账号" type="text" input-produce="formControls.comment" ng-model="formControls.models.comment"/>
+      </label>
+      <label class="item item-input">
+        <span class="input-label">充值金额:</span>
+        <input type="text" placeholder="充值金额" input-produce="formControls.amount" ng-model="formControls.models.amount">
+      </label>
+      <label class="item item-input hide">
+         <input type="text" input-produce="formControls.platform" ng-model="depositData.platform.id" />
+      </label>
+      <div class="list">
+         <label class="item item-input item-select">
+         <div class="input-label">
+          银 行 卡:
+          </div>
+         <select ng-model="formControls.models.bankcard"  input-produce="formControls.bankcard" ng-options="card.id as (card.bank.split(':')[0] + ' ' + card.card) for card in formControls.bankcards">
+         </select>
+      </div>
+      <div class="padding">
+        <button class="button button-positive button-block">
+          充值
+        </button>
+      </div>
+      <a class="button button-clear button-positive" href="#/truffle/account/bankcard">银行卡管理</a>
+      <h2 class="text-center" ng-if="!depositData.platformList.length">
+        <i class="icon ion-loading-d icon-refreshing"></i>
+      </h2>
+    </form>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

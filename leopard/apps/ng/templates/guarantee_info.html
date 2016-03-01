@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+{% include 'top_nav.html' %}
+<div class="container">
+    <div class="middle-title">
+        <span class="middle-title-name">担保机构介绍</span>
+    </div>
+    <div class="middle-info-box">
+        <div class="guarantee-title">
+            <h2 class="text-center">{{ guarantee.name }}</h2>
+        </div>
+        <p class="muted text-center">
+            <br/>
+            <img src="/{{ guarantee.logo }}" alt="guarantee_img"/>
+        </p>
+
+        <div class="guarantee-text-container"> {{ guarantee.description | safe }}</div>
+
+    </div>
+</div>
+{% endblock %}
+

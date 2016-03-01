@@ -1,0 +1,59 @@
+<div class="container account-middle">
+    <!--left-->
+    <div class="account-left">
+        <div class="my-account" data-match-navbar>
+            <span>联盟查询</span>
+        </div>
+
+    </div>
+
+
+    <!--right-->
+    <div  class="main-wrap">
+        <div class="account-right">
+            <div class="account-theme">&nbsp;用户来源查询
+            </div>
+
+            <form class="form-horizontal" data-form-produce="formControls.conf">
+                <div class="control-group">
+                    <input type="text"  placeholder="联盟名称" data-input-produce="formControls.username" ng-model="formControls.names"/>
+                 
+                    <input type="password"  placeholder="查询密码" data-input-produce="formControls.password" ng-model="formControls.pass" />
+
+                    <input type="text" id="limit" ng-model="formControls.limit" data-input-produce="formControls.limits" ng-show="false" />
+                    <button class="login-btn" type="submit">查询</button>
+                </div>
+            </form>
+
+            <!-- <div data-filter-producessss="filterConfig"></div> -->
+            <div class="span10">
+                <table class="table table-hover table-bordered integration-table">
+                    <thead>
+                    <tr class="red-cardTop">
+                        <th>序号</th>
+                        <th>联盟名称</th>
+                        <th>联盟编号</th>
+                        <th>来源编码</th>
+                        <th>用户名称</th>
+                        <th>手机号码</th>
+                        <th>创建时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="li in listData.list">
+                        <td ng-bind="$index + 1"></td>
+                        <td ng-bind="li.source_website.name"></td>
+                        <td ng-bind="li.source_website.puthin"></td>
+                        <td ng-bind="li.source_code"></td>
+                        <td ng-bind="li.username"></td>
+                        <td ng-bind="(li.phone | limitTo: 3) + '****' + (li.phone | limitTo: -4)" tooltip="{{ li.phone }}"></td>
+                        <td ng-bind="li.added_at | date: 'yyyy-MM-dd'" tooltip="{{ li.added_at | date: 'yyyy-MM-dd HH:mm:ss' }}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div data-pagination-produce="paginationConf" class="pull-right"></div>
+        </div>
+    </div>
+</div>

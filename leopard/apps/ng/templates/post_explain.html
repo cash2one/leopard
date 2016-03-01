@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+{% block content %}
+{% include 'top_nav.html' %}
+<div class="fold-nav post-fold-nav">
+    <a href="/post/help/yjd"  class="active" class="fold-nav-title active" href="/post/help/yjd">
+        <i class="postNav.icon" class="icon-large icon-group"></i>
+        关于易简贷
+    </a>
+    <a href="/post/help/entrance" class="active" class="fold-nav-title" href="/#/post/help/entrance">
+        <i class="postNav.icon" class="icon-large icon-question"></i>
+        注册和登录
+    </a>
+    <a href="/post/help/finace-handle" class="active" class="fold-nav-title" href="/#/post/help/finace-handle">
+        <i class="postNav.icon" class="icon-large icon-question"></i>
+        充值和提现
+    </a>
+    <a href="/post/help/rate-fee" class="active" class="fold-nav-title" href="/#/post/help/rate-fee">
+        <i class="postNav.icon" class="icon-large icon-question"></i>
+        利息和费用
+    </a>
+    <a href="/post/help/security" class="active" class="fold-nav-title" href="/#/post/help/security">
+        <i class="postNav.icon" class="icon-large icon-question"></i>
+        安全认证管理
+    </a>
+    <a href="/post/help/invest-manage" class="active" class="fold-nav-title" href="/#/post/help/invest-manage">
+        <i class="postNav.icon" class="icon-large icon-question"></i>
+        投资理财管理
+    </a>
+    <a href="/post/help/explain" class="active" class="fold-nav-title" href="/#/post/help/explain">
+        <i class="postNav.icon" class="icon-large icon-book"></i>
+        名词解释
+    </a>
+</div>
+<p class="user-right-title">名词解释</p>
+<div class="user-right-add-box post-detail-box">
+    <div data-accordion class="post-accordion">
+        <div accordion-group>
+            <div accordion-heading>
+            借款用户（借款人）
+            </div>
+            已经或准备在网站上进行借款活动的用户称为借款用户。凡22周岁以上的中国大陆地区公民，都可以成为借款用户。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            理财用户（理财人）
+            </div>
+            已经或准备在网站上进行资金出借活动并完成了实名认证、手机号码绑定和提现密码设置的用户称为理财用户。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            标的 [biāo dì]
+            </div>
+            指借款用户发布的包含其借款相关说明信息的借款申请。一个合格的标的内至少包含：标题、描述、借款用途、借款总额、还款方式、年利率、借款期限、招标期限等基本信息。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            发标
+            </div>
+            指借款用户发布借款标的的行为。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            招标
+            </div>
+            指标的通过审核进入到投资列表内，此时标的状态为招标。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            投标
+            </div>
+            指理财用户将其易简贷账户内指定的金额出借给指定的借款用户的行为。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            满标
+            </div>
+            指一个标的在招标期限内足额筹集到所需资金，等待放款的状态。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            放款
+            </div>
+            指一个标的满标后且已符合放款标准，该标的所筹资金从出借人账户转入借款人账户的过程，即借款人成功获得了借款。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            流标
+            </div>
+            指因资料上传不全或综合情况不符合借款要求，导致借款申请未通过，或超过招标期限但未满标的状态叫做流标。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            逾期
+            </div>
+            指借款用户未按协议约定时间进行足额还款，此时标的状态为逾期。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            严重逾期
+            </div>
+            逾期时间超过30天时，从第31天开始该标的状态为严重逾期（针对借款用户）。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            垫付
+            </div>
+            指严重逾期的债权根据易简贷本金保障计划，由易简贷风险准备金代为偿还的动作，垫付完成后债权转移至易简贷名下。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            账户净资产
+            </div>
+            指用户在易简贷网站的全部资产和负债的总和。<br/>
+            具体计算公式如下：<br/>
+            账户净资产=债权资产+优选理财计划资产+账户余额-借款负债
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            等额本息
+            </div>
+            等额本息还款法是一种被广泛采用的还款方式。在还款期内，每月偿还同等数额的借款(包括本金和利息)。借款人每月还款额中的本金比重逐月递增、利息比重逐月递减。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            加权平均投标利率
+            </div>
+            由于借款时间不定，易简贷采用加权平均的方式计算借出者的收益率。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            债权
+            </div>
+            指理财用户与借款用户之间的债务约定。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            债权价值
+            </div>
+            指根据定价公式计算出的债权当前的公允价值，具体计算公式如下：<br/>
+            通常算法：债权出售日待收本金与当日距离上一期还款的天数所对应的利息之和。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            债权价格
+            </div>
+            指债权转让时的价格。
+        </div>
+        <div accordion-group>
+            <div accordion-heading>
+            债权份数
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

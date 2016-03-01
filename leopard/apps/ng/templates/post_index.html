@@ -1,0 +1,16 @@
+<div class="container user-center-container">
+    <div class="row">
+        <div class="span3">
+            <div class="user-nav-box">
+                <div class="fold-nav post-fold-nav">
+                    <a ng-href="/#/post/{{ postInfo.parentUrl }}/{{ postNav.url }}" ng-repeat="postNav in postInfo.secondNav" ng-class="{active: postInfo.nowUrl == postNav.url}" class="fold-nav-title">
+                        <i ng-class="postNav.icon" class="icon-large"></i>
+                        {{ postNav.name }}
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="span9 user-right-box post-right-box" ng-include="postTemplateUrl">
+        </div>
+    </div>
+</div>

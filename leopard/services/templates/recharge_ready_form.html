@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>跳转中...</title>
+</head>
+<body>
+<p>正在跳转到支付页面...</p>
+<form id="recharge-form" name="recharge-form" method="post" action="{{ action }}">
+{{ form | unzip_dict | safe }}
+</form>
+<script>
+    document.getElementById('recharge-form').submit();
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        {% block head %}
+            <meta charset="utf-8"/>
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"/>
+            <meta name="renderer" content="webkit"/>
+            <meta name="title" content="{{ SYSTEM_NAME }}"/>
+            <meta name="description" content="{{ META_DESCRIPTION }}"/>
+            <meta name="keywords" content="{{ SYSTEM_NAME }}"/>
+            <title>{% block title %}{{ SYSTEM_NAME }}{% endblock %} - 专业P2P网络投资理财借贷平台！闲钱投资,个人理财,线上理财,企业财富管理,资金周转,综合性网络贷款服务。让理财融资简单快乐起来！</title>
+            <link rel="stylesheet" type="text/css" href="/static/styles/bootstrap.min.css" />
+            <link rel="stylesheet" type="text/css" href="/static/styles/main.css" />
+        {% endblock %}
+    </head>
+<body>
+    {% include 'header.html' %}
+    {% block content %}{% endblock %}
+    {% block footer %}
+        {% include 'footer.html' %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,12 @@
+<div class="post-right">
+    <div class="post-theme" ng-bind="'&nbsp;' + postData.childTitle"></div>
+    <div class="post-detail-head">
+        <h4 ng-bind="postData.detail.title" ng-if="postData.isDetail"></h4>
+        <div class="post-detail-ul" ng-if="postData.isDetail">
+        	<span>来源：{{ platformConfig.name }}</span>
+        	<span ng-bind="postData.detail.added_at | date: 'yyyy-MM-dd HH:mm'"></span>
+        </div>
+    </div>
+    <div class="post-detail-main" ng-bind-html="postData.detail.content || postData.detail"></div>
+</div>
+</div>

@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{corporation}}认证邮件</title>
+</head>
+<body>
+<p>您好！</p>
+<p>感谢您选择了{{ corporation }}！</p>
+<p>请点击&nbsp;&nbsp;<a href="{{ activation_url }}">此处</a>&nbsp;&nbsp;认证您的账号。</p>
+<p>(此邮件为系统所发，请勿直接回复。)</p>
+<p>® {{ current_time | dateformat('%Y') }} {{ corporation }} {{ current_time | dateformat }}</p>
+</body>
+</html>

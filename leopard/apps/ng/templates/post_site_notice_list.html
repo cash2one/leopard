@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    {% include 'top_nav.html' %}
+    {% include 'post_site_notice_nav.html' %}
+    <p class="user-right-title">{{ nav_name }}</p>
+    <div class="user-right-add-box post-detail-box">
+        <ul class="post-list">
+            {% for post in posts %}
+                <li>
+                    <small class="pull-right">{{ post.added_at }}</small>
+                    <a href="/post/site-notice/{{ post_type }}/{{ post.id }}">{{post.title}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div ng-include="PAGE_OBJ_URL"></div>
+{% endblock %}

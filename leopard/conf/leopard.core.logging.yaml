@@ -1,0 +1,100 @@
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  file:
+    format: '%(asctime)s %(levelname)s: %(message)s'
+
+handlers:
+  admin:
+    level: DEBUG
+    class: logging.handlers.RotatingFileHandler
+    formatter: file
+    filename: logs/admin.log
+    maxBytes: 100000000
+    backupCount: 100
+    encoding: 'utf-8'
+  comps:
+    level: DEBUG
+    class: logging.handlers.RotatingFileHandler
+    formatter: file
+    filename: logs/comps.log
+    maxBytes: 100000000
+    backupCount: 100
+    encoding: 'utf-8'
+  authentication:
+    level: DEBUG
+    class: logging.handlers.RotatingFileHandler
+    formatter: file
+    filename: logs/authentication.log
+    maxBytes: 100000000
+    backupCount: 100
+    encoding: 'utf-8'
+  tender:
+    level: DEBUG
+    class: logging.handlers.RotatingFileHandler
+    formatter: file
+    filename: logs/tender.log
+    maxBytes: 100000000
+    backupCount: 100
+    encoding: 'utf-8'
+  rotate:
+    level: DEBUG
+    class: logging.handlers.RotatingFileHandler
+    formatter: file
+    filename: logs/rotate.log
+    maxBytes: 100000000
+    backupCount: 100
+    encoding: 'utf-8'
+  sms:
+    level: DEBUG
+    class: logging.handlers.RotatingFileHandler
+    formatter: file
+    filename: logs/sms.log
+    maxBytes: 100000000
+    backupCount: 100
+    encoding: 'utf-8'
+  celery_task:
+    level: DEBUG
+    class: logging.handlers.RotatingFileHandler
+    formatter: file
+    filename: logs/celery_task.log
+    maxBytes: 100000000
+    backupCount: 100
+    encoding: 'utf-8'
+  mall:
+    level: DEBUG
+    class: logging.handlers.RotatingFileHandler
+    formatter: file
+    filename: logs/mall.log
+    maxBytes: 100000000
+    backupCount: 100
+
+loggers:
+  leopard.comps.email:
+    level: DEBUG
+    handlers: [rotate]
+  admin:
+    level: DEBUG
+    handlers: [admin]
+  tender:
+    level: DEBUG
+    handlers: [tender]
+  rotate:
+    level: DEBUG
+    handlers: [rotate]
+  celery_task:
+    level: DEBUG
+    handlers: [celery_task]
+  comps:
+    level: DEBUG
+    handlers: [comps]
+  authentication:
+    level: DEBUG
+    handlers: [authentication]
+  sms:
+    level: DEBUG
+    handlers: [sms]
+  mall:
+    level: DEBUG
+    handlers: [mall]

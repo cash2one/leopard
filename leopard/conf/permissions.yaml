@@ -1,0 +1,494 @@
+staff_permissions: [
+    userview,
+    userview.can_actions,
+    userview.can_read,
+    userview.can_edit,
+    friendinviteview,
+    friendinviteview.can_actions,
+    friendinviteview.can_read,
+    friendinviteview.can_edit,
+    specialremindview,
+    specialremindview.can_read,
+    postview,
+    postview.can_actions,
+    postview.can_read,
+    postview.can_edit,
+    postview.can_delete,
+    postview.can_create,
+    projectpendingview,
+    projectpendingview.can_actions,
+    projectpendingview.can_read,
+    finprojectview,
+    finprojectview.can_actions,
+    finprojectview.can_read,
+    finprojectpublishview,
+    finprojectpublishview.can_actions,
+    finprojectpublishview.can_read,
+    finprojectpublishview.can_create,
+    finprojectpublishview.can_edit,
+    projectview,
+    projectview.can_actions,
+    projectview.can_read,
+    projectview.can_edit,
+    projectpublishview,
+    projectpublishview.can_actions,
+    projectpublishview.can_read,
+    projectpublishview.can_create,
+    projectpublishview.can_edit,
+    investmentview,
+    investmentview.can_actions,
+    investmentview.can_read,
+    projectrepayview,
+    projectrepayview.can_actions,
+    projectrepayview.can_read,
+    repaymentview,
+    repaymentview.can_actions,
+    repaymentview.can_read,
+    withdrawview,
+    withdrawview.can_actions,
+    withdrawview.can_read,
+    depositview,
+    depositview.can_actions,
+    depositview.can_read,
+    logview,
+    logview.can_actions,
+    logview.can_read,
+    manuallysmsview,
+    applicationview,
+    applicationview.can_actions,
+    applicationview.can_read,
+    applicationview.can_edit,
+    finapplicationview,
+    finapplicationview.can_actions,
+    finapplicationview.can_read,
+    finapplicationview.can_edit,
+    finmobileapplicationview,
+    finmobileapplicationview.can_actions,
+    finmobileapplicationview.can_read,
+    historyfailfinapplicationview,
+    historyfailfinapplicationview.can_read,
+    historyfailfinapplicationview.can_actions,
+    historysuccessfinapplicationview,
+    historysuccessfinapplicationview.can_read,
+    historysuccessfinapplicationview.can_actions,
+    historyfailapplicationview,
+    historyfailapplicationview.can_read,
+    historyfailapplicationview.can_delete,
+    historysuccessapplicationview,
+    historysuccessapplicationview.can_read,
+    configview,
+    configview.can_actions,
+    configview.can_read,
+    configview.can_edit,
+    depositplatformview,
+    depositplatformview.can_actions,
+    depositplatformview.can_read,
+    depositplatformview.can_edit,
+    depositplatformview.can_create,
+    bankcardview,
+    bankcardview.can_actions,
+    bankcardview.can_read,
+    bankcardview.can_delete,
+    redpackettypeview,
+    redpackettypeview.can_actions,
+    redpackettypeview.can_read,
+    redpackettypeview.can_edit,
+    redpackettypeview.can_delete,
+    redpackettypeview.can_create,
+    redpacketview,
+    redpacketview.can_actions,
+    redpacketview.can_read,
+    redpacketview.can_edit,
+    redpacketview.can_delete,
+    redpacketview.can_create,
+    coderedpacketview,
+    coderedpacketview.can_actions,
+    coderedpacketview.can_read,
+    coderedpacketview.can_edit,
+    coderedpacketview.can_create,
+    coderedpacketlogview,
+    CodeRedPacketLogView.can_actions,
+    CodeRedPacketLogView.can_read,
+    checksmscodeview,
+    realnameauthview,
+    realnameauthview.can_actions,
+    realnameauthview.can_read,
+    authenticationtypeview,
+    authenticationtypeview.can_actions,
+    authenticationtypeview.can_read,
+    authenticationtypeview.can_edit,
+    authenticationtypeview.can_delete,
+    authenticationtypeview.can_create,
+    #idcardlogview,
+    #idcardlogview.can_read,
+    authenticationview,
+    authenticationview.can_actions,
+    authenticationview.can_read,
+    authenticationview.can_edit,
+    authenticationview.can_delete,
+    authenticationview.can_create,
+    authview,
+    authview.can_actions,
+    authview.can_read,
+    authview.can_edit,
+    groupview,
+    groupview.can_actions,
+    groupview.can_read,
+    groupview.can_edit,
+    groupview.can_delete,
+    groupview.can_create,
+    wechatbannerview,
+    wechatbannerview.can_actions,
+    wechatbannerview.can_read,
+    wechatbannerview.can_edit,
+    wechatbannerview.can_delete,
+    wechatbannerview.can_create,
+    pcbannerview,
+    pcbannerview.can_actions,
+    pcbannerview.can_read,
+    pcbannerview.can_edit,
+    pcbannerview.can_delete,
+    pcbannerview.can_create,
+    studentapplybannerview,
+    studentapplybannerview.can_actions,
+    studentapplybannerview.can_read,
+    studentapplybannerview.can_edit,
+    studentapplybannerview.can_delete,
+    studentapplybannerview.can_create,
+    firendlinkview,
+    firendlinkview.can_actions,
+    firendlinkview.can_read,
+    firendlinkview.can_edit,
+    firendlinkview.can_delete,
+    firendlinkview.can_create,
+    messageview,
+    messageview.can_actions,
+    messageview.can_read,
+    messageview.can_delete,
+    messageview.can_create,
+    plansview,
+    plansview.can_actions,
+    plansview.can_read,
+    finapplicationplansview,
+    finapplicationplansview.can_actions,
+    finapplicationplansview.can_read,
+    finmobileapplicationplansview,
+    finmobileapplicationplansview.can_actions,
+    finmobileapplicationplansview.can_read,
+    projecttypeview,
+    projecttypeview.can_read,
+    projecttypeview.can_create,
+    projecttypeview.can_edit,
+    userpermissionview,
+    userpermissionview.can_read,
+    userpermissionview.can_edit,
+    borrowerview,
+    borrowerview.can_actions,
+    borrowerview.can_read,
+    sourcewebsiteview,
+    sourcewebsiteview.can_read,
+    sourcewebsiteview.can_create,
+    sourcewebsiteview.can_actions,
+    sourcewebsiteview.can_edit,
+    sourceuserview,
+    sourceuserview.can_actions,
+    sourceuserview.can_read,
+    automaticview,
+    automaticview.can_read,
+    automaticview.can_edit,
+    automaticview.can_actions,
+    commoditysview,
+    commoditysview.can_read,
+    commoditysview.can_edit,
+    commoditysview.can_actions,
+    commoditysview.can_create,
+    commodityorderview,
+    commodityorderview.can_read,
+    commodityorderview.can_edit,
+    commodityorderview.can_actions,
+    commodityorderview.can_create,
+    giftpointview,
+    giftpointview.can_read,
+    userlevelview,
+    userlevelview.can_read,
+    userlevelview.can_edit,
+    userlevelview.can_create,
+    userlevellogview,
+    userlevellogview.can_read
+]
+
+staff_permissions_key:
+    userview: 用户管理 - 界面
+    userview.can_actions: 用户管理 - 操作
+    userview.can_read: 用户管理 - 查看
+    userview.can_edit: 用户管理 - 修改
+    friendinviteview: 好友邀请 - 界面
+    friendinviteview.can_actions: 好友邀请 - 操作
+    friendinviteview.can_read: 好友邀请 - 查看
+    friendinviteview.can_edit: 好友邀请 - 修改
+    specialremindview: 特殊提醒 - 界面
+    specialremindview.can_read: 特殊提醒 - 查看
+    postview: 文章管理 - 界面
+    postview.can_actions: 文章管理 - 操作
+    postview.can_read: 文章管理 - 查看
+    postview.can_edit: 文章管理 - 修改
+    postview.can_delete: 文章管理 - 删除
+    postview.can_create: 文章管理 - 新增
+    projectpendingview: 待审核项目 - 界面
+    projectpendingview.can_actions: 待审核项目 - 操作
+    projectpendingview.can_read: 待审核项目 - 查看
+    projectpendingview.can_edit: 待审核项目 - 修改
+    projectpendingview.can_delete: 待审核项目 - 删除
+    riskcontrolview: 风控信息管理 - 界面
+    riskcontrolview.can_create: 风控信息管理 - 新增 
+    riskcontrolview.can_actions: 风控信息管理 - 操作
+    riskcontrolview.can_read: 风控信息管理 - 查看
+    riskcontrolview.can_edit: 风控信息管理 - 修改
+    projectspecview: 项目特点信息管理 - 界面
+    projectspecview.can_create: 项目特点信息管理 - 新增 
+    projectspecview.can_actions: 项目特点信息管理 - 操作
+    projectspecview.can_read: 项目特点信息管理 - 查看
+    projectspecview.can_edit: 项目特点信息管理 - 修改
+    projectview: 项目记录管理 - 界面
+    projectview.can_actions: 项目记录管理 - 操作
+    projectview.can_read: 项目记录管理 - 查看
+    projectview.can_edit: 项目记录管理 - 修改
+    projectpublishview: 项目发布管理 - 界面
+    projectpublishview.can_actions: 项目发布管理 - 操作
+    projectpublishview.can_read: 项目发布管理 - 查看
+    projectpublishview.can_create: 项目发布管理 - 新增
+    projectpublishview.can_edit: 项目发布管理 - 修改
+    finprojectview: 学仕贷管理 - 界面
+    finprojectview.can_actions: 学仕贷管理 - 操作
+    finprojectview.can_read: 学仕贷管理 - 查看
+    finprojectpublishview: 学仕贷发布管理 - 界面
+    finprojectpublishview.can_actions: 学仕贷发布管理 - 操作
+    finprojectpublishview.can_read: 学仕贷发布管理 - 查看
+    finprojectpublishview.can_create: 学仕贷发布管理 - 新增
+    finprojectpublishview.can_edit: 学仕贷发布管理 - 修改
+    investmentview: 投资记录管理 - 界面
+    investmentview.can_actions: 投资记录管理 - 操作
+    investmentview.can_read: 投资记录管理 - 查看
+    projectrepayview: 学仕贷 - 还款记录管理 - 界面
+    projectrepayview.can_actions: 学仕贷 - 还款记录管理 - 操作
+    projectrepayview.can_read: 学仕贷 - 还款记录管理 - 查看
+    repaymentview: 还款记录管理 - 界面
+    repaymentview.can_actions: 还款记录管理 - 操作
+    repaymentview.can_read: 还款记录管理 - 查看
+    withdrawview: 提现记录管理 - 界面
+    withdrawview.can_actions: 提现记录管理 - 操作
+    withdrawview.can_read: 提现记录管理 - 查看
+    depositview: 充值记录管理 - 界面
+    depositview.can_actions: 充值记录管理 - 操作
+    depositview.can_read: 充值记录管理 - 查看
+    logview: 资金记录管理 - 界面
+    logview.can_actions: 资金记录管理 - 操作
+    logview.can_read: 资金记录管理 - 查看
+    applicationview: 申请书管理 - 界面
+    applicationview.can_actions: 申请书管理 - 操作
+    applicationview.can_read: 申请书管理 - 查看
+    applicationview.can_edit: 申请书管理 - 修改
+    applicationview.can_delete: 申请书管理 - 删除
+    applicationview.can_create: 申请书管理 - 新增
+    historyfailapplicationview: 审核失败申请书管理 - 界面
+    historyfailapplicationview.can_actions: 审核失败申请书管理 - 操作
+    historyfailapplicationview.can_edit: 审核失败申请书管理 - 修改
+    historysuccessapplicationview: 审核成功申请书管理 - 界面
+    historysuccessapplicationview.can_actions: 审核成功申请书管理 - 操作
+    historysuccessapplicationview.can_read: 审核成功申请书管理 - 查看
+    historysuccessapplicationview.can_edit: 审核成功申请书管理 - 修改
+    historysuccessapplicationview.can_delete: 审核成功申请书管理 - 删除
+    historysuccessapplicationview.can_create: 审核成功申请书管理 - 新增
+    finmobileapplicationview: 微信学仕贷借款申请 - 界面
+    finmobileapplicationview.can_actions: 微信学仕贷借款申请 - 操作
+    finmobileapplicationview.can_read: 微信学仕贷借款申请 - 查看
+    finapplicationview: 学仕贷申请书 - 界面
+    finapplicationview.can_actions: 学仕贷申请书 - 操作
+    finapplicationview.can_read: 学仕贷申请书 - 查看
+    finapplicationview.can_edit: 学仕贷申请书 - 修改
+    historyfailfinapplicationview: 学仕贷申请书-审核失败 - 界面
+    historyfailfinapplicationview.can_read: 学仕贷申请书-审核失败 - 查看
+    historyfailfinapplicationview.can_actions: 学仕贷申请书-审核失败 - 操作
+    historysuccessfinapplicationview: 学仕贷申请书-审核成功 - 界面
+    historysuccessfinapplicationview.can_read: 学仕贷申请书-审核成功 - 查看
+    historysuccessfinapplicationview.can_actions: 学仕贷申请书-审核成功 - 操作
+    configview: 参数配置管理 - 界面
+    configview.can_actions: 参数配置管理 - 操作
+    configview.can_read: 参数配置管理 - 查看
+    configview.can_edit: 参数配置管理 - 修改
+    configview.can_delete: 参数配置管理 - 删除
+    configview.can_create: 参数配置管理 - 新增
+    depositplatformview: 充值平台管理 - 界面
+    depositplatformview.can_actions: 充值平台管理 - 操作
+    depositplatformview.can_read: 充值平台管理 - 查看
+    depositplatformview.can_edit: 充值平台管理 - 修改
+    depositplatformview.can_delete: 充值平台管理 - 删除
+    depositplatformview.can_create: 充值平台管理 - 新增
+    bankcardview: 银行卡管理 - 界面
+    bankcardview.can_actions: 银行卡管理 - 操作
+    bankcardview.can_read: 银行卡管理 - 查看
+    bankcardview.can_edit: 银行卡管理 - 修改
+    bankcardview.can_delete: 银行卡管理 - 删除
+    bankcardview.can_create: 银行卡管理 - 新增
+    redpackettypeview: 红包类型管理 - 界面
+    redpackettypeview.can_actions: 红包类型管理 - 操作
+    redpackettypeview.can_read: 红包类型管理 - 查看
+    redpackettypeview.can_edit: 红包类型管理 - 修改
+    redpackettypeview.can_delete: 红包类型管理 - 删除
+    redpackettypeview.can_create: 红包类型管理 - 新增
+    redpacketview: 红包管理 - 界面
+    redpacketview.can_actions: 红包管理 - 操作
+    redpacketview.can_read: 红包管理 - 查看
+    redpacketview.can_edit: 红包管理 - 修改
+    redpacketview.can_delete: 红包管理 - 删除
+    redpacketview.can_create: 红包管理 - 新增
+    coderedpacketview: 代码红包管理 - 界面
+    coderedpacketview.can_actions: 代码红包管理 - 操作
+    coderedpacketview.can_read: 代码红包管理 - 查看
+    coderedpacketview.can_edit: 代码红包管理 - 修改
+    coderedpacketview.can_create: 代码红包管理 - 新增
+    coderedpacketlogview: 代码红包兑换记录 - 界面
+    coderedpacketlogview.can_actions: 代码红包兑换记录 - 操作
+    coderedpacketlogview.can_read: 代码红包兑换记录 - 查看
+    checksmscodeview: 验证码查询 - 界面
+    realnameauthview: 第三方实名认证 - 界面
+    realnameauthview.can_read: 第三方实名认证 - 查看
+    realnameauthview.can_actions: 第三方实名认证 - 操作
+    authenticationtypeview: 认证类型管理 - 界面
+    authenticationtypeview.can_actions: 认证类型管理 - 操作
+    authenticationtypeview.can_read: 认证类型管理 - 查看
+    authenticationtypeview.can_edit: 认证类型管理 - 修改
+    authenticationtypeview.can_delete: 认证类型管理 - 删除
+    authenticationtypeview.can_create: 认证类型管理 - 新增
+    authenticationview: 实名审核管理 - 界面
+    authenticationview.can_actions: 实名审核管理 - 操作
+    authenticationview.can_read: 实名审核管理 - 查看
+    authenticationview.can_edit: 实名审核管理 - 修改
+    authenticationview.can_delete: 实名审核管理 - 删除
+    authenticationview.can_create: 实名审核管理 - 新增
+    manuallysmsview: 发送短信 - 界面
+    #idcardlogview: 实名征信管理 - 界面
+    #idcardlogview.can_read: 实名征信管理 - 查看
+    authview: 认证中心管理 - 界面
+    authview.can_actions: 认证中心管理 - 操作
+    authview.can_read: 认证中心管理 - 查看
+    authview.can_edit: 认证中心管理 - 修改
+    authview.can_delete: 认证中心管理 - 删除
+    authview.can_create: 认证中心管理 - 新增
+    wechatbannerview: 微信Banner管理 - 界面
+    wechatbannerview.can_actions: 微信Banner管理 - 操作
+    wechatbannerview.can_read: 微信Banner管理 - 查看
+    wechatbannerview.can_edit: 微信Banner管理 - 修改
+    wechatbannerview.can_delete: 微信Banner管理 - 删除
+    wechatbannerview.can_create: 微信Banner管理 - 新增
+    pcbannerview: Web的Banner管理 - 界面
+    pcbannerview.can_actions: Web的Banner管理 - 操作
+    pcbannerview.can_read: Web的Banner管理 - 查看
+    pcbannerview.can_edit: Web的Banner管理 - 修改
+    pcbannerview.can_delete: Web的Banner管理 - 删除
+    pcbannerview.can_create: Web的Banner管理 - 新增
+    studentapplybannerview: 学仕贷的Banner管理 - 界面
+    studentapplybannerview.can_actions: 学仕贷的Banner管理 - 操作
+    studentapplybannerview.can_read: 学仕贷的Banner管理 - 查看
+    studentapplybannerview.can_edit: 学仕贷的Banner管理 - 修改
+    studentapplybannerview.can_delete: 学仕贷的Banner管理 - 删除
+    studentapplybannerview.can_create: 学仕贷的Banner管理 - 新增
+    firendlinkview: 友情链接管理 - 界面
+    firendlinkview.can_actions: 友情链接管理 - 操作
+    firendlinkview.can_read: 友情链接管理 - 查看
+    firendlinkview.can_edit: 友情链接管理 - 修改
+    firendlinkview.can_delete: 友情链接管理 - 删除
+    firendlinkview.can_create: 友情链接管理 - 新增
+    messageview: 站内信管理 - 界面
+    messageview.can_actions: 站内信管理 - 操作
+    messageview.can_read: 站内信管理 - 查看
+    messageview.can_delete: 站内信管理 - 删除
+    messageview.can_create: 站内信管理 - 新增
+    plansview: 还款计划管理 - 界面
+    plansview.can_actions: 还款计划管理 - 操作
+    plansview.can_read: 还款计划管理 - 查看
+    finapplicationplansview: 学仕贷 - 还款计划 - 界面
+    finapplicationplansview.can_actions: 学仕贷 - 还款计划 - 操作
+    finapplicationplansview.can_read: 学仕贷 - 还款计划 - 查看
+    projecttypeview: 项目类型 - 界面
+    projecttypeview.can_read: 项目类型 - 查看
+    projecttypeview.can_create: 项目类型 - 新增
+    projecttypeview.can_edit: 项目类型 - 修改
+    groupview: 权限组管理 - 界面
+    groupview.can_actions: 权限组管理 - 操作
+    groupview.can_read: 权限组管理 - 查看
+    groupview.can_edit: 权限组管理 - 修改
+    groupview.can_delete: 权限组管理 - 删除
+    groupview.can_create: 权限组管理 - 新增
+    userpermissionview: 用户权限管理
+    userpermissionview.can_read: 用户权限管理 - 查看
+    userpermissionview.can_edit: 用户权限管理 - 修改
+    borrowerview: 用户借款行为 - 界面
+    borrowerview.can_actions: 用户借款行为 - 操作
+    borrowerview.can_read: 用户借款行为 - 查看
+    sourceuserview: 推广用户 - 界面
+    sourceuserview.can_actions: 推广用户 - 操作
+    sourceuserview.can_read: 推广用户 - 查看
+    sourcewebsiteview: 推广网站管理 - 界面
+    sourcewebsiteview.can_read: 推广网站管理 - 查看
+    sourcewebsiteview.can_create: 推广网站管理 - 新增
+    sourcewebsiteview.can_actions: 推广网站管理 - 操作
+    sourcewebsiteview.can_edit: 推广网站管理 - 修改
+    automaticview: 自动投标管理 - 界面
+    automaticview.can_read: 自动投标管理 - 查看
+    automaticview.can_edit: 自动投标管理 - 修改
+    automaticview.can_actions: 自动投标管理 - 操作
+    commoditysview: 商品管理 - 界面
+    commoditysview.can_read: 商品管理 - 查看
+    commoditysview.can_edit: 商品管理 - 修改
+    commoditysview.can_actions: 商品管理 - 操作
+    commoditysview.can_create: 商品管理 - 新增
+    commodityorderview: 订单管理 - 界面
+    commodityorderview.can_read: 订单管理 - 查看
+    commodityorderview.can_edit: 订单管理 - 修改
+    commodityorderview.can_actions: 订单管理 - 操作
+    commodityorderview.can_create: 订单管理 - 新增
+    giftpointview: 宝币记录 - 界面
+    giftpointview.can_read: 宝币记录 - 查看
+    userlevelview: 等级权限 - 界面
+    userlevelview.can_read: 等级权限 - 查看
+    userlevelview.can_edit: 等级权限 - 修改
+    userlevelview.can_create: 等级权限 - 新增
+    userlevellogview: 等级调整记录 - 界面
+    userlevellogview.can_read: 等级调整记录 - 查看
+
+guarantee_permissions: [
+    guaranteeprofile,
+    guaranteeprofile.can_actions,
+    guaranteeprofile.can_read,
+    guaranteeprofile.can_edit,
+    userview,
+    userview.can_read,
+    applicationview,
+    applicationview.can_actions,
+    applicationview.can_read,
+    successapplicationview,
+    successapplicationview.can_actions,
+    successapplicationview.can_read,
+    publishedapplicationview,
+    publishedapplicationview.can_actions,
+    publishedapplicationview.can_read,
+    failapplicationview,
+    failapplicationview.can_actions,
+    failapplicationview.can_read,
+    guaranteeprofileview,
+    guaranteeprofileview.can_actions,
+    guaranteeprofileview.can_read,
+    guaranteeprofileview.can_edit,
+    guaranteelogoview,
+    guaranteelogoview.can_actions,
+    guaranteelogoview.can_read,
+    guaranteelogoview.can_edit,
+    projectview,
+    projectview.can_actions,
+    projectview.can_read,
+    projectview.can_edit,
+    borrowerview,
+    borrowerview.can_actions,
+    borrowerview.can_read,
+]

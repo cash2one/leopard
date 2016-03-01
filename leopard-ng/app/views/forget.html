@@ -1,0 +1,82 @@
+<!-- middle === -->
+<div class="container">
+    <div class="row">
+        <div class="span11 login-user">
+            <div class="login-text">&nbsp;找回用户密码</div>
+            <div class="row">
+                <div class="span7 ">
+                    <form class="form-horizontal" data-form-produce="formControls.conf">
+                        <div class="control-group input-append">
+                            <label class="control-label">图片验证码：</label>
+                            <div class="controls">
+                                <input type="text" class="input-medium" placeholder="请输入图片验证码" data-input-produce="formControls.pvcode" ng-model="formControls.models.pvcode"/>
+                                <img style="cursor: pointer;" ng-src="/service/auth/identifying_code?type=retrieve_password&cb={{ formControls.current_date }}" alt="identifying_code" ng-click="reload_vcode()">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputUsername">用户名：</label>
+                            <div class="controls">
+                                <input class="main-input profile-input" type="text" id="inputUseFrname" placeholder="请输入用户名" data-phone-produce="formControls.username" data-phone-send="#back-send" ng-model="formControls.models.username" phone-send-validate="{{ {ver_code: formControls.models.pvcode} }}"/>
+                                    <button type="button" id="back-send" class="button forget-buttFon">发送验证码
+                                    </button>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputCode">短信验证码：</label>
+                            <div class="controls">
+                                <input type="text" id="inputCode" data-input-produce="formControls.phoneCode" ng-model="formControls.models.phoneCode"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputNewPassword">新密码：</label>
+                            <div class="controls">
+                                <input type="password" id="inputNewPassword" data-input-produce="formControls.password" ng-model="formControls.models.password"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputConfirmPassword">确认新密码：</label>
+                            <div class="controls">
+                                <input type="password" id="inputConfirmPassword" data-input-produce="formControls.rePassword" ng-model="formControls.models.rePassword"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <button class="login-btn login-btn-one" type="submit">修改密码</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="span3 login-right">
+                    <img src="../images/logo.png" height="53" width="202"></br>
+                    <a href="/#!/register">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- middle === -->
+<!-- bottom === -->
+<div class="container">
+    <div class="row bottom">
+        <div class="span6">
+            <div class="bottom-phone"><span>客服电话：</span>
+            <span class="bottom-phone-text" ng-bind="platformConfig.phone"></span></div>
+            <div class="bottom-phone">CopyRight © 2013 {{ platformConfig.fullName }} 品牌所有 <a href="http://www.miitbeian.gov.cn/" ng-bind="platformConfig.ICP"></a></div>
+        </div>
+        <div class="span6">
+            <ul class="authenticate">
+                <li class="xl-xin">
+                    <a href="https://ss.knet.cn/verifyseal.dll?sn=e14031131011547229jxxf000000&comefrom=trust" target="_blank" title="#"></a></li>
+                <li class="tx-wb">
+                    <a href="https://www.sgs.gov.cn/shaic/" target="_blank" title="#"></a></li>
+                <li class="xl-wb">
+                    <a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.zhongbaodai.com&amp;lang=zh_cn" target="_blank"></a></li>
+                <li class="wx" id="div-img">
+                    <a href="http://www.miitbeian.gov.cn/" title="#" target="_blank"></a></li>
+                <li class="qy-not">
+                    <a href="http://www.shjbzx.cn/" title="#" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- bottom === -->

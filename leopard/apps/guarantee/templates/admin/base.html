@@ -1,0 +1,136 @@
+{% import 'admin/layout.html' as layout with context -%}
+{% import 'admin/static.html' as admin_static with context %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% if admin_view.category %}{{ admin_view.category }} - {% endif %}{{ admin_view.name }} - {{ admin_view.admin.name }}{% endblock %}</title>
+    {% block head_meta %}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    {% endblock %}
+    {% block head_css %}
+        <link href="{{ url_for('static', filename='bootstrap/bootstrap3/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='admin/css/bootstrap3/admin.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='admin/css/sb-admin.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='admin/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+    {% endblock %}
+    {% block head %}
+    {% endblock %}
+    {% block head_tail %}
+    {% endblock %}
+  </head>
+  <body>
+    {% block page_body %}
+    <div id="wrapper">
+        <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          {% block brand %}
+          <a class="navbar-brand" href="#">{{ admin_view.admin.name }}</a>
+          {% endblock %}
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+          <ul class="nav navbar-nav side-nav" id="side-menu">
+                {{ layout.sb_menu() }}
+          </ul>
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 管理员 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="{{ url_for('admin.logout_view') }}"><i class="fa fa-power-off"></i> 安全退出</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+
+    <div id="page-wrapper">
+     {% block access_control %}
+     {% endblock %}
+
+     {% if admin_view.url %}
+        <ul class="breadcrumb">
+            <li><a href="{{ url_for('admin.index') }}"><i class="fa fa-home"></i>首页</a></li>
+            {% if admin_view.category %}
+            <li>{{ admin_view.category }}</li>
+            {% endif %}
+            <li class="active">{{ admin_view.name }}</li>
+        </ul>
+     {% endif %}
+
+
+     {% block messages %}
+          {{ layout.messages() }}
+     {% endblock %}
+
+     {% set render_ctx = h.resolve_ctx() %}
+
+     {% block body %}{% endblock %}
+    </div>
+
+    </div>
+
+    {% endblock %}
+
+    {% block tail_js %}
+    <script src="{{ url_for('static', filename='vendor/jquery-2.0.3.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='bootstrap/bootstrap3/js/bootstrap.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='select2/select2.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='select2/select2_locale_zh-CN.js') }}" type="text/javascript"></script>
+
+    <script src="{{ url_for('static', filename='admin/js/plugins/morris/raphael-2.1.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='admin/js/plugins/morris/morris.js') }}"></script>
+    <script src="{{ url_for('static', filename='admin/js/plugins/metisMenu/jquery.metisMenu.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='admin/js/sb-admin.js') }}" type="text/javascript"></script>
+    {% endblock %}
+
+    <script type="text/javascript">
+        var floatInfoBox = $("<span></span>");
+        var floatBoxTriangle = $("<span></span>");
+        var floatInfoTxt = $("<p></p>");
+
+        floatInfoBox.css({"position":"relative","position":"absolute",
+        "display":"none","zIndex":"100","opacity":"0.9","_width":"170px","maxWidth":"170px"});
+        floatBoxTriangle.css({"position":"absolute","width":"0px","height":"0px","fontSize":"1px","lineHeight":"1px",
+        "display":"block","borderLeft":"5px solid transparent","borderRight":"5px solid transparent",
+        "borderBottom":"5px solid #333","top":"0","left":"50%","marginLeft":"-5px","zIndex":"10",
+        "marginTop":"-5px"});
+        floatInfoTxt.css({"padding":"5px 10px","backgroundColor":"#333",
+        "color":"#DDD","borderRadius":"5px","fontSize":"12px","_width":"150px"
+        ,"maxWidth":"150px","wordWrap":"break-word","marginBottom":"5px"});
+
+        floatInfoBox.append(floatInfoTxt);
+        floatInfoBox.append(floatBoxTriangle);
+        $("body").append(floatInfoBox);
+
+        $(document).on("mouseover", ".needShowFullInfo" ,function(){
+        var tempInfo = $(this).attr("data-full");
+        if(tempInfo == "None" || tempInfo == undefined)
+        return;
+        floatInfoTxt.html(tempInfo);
+        floatInfoBox.css({"top":$(this).offset().top+$(this).height()+10,"left":$(this).offset().left+$(this).outerWidth()*0.5-floatInfoBox.outerWidth()*0.5});
+        floatInfoBox.show();
+        });
+        $(document).on("mouseleave", ".needShowFullInfo" ,function(){
+        floatInfoBox.hide();
+        });
+    </script>
+
+
+    {% block tail %}
+    {% endblock %}
+  </body>
+</html>

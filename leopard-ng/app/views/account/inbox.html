@@ -1,0 +1,44 @@
+<!--right-->
+<div  class="main-wrap" ng-controller="messageCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;消息中心
+        </div>
+        <div class="span10 inbox-main">
+            <div data-accordion close-others="true">
+                <div data-accordion-group ng-repeat="message in messageData.list">
+                    <div data-accordion-heading>
+                       <div class="inbox-theme">
+                            <a href="javascript:;" ng-click="readMessage(message)">
+                            <span class="inbox-text">
+                                <i class="icon-envelope" tooltip="未读消息" ng-if="!message.is_read"></i>
+                                <i class="icon-envelope-alt" tooltip="已读消息" ng-if="message.is_read"></i>
+                                &nbsp;<span ng-bind="(message.title | limitTo: 32) + '...'"></span>
+                            <small ng-bind="message.added_at | date: 'yyyy-MM-dd HH:mm:ss'"></small>
+
+                            </span>
+
+                            <p>
+                                <i class=" icon-chevron-down"></i>
+                                <i class="icon-trash icon-large text-error" tooltip="删除此消息" ng-click="removeMessage(message.id)"></i>
+                            </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div ng-bind="message.content">
+                    </div>
+                </div>
+            </div>
+            <div data-pagination-produce="paginationConf" class="pull-right integration-page"></div>
+        </div>
+        <script type="text/ng-template" id="remove_message_modal.html">
+            <div class="modal-header"><h4>删除消息确认</h4></div>
+            <div class="modal-body">
+                <p>您确定删除此条消息吗？删除后将不可撤销！</p>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" ng-click="ok()" class="btn btn-primary" value="确定"/>
+                <input type="button" ng-click="cancel()" class="btn btn-danger" value="取消"/>
+            </div>
+        </script>
+    </div>
+</div>

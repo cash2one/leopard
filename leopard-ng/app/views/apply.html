@@ -1,0 +1,88 @@
+<div class="container">
+    <form data-form-produce="lendApplyControls.conf" novalidate="novalidate">
+        <div class="lend-box">
+            <div class="index-theme">&nbsp;发起项目</div>
+            <p class="lend-title">项目申请书</p>
+            <p class="lend-content">
+                本人因
+                <input type="text" class="input-xxlarge" placeholder="请简要描述借款用途" data-input-produce="lendApplyControls.description" ng-model="lendApplyControls.models.description"/>
+                需要资金进行周转，特向 平台提出项目发起申请。
+            </p>
+            <p class="lend-content">
+                在此项目中，我想筹集资金共计
+                <input type="number" class="input-medium" placeholder="请输入借款金额" data-input-produce="lendApplyControls.amount" ng-model="lendApplyControls.models.amount"/>
+                元
+                （注：金额必须为1000的倍数。大写：<span class="text-error" ng-bind="getUpperAmount()"></span>），
+                并与 平台、中宝财富特约担保机构及中宝财富所有投资人约定该项目名称为
+                <input type="text" class="input-medium" placeholder="请输入项目名称" data-input-produce="lendApplyControls.name" ng-model="lendApplyControls.models.name" /> ，
+                借款期数为
+                <input type="number" class="input-small" placeholder="请输入整数" data-input-produce="lendApplyControls.periods" ng-model="lendApplyControls.models.periods"/>
+                期，其中 1 期即为 1 
+                <select data-input-produce="lendApplyControls.type" ng-model="lendApplyControls.models.type" class="input-small" ng-change="changeProjectType()">
+                    <option value="100">个月</option>
+                    <option value="200">天</option>
+                </select>
+                ，年化收益率为
+                <input type="number" class="input-small" placeholder="请输入利率" data-input-produce="lendApplyControls.rate" ng-model="lendApplyControls.models.rate"/> %
+                （注：<span class="text-error">利率范围为0% ~ 24.0%，小数位不超过一位</span>）
+                ，还款方式为
+                <select class="input-medium" data-input-produce="lendApplyControls.repayMethod" ng-model="lendApplyControls.models.repayMethod" ng-options="repay.id as repay.name for repay in lendApplyControls.repayMethods" ng-disabled="lendApplyControls.models.type == 200"></select>
+                。我承诺项目资金将用于合法用途，不将所借款项用于任何违法活动(包括但不限于赌博、吸毒、贩毒、卖淫嫖娼等)及一切高风险投资(如证券期货、彩票等)。
+            </p>
+            <p class="lend-content">
+                在项目生效后，我将按时依规定付息，并且在 <span class="text-error" ng-bind="lendApplyControls.models.periods"></span> <span ng-bind="lendApplyControls.models.type==100?'个月': '天'"></span>后将所借款项全部还清，连本带利我一共需支付约 <span class="text-error" ng-bind="getTotalAmount() | currency: ''"></span> 元。
+                若逾期未还款，我承诺除向出借人支付正常约定利息以外，还会每天向出借人支付逾期罚息。
+            </p>
+            <p class="lend-content">
+                为了保障投资人及平台方利益，在此我特请：<small>（* 请选择一个担保机构或风控团队）</small>
+            </p>
+            <input type="hidden" data-input-produce="lendApplyControls.guarantee" ng-model="lendApplyControls.models.guarantee" />
+            <ul class="customer-service-list">
+                <li ng-click="selectGuarantee(0)" ng-class="{'active': lendApplyControls.models.guarantee == 0}">
+                    <img src="/images/logo_team.png" class="service-avatar" alt="logo"/>
+                    <p class="service-info">
+                        <strong>{{ platformConfig.name }}风险控制团队</strong><br/>
+                        <span>联系电话：0531-61385888-806</span><br/>
+                    </p>
+                </li>
+                <li ng-repeat="guarantee in lendApplyControls.guarantees" ng-click="selectGuarantee(guarantee.id)" ng-class="{'active': lendApplyControls.models.guarantee == guarantee.id}">
+                    <i class="icon-building icon-5x service-avatar" ng-if="!guarantee.logo"></i>
+                    <img ng-src="{{ guarantee.logo }}" class="service-avatar" alt="logo" ng-if="guarantee.logo"/>
+                    <p class="service-info">
+                        <strong ng-bind="guarantee.name"></strong><br/>
+                        <span>联系电话：{{  guarantee.contact }}</span><br/>
+                        <a target="_blank" ng-href="/#!/guarantee_info/{{ guarantee.id }}">查看担保机构详情>></a>
+                    </p>
+                </li>
+            </ul>
+            <p class="lend-content">
+                对我所有个人信息进行严格审核，控制风险，并对此项目进行担保。
+            </p>
+            <p class="lend-content">
+                <span>我的还款计划表如下<small>（以下数据仅供参考）</small>：</span>
+                <button type="button" class="login-btn" data-form-only-check="generatePlan()">生成我的还款计划</button>
+                <table class="table table-striped table-hover table-bordered lend-plan-table" ng-if="lendApplyControls.repaymentPlans">
+                    <thead>
+                    <tr>
+                        <th>期数</th>
+                        <th>月还款本息</th>
+                        <th>月还款本金</th>
+                        <th>利息</th>
+                        <th>余额</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="plan in lendApplyControls.repaymentPlans">
+                        <td ng-bind="'第' + plan.periods + '期'"></td>
+                        <td ng-bind="(plan.monthInterest | currency: '') + ' 元'"></td>
+                        <td ng-bind="(plan.monthAmount | currency: '') + ' 元'"></td>
+                        <td ng-bind="(plan.interest | currency: '') + ' 元'"></td>
+                        <td ng-bind="(plan.amount | currency: '') + ' 元'"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </p>
+            <button type="submit" class="offset9 btn-large login-btn">提交申请书</button>
+        </div>
+    </form>
+</div>

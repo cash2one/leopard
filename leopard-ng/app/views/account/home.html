@@ -1,0 +1,32 @@
+<div class="main-wrap">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;账户总览
+            <a href="/#!/account/ranking"><img src="/images/rise.jpg" height="17" width="20"/>查看个人投资风云榜</a>
+        </div>
+        <div class="account-data">
+            <div class="row">
+                <div class="span2 account-alance">
+                    <b>可用余额&nbsp;<i class="icon-question-sign" tooltip="当前账户目前可自由支配的金额"></i></b></br>
+                    <span ng-bind="accountData.user.available_amount | currency: '￥'"></span>
+                    
+                </div>
+                <div class="span2 account-alance">
+                    <b>账户总资产&nbsp;<i class="icon-question-sign" tooltip="账户的所有资产，包括冻结、待收等等"></i></b></br>
+                    <span ng-bind="accountData.user.total_amount | currency: '￥'"></span>
+                    
+                </div>
+                <div class="span2 account-alance">
+                    <b>累计净收益&nbsp;<i class="icon-question-sign" tooltip="开户至今您总共赚取的利息、奖励和红包总和"></i></b></br>
+                    <span class="account-money" ng-bind="accountData.user.net_income | currency: '￥'"></span>
+                </div>
+                <div class="span2 gift-deposit-main">
+                    <a href="/#!/account/deposit-new" class="button gift-deposit">充值</a></br></br>
+                    <a href="/#!/account/withdraw-new" class="button gift-deposit">提现</a>
+                </div>
+            </div>
+        </div>
+        <div class="account-theme">&nbsp;最近待收情况</div>
+        <div ng-if="accountData.recentMorris.data.length > 0" data-morris-render="accountData.recentMorris" class="account-recent-morris"></div>
+        <p ng-if="accountData.recentMorris.data.length == 0">您暂无待收记录，赶快 <a href="/#!/invest"><span>去找寻项目投资</span></a> 吧。</p>
+    </div>
+</div>

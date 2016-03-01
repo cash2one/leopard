@@ -1,0 +1,794 @@
+//头部颜色
+@top-color: #333333;
+@top-textcolor:#999;
+@bottom-color: #555555;
+@light-color: #d0d5d9;
+@background-bj:#f0f4f7;
+//字体主色调
+@text-color-1: #69737b;
+//导航字体及按钮橘黄色
+@text-color-2: #475058;
+@text-color-3:#fc8936;
+//立即投标按钮背景颜色
+@text-color-4:#336699;
+@text-color-5:#e8ecef;
+@text-color-6:#555;
+@text-color-7:#808080;
+@color:#fff;
+//土黄色
+@text-color:#c9a062;
+//字母数字字体
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+body{
+	font-family: '微软雅黑';
+	background-color: @background-bj;
+}
+ul,li{
+	list-style-type: none;
+}
+.nav-top{
+	width: 100%;
+	line-height: 40px;
+	background-color:@top-color;
+	color: @top-textcolor;
+	span{
+		b{
+			font-size: 24px;
+		}
+	}
+}
+.nav-logn{
+	font-size: 14px;
+	font-family:'微软雅黑';
+	height: 43px;
+	ul{
+		li{
+			text-align: right;
+			line-height: 43px;
+			padding: 0px 10px;
+			float: right;
+			display: block;
+			a:link,a:visited{
+				color:@top-textcolor;
+				text-decoration:none;
+				&:hover{
+					color:@color;
+					text-decoration:none;
+				}	
+			}
+		}
+	}
+}	
+//导航部分
+.nav-main{
+	margin-top: 40px;
+}
+.nav-right{
+	float: right;
+	li{
+		float: left;
+		display: block;
+		font-size: 16px;
+		font-family: '微软雅黑';
+		font-weight: bold;
+		padding:0px 2px;
+	}
+	a:link,a:visited{
+			padding:6px 20px;
+			color:@text-color-2;
+			text-decoration:none;
+			.border-radius;
+			&:hover{
+				color:@color;
+				text-decoration:none;
+				background-color:@text-color-4; 
+			}	
+		}
+}
+.active a:link,.active a:visited{
+	background-color:@text-color-4; 
+	color: @color;
+}
+//login
+.login-user{
+	background-color: @color;
+	margin-top: 40px;
+	.border-radius;
+	border: 1px solid @light-color;
+	padding-top: 20px;
+}
+.login-text{
+	border-left: 6px solid @text-color-4;
+	font-size: 16px;
+	line-height: 32px;
+	margin-bottom: 20px;
+	margin-left: 25px;
+	span{
+		float: right;
+		margin-right: 25px;
+	}
+}
+
+.login-right{
+	border-left: 1px dotted @light-color;
+	padding:20px 20px;
+	a{
+		float: right;
+		line-height: 32px;
+		font-size: 16px;
+	}
+}
+.login-btn{
+	padding:10px 55px;
+	font-size: 16px;
+	background-color: @text-color-4;
+	border:1px solid @text-color-4;
+	.border-radius;
+	color:@color;
+	font-weight: bold;
+	margin-top: 20px;
+	clear: both;
+	&:hover{
+		background-color: @text-color-5;
+		border:1px solid @text-color-4;
+		color:@text-color-4;
+	}
+}
+
+//bottom
+.bottom{
+	margin-top: 40px;
+	.bottom-phone{
+		.bottom-phone-text{
+			font-size: 24px;
+			margin-top: 6px;
+			color:@text-color;
+			margin-top: 10px;
+		}
+	}
+}
+//login
+//register
+.register-user{
+	background-color: @color;
+	margin-top: 40px;
+	.border-radius;
+	border: 1px solid @light-color;
+	.register-theme{
+		background-color: @background-bj;
+		height:46px;
+		padding-top: 0;
+		border-bottom: 1px solid @light-color;
+		.border-radius;
+		margin-bottom: 20px;
+		
+		ul{
+			padding-top: 6px;
+			margin-left: 0;
+			li{
+				width: 20%;
+				float: left;
+				text-align: center;
+			}
+		}
+		.register-location{
+			position:absolute;
+			z-index: 10;
+			left:246px;
+			top:206px;
+		}
+		.register-location-two{
+			position:absolute;
+			z-index: 10;
+			left:620px;
+			top:206px;
+		}
+		.register-location-three{
+			position:absolute;
+			z-index: 10;
+			left:990px;
+			top:206px;
+		}
+	}
+}
+.register-success{
+	margin-top: 40px;
+	margin-bottom: 100px;
+	span{
+		background-image: url(../img/proper-three.png);
+		background-repeat: no-repeat;
+		display: block;
+		margin-left: 60px;
+		padding-left: 60px;
+		line-height: 28px;
+	}
+}
+.controls{
+	.passward-input{
+		width: 60px;
+	}
+}
+//register
+//index-middle
+//new
+    #hd, #ft {
+        height: 50px;
+        text-align: center;
+    }
+    #ft { height: 40px; }
+
+    /* core layout css */
+    .main {
+        float: left;
+        width: 100%;
+    }
+    .sub {
+        float: left;
+        width: 195px;
+        margin-left: -100%;
+    }
+    .main, .sub, {
+        padding-bottom: 5000px;
+        margin-bottom: -5000px;
+    }
+
+.main-wrap {
+    margin: 0 0px 0 230px;
+}
+    
+#bd {
+	overflow: hidden;
+	_zoom: 1; 
+}
+//new
+.account-middle{
+	background-color: @color;
+	margin-top: 40px;
+	.border-radius;
+	border: 1px solid @light-color;
+	padding-right: 20px;
+}
+
+//left:
+.account-left{
+	width: 200px;
+	border-right: 1px solid @light-color;
+	.admin{
+	color:@text-color-2;
+	font-weight: bold;
+	padding:16px;
+	}
+	.data{
+		border-bottom: 1px solid @light-color;
+		padding:0px 16px 16px 16px;
+		img{
+			margin-left: 6px;
+			display: inline;
+		}
+	}
+	.funds{
+		padding:10px 16px;
+		font-weight: bold;
+		line-height: 32px;
+		border-bottom: 1px solid @light-color;
+		b{
+			color:@text-color-4;
+			font-size: 16px;
+		}
+			.btnTenderList{
+			padding: 6px 23px;
+			.border-radius;
+			cursor:pointer;
+			color:@color;
+			background:0;
+			background-color:@text-color-4;
+			font-weight: bold;
+			margin-top: 10px;
+			border:1px solid @text-color-4;
+				&:hover{
+					background-color: @text-color-5;
+					color: @text-color-4;
+					border:1px solid @text-color-4;
+				}
+			}
+		}
+	.my-account{
+		line-height: 40px;
+		span{
+			padding:10px 16px;
+		}
+		.data-table{
+			width: 100%;
+			td{
+				padding-left: 50px;
+					a:link,a:visited{
+					color: @text-color-2;
+						&:hover{
+							color:@text-color-4;
+							text-decoration:none;
+						}	
+					}
+			}
+			.data-active{
+				color: @text-color-4;
+				background-color: @background-bj;
+				border-top: 1px solid @light-color;
+				border-bottom: 1px solid @light-color;
+				a:link,a:visited{
+					color: @text-color-4;
+				}
+			}
+		}
+	}
+	}
+//account-right
+.account-right{
+	width: 100%;
+	padding:16px 0px;
+	.account-theme{
+		border-left: 6px solid @text-color-4;
+		font-size: 16px;
+		line-height: 32px;
+		margin-bottom: 20px;
+		font-weight: bold;
+		a:link,a:visited{
+			float: right;
+			font-size: 14px;
+			background-color: @text-color-4;
+			color: @color;
+			padding:0px 10px;
+			line-height: 24px;
+			margin-top: 6px;
+		}
+		span{
+			font-size: 14px;
+			padding-left: 20px;
+			color:@text-color-2;
+		}
+	}
+	.account-table{
+		.border-radius;
+		border:1px solid @light-color;
+		span{
+			font-size: 16px;
+			color:@text-color-1;
+			line-height: 44px;
+			h1{
+				margin: 20px 10px 20px 20px;
+				width: 8px;
+				height: 8px;
+				display: block;
+				float: left;
+				background-color: @text-color-4;
+			}
+		}
+		.date-table{
+			td{
+			padding:0px 0px 0px 40px;
+			line-height: 32px;
+			}
+			.data-modification{
+				background-color: @background-bj;
+			}
+			.data-main{
+				background-color: @background-bj;
+				td{
+					padding-top: 20px;
+					.btnTenderList{
+					.border-radius;
+					border:1px solid @text-color-4;
+					padding:4px 20px;
+					background-color: @text-color-4;
+					color:@color;
+					&:hover{
+						background-color: @light-color;
+						border:1px solid @text-color-4;
+						color: @text-color-4;
+					}
+				}
+				}
+			}
+
+		}
+		.data-confirm{
+			width: 100%;
+			background-color: @background-bj;
+		}
+	}
+	.account-data{
+		.border-radius;
+		background-color: @text-color-5;
+		border:1px solid @light-color;
+		padding:20px;
+		margin-left: 20px;
+		margin-bottom: 40px;
+		.account-alance{
+			text-align: center;
+			float: left;
+			border-right: 1px solid @light-color;
+			text-align: center;
+			padding-right: 20px;
+			b{
+				color: @text-color-1;
+				line-height: 32px;
+				font-weight: normal;
+			}
+			span{
+				color: @text-color-2;
+				font-size: 18px;
+				line-height: 32px;
+			}
+			.account-money{
+				color: @text-color-3;
+			}
+			.account-tody{
+				background-color: @text-color-3;
+				color: @color;
+			}
+		}
+		.btnTenderList{
+			padding: 8px 32px;
+			border:0;
+			.border-radius;
+			cursor:pointer;
+			color:@color;
+			background:0;
+			background-color:@text-color-4;
+			font-weight: bold;
+			margin-top: 10px;
+			border:1px solid @text-color-4;
+		}
+		.btnTenderList:hover{
+			background-color: @text-color-5;
+			color: @text-color-4;
+			border:1px solid @text-color-4;
+		}
+	}
+	p{
+		margin-left: 40px;
+		display: inline;
+		span{
+			color:@text-color-4;
+			font-size: 14px;
+			padding:0px 10px;
+		}
+	}
+}
+//account-bank
+.bank-card{
+	border:1px solid @light-color;
+	.border-radius;
+	padding:50px 40px;
+	.bank-logo{
+		width: 45%;
+		border-right: 1px solid @light-color;
+		display: block;
+		float: left;
+	}
+	.bank-table{
+		display: block;
+		margin-left: 20px;
+		display: inline;
+		float: left;
+		width: 40%;
+		margin-top: 10px;
+		td{
+			line-height: 32px;
+			font-weight: bold;
+			color:@text-color-4;
+		}
+		.bank-td{
+			text-align: right;
+			margin-right: 10px;
+		}
+	}
+}
+.bank-cardAdd{
+	border:1px solid @light-color;
+	.border-radius;
+	.bank-cardTop{
+		background-color: @light-color;
+		height: 40px;
+		text-align: center;
+		line-height: 32px;
+		.bank-btn{
+			padding:4px 30px 4px 35px;
+			.border-radius;
+			cursor:pointer;
+			color:@color;
+			font-weight: bold;
+			border:1px solid @text-color-4;
+			background: url(../img/plus-1.png) no-repeat;
+			background-position:20%;
+			background-color:@text-color-4;
+				&:hover{
+					background-color: @text-color-5;
+					color: @text-color-4;
+					border:1px solid @text-color-4;
+					background: url(../img/plus-2.png) no-repeat;
+					background-position:20%;
+				}
+		}
+		.bank-btnTwo{
+			padding:4px 30px 4px 35px;
+			.border-radius;
+			cursor:pointer;
+			color:@color;
+			font-weight: bold;
+			border:1px solid @text-color-4;
+			background: url(../img/bank-correct.png) no-repeat;
+			background-position:20%;
+			background-color:@text-color-4;
+				&:hover{
+					background-color: @text-color-5;
+					color: @text-color-4;
+					border:1px solid @text-color-4;
+					background: url(../img/bank-correct1.png) no-repeat;
+					background-position:20%;
+				}
+		}
+	}
+	.bank-cardMiddle{
+		text-align: right;
+		line-height: 40px;
+		width: 100%;
+		padding: 20px 80px;
+	}
+}
+//account-red
+.red-cardTop{
+	color:@text-color-4;
+	background-color: @background-bj;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 30px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.red-cardMiddle{
+	margin-top: 20px;
+	li{
+		float: left;
+		display: block;
+		margin-left: 10px;
+		display: block;
+		a:link,a:visited{
+			color: @text-color-4;
+			padding:6px 20px;
+			.border-radius;
+			&:hover{
+				background-color: @text-color-4;
+				color:@color;
+				text-decoration: none;
+			}
+		}
+	}
+	.red-active {
+		a:link,a:visited{
+		background-color: @text-color-4;
+		color:@color;
+		text-decoration: none;
+		.border-radius;
+		}
+	}
+}
+.red-checkbox{
+	display: block;
+	margin:20px 40px;
+}
+.red{
+	padding-left: 40px;
+}
+//data-right
+.date-table{
+	width: 100%;
+}
+//foot
+.foot_backg {
+	width: 100%;
+	margin-top: 30px;
+	background-color: @text-color-6;
+	z-index: 1;
+	
+}
+.friend_box {
+	color: @text-color-7;
+	a {
+		color: @text-color-7!important;
+		font-size: 14px; 
+		&:hover {
+			color: @color!important;
+		}
+	}
+}
+.yq_ul { 
+	padding-top: 10px;
+	li {
+		font-size: 16px;
+		text-align: left;
+		display: inline;
+		margin: 7px; 
+	}
+}
+
+.youqing_txt {
+	border-bottom: 1px @text-color-7 solid;
+	padding: 10px 0px 0px 0px;
+	color: @text-color-7; 
+}
+.youqing_txt_bottom {
+	float: left;
+	text-align: left;
+	position: relative; 
+}
+.bottomleft_title {
+	_display: inline;
+	color: @text-color-7;
+}
+.intro {
+	padding: 20px 0px 0px 0px;
+	border-bottom: 1px solid @text-color-7;
+}
+.youqing_txt_bottomleft li {
+	float: left; 
+	text-align: left;
+	_display: inline; margin: 0 7px; }
+.youqing_txt_bottomcenter {
+	position: relative;
+	overflow: hidden;
+	li {
+		float: left;
+		a {
+			float: left;
+			margin: 10px;
+			height: 30px;
+			background: url(../img/footbg.png) no-repeat;
+			_display: inline;
+		}
+	}
+	.tit {
+		height: 50px;
+		line-height: 50px;
+		float: left;
+		font-size: 16px;
+		background: none; 
+	}
+	.xl_wb a {
+		float: left;
+		display: block;
+		width: 99px;
+		&:hover {
+			background-position: 0 -30px;
+		}
+	}
+	.wx a {
+		float: left;
+		display: block;
+		width: 114px;
+		background-position: -99px 0;
+		&:hover {
+			background-position: -99px -30px;
+		}
+	}
+	.qy_qq a {
+		float: left;
+		display: block;
+		width: 113px;
+		background-position: -302px 0;
+		&:hover {
+			background-position: -302px -30px;
+		}
+	}
+	.tx_wb a {
+		float: left;
+		display: block;
+		width: 112px;
+		background-position: -190px 0;
+		&:hover {
+			background-position: -190px -30px;
+		}
+	}
+}
+.youqing_txt_bottomright {
+	float: right;
+	width: 271px;
+	ul {
+		float: right;
+		padding: 0 10px 0 0;
+		li {
+			width: 185px;
+			font-size: 14px;
+			margin: 2px 2px 0 5px;
+			color: @text-color-5;
+			text-align: right;
+		}
+	}
+}
+.youqing_txt_bottomright ul .num { font-size: 18px; }
+.bangqiu {
+	text-align: center;
+	margin: 0 0 10px 0;
+	p {
+		line-height: 40px; 
+		text-align: center;
+	}
+}
+
+//认证
+.authenticate {
+	position: relative;
+	overflow: hidden;
+	width: 500px;
+	margin: 0 auto;
+	li {
+		float: left;
+		a {
+			float: left;
+			margin: 8px;
+			height: 35px;
+			background: url(../img/footbg.png) no-repeat;
+			_display: inline;
+		}
+	}
+	.xl_xin a {
+		float: left;
+		display: block;
+		width: 96px;
+		background-position: -0px -68px;
+		&:hover {
+			background-position: -0px -118px;
+		}
+	}
+	.tx_wb a {
+		float: left;
+		display: block;
+		width: 112px;
+		background-position: -236px -68px;
+		&:hover {
+			background-position: -236px -118px;
+		}
+	}
+	.xl_wb a {
+		float: left;
+		display: block;
+		width: 65px;
+		background-position: -96px -68px;
+		&:hover {
+			background-position: -96px -118px;
+		}
+	}
+	.wx a {
+		float: left;
+		display: block;
+		width: 30px;
+		background-position: -203px -68px;
+		&:hover {
+			background-position: -203px -118px;
+		}
+	}
+	.qy_not a {
+		float: left;
+		display: block;
+		width: 34px;
+		background-position: -351px -68px;
+		&:hover {
+			background-position: -351px -119px;
+		}
+	}
+	.qy_qq a {
+		float: left;
+		display: block;
+		width: 42px;
+		background-position: -162px -68px;
+		&:hover {
+			background-position: -162px -118px;
+		}
+	}
+}
+
+
+

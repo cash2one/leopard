@@ -1,0 +1,109 @@
+/*表单提醒插件样式*/
+html ._warning-container{
+      position: absolute;
+      z-index: 100000;
+      margin-top: 15px;
+      margin-left: -112px;
+      width: 200px;
+      padding: 4px 12px;
+      color: #F7A042;
+      word-wrap: break-word;
+      font-size: 13px;
+      background-color: #FDF5DF;
+      border: 1px solid #FFCF93;
+      .box-shadow(0 3px 5px, rgba(0, 0, 0, 0.3));
+      .border-radius(3px);
+}
+html ._warning-container:before{
+      position: absolute;
+      top: -21px;
+      left: 50%;
+      content: '';
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-bottom-color: #FFCF93;
+}
+html ._warning-container:after{
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      content: '';
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-bottom-color: #FDF5DF;
+}
+html ._warning-base{
+      .single-animation(0.2s);
+}
+html ._warning-flicker{
+      background-color: #f2c5c7;
+      border-color: #c2150a;
+}
+/*弹框样式*/
+html ._message-prompt-box{
+      display: inline-block;
+      min-width: 275px;
+      border: 1px solid #ccc;
+      background: #ffffff;
+      position: fixed;
+      z-index: 12000;
+      left: 50%;
+      top: 50%;
+      margin-top: -150px;
+      font-size: 14px;
+      padding: 10px 15px;
+      .box-shadow(0px 5px 30px, rgba(0, 0, 0, 0.5));
+      .opacity(0);
+      .border-radius(5px);
+      overflow: hidden;
+}
+html ._message-prompt-title{
+      display: block;
+      font-size: 16px;
+      margin: -10px -15px 10px;
+      padding-left: 15px;
+      background-color: #f3f3f3;
+      color: #333333;
+      line-height: 35px;
+      border-bottom: 1px solid #dddddd;
+      .border-radius(5px 5px 0 0);
+}
+/*银行卡大写样式*/
+html ._bankcard-upper{
+      padding: 5px 10px;
+      background-color: #FCF7EA;
+      border: 1px solid #DDB77E;
+      font-size: 20px;
+      color: #F80;
+      position: absolute;
+      z-index: 10000;
+      display: none;
+      letter-spacing: 1;
+      border-radius: 3px;
+}
+/*morris.js*/
+.morris-hover{
+      position:absolute;
+      z-index:1000;
+}
+.morris-hover.morris-default-style{
+      border-radius:10px;
+      padding:6px;color:#666;
+      background:rgba(255,255,255,0.8);
+      border:solid 2px rgba(230,230,230,0.8);
+      font-family:sans-serif;
+      font-size:12px;
+      text-align:center;
+}
+.morris-hover.morris-default-style .morris-hover-row-label{
+      font-weight:bold;
+      margin:0.25em 0;
+}
+.morris-hover.morris-default-style .morris-hover-point{
+      white-space:nowrap;
+      margin:0.1em 0;
+}

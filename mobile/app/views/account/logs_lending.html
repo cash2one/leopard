@@ -1,0 +1,24 @@
+<ion-view view-title="投资记录">
+  <ion-content>
+    <div class="list">
+      <div class="item row">
+        <div class="col">还款时间</div>
+        <div class="col col-20">本金</div>
+        <div class="col col-20">利息</div>
+        <div class="col col-20">状态</div>
+      </div>
+      <div class="logs-border row" ng-repeat="log in logsData.list">
+        <div class="col" ng-bind="log.plan_time | date: 'yyyy-MM-dd'"></div>
+        <div class="col col-20" ng-bind="'￥' + log.amount"></div>
+        <div class="col col-20" ng-bind="'￥' + log.interest"></div>
+        <div class="col col-20" ng-bind="log.status | status: 'plan'"></div>
+      </div>
+      <div class="item text-center" ng-if="!logsData.list.length">
+        <p>暂无相关记录</p>
+      </div>
+    </div>
+    <ion-infinite-scroll on-infinite="loadData()" distance="1%" ng-if="!logsData.isOver">
+    </ion-infinite-scroll>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,21 @@
+<div class="modal">
+  <ion-content>
+    <h2 class="text-center padding">用户登录</h2>
+    <form class="list list-inset" form-produce="formControls.conf">
+      <input type="hidden" placeholder="随机串" input-produce="formControls.cb" ng-model="formControls.models.cb">
+      <label class="item item-input">
+        <input type="text" placeholder="用户名" input-produce="formControls.username" ng-model="formControls.models.username">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="密码" input-produce="formControls.password" ng-model="formControls.models.password">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="验证码" input-produce="formControls.vercode" ng-model="formControls.models.vercode">
+        <img ng-src="http://www.zhongbaodai.com/service/auth/identifying_code?type=login&cb={{ formControls.models.current_date }}" alt="identifying_code" on-tap="reload_vcode()">
+      </label>
+      <button class="button button-positive button-block">立即登录</button>
+      <button type="button" class="button button-dark button-block button-clear" ng-click="modal.hide()">取消登录</button>
+      <a class="button button-dark button-block button-clear" href="#/truffle/register" ng-click="modal.hide()">去注册</a>
+    </form>
+  </ion-content>
+</div>

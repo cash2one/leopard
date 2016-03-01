@@ -1,0 +1,76 @@
+<!--right-->
+<div  class="main-wrap" ng-controller="rankCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;投资风云榜
+        </div>
+        <div class="span3 ranking-link ranking-today">
+            <table class="table table-hover table-bordered integration-table">
+            <thead>
+                <tr class="red-cardTop">
+                    <th class="integration-cardTop" colspan="3">
+                        日排行
+                    </th>
+                </tr>
+            </thead>
+            <tbody>  
+                <tr ng-repeat="li in rankData.rank.daylist">
+                    <td><span class="ranking-digital" ng-bind="$index + 1"></span></td>
+                    <td ng-bind="li.username"></td>
+                    <td class="ranking-money" ng-bind="li.total_amount | currency: '￥'"></td>
+                </tr>
+                <tr ng-if="rankData.rank.daylist.length == 0">
+                    <td><span class="ranking-digital">N</span></td>
+                    <td>虚位以待...</td>
+                    <td class="ranking-money"></td>
+                </tr>
+            </tbody>      
+            </table>
+        </div>
+        <div class="span3 ranking-link ranking-today">
+            <table class="table table-hover table-bordered integration-table">
+            <thead>
+                <tr class="red-cardTop">
+                    <th class="integration-cardTop" colspan="3">
+                        周排行
+                    </th>
+                </tr>
+            </thead>  
+            <tbody>  
+                <tr ng-repeat="li in rankData.rank.weeklist">
+                    <td><span class="ranking-digital" ng-bind="$index + 1"></span></td>
+                    <td ng-bind="li.username"></td>
+                    <td class="ranking-money" ng-bind="li.total_amount | currency: '￥'"></td>
+                </tr>
+                <tr ng-if="rankData.rank.weeklist.length == 0">
+                    <td><span class="ranking-digital">N</span></td>
+                    <td>虚位以待...</td>
+                    <td class="ranking-money"></td>
+                </tr>
+            </tbody>    
+            </table>
+        </div>
+        <div class="span3 ranking-link ranking-today">
+            <table class="table table-hover table-bordered integration-table">
+            <thead>
+                <tr class="red-cardTop">
+                    <th class="integration-cardTop" colspan="3">
+                        月排行
+                    </th>
+                </tr>
+            </thead>   
+            <tbody> 
+                <tr ng-repeat="li in rankData.rank.monthlist">
+                    <td><span class="ranking-digital" ng-bind="$index + 1"></span></td>
+                    <td ng-bind="li.username"></td>
+                    <td class="ranking-money" ng-bind="li.total_amount | currency: '￥'"></td>
+                </tr>
+                <tr ng-if="rankData.rank.monthlist.length == 0">
+                    <td><span class="ranking-digital">N</span></td>
+                    <td>虚位以待...</td>
+                    <td class="ranking-money"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

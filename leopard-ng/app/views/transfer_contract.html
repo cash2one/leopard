@@ -1,0 +1,131 @@
+<!-- middle === -->
+<style type="text/css">
+    *{-webkit-margin-before: 0em;-webkit-margin-after: 0em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;}
+    .contract-main{padding: 20px 40px;}
+    .contract-company{text-align:center; auto;font-size:19px;}
+    .contract-name{text-align:center;font-size:32px;}
+    .contract-no{text-align:center;font-size:16px;}
+    .contract-people{line-height:40px;font-weight:bold;font-size:16px;}
+    .contract-people-attr{line-height:22px;font-size:16px;}
+    .contract-first-title{text-align:center;font-size:19px;line-height: 50px;}
+    .contract-second-title{font-size:14px;line-height:28px;text-indent:28px;}
+    .contract-third-title{font-size:13px;line-height:18px;text-indent:26px;padding-left:20px;}
+    .contract-fourth-title{font-size:13px;line-height:18px;text-indent:36px;padding-left:30px;}
+    .contract-end-time{text-align:right;margin-top:50px;margin-right:100px;font-size:16px;}
+</style>
+<div class="guarantee-middle">
+    <div class="guarantee-container">
+        <div class="container">
+            <div class="lend-box contract-main">
+                <h3 class="contract-company">{{ platformConfig.name }}</h3>
+                <h1 class="contract-name">债权转让合同</h1>
+                <br clear=all style="page-break-before:always" mce_style="page-break-before:always">
+                <p class="contract-people">甲方(债权转让人): {{ contractData.info.lender.realname }}</p>
+                <p class="contract-people">中宝财富用户名: {{ contractData.info.lender.username }}</p>
+                <p class="contract-people">身份证号码: {{ contractData.info.lender.idcard }}</p>
+                <br clear=all style="page-break-before:always" mce_style="page-break-before:always">
+                <p class="contract-people">乙方(债权受让人): {{ contractData.info.borrower.realname }}</p>
+                <p class="contract-people">中宝财富用户名: {{ contractData.info.borrower.username }}</p>
+                <p class="contract-people">身份证号码: {{ contractData.info.borrower.idcard }}</p>
+                <br clear=all style="page-break-before:always" mce_style="page-break-before:always">
+                <p>根据《中华人民共和国合同法》等相关法律、法规及规章的规定，甲、乙双方遵循自愿、公平、诚实信用的原则，甲方向乙方转让其在上海中泉宝泰互联网金融信息服务有限公司（以下称“中宝财富”）运营管理的P2P网络借贷平台“中宝财富”（www.zhongbaodai.com，以下称“中宝财富平台”）投资的项目债权，就相关事宜达成一致意见，签订本债权转让合同（以下简称“本合同”），以资共同遵守。</p>
+                <br clear=all style="page-break-before:always" mce_style="page-break-before:always">
+                <h3 class="contract-first-title">第一条 标的债权</h3>
+                <p class="contract-second-title">本合同项下标的债权主要信息如下：</p>
+                <div class="contract-table">
+                    <table class="table table-hover table-bordered integration-table">
+                        <tr>
+                            <td>借款合同号</td>
+                            <td>{{ contractData.info.no }}</td>
+                        </tr>
+                        <tr>
+                            <td>借款人</td>
+                            <td>{{ contractData.info.project_lender }}</td>
+                        </tr>
+                        <tr>
+                            <td>借款到期日</td>
+                            <td>{{ contractData.info.processed_at }}</td>
+                        </tr>
+                        <tr>
+                            <td>借款年利率</td>
+                            <td>{{ contractData.info.rate }}</td>
+                        </tr>
+                        <tr>
+                            <td>标的债权本金</td>
+                            <td>{{ contractData.info.remain_periods_capital }}</td>
+                        </tr>
+                        <tr>
+                            <td>标的债权应收利息</td>
+                            <td>{{ contractData.info.transfer_interest }}</td>
+                        </tr>
+                        <tr>
+                            <td>标的债权转让收益起算日</td>
+                            <td>本合同签署日之次日</td>
+                        </tr>
+                        <tr>
+                            <td>担保措施</td>
+                            <td>该项目由
+                                <a ng-bind="platformConfig.name + '风控团队'" ng-if="!contractData.info.guarantee_name">
+                                <a ng-href="/#!/guarantee_info/{{ contractData.info.guarantee_id }}" target="_blank" ng-bind="contractData.info.guarantee_name" ng-if="contractData.info.guarantee_name"></a>
+                                （以下称“担保人”）为标的债权本金和利息提供连带责任保证担保
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <h3 class="contract-first-title">第二条 标的债权的转让</h3>
+                <p class="contract-second-title">1.甲方同意按照本合同约定向乙方转让标的债权，乙方同意根据本合同的约定，受让甲方持有的对债务人的标的债权，并支付标的债权转让价款。</p>
+                <p class="contract-second-title">2.标的债权的转让</p>
+                    <p class="contract-third-title">（1）标的债权转让日为本合同生效之日，即甲方将标的债权转让给乙方，且乙方向甲方支付标的债权的转让价款之日。</p>
+                    <p class="contract-third-title">（2）除本合同另有约定外，自标的债权转让日起（包括该转让日），甲方基于标的债权所享有的标的债权及其附属的一切权利、利益均转让给乙方，该等权利、利益包括但不限于：</p>
+                        <p class="contract-fourth-title">1）标的债权的所有权和相关权益（包括但不限于担保权益以及其他权利或利益）；</p>
+                        <p class="contract-fourth-title">2）标的债权相关的滞纳金、违约金及延期补偿金等的权利；</p>
+                        <p class="contract-fourth-title">3）获得标的债权被转让、被出售或者被以其他方式处置所获得的全部款项的权利；</p>
+                        <p class="contract-fourth-title">4）以诉讼或其他形式请求、收回、接受与标的债权相关的全部应偿付款项的权利；</p>
+                        <p class="contract-fourth-title">5）债权文件项下甲方享有的其他一切权利和利益。</p>
+
+                    <p class="contract-third-title">（3）标的债权转让通过中宝财富平台站内消息的方式通知债务人，站内消息一经发出即视为送达。</p>
+                <p class="contract-second-title">3.标的债权转让价款</p>
+                    <p class="contract-third-title">双方同意，标的债权的转让价款由转让本金及其应收利息组成；债权转让合同生效之同时，乙方即同步支付转让价款。乙方在此不可撤销地授权中宝财富于本合同成立时将标的债权转让价款全部划转至甲方平台账户中，划转完毕即视为标的债权转让完毕。</p>
+
+
+                <h3 class="contract-first-title">第三条 标的债权保障</h3>
+                <p class="contract-second-title">1.为确保债务人履行《借款合同》项下的义务，标的债权的转让不影响原合同的担保效力。双方在此确认，自标的债权转让日起，甲方在标的债权上设置的前述担保权利亦转让于乙方。</p>
+                <p class="contract-second-title">2.若债务人未按照本合同的约定履行还本付息义务，乙方有权根据本合同及相关文件约定依法行使担保权利，以保障乙方的合法权益。</p>
+
+                <h3 class="contract-first-title">第四条 甲方的保证</h3>
+                <p class="contract-second-title">甲方系中华人民共和国公民，具有签署和履行本合同及与本合同有关的其他文件的民事权利能力和行为能力，能够独立承担民事责任。</p>
+
+                <h3 class="contract-first-title">第五条 乙方的保证</h3>
+                <p class="contract-second-title">1.乙方系中华人民共和国公民，具有签署和履行本合同及与本合同有关的其他文件的民事权利能力和行为能力，能够独立承担民事责任。</p>
+                <p class="contract-second-title">2.乙方保证其用于受让标的债权的投标资金为其合法所有或享有支配权的财产，前述投标资金与其他任何个人、法人及其他组织不存在法律上的任何纠纷。</p>
+
+                <h3 class="contract-first-title">第六条 税费的承担</h3>
+                <p class="contract-second-title">1.除各方签署的其他合同另有约定外，各方应按照现行有效的中国法律法规的规定各自承担其因签署和履行本合同而产生的相应税费。</p>
+                <p class="contract-second-title">2.因处置标的债权、担保物（如有）而产生的所有税费适用债权文件的约定。</p>
+
+                <h3 class="contract-first-title">第七条 合同的变更</h3>
+                <p class="contract-second-title">1.本合同的任何修改、补充均须以中宝财富平台电子文本形式作出。</p>
+                <p class="contract-second-title">2.变更后的内容或补充合同与本合同具有同等法律效力，如果变更后的内容或补充协议与本合同发生冲突，以变更后的内容或补充合同为准。</p>
+
+                <h3 class="contract-first-title">第八条 违约责任</h3>
+                <p class="contract-second-title">任何一方未履行或未适当履行其在本合同项下的义务，或违反其在本合同项下任何声明与保证的，视为该方违约，违约方应当赔偿因其违约而给其他方造成的全部损失。</p>
+
+                <h3 class="contract-first-title">第九条 法律适用及争议解决方式</h3>
+                <p class="contract-second-title">1.本合同的签署、生效、履行、解释、修改和终止等事项均适用中华人民共和国现行法律法规。</p>
+                <p class="contract-second-title">2.各方因履行本合同或与本合同有关的所有争议均应当以友好协商的方式解决，协商不成的，任何一方均可向中宝财富住所地人民法院提起诉讼。</p>
+
+                <h3 class="contract-first-title">第十条 合同的生效</h3>
+                <p class="contract-second-title">1.中宝财富将甲方转让标的债权的招标信息发布在中宝财富平台，乙方点击“投标”按钮后，本合同成立。</p>
+                <p class="contract-second-title">2.乙方根据本合同第二条第3款的约定将标的债权转让价款支付至甲方账户时，本合同立即生效。</p>
+
+                <h3 class="contract-first-title">第十一条 其他</h3>
+                <p class="contract-second-title">1.除非本合同另有约定，本合同中所用词语的含义与该词语在《中宝财富债权转让规则》的含义相同。</p>
+                <p class="contract-second-title">2.各方已经充分阅读并理解本合同及相关法律文件及其含义，对于本合同项下的行为自愿承担各自的法律责任和义务。</p>
+                <p class="contract-second-title">3.如果本合同的任何条款因任何原因无效，该条款的无效不影响本合同其他条款有效性的，则各方应当继续履行本合同其他条款。</p>
+                <p class="contract-second-title">4.本合同项下相关费用的支付不受法定假日或公休日影响。</p>
+                <h4 class="contract-end-time">更新日期为 {{ contractData.info.now }}</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- middle === -->

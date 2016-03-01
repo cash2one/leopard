@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+{% include 'top_nav.html' %}
+{% include 'post_about_nav.html' %}
+<p class="user-right-title">{{ post.title }}</p>
+{{ post.content | safe}}
+{% endblock %}
+
+

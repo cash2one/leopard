@@ -1,0 +1,114 @@
+<ion-view title="学仕贷项目详情">
+  <ion-content>
+    <div class="list padding-top">
+      <div class="item item-divider">
+        <span class="badge project-mark">
+          学
+        </span>
+        {{ projectData.project.name }}
+      </div>
+      <ul class="project-funds">
+        <li>
+          开放额度
+          <span>{{ projectData.project.amount | currency: '' }}元</span>
+        </li>
+        <li>
+          实际金额
+          <span>{{ projectData.project.borrowed_amount | currency: '' }}元</span>
+        </li>
+        <li>
+          投资期限
+          <span ng-bind="projectData.project.periods + '个月'"></span>
+        </li>
+        <li>
+          年化收益
+          <span ng-bind="(projectData.project.rate*12 | number: 2) + '%'"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="list project-border">
+      <ul class="project-funds  project-bordernone">
+        <li>
+          可投金额
+          <span class="project-money" ng-bind="((projectData.project.amount - projectData.project.borrowed_amount) | currency: '') + '元'"></span>
+        </li>
+        <li>
+          还款方式
+          <span class="project-money" ng-bind="projectData.project.repaymentmethod.name"></span>
+        </li>
+        <li>
+          担保公司
+          <span class="project-money" ng-bind="projectData.project.guarantee.name || '无'">
+          </span>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col col-80">
+          <div class="investment-progress">
+            <span ng-style="{width: projectData.project.progress * 100 + '%'}"></span>
+          </div>
+        </div>
+        <div class="col" ng-bind="(projectData.project.progress * 100 | number: 0) + '%'"></div>
+      </div>
+      <div class="item item-divider">
+        产品详情
+      </div>
+      <ul class="project-funds  project-bordernone student-project">
+        <li>
+          产品名称
+          <p>“筑梦启航”投资计划</p>
+        </li>
+        <li>
+          投资条件
+          <p>加入金额100元起，且为100元的整数倍递增</p>
+        </li>
+        <li>
+          投资上限
+          <p>单个客户每笔认购金额最高不超过100 万</p>
+        </li>
+        <li>
+          投资模式
+          <p>本金复投</p>
+        </li>
+        <li>
+          合约期限
+          <p>投标期 （2天） +锁定期 （ 6 个月）</p>
+        </li>
+        <li>
+          退出方式
+          <p>到期退出。</p>
+        </li>
+        <li>
+          退出所需时间
+          <p>计划到期后，资金在一个工作日之内返回个人账户</p>
+        </li>
+        <li>
+          费率说明
+          <p>年化利率为15%，无投资管理费、退出费用</p>
+        </li>
+        <li>
+          产品说明书
+          <p>查看 “筑梦启航” 投资计划说明书</p>
+        </li>
+      </ul>
+      <a href="javascript:;" class="item positive" ng-click="recordModal.show()">
+        查看投标记录>>
+      </a>
+      <form class="item" form-produce="formControls.conf">
+        <label class="item item-input">
+          <input type="text" placeholder="投标金额" input-produce="formControls.amount" ng-model="formControls.models.amount">
+        </label>
+        <button type="button" class="button button-positive button-block" form-only-check="lendProject(false)" ng-if="CURRENT_USER_ID">
+          用回款资金进行投标
+        </button>
+        <button type="button" class="button button-calm button-block" form-only-check="lendProject(true)" ng-if="CURRENT_USER_ID">
+          用充值资金进行投标
+        </button>
+        <button type="button" class="button button-assertive button-block" ng-click="login()" ng-if="!CURRENT_USER_ID">
+          请先登录
+        </button>
+      </form>
+    </div>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

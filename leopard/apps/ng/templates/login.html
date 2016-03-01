@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <div class="container">
+        <div class="login-container">
+            <div class="entrance-box">
+                <div class="middle-title">
+                    <a class="middle-more" href="/register">没有账号？快速注册>></a>
+                    <span class="middle-title-name">用户登录</span>
+                </div>
+                <form class="form-inline" name="registerForm" novalidate="novalidate">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td class="text-right">用户名：</td>
+                            <td><input class="input-medium" name="username" type="text" placeholder="用户名/手机号码" required="required"/></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right">密码：</td>
+                            <td><input class="input-medium" name="password" type="password" required="required"/></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"></td>
+                            <td>
+                                <a href="/forget" class="pull-right">忘记密码?</a>
+                                <label for="remember" class="checkbox">
+                                    <input id="remember" name="remember" type="checkbox" required="required"> 记住用户名
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p></p>
+                                <input type="submit" click="login()" value="登录" class="btn btn-danger"/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block footer%}
+
+<div class="bottom">
+    <div class="container">
+            <p>CopyRight &copy; 2014 {{ SYSTEM_NAME }}投资 版权所有 <a href="http://www.miitbeian.gov.cn/" rel="nofollow">{{ SYSTEM_ICP }}</a></p>
+    </div>
+</div>
+<a href="http://crm2.qq.com/page/portalpage/wpa.php?uin=4000311608&aty=2&a=2&curl=demo.ejdai.cn&ty=1" id="float-server" target="_blank" title="点击与易简贷客服对话">
+    <i class="icon-comments"></i>
+    在线客服
+</a>
+
+{% endblock %}

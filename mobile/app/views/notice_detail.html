@@ -1,0 +1,10 @@
+<ion-view title="详情">
+  <ion-content>
+    <div class="padding">
+      <h4 class="text-center" ng-bind="notice.title"></h4>
+      <p class="text-center dark" ng-bind="notice.added_at | date: 'yyyy-MM-dd HH:mm:ss'"></p>
+      <div ng-bind-html="notice.content"></div>
+    </div>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

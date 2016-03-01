@@ -1,0 +1,285 @@
+{% extends 'admin/base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <link href="{{ url_for('static', filename='admin/css/plugins/morris/morris-0.4.3.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-lg-12">
+         <div class="panel panel-default">
+            <div class="panel-heading" style="overflow: auto;">
+                <div style="float:left;min-width: 250px;">
+                &nbsp;平台总融资额度： <font color="#ff7f50">{% if total_investments %}{{ "{:,.2f}".format(total_investments) }} {% else %} 0 {% endif %}元 </font>
+                </div>
+                <div style="float:left;min-width: 250px;">
+                <i class="fa fa-user fa-fw"></i>&nbsp;平台总用户量： <font color="#ff7f50">{{ total_users }} 人 </font>
+                </div>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                {% if history_investments|length == 0%}
+                   <div style="text-align:center;font-size:16px;">暂无投资记录</div>
+                {% else  %}
+                    <h4>历史投资记录</h4>
+                 <div id="history_investments" style="overflow: auto;"></div>
+                {% endif %}
+            </div>
+
+         </div>
+    </div>
+
+    <!-- /. col-lg-9 -->
+    <div class="col-lg-9">
+
+
+        <div class="panel panel-default">
+             <div class="panel-heading">
+                <i class="fa fa-bar-chart-o fa-fw"></i> 今日待还记录 总额: <font color="#ff7f50">{{ today_repay_amount }} 元</font>
+                &nbsp;&nbsp;所有待还总额:<font color="#ff7f50">{{ total_repay_amount }} 元</font>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                     <div class="table-responsive">
+                         <table class="table table-bordered table-hover table-striped">
+                             <thead>
+                                <tr>
+                                    <th>用户</th>
+                                    <th>项目</th>
+                                    <th>金额</th>
+                                    <th>利息</th>
+                                    <th>时间</th>
+                                    <th>截止时间</th>
+                                </tr>
+                             </thead>
+                             <tbody>
+
+                              {% for item in today_repayments %}
+                                <tr>
+                                    <td><a href="{{ url_for('user.read_view', id=item.investment.user.id) }}" target="_blank">{{ item.investment.user }}</a></td>
+                                    <td><a href="{{ url_for('project.read_view', id=item.id) }}" target="_blank">{{ item.investment.project }}</a></td>
+                                    <td>{{ "{:,}".format(item.amount) }}</td>
+                                    <td>{{ "{:,}".format(item.interest) }}</td>
+                                    <td>{{ item.investment.added_at.strftime('%Y-%m-%d %H:%M:%S')}}</td>
+                                    <td>{{ item.plan_time.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                                </tr>
+                              {% endfor %}
+                              {% if today_repayments.count() == 0 %}
+                                        <tr>
+                                            <td colspan="999">
+                                            <div class="text-center">
+                                                表中没有任何记录
+                                            </div>
+                                            </td>
+                                        </tr>
+                                     {% endif %}
+                             </tbody>
+                         </table>
+                        <a href="{{ url_for('repayment.index_view') }}" class="btn btn-default btn-block">查看更多</a>
+                     </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /. 今日待还总额-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-bar-chart-o fa-fw"></i> 今日投标记录 总额: <font color="#ff7f50">{{ today_invest_amount }} 元</font>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>用户</th>
+                                        <th>项目</th>
+                                        <th>金额</th>
+                                        <th>利息</th>
+                                        <th>时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                 {% for item in today_investments %}
+                                    <tr>
+                                        <td><a href="{{ url_for('user.read_view', id=item.user.id) }}" target="_blank">{{ item.user }}</a></td>
+                                        <td><a href="{{ url_for('project.read_view', id=item.id) }}" target="_blank">{{ item.project }}</a></td>
+                                        <td>{{ "{:,}".format(item.amount) }}</td>
+                                        <td>{{ "{:,}".format(item.interest) }}</td>
+                                        <td>{{ item.added_at.strftime('%Y-%m-%d %H:%M:%S')}}</td>
+                                    </tr>
+
+                                 {% endfor %}
+
+                                {% if today_investments.count() == 0 %}
+                                    <tr>
+                                        <td colspan="999">
+                                        <div class="text-center">
+                                            表中没有任何记录
+                                        </div>
+                                        </td>
+                                    </tr>
+                                 {% endif %}
+                                </tbody>
+                            </table>
+                            <a href="{{ url_for('investment.index_view') }}" class="btn btn-default btn-block">查看更多</a>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.col-lg-4 (nested) -->
+                    <div class="col-lg-8">
+                        <div id="morris-bar-chart"></div>
+                    </div>
+                    <!-- /.col-lg-8 (nested) -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+
+        <!-- 每月为用户赚取收益-->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-bar-chart-o fa-fw"></i> 累计为客户赚取收益: <font color="#ff7f50">{{ users_income }} 元</font>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>金额(元)</th>
+                                        <th>开始日期</th>
+                                        <th>结束日期</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                 {% for item in monthly_incomes %}
+                                    <tr>
+                                        <td>{{ "{:,}".format(item.amount) }}</td>
+                                        <td>{{ item.start_at.strftime('%Y-%m')}}</td>
+                                        <td>{{ item.end_at.strftime('%Y-%m')}}</td>
+                                    </tr>
+
+                                 {% endfor %}
+
+                                {% if not monthly_incomes %}
+                                    <tr>
+                                        <td colspan="999">
+                                        <div class="text-center">
+                                            没有任何记录
+                                        </div>
+                                        </td>
+                                    </tr>
+                                 {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+
+    </div>
+    <!-- /.col-lg-12 -->
+    <div class="col-lg-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bar-chart-o fa-fw"></i> 平台充值
+                    </div>
+                    <div class="panel-body">
+                        今日充值总额：<font color="#ff7f50">{{ today_deposits_amount }} 元</font> <br>
+                        历史充值总额：<font color="#ff7f50">
+                        {% if total_deposits %}
+                        {{ "{:,.2f}".format(total_deposits) }} 元
+                        {% else %}0元
+                        {% endif %}</font>
+                        <a href="{{ url_for('deposit.index_view') }}" class="btn btn-default btn-block">查看详情</a>
+                    </div>
+
+                    <!-- /.panel-body -->
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-bar-chart-o fa-fw"></i> 平台提现
+                    </div>
+                    <div class="panel-body">
+                        今日提现总额：<font color="#ff7f50">{{ today_withdraws_amount }} 元</font> <br>
+                        历史提现总额：<font color="#ff7f50">
+                        {% if total_withdraws %}
+                        {{ "{:,.2f}".format(total_withdraws) }} 元
+                        {% else %}0元
+                        {% endif %}</font>
+                        <a href="{{ url_for('withdraw.index_view') }}" class="btn btn-default btn-block">查看详情</a>
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+        <!-- /.col-lg-4 -->
+    </div>
+</div>
+<!-- /.row -->
+{% endblock %}
+
+{% block tail %}
+    {{ super() }}
+<script type="application/javascript">
+Morris.Bar({
+  element: 'history_investments',
+  data: [
+      {% for item in history_investments %}
+        { dates: '{{ item[0].strftime('%Y-%m-%d') }}', amount: {{ item[1] }} },
+      {% endfor %}
+  ],
+  xkey: 'dates',
+  ykeys: ['amount'],
+  labels: ['金额']
+
+});
+
+{#Morris.Donut({#}
+{#  element: 'today_deposits',#}
+{#  data: [#}
+{#    {% for item in today_deposits %}#}
+{#    {label: "充值金额", value:{{ item.amount }} },#}
+{#   {% endfor %}#}
+{#  ],#}
+{#  backgroundColor: '#ccc',#}
+{#  labelColor: '#060',#}
+{#  colors: [#}
+{#    '#0BA462',#}
+{#    '#39B580',#}
+{#    '#67C69D',#}
+{#    '#95D7BB'#}
+{#  ]
+);#}
+{##}
+{#Morris.Donut({#}
+{#  element: 'today_withdraws',#}
+{#  data: [#}
+{#     {% for item in today_withdraws %}#}
+{#    {label: "提现金额", value:{{ item.amount }} },#}
+{##}
+{#   {% endfor %}#}
+{#  ],#}
+{#  backgroundColor: '#ccc',#}
+{#  labelColor: '#060',#}
+{#  colors: [#}
+{#    '#0BA462',#}
+{#    '#39B580',#}
+{#    '#67C69D',#}
+{#    '#95D7BB'#}
+{#  ]
+});#}
+</script>
+{% endblock %}

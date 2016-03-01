@@ -1,0 +1,71 @@
+<div class="main-wrap" ng-controller="depositCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;账户充值
+        </div>
+        <div class="span9 automatic-link">
+            <form data-form-produce="depositControls.conf">
+            <table width="90%">
+            <tbody>
+                <tr>
+                    <td class="automatic-off" width="100"> 充值平台：</td>
+                    <td width="6">&nbsp;</td>
+                    <td>
+                        <select ng-model="depositData.platform" ng-options="platform as platform.name for platform in depositData.platformList"></select>
+                    </td>
+                </tr>
+                <tr class="platform-description">
+                    <td class="automatic-off"> 充值信息：</td>
+                    <td>&nbsp;</td>
+                    <td ng-bind="depositData.platform.description || '无'"></td>
+                </tr>
+                <tr ng-if="depositData.platform.logic == 'Offline'">
+                    <td class="automatic-off"> 充值金额：</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input class="main-input" type="text" data-input-produce="depositControls.amount" ng-model="depositControls.models.amount"/>
+                    </td>
+                </tr>
+                <tr ng-if="depositData.platform.logic == 'Offline'">
+                    <td class="automatic-off"> 流水号：</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input class="main-input" type="text" data-input-produce="depositControls.serial" ng-model="depositInfo.serial"/>
+                    </td>
+                </tr>
+                <tr ng-if="depositData.platform.logic == 'Offline'">
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="hidden" data-input-produce="depositControls.platform" ng-model="depositData.platform.id"/>
+                        <button class="button login-btn">充 值</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            </form >
+            <form target="_blank" method="post" action="/service/account/deposit" ng-if="depositData.platform.logic != 'Offline'">
+            <table width="90%">
+            <tbody>
+                <tr ng-if="depositData.platform.logic != 'Offline'">
+                    <td class="automatic-off" width="100"> 充值金额：</td>
+                    <td width="6">&nbsp;</td>
+                    <td>
+                        <input class="main-input" name="amount" type="text" ng-model="depositControls.models.amount"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="hidden" name="platform" ng-value="depositData.platform.id"/>
+                        <input type="hidden" name="_csrf_token" ng-value="depositData.token">
+                        <button class="button login-btn">充 值</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            </form >
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<ul>
+    <li><a href="/">首页</a></li>
+    <li><a href="/invest/list/">我要投资</a></li>
+    <li><a href="/user" rel="nofollow">账户中心</a></li>
+    <li><a href="/affiliate">合作加盟</a></li>
+    <li><a href="/post/about/info">关于我们</a></li>
+</ul>
+{% include 'post_about_nav.html' %}
+<p class="user-right-title">新手引导</p>
+<div class="user-right-add-box post-detail-box">
+    <img src="/img/newer_lead.jpg" alt="lead" />
+</div>
+{% endblock %}
+

@@ -1,0 +1,36 @@
+<div class="modal">
+  <ion-content>
+    <h2 class="text-center padding">用户注册</h2>
+    <form class="list list-inset" form-produce="formControls.conf">
+      <label class="item item-input" ng-show="formControls.models.inviteUser">
+        您的邀请人是：<span ng-bind="formControls.models.inviteUser"></span>
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="邀请码" input-produce="formControls.inviteCode" ng-model="formControls.models.inviteCode" event-blur="getInviteUser()">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="用户名" input-produce="formControls.username" ng-model="formControls.models.username">
+      </label>
+      <div class="item item-input item-button-inset">
+        <input type="text" placeholder="图片验证码" phone-produce="formControls.pvcode" ng-model="formControls.models.pvcode" phone-send="#sms-send">
+        <img ng-src="http://www.zhongbaodai.com/service/auth/identifying_code?type=register&cb={{ formControls.models.current_date }}" alt="identifying_code" on-tap="reload_vcode()">
+      </div>
+      <div class="item item-input item-button-inset">
+        <input type="text" placeholder="手机号码" phone-produce="formControls.phone" ng-model="formControls.models.phone" phone-send="#sms-send" phone-send-validate="{{ {ver_code: formControls.models.current_date + ':' + formControls.models.pvcode } }}">
+        <button id="sms-send" type="button" class="button button-clear button-small">发送验证码</button>
+      </div>
+      <label class="item item-input">
+        <input type="text" placeholder="验证码" input-produce="formControls.phoneCode" ng-model="formControls.models.phoneCode">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="密码" input-produce="formControls.password" ng-model="formControls.models.password">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="重复密码" input-produce="formControls.rePassword" ng-model="formControls.models.rePassword">
+      </label>
+      <button class="button button-positive button-block">立即注册</button>
+      <a class="button button-dark button-block button-clear" href="#/truffle/home">返回首页</a>
+    </form>
+    <div style="height: 40px"></div>
+  </ion-content>
+</div>

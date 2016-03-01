@@ -1,0 +1,15 @@
+<div class="span10 investment-link">
+    <ul>
+        <li>起止日期</li>
+        <li class="investment-li"><i class="icon-calendar"></i><input type="text" class="icon-calendar" readonly="readonly" datepicker-popup="yyyy-MM-dd" ng-model="filterConf.start_date" show-weeks="false" toggle-weeks-text="显示周" clear-text="清空" current-text="今天" close-text="关闭" max="filterConf.end_date" ng-change="timeSelect()"/></li>
+        <li>-</li>
+        <li class="investment-li"><i class="icon-calendar"></i><input type="text" class="icon-calendar" readonly="readonly" datepicker-popup="yyyy-MM-dd" ng-model="filterConf.end_date" show-weeks="false" toggle-weeks-text="显示周" clear-text="清空" current-text="今天" close-text="关闭" min="filterConf.start_date" ng-change="timeSelect()"/></li>
+    </ul>
+    <ul class="investment-today">
+        <li ng-class="{'active': filterConf.day == type.value}" ng-repeat="type in quickConf"><a href="javascript:;" ng-click="quickSelect(type.value)" ng-bind="type.name"></a></li>
+    </ul>
+    <ul class="investment-today" ng-repeat="type in filterTypes">
+        <li ng-bind="type.title"></li>
+        <li ng-class="{'active': filterConf[type.name] == select.value}" ng-repeat="select in type.values"><a href="javascript:;" ng-bind="select.name" ng-click="typeSelect(type.name, select.value)"></a></li>
+    </ul>
+</div>

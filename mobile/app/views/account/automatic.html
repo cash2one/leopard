@@ -1,0 +1,53 @@
+<ion-view title="自动投标设置">
+  <ion-content>
+    <form class="list" form-produce="formControls.conf">
+      <div class="item item-toggle">
+        是否启用
+        <label class="toggle toggle-balanced">
+          <input type="checkbox" input-produce="formControls.isOpen" ng-model="formControls.models.is_open" ng-change="togglePower()">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+      </div>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">最小利率(%)</span>
+        <input type="text" input-produce="formControls.minRate" ng-model="formControls.models.min_rate">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">最大利率(%)</span>
+        <input type="text" input-produce="formControls.maxRate" ng-model="formControls.models.max_rate">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">最小金额(元)</span>
+        <input type="text" input-produce="formControls.minAmount" ng-model="formControls.models.min_amount">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">最大金额(元)</span>
+        <input type="text" input-produce="formControls.maxAmount" ng-model="formControls.models.max_amount">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">最小期数(月)</span>
+        <input type="text" input-produce="formControls.minPeriods" ng-model="formControls.models.min_periods">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">最大期数(月)</span>
+        <input type="text" input-produce="formControls.maxPeriods" ng-model="formControls.models.max_periods">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">账户预留金额(元)</span>
+        <input type="text" input-produce="formControls.reserveAmount" ng-model="formControls.models.reserve_amount">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">交易密码</span>
+        <input type="password" input-produce="formControls.tradePass" ng-model="formControls.models.tradePass">
+      </label>
+      <div class="padding">
+        <button class="button button-positive button-block">
+          保存设置
+        </button>
+      </div>
+    </form>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

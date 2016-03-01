@@ -1,0 +1,24 @@
+<table class="{{ tp.className }}">
+    <thead>
+        <tr>
+            <th ng-repeat="head in tp.heads">
+                <span ng-if="!head.sort" ng-bind="head.name"></span>
+                <a href="javascript:;" ng-click="sort(head)" ng-if="head.sort">
+                {{head.name}}
+                <i ng-if="tp.sort == head.sort" ng-class="{'icon-chevron-down': tp.sortType, 'icon-chevron-up': !tp.sortType}"></i>
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="cells in tp.rows track by $index">
+            <td ng-repeat="cell in cells">
+                <a ng-href="{{ cells[tp.attrs[$index]].link }}" ng-bind="cells[tp.attrs[$index]].text" ng-if="cells[tp.attrs[$index]].link"></a>
+                <span ng-if="!cells[tp.attrs[$index]].link" ng-bind="cells[tp.attrs[$index]].text"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="pp.className" ng-if="pp">
+    <div data-pagination previous-text="上一页" next-text="下一页" items-per-page="pp.item" page="pp.currentPage" max-size="pp.maxSize" total-items="pp.total" on-select-page="changePage(page)" rotate="false"></div>
+</div>

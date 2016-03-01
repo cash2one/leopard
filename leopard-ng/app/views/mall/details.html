@@ -1,0 +1,106 @@
+<div class="integral-mall-middle">
+    <!--<div class="integral-mall-banner">
+        <div class="integral-mall-banner">
+            
+        </div>
+    </div>-->
+    <div class="details-top">
+        <div class="d-name mall-name">
+            <a href="/">首页</a> &gt; <a href="/#!/mall/index">宝币商城</a> &gt; <a href="#" ng-bind="products.info.name"></a>
+        </div>
+   </div>
+
+    <div class="container">
+        <div class="details-content">
+            <div class="details-left">
+                <div class="details-left-top">
+                    <div class="details-tu">
+                        <img src="{{ products.info.src }}" />
+                    </div>
+                    <form data-form-produce="productDetailControls.conf">
+                        <div class="details-massage">
+                            <h1 ng-bind="products.info.name"></h1>
+                            <div class="jifen">
+                                所需宝币:<span ng-bind="products.info.price"></span>点
+                            </div>
+                            <p>物流运费:&nbsp;&nbsp;<a href="#">免邮</a></p>
+                            <div class="number">
+                                <span>兑换数量: </span>
+                                <div class="number1">
+                                    <input type="number" class="details-input" ng-model="productDetailControls.models.buy_number" data-input-produce="productDetailControls.buyNumber" autofocus="autofocus"/>
+                                </div>
+                            </div>
+                            <span class="text-error" ng-show="products.info.number <= 0"> *此商品库存不足，暂时不可兑换* </br></span>
+                            <button>立即兑换</button>
+                        </div>
+                    </form>
+                    <script type="text/ng-template" id="pay_commodity_modal.html">
+                        <div class="modal-header"><h4>兑换确认</h4></div>
+                        <div class="modal-body"> 
+                            <form class="form-horizontal" ng-show="commodity.is_material">
+                              <div class="page-header">
+                               <h5 >请填写邮寄信息<small>（若指定快递请备注）</small></h5>
+                              </div>
+                              <div class="control-group">
+                                <label class="control-label" for="addressee">收件人</label>
+                                <div class="controls">
+                                  <input type="text" id="addressee" placeholder="收件人姓名" ng-model="commodity.addressee">
+                                </div>
+                              </div>
+                              <div class="control-group">
+                                <label class="control-label" for="phone">电话</label>
+                                <div class="controls">
+                                  <input type="text" id="phone" placeholder="联系电话" ng-model="commodity.phone">
+                                </div>
+                              </div>
+                              <div class="control-group">
+                                <label class="control-label" for="address">收货地址</label>
+                                <div class="controls">
+                                  <textarea type="text" id="address" placeholder="详细收货地址" ng-model="commodity.address"/>
+                                </div>
+                              </div>
+                              <div class="control-group">
+                                <label class="control-label" for="remarks">备注</label>
+                                <div class="controls">
+                                  <textarea type="text" id="remarks" placeholder="备注说明" ng-model="commodity.description"/>
+                                </div>
+                              </div>
+                            </form>
+                            <div class="page-header">
+                                <p>本次兑换，将花费 {{ commodity.amount }} 点宝币</p>
+                            </div>
+                            <p ng-if="commodity.config">
+                                <span class="text-error">*</span>
+                                请输入您的交易密码：
+                                <input type="password" class="input-medium" ng-model="commodity.tradePass"/>
+                            </p>                                                
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" ng-click="ok()" class="btn btn-primary" value="确定"/>
+                            <input type="button" ng-click="cancel()" class="btn btn-danger" value="取消"/>
+                        </div>
+                    </script>
+                </div>
+                <div class="mall-name details-font">
+                    商品详情
+                </div>
+                <div class="details-font-m">
+                    <p ng-bind-html="products.info.details"></p>
+                </div>
+            </div>
+            <div class="details-right">
+                <div class="details-right-top">
+                    <div class="no-login">
+                        <img src="../../images/images/people.png" />
+                        <a href="/#!/login" ng-show="!CURRENT_USER_ID">登录</a>
+                        <span ng-show="CURRENT_USER_ID" ng-bind="'当前'+ (products.user.gift_points) + '宝币'"></span>
+                    </div>
+                    <h3>兑换说明:</h3>
+                    <p>红包商品将在您兑换后3分钟内发放到您的<a  class="text-error" href="/#!/account/management/red-packet">红包管理</a>账户中。订单商品由工作人员处理后邮寄形式发放，均为免费配送,会员可咨询客服查询<a href="#">物流信息</a>。</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+

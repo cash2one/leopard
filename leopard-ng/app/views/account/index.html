@@ -1,0 +1,52 @@
+<div class="container account-middle">
+    <!--new -->
+    <div id="page2">
+        <div id="bd">
+            <div class="main" ng-include="accountTemplate">
+            </div>
+            <!--left -->
+            <div class="sub">
+                <div class="account-left">
+                    <div class="admin" >
+                    	<span ng-bind="'Hi, ' + accountData.user.username" > </span>
+                    	<span class="i-vip" ng-if="accountData.user.level">
+                    		<em ng-bind="accountData.user.level.name"></em>
+                    	</span>
+                    </div>
+                    <div class="data">
+                        <ul class="account-admin">
+                            <li class="account-user" tooltip="身份认证">
+                                <a href="/#!/account/management/profile"></a></li>
+                            <li class="account-phone" tooltip="手机认证">
+                                <a href="/#!/account/management/profile"></a></li>
+                            <li class="account-data" tooltip="交易密码认证">
+                                <a href="/#!/account/management/profile"></a></li>
+                        </ul>
+                    </div>
+                    <div class="funds">
+                        <span>可用余额
+                        <b ng-bind="accountData.user.available_amount | currency: '￥'"></b></span>
+                        <span>待收资金
+                        <b ng-bind="accountData.user.repaying_amount | currency: '￥'"></b></span>
+                        <span>待收利息
+                        <b ng-bind="accountData.user.investing_interest | currency: '¥'"></b>
+                        </span>
+                        <a href="/#!/account/deposit-new" class="button">充 值</a>
+                        <a href="/#!/account/withdraw-new" class="button">提 现</a>
+                    </div>
+                    <div class="my-account" data-match-navbar>
+                        <span ng-repeat-start="nav in leftNavbarUrl" ng-bind="nav.name" ng-if="nav.link || nav.links"></span>
+                        <ul ng-repeat-end>
+                            <li ng-repeat="child in nav.links | filter: accountData.navFilter" data-match-route="/account/{{ nav.id }}{{ child.link }}">
+                                <a ng-href="/#!/account/{{ nav.id }}{{ child.link }}" ng-bind="child.name"></a>
+                                <img src="/images/new.gif" height="11" width="28" ng-if="child.isNew">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--left -->
+        </div>
+    </div>
+    <!--new -->
+</div>

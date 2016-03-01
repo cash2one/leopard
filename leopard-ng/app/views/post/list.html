@@ -1,0 +1,10 @@
+<div class="post-right">
+    <div class="post-theme" ng-bind="'&nbsp;' + postData.childTitle"></div>
+    <ul>
+    	<li ng-repeat="li in postData.list">
+            <a ng-href="/#!/post/{{ postData.category }}/{{ postData.type }}/{{ li.id }}" ng-bind="li.title"></a>
+            <span ng-bind="li.added_at | date: 'yyyy-MM-dd'"></span>
+        </li>
+    </ul>
+    <div data-pagination-produce="paginationConf" class="pull-right integration-page"></div>
+</div>

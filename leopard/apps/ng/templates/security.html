@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+{% include 'top_nav.html' %}
+<div class="container">
+    <div data-tabset class="security-tab">
+        <div data-tab heading="安全保障">
+            <div class="security-container security-1">
+                <h3>本息保障更安全</h3>
+                <p>易简贷与多家担保机构合作，当投资者所投的借款出现逾期时，易简贷将向投资者垫付此笔借款未归还的当期剩余本息，从而为投资者营造一个安全的投资环境，保证投资者的本息安全。</p>
+            </div>
+            <div class="security-container right security-2">
+                <h3>由高信誉的专业担保公司进行金额本息担保</h3>
+                <p>我们与多家国内领先的担保机构相互合作，对易简贷的投资人资金进行全额本息担保。所有调查信息公开透明，投资人在投资前就能对项目有100%掌控。</p>
+            </div>
+            <div class="security-container security-3">
+                <h3>足额的反担保措施</h3>
+                <p>要求融资人向担保公司出具足额的连带责任反担保，包括但不限于不动产抵押、机动车抵质押、动产抵押质押等各种反担保措施，为投资人再增加一层安全保证。</p>
+            </div>
+            <div class="security-container right security-4">
+                <h3>信息安全、真实、透明 第三方资金交易</h3>
+                <p>易简贷与京东旗下网银在线达成合作，资金的流转不会经过平台，全部在第三方支付平台实现，资金的每一次流动都能被投资者清晰地监控。我们还同时委托了第三方银行对资金流转过程进行监管。</p>
+            </div>
+            <div class="security-container security-5">
+                <h3>数据安全</h3>
+                <p>易简贷的技术团队成员均来自国内一流大型互联网公司和金融公司的核心研发部门，采用国际领先的系统加密及保护技术，有效的防范入侵，确保交易数据安全无虞。保障用户的个人信息、账户信息。</p>
+            </div>
+            <div class="security-container right security-6">
+                <h3>隐私安全</h3>
+                <p>易简贷严格遵守国家相关的法律法规，对用户的隐私信息进行保护。未经您的同意，绝不会向任何第三方公司、组织和个人披露您的个人信息、账户信息以及交易信息。您的信息按照《易简贷用户服务协议》中的规定被严格保护。</p>
+            </div>
+        </div>
+        <div data-tab heading="机构保障">
+            {% for guarantee in guarantees %}
+                <div class="security-guarantee">
+                    <p>担保公司名称：<span class="text-warning">{{ guarantee.name }}</span> 担保有限公司</p>
+                    <p>担保公司简介：{{ guarantee.description | safe}}</p>
+                    <p><a href="/guarantee_info/{{ guarantee.id }}">更多 >></a></p>
+                </div>
+            {% endfor %}
+        </div>
+  </div>
+</div>
+{% endblock %}
+

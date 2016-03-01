@@ -1,0 +1,93 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*基本样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, 
+form,fieldset,input,textarea,p,blockquote,th,td img { 
+padding: 0; 
+margin: 0;
+font-size:14px;
+} 
+
+fieldset,img { 
+border: 0; 
+
+} 
+address,caption,cite,code,dfn,em,th,var { 
+font-weight: normal; 
+font-style: normal; 
+} 
+ol,ul,li { 
+list-style: none; 
+} 
+caption,th { 
+text-align: left; 
+} 
+h1,h2,h3,h4,h5,h6 { 
+font-weight: normal; 
+font-size: 100%; 
+} 
+q:before,q:after { 
+content:? 
+} 
+abbr,acronym { border: 0; 
+
+}
+.fl{ float:left;}
+.fr{ float:right;}
+body{ background:#f3f3f3;}
+.wrap{ width:1000px; margin:0 auto;}
+.clear{ clear:both; float:none;}
+
+
+
+
+.index-student{ background:#FFF;width:1012px; height:400px; margin:0 auto; border:1px solid #d0d5d9; margin-top:10px; font-family:"微软雅黑";}
+/*.content{ width:730px; height:395px; border-right:1px solid #d0d5d9; }*/
+.index-left{ width:730px; height:340px; float:left; margin-top:30px;}
+.left-photo{width:220px; height:339px; float:left; background:url(../images/study.jpg)}
+.font-title{ font-size:18px; margin-left:30px; margin-top:10px; }
+.left-font{ width:509px; float:right;}
+.font-way{ margin-left:30px; margin-top:10px; color:#c09853;}
+.font-money{ margin-top:10px; margin-left:30px; height:61px;}
+.index-right{ width:282px; }
+.money-left{ color:#717171; width:70%; float:left;}
+.money-left span{ float:left; }
+.money-left p{ margin-left:20px; float:left; padding-top:20px; color:#3f9fe8; font-size:24px;}
+.font-money p{ margin-top:10px;}
+.font-money p span{ margin-left:30px; font-size:24px; color:#3f9fe8;}
+.money-right{color:#717171; width:30%; float:right; margin-top:10px;}
+.money-right p{ font-size:20px; color:#c09853; }
+.plan{ margin-left:30px; margin-top:10px; height:50px;}
+.plan p{ margin-top:10px;}
+.plan-left{ width:70%; color:#717171; float:left;}
+.plan-left-a{ width:50%; float:left;}
+.plan-left span{ float:right;  width:30px;}
+.plan-right{ color:#717171; float:right; width:30%;}
+.plan-right p{ font-size:20px; color:#c09853;}
+.time{ margin-left:30px; height:70px; margin-top:20px; }
+.time-left{ width:300px; float:left;/*margin-left:1px;*/}
+.time-left p{ font-size:12px; line-height:14px; letter-spacing:1px; line-height:30px; color:#a8a8aa;}
+.time-left span{ font-size:12px; color:#c09853; margin-top:30px;letter-spacing:1px;}
+/*.time-right{ width:140px; float:right; color:#717171;}
+.time-right p{ font-size:24px; color:#c09853; margin-top:5px;}*/
+.student-btn{ margin-left:30px;height:38px; width:147px; }
+.index-right{ width:280px; height:400px; float:right;border-left:1px solid #d0d5d9; }
+.right-title{  line-height:30px; color:#666; margin-top:30px;}
+.right-title img{ width:29px; height:25px; margin-top:5px;}
+.right-title p{font-size:16px; font-weight:500; line-height:20px; margin-left:20px; color:#c09853; text-align:left;}
+.right-font{ height:180px; padding: 10px 20px 0px 20px;}
+.right-font p{ font-size:14px; font-weight:500; color:#333; color:#c09853; line-height:25px;}
+.right-font p .nomal{ font-size:12px; font-weight:normal; color:#666;}
+.right-b{ height:160px; }
+.right-b span{ color:#c09853;}
+.right-b p{ font-size:12px;padding: 0px 20px 0px 20px; color:#999; line-height:22px;}
+
+
+
+
+
+
+ 
+ 
+ 

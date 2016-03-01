@@ -1,0 +1,13 @@
+<div class="guarantee-middle">
+    <div class="guarantee-container">
+        <div class="container">
+            <div class="guarantee-guarantee">担保机构介绍</div>
+            <div class="lend-box">
+                <p class="lend-title" ng-bind="guaranteeData.info.name">银联担保</p>
+                <i class="icon-building" ng-if="!guaranteeData.info.logo"></i>
+                <p class="text-center"><img ng-src="{{ guaranteeData.info.logo }}" alt="guarantee_logo" ng-if="guaranteeData.info.logo"/></p>
+                <div class="guarantee-main" ng-bind-html="guaranteeData.info.description"></div>
+            </div>
+        </div>
+    </div>
+</div>

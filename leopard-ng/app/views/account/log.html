@@ -1,0 +1,35 @@
+<!--right-->
+<div  class="main-wrap" ng-controller="simpleListCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;资金记录
+        </div>
+        <div data-filter-produce="filterConfig"></div>
+        <div class="span10">
+            <table class="table table-hover table-bordered integration-table">
+                <thead>
+                <tr class="red-cardTop">
+                    <th>操作类型</th>
+                    <th>操作金额</th>
+                    <th>活动资金</th>
+                    <th>普通资金</th>
+                    <th>回款资金</th>
+                    <th>冻结资金</th>
+                    <th>创建时间</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="li in listData.list">
+                    <td ng-bind-html="li.description"></td>
+                    <td ng-bind="li.amount | currency: '￥'"></td>
+                    <td ng-bind="li.active_amount | currency: '￥'"></td>
+                    <td ng-bind="li.deposit_amount | currency: '￥'"></td>
+                    <td ng-bind="li.income_amount | currency: '￥'"></td>
+                    <td ng-bind="li.blocked_amount | currency: '￥'"></td>
+                    <td ng-bind="li.added_at | date: 'yyyy-MM-dd'" tooltip="{{ li.added_at | date: 'yyyy-MM-dd HH:mm:ss' }}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div data-pagination-produce="paginationConf" class="pull-right"></div>
+    </div>
+</div>

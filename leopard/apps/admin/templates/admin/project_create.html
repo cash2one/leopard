@@ -1,0 +1,70 @@
+{% extends 'admin/model/create.html' %}
+
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .fileField {
+            height: 40px;
+            width: 180px;
+            padding-top:10px;
+        }
+        .file_input_label {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+        }
+        .file_input_unit {
+            width: 100%;
+            overflow: auto;
+        }
+        .file_input_unit input {
+            float: left;
+            margin: 5px 5px;
+        }
+        .file_input_unit a {
+            display: block;
+            height: 40px;
+            float: left;
+            margin: 10px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+  <div class="navbar content-navbar navbar-default navbar-xs">
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li>
+          <a href="{{ return_url }}"><i class="fa fa-list fw"></i>&nbsp;{{ _gettext('List') }}</a>
+      </li>
+      <li class="active">
+          <a href="javascript:void(0)"><i class="fa fa-plus fw"></i>&nbsp;{{ _gettext('Create') }}</a>
+      </li>
+	</ul>
+  </div>
+  </div>
+
+  {% call lib.form_tag(form) %}
+      <div class="panel panel-default">
+      {{ lib.render_form_fields(form, form_leopard=form_leopard) }}
+      {{ lib.render_form_buttons(return_url, extra()) }}
+      </div>
+  {% endcall %}
+{% endblock %}
+
+{% block tail %}
+    {{ super() }}
+    <script type="text/javascript">
+        $(function() {
+            var file_name_step = 1
+            $('#add_file_input').click(function(){
+                var file_input = $(".file_input_unit:first").clone();
+                file_input.find('input').attr('name', 'file' + file_name_step++);
+                $('#mutli-input').append(file_input);
+                file_input.find('a').click(function() {
+                    $(this).parent().remove();
+                });
+            });
+        });
+    </script>
+{% endblock %}

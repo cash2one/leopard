@@ -1,0 +1,37 @@
+{
+    "server": {
+        "root": "./app",
+        "port": 3003
+    },
+    "livereload": {
+        "port": "35733"
+    },
+    "src": {
+        "html": {
+            "main": "index.html",
+            "paths": [
+                "index.html",
+                "views/**/*.html"
+            ]
+        },
+        "less": {
+            "main": "styles/less/zhongbao.less",
+            "output": "styles/zhongbao.css",
+            "paths": [
+                "styles/less/**/*.less"
+            ]
+        },
+        "css": {
+            "paths": [
+                "styles/**/*.css"
+            ]
+        },
+        "js": {
+            "main": "scripts/require.config.js",
+            "output": "scripts/zhongbao.js",
+            "paths": [
+                "scripts/**/*.js"
+            ]
+        }
+    }
+}

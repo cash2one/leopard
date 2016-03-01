@@ -1,0 +1,150 @@
+<ion-view view-title="账户中心">
+  <ion-content has-tabs="true">
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+    <div class="padding">
+      <h4 class="account-name">
+      	<span ng-bind="accountData.account.username"></span>
+      	<span class="i-vip" ng-if="accountData.account.level">
+          <em ng-bind="accountData.account.level.name"></em>
+        </span>
+      </h4>
+      <div class="row account-authenticate">
+        <div class="col" ng-class="{'active': accountData.account.realname}">
+          <i class="iconfont icon-verified"></i>
+          实名<span ng-bind="accountData.account.realname?'已': '未'"></span>认证
+        </div>
+        <div class="col" ng-class="{'active': accountData.account.phone}">
+        <i class="iconfont icon-authentication"></i>
+          手机<span ng-bind="accountData.account.phone?'已': '未'"></span>认证
+        </div>
+      </div>
+    </div>
+    <div class="account-home">
+      <div class="padding account-total">
+        <span>
+          账户总额(元):
+        </span>
+        <span class="account-digital" ng-bind="accountData.account.total_amount | currency: ''">
+        </span>
+      </div>
+      <div class="row account-balance">
+        <div class="col">
+          可用余额(元)
+          <span ng-bind="accountData.account.available_amount | currency: ''">
+          </span>
+        </div>
+        <div class="col">
+          累计净收益(元)
+          <span ng-bind="accountData.account.net_income | currency: ''">
+          </span>
+        </div>
+      </div>
+      <div class="row account-balance">
+        <div class="col">
+          待收资金(元)
+          <span ng-bind="accountData.account.repaying_amount | currency: ''">
+          </span>
+        </div>
+        <div class="col">
+          冻结资金(元)
+          <span ng-bind="accountData.account.blocked_amount | currency: ''">
+          </span>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-center" ng-if="!accountData.account.username">
+      <i class="icon ion-loading-d icon-refreshing"></i>
+    </h2>
+    <div class="row account-row">
+        <div class="col account-border">
+          <a class="account-a" href="#/truffle/account/password">
+            <span class="color-password">
+              <i class="iconfont icon-password"></i>
+            </span>
+            密码修改
+          </a>
+        </div>
+        <div class="col">
+          <a class="account-a" href="#/truffle/account/bankcard">
+            <span class="color-bank">
+              <i class="iconfont icon-bank"></i>
+            </span>
+            银行卡管理
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row account-row">
+        <div class="col account-border">
+          <a class="account-a" href="#/truffle/account/invitation">
+            <span class="color-invite">
+              <i class="iconfont icon-invite"></i>
+            </span>
+            好友邀请
+          </a>
+        </div>
+        <div class="col">
+          <a class="account-a" href="#/truffle/account/automatic">
+            <span class="color-status">
+              <i class="iconfont icon-status"></i>
+            </span>
+            自动投标设置
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row account-row">
+        <div class="col account-border">
+          <a class="account-a" href="#/truffle/account/logs">
+            <span class="color-money">
+              <i class="iconfont icon-money"></i>
+            </span>
+            资金记录
+          </a>
+        </div>
+        <div class="col">
+          <a class="account-a" href="#/truffle/account/red-packet">
+            <span class="color-red">
+              <i class="iconfont icon-red"></i>
+            </span>
+            红包管理
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row account-row">
+        <div class="col account-border">
+          <a class="account-a" href="#/truffle/account/recharge">
+            <span class="color-status">
+              <i class="iconfont icon-bookmark"></i>
+            </span>
+            充值
+          </a>
+        </div>
+        <div class="col">
+          <a class="account-a" href="#/truffle/account/withdraw">
+            <span class="color-password">
+              <i class="iconfont icon-retweet"></i>
+            </span>
+            提现
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row account-row">
+        <div class="col">
+          <a class="account-a" href="#/truffle/account/student_apply">
+            <span class="color-record">
+              <i class="iconfont icon-record"></i>
+            </span>
+            学仕贷申请记录
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="padding">
+      <button class="button button-assertive button-block" ng-click="logout()">退出登录</button>
+    </div>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

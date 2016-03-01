@@ -1,0 +1,121 @@
+<!--right-->
+<div class="main-wrap" ng-controller="autoInvestCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;自动投标
+        </div>
+        <div class="span10 friends-data">
+            <p>
+            提示</br>
+            设置自动投标后系统将会根据您的设计自动投资项目，投资后不可撤销，请慎重操作！
+            </p>
+        </div>
+        <div class="span10 automatic-link">
+            <form data-form-produce="formControls.conf">
+            <table class="table table-striped table-bordered">
+            <tbody>
+                <tr>
+                    <td class="automatic-off">是否启用 </td>
+                    <td>
+                        <ul>
+                            <li><a class="off" ng-click="togglePower()" ng-class="{'on': formControls.models.is_open}"></a></li>
+                        </ul>
+                        <input type="hidden" data-input-produce="formControls.isOpen" ng-model="formControls.models.is_open"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">利率范围 </td>
+
+                    <td>
+                        <ul>
+                            <li><input type="text" class="input-small" data-input-produce="formControls.minRate" ng-model="formControls.models.min_rate">%</li>
+                            <li>~</li>
+                            <li><input type="text" class="input-small" data-input-produce="formControls.maxRate" ng-model="formControls.models.max_rate">%</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">投资金额范围 </td>
+
+                    <td>
+                        <ul>
+                            <li><input type="text" class="input-small" data-input-produce="formControls.minAmount" ng-model="formControls.models.min_amount"></li>
+                            <li>~</li>
+                            <li><input type="text" class="input-small" data-input-produce="formControls.maxAmount" ng-model="formControls.models.max_amount"></li>
+                            <li class="text-error">&nbsp;&nbsp;&nbsp;&nbsp;提示: 投资金额范围在100.00元 ~ {{ formControls.models.max_allow_amount | currency: '' }}元</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">期数范围 </td>
+
+                    <td>
+                        <ul>
+                            <li><input type="text" class="input-small" data-input-produce="formControls.minPeriods" ng-model="formControls.models.min_periods"></li>
+                            <li>~</li>
+                            <li><input type="text" class="input-small" data-input-produce="formControls.maxPeriods" ng-model="formControls.models.max_periods"></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">账户预留金 </td>
+
+                    <td>
+                        <ul>
+                            <li><input type="text" data-input-produce="formControls.reserveAmount" ng-model="formControls.models.reserve_amount"></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">交易密码 </td>
+
+                    <td>
+                        <ul>
+                            <li><input type="password" data-input-produce="formControls.tradePass" ng-model="formControls.models.trade_password"></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+
+                    <td><button class="button login-btn">保 存</button></td>
+                </tr>
+                </tbody>
+            </table>
+
+            </form>
+        </div>
+
+       <div class="span10 automatic-link">
+            <div class="auto-box">
+                <p class="lend-title"><span class="tip">提示</span>中宝财富自动投标规则</br></p>
+                <p class="auto-content">
+                    <span>1、</span>本平台中小微借贷项目，按一定比例划分为自动投标和手动投标部分，自动投标比例最高为项目金额80%，目前学仕贷与债权暂时不能使用自动投标工具进行购买。</br>
+                </p>
+                <p class="auto-content">
+                    <span>2、</span>用户开启此工具，并完成条件设置后，自动投标功能将对新上线的项目生效，对开启此工具时已上线的项目无效，且单个项目只进行1次自动投标。</br>
+                </p>
+                <p class="auto-content">
+                    <span>3、</span> 项目发布后，待发阶段先自动进行自动投标，发标后才可进行手动投标，自动投标比手动投标优先级更高。</br>
+                </p>
+                <p class="auto-content">
+                    <span>4、</span>自动投标成交的金额为用户在“自动投标”设置的最大金额、用户可用余额-账户保留余额和项目可投金额三者中的最小值。</br>
+                </p>
+                <p class="auto-content">
+                    <span>5、</span>上述项目可投金额为项目剩余可投额度，项目最大投资限额，200,000元投资上限三者中的最小值。</br>
+                </p>
+                <p class="auto-content">
+                    <span>6、</span>用户开通自动投标功能即视为委托中宝财富平台与达到用户指定标准的借款人签署借款合同，并承担该合同项下的一切权利及义务。</br>
+                </p>
+                <p class="auto-content">
+                    <span>7、</span>自动投标成交后，用户的自动投标功能不会自动关闭，如果需要关闭，需进行手工设置。</br>
+                </p>
+                <p class="auto-content">
+                   <span>8、</span>用户依开通自动投标功能时间先后形成队列，平台项目在此队列依次进行匹配。若项目不符合用户设置的规则，则用户保持在原有队列中位置。</br>
+                </p>
+                <p class="auto-content">
+                   <span>9、</span>用户对于自动投标队列的调整不会影响用户的排名，只有用户退出队列才会移除队列。</br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

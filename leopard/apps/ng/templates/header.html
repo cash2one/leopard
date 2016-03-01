@@ -1,0 +1,64 @@
+<div class="nav-top">
+    <div class="container">
+        <div class="row">
+            <div class="span5 visible-desktop visible-tablet">
+                <span class="index-service"><img src="/images/mobile.png" height="27" width="27">&nbsp;QQ官方群：</span>
+                <span class="index-phone">310271739</span>
+            </div>
+            <div class="span7 nav-logn">
+                <ul id="aid">
+                    <li><a href="/#!/newlib" rel="nofollow">新手上路</a></li>
+                    <li>|</li>
+                    <li><a href="javascript:;" data-folding="#on-line" rel="nofollow">在线客服</a></li>
+                    <li>|</li>
+                    <li>
+                        <!-- ngIf: !CURRENT_USER_ID --><a href="/#!/register" ng-if="!CURRENT_USER_ID" class="ng-scope" rel="nofollow" >注 册</a><!-- end ngIf: !CURRENT_USER_ID -->
+                        <!-- ngIf: CURRENT_USER_ID -->
+                    </li>
+                    <li>|</li>
+                    <li ng-class="{'admin': CURRENT_USER_ID}">
+                        <!-- ngIf: !CURRENT_USER_ID --><a href="/#!/login"
+                        ng-if="!CURRENT_USER_ID" class="ng-scope" rel="nofollow">登 录</a><!-- end ngIf: !CURRENT_USER_ID -->
+                        <!-- ngIf: CURRENT_USER_ID -->
+                    </li>
+                </ul>
+                <ul id="on-line" style="display:none;">
+                    <li>工作时间:(9:00 ~ 22:00)</li>
+                    <li>中宝财富官群：310271739</li>
+                    <li>大宝理财： <a rel="nofollow" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1471865291&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息">1471865291</a></li>
+                    <li>中宝官群： <a rel="nofollow" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1801652226&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息">1801652226</a></li>
+                    <li>小宝理财： <a rel="nofollow" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1284794337&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息">1284794337</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="nav-main">
+    <div class="container">
+        <div class="row">
+            <div class="span4 logo">
+                <a href="/#!/" rel="nofollow"><img src="/images/logo.png" height="53" width="317"></a>
+            </div>
+            <div class="span8">
+                <!-- Navbar==== -->
+                <div class="nav-collapse collapse">
+                    <ul class="nav nav-right" data-match-navbar="true">
+                        <!-- ngRepeat: nav in navbarUrl --><li ng-repeat="nav in navbarUrl" data-match-route="/" class="ng-scope active">
+                        <a rel="nofollow" ng-href="/#!/" ng-bind="nav.name" class="ng-binding" href="/#!/">首　页</a>
+                        </li><!-- end ngRepeat: nav in navbarUrl --><li ng-repeat="nav in navbarUrl" data-match-route="/invest.*" class="ng-scope">
+                        <a rel="nofollow"  ng-href="/#!/invest" ng-bind="nav.name" class="ng-binding" href="/#!/invest">我要出借</a>
+                        </li><!-- end ngRepeat: nav in navbarUrl --><li ng-repeat="nav in navbarUrl" data-match-route="/lend.*" class="ng-scope">
+                        <a rel="nofollow" ng-href="/#!/lend" ng-bind="nav.name" class="ng-binding" href="/#!/lend">我要借款</a>
+                        </li><!-- end ngRepeat: nav in navbarUrl --><li ng-repeat="nav in navbarUrl" data-match-route="/account.*" class="ng-scope">
+                        <a rel="nofollow" ng-href="/#!/account/dashboard" ng-bind="nav.name" class="ng-binding" href="/#!/account/dashboard">账户中心</a>
+                        </li><!-- end ngRepeat: nav in navbarUrl --><li ng-repeat="nav in navbarUrl" data-match-route="/post/help.*" class="ng-scope">
+                        <a rel="nofollow" ng-href="/#!/post/help/zhongbao" ng-bind="nav.name" class="ng-binding" href="/#!/post/help/zhongbao">帮助中心</a>
+                        </li><!-- end ngRepeat: nav in navbarUrl -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

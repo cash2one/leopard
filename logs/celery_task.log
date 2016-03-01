@@ -1,0 +1,2492 @@
+2016-02-25 13:13:09,166 INFO: -- Celery task [用户等级检查] 开始 --
+2016-02-25 13:13:15,976 INFO: [Real Adjust User Level] UserLevelLog: <leopard.orm.auth.UserLevelLog object at 0x7f81842a7fd0>, User(id: 40), UserLevel:VIP : Adjust User  Level
+2016-02-25 13:13:16,431 INFO: [Real Adjust User Level] UserLevelLog: <leopard.orm.auth.UserLevelLog object at 0x7f81842b4d30>, User(id: 42), UserLevel:VIP : Adjust User  Level
+2016-02-25 13:13:16,733 INFO: -- Celery task [用户等级检查] 结束 --
+2016-02-29 10:41:18,409 INFO: -- Celery task [用户等级检查] 开始 --
+2016-02-29 10:41:19,859 INFO: -- Celery task [用户等级检查] 结束 --
+2016-02-29 10:42:15,783 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:42:16,203 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:42:16,209 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:42:16,270 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:43:22,161 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:43:22,214 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:43:22,239 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:43:22,618 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:44:15,901 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:44:16,335 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:44:16,340 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:44:16,406 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:45:22,242 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:45:22,314 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:45:22,318 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:45:22,845 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:46:16,005 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:46:16,476 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:46:16,482 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:46:16,528 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:47:22,356 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:47:22,409 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:47:22,413 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:47:22,801 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:48:15,830 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 10:48:15,908 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 10:48:15,909 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 10:48:16,019 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:48:16,419 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:48:16,424 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:48:16,455 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:49:22,140 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 10:49:22,197 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 10:49:22,199 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 10:49:22,325 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:49:22,387 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:49:22,392 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:49:22,905 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:50:16,142 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:50:16,495 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:50:16,500 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:50:16,535 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:51:22,428 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:51:22,502 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:51:22,520 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:51:22,877 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:52:16,243 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:52:16,785 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:52:16,790 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:52:16,860 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:53:22,528 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:53:22,605 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:53:22,614 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:53:22,978 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:54:16,349 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:54:16,727 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:54:16,732 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:54:16,767 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:55:22,623 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:55:22,667 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:55:22,673 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:55:23,144 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:56:15,933 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 10:56:15,988 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 10:56:15,988 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 10:56:16,339 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:56:16,762 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:56:16,769 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:56:16,815 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:57:22,261 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 10:57:22,316 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 10:57:22,317 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 10:57:22,624 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:57:22,690 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:57:22,696 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:57:23,089 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:58:16,429 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:58:16,870 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 10:58:16,877 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:58:16,933 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:59:22,725 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 10:59:22,782 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 10:59:22,789 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 10:59:23,180 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:00:16,534 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:00:16,955 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:00:16,961 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:00:17,008 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:01:22,837 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:01:22,887 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:01:22,894 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:01:23,344 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:02:16,648 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:02:17,106 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:02:17,112 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:02:17,182 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:03:22,934 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:03:22,986 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:03:22,990 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:03:23,404 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:04:16,031 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:04:16,118 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:04:16,122 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:04:16,640 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:04:17,003 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:04:17,008 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:04:17,048 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:05:22,381 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:05:22,434 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:05:22,435 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:05:22,921 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:05:22,967 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:05:22,971 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:05:23,352 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:06:16,733 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:06:17,134 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:06:17,144 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:06:17,186 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:07:23,038 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:07:23,100 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:07:23,117 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:07:23,476 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:08:16,828 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:08:17,181 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:08:17,186 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:08:17,236 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:09:23,168 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:09:23,256 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:09:23,260 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:09:23,667 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:10:16,950 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:10:17,350 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:10:17,355 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:10:17,419 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:11:23,283 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:11:23,355 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:11:23,366 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:11:23,732 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:12:16,156 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:12:16,210 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:12:16,211 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:12:16,948 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:12:17,418 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:12:17,425 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:12:17,490 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:13:22,557 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:13:22,638 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:13:22,639 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:13:23,281 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:13:23,335 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:13:23,340 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:13:23,719 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:14:17,038 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:14:17,434 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:14:17,440 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:14:17,475 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:15:23,348 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:15:23,397 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:15:23,401 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:15:23,810 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:16:17,164 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:16:17,581 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:16:17,586 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:16:17,652 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:17:23,466 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:17:23,538 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:17:23,542 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:17:23,912 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:18:17,282 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:18:17,688 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:18:17,694 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:18:17,759 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:19:23,579 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:19:23,636 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:19:23,641 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:19:24,024 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:20:16,273 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:20:16,361 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:20:16,365 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:20:17,280 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:20:17,669 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:20:17,675 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:20:17,710 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:21:22,583 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:21:22,650 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:21:22,650 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:21:23,575 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:21:23,646 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:21:23,651 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:21:24,113 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:22:17,349 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:22:17,745 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:22:17,751 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:22:17,800 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:23:23,673 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:23:23,723 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:23:23,728 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:23:24,129 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:24:17,397 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:24:17,753 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:24:17,758 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:24:17,807 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:25:23,765 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:25:23,837 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:25:23,841 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:25:24,225 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:26:17,478 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:26:17,840 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:26:17,846 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:26:17,896 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:27:23,884 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:27:23,960 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:27:23,970 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:27:24,327 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:28:16,351 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:28:16,423 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:28:16,424 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:28:17,503 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:28:17,907 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:28:17,912 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:28:17,959 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:29:22,705 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:29:22,767 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:29:22,767 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:29:23,857 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:29:23,918 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:29:23,922 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:29:24,428 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:30:17,657 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:30:18,068 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:30:18,074 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:30:18,127 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:31:23,986 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:31:24,057 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:31:24,063 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:31:24,429 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:32:17,732 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:32:18,119 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:32:18,126 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:32:18,192 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:33:24,100 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:33:24,153 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:33:24,157 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:33:24,529 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:34:17,846 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:34:18,343 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:34:18,349 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:34:18,400 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:35:24,176 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:35:24,224 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:35:24,229 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:35:24,609 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:36:16,480 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:36:16,534 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:36:16,535 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:36:17,835 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:36:18,220 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:36:18,228 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:36:18,295 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:37:22,837 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:37:22,902 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:37:22,903 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:37:24,171 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:37:24,251 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:37:24,255 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:37:24,664 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:38:17,905 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:38:18,301 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:38:18,306 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:38:18,350 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:39:24,273 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:39:24,321 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:39:24,329 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:39:24,700 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:40:18,008 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:40:18,393 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:40:18,398 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:40:18,437 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:41:24,391 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:41:24,450 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:41:24,455 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:41:24,831 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:42:18,120 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:42:18,487 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:42:18,492 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:42:18,557 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:43:24,485 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:43:24,566 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:43:24,570 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:43:24,927 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:44:16,593 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:44:16,676 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:44:16,677 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:44:18,117 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:44:18,618 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:44:18,624 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:44:18,667 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:45:22,930 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:45:22,995 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:45:22,996 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:45:24,485 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:45:24,532 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:45:24,537 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:45:24,904 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:46:18,239 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:46:18,679 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:46:18,686 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:46:18,725 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:47:24,586 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:47:24,665 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:47:24,688 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:47:25,057 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:48:18,340 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:48:18,768 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:48:18,774 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:48:18,822 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:49:24,678 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:49:24,752 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:49:24,758 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:49:25,144 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:50:18,454 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:50:18,801 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:50:18,808 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:50:18,862 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:51:24,788 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:51:24,893 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:51:24,900 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:51:25,292 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:52:16,684 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:52:16,734 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:52:16,734 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:52:18,459 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:52:18,839 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:52:18,845 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:52:18,887 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:53:23,031 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 11:53:23,080 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 11:53:23,080 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 11:53:24,787 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:53:24,848 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:53:24,855 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:53:25,238 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:54:18,571 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:54:19,026 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:54:19,031 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:54:19,098 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:55:24,881 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:55:24,937 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:55:24,942 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:55:25,339 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:56:18,690 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:56:19,070 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:56:19,076 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:56:19,137 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:57:24,997 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:57:25,050 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:57:25,054 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:57:25,424 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:58:18,833 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:58:19,229 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 11:58:19,235 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:58:19,291 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:59:25,113 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 11:59:25,189 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 11:59:25,194 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 11:59:25,551 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:00:16,828 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:00:16,901 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:00:16,901 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:00:18,809 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:00:19,196 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:00:19,202 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:00:19,253 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:01:23,171 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:01:23,234 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:01:23,234 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:01:25,091 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:01:25,171 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:01:25,176 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:01:25,567 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:02:18,903 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:02:19,304 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:02:19,310 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:02:19,355 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:03:25,186 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:03:25,239 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:03:25,244 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:03:25,702 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:04:19,017 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:04:19,398 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:04:19,405 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:04:19,463 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:05:25,267 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:05:25,325 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:05:25,330 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:05:25,696 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:06:19,139 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:06:19,532 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:06:19,538 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:06:19,593 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:07:25,386 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:07:25,455 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:07:25,470 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:07:25,854 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:08:16,942 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:08:17,000 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:08:17,001 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:08:19,135 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:08:19,506 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:08:19,512 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:08:19,550 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:09:23,273 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:09:23,325 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:09:23,326 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:09:25,386 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:09:25,446 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:09:25,449 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:09:25,789 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:10:19,229 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:10:19,642 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:10:19,647 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:10:19,694 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:11:25,466 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:11:25,527 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:11:25,534 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:11:25,989 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:12:19,306 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:12:19,811 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:12:19,825 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:12:19,874 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:13:25,566 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:13:25,619 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:13:25,627 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:13:25,970 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:14:19,417 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:14:19,782 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:14:19,788 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:14:19,831 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:15:25,644 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:15:25,681 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:15:26,373 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:15:26,726 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:16:17,004 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:16:17,075 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:16:17,076 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:16:19,411 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:16:19,774 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:16:19,781 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:16:19,820 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:17:24,100 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:17:24,156 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:17:24,156 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:17:25,650 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:17:25,693 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:17:26,379 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:17:26,829 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:18:19,512 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:18:19,879 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:18:19,884 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:18:19,933 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:19:25,737 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:19:25,787 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:19:26,374 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:19:27,230 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:20:19,576 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:20:20,090 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:20:20,427 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:20:20,484 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:21:25,835 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:21:25,908 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:21:26,375 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:21:26,796 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:22:20,519 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:22:20,903 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:22:20,909 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:22:20,942 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:24:44,532 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:24:44,586 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:24:44,587 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:24:44,594 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:24:44,634 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:24:47,983 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:24:48,450 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:24:48,454 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:24:48,916 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:24:48,921 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:24:48,954 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:25:27,922 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:25:27,992 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:25:27,993 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:26:59,815 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:27:00,450 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:27:00,455 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:27:00,499 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:27:00,503 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:27:00,935 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:27:00,944 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:27:00,987 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:28:59,919 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:29:00,000 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:29:00,009 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:29:00,451 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:29:00,926 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:29:45,320 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:29:45,326 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:29:45,395 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:31:01,012 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:31:01,133 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:31:01,138 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:31:01,546 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:31:01,550 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:31:01,969 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:31:01,978 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:31:02,039 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:32:44,370 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:32:44,422 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:32:44,422 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:33:01,017 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:33:01,583 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:33:01,589 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:33:01,625 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:33:01,630 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:33:01,669 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:33:01,674 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:33:02,179 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:33:27,953 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:33:28,023 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:33:28,024 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:35:01,112 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:35:01,479 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:35:01,485 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:35:01,517 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:35:01,523 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:35:01,561 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:35:01,569 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:35:02,000 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:37:01,281 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:37:01,727 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:37:01,732 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:37:01,776 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:37:01,783 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:37:02,205 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:37:02,211 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:37:02,274 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:39:01,453 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:39:01,509 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:39:01,526 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:39:02,140 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:39:02,144 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:39:02,506 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:39:02,512 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:39:02,585 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:40:44,486 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:40:44,776 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:40:44,776 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:41:01,438 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:41:01,958 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:41:01,965 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:41:02,005 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:41:02,014 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:41:02,157 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:41:02,165 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:41:02,688 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:41:27,972 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 12:41:28,036 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 12:41:28,037 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 12:43:01,553 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:43:01,608 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:43:01,617 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:43:02,116 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:43:02,122 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:43:02,611 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:43:02,616 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:43:02,660 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:45:01,665 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:45:02,384 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:45:02,391 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:45:02,437 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 12:45:02,441 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 12:45:02,885 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 12:45:02,890 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 12:45:02,951 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:07:02,640 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:07:02,726 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:07:02,727 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:07:02,735 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:07:02,835 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:07:02,840 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:07:03,229 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:07:03,234 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:07:03,303 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:07:03,304 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:07:03,310 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:07:03,679 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:07:03,690 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:07:03,733 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:09:02,780 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:09:02,822 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:09:02,825 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:09:03,217 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:09:03,221 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:09:03,576 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:09:03,581 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:09:03,621 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:11:02,924 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:11:03,055 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:11:03,070 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:11:03,502 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:11:03,507 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:11:03,862 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:11:03,869 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:11:03,902 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:13:03,001 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:13:03,114 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:13:03,125 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:13:03,506 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:13:03,510 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:13:03,909 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:13:03,915 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:13:03,953 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:15:02,774 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:15:02,864 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:15:02,865 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:15:02,871 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:15:02,918 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:15:02,919 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:15:02,968 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:15:03,017 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:15:03,025 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:15:03,397 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:15:03,401 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:15:03,731 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:15:03,737 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:15:03,784 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:17:03,083 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:17:03,191 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:17:03,196 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:17:03,574 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:17:03,579 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:17:03,927 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:17:03,933 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:17:03,978 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:19:03,202 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:19:03,278 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:19:03,283 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:19:03,734 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:19:03,738 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:19:04,121 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:19:04,127 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:19:04,164 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:21:03,327 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:21:03,450 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:21:03,455 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:21:03,833 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:21:03,838 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:21:03,880 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:21:03,884 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:21:04,187 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:23:02,915 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:23:02,969 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:23:02,970 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:23:02,978 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:23:03,052 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:23:03,053 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:23:03,348 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:23:03,427 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:23:03,432 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:23:03,877 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:23:03,882 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:23:04,289 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:23:04,297 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:23:04,366 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:25:03,418 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:25:03,557 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:25:03,561 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:25:03,914 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:25:03,918 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:25:04,272 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:25:04,277 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:25:04,324 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:27:03,505 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:27:03,570 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:27:03,575 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:27:03,933 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:27:03,937 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:27:04,265 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:27:04,272 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:27:04,318 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:29:03,658 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:29:03,733 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:29:03,760 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:29:04,177 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:29:04,181 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:29:04,601 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:29:04,607 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:29:04,651 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:31:03,051 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:31:03,108 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:31:03,109 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:31:03,124 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:31:03,209 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:31:03,210 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:31:03,613 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:31:03,665 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:31:03,669 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:31:04,157 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:31:04,164 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:31:04,566 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:31:04,571 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:31:04,639 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:33:03,754 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:33:03,822 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:33:03,844 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:33:04,230 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:33:04,239 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:33:04,603 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:33:04,609 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:33:04,653 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:35:03,914 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:35:04,028 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:35:04,033 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:35:04,428 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:35:04,433 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:35:04,767 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:35:04,773 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:35:04,821 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:37:04,031 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:37:04,149 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:37:04,153 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:37:04,533 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:37:04,537 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:37:04,863 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:37:04,869 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:37:04,907 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:39:03,161 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:39:03,225 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:39:03,227 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:39:03,284 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:39:03,336 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:39:03,336 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:39:04,008 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:39:04,082 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:39:04,104 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:39:04,584 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:39:04,590 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:39:04,986 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:39:04,992 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:39:05,033 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:41:04,080 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:41:04,122 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:41:04,132 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:41:04,542 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:41:04,546 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:41:04,956 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:41:04,961 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:41:05,000 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:43:04,249 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:43:04,329 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:43:04,339 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:43:04,793 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:43:04,797 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:43:05,226 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:43:05,233 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:43:05,302 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:45:04,410 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:45:04,528 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:45:04,533 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:45:04,971 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:45:04,977 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:45:05,036 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:45:05,040 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:45:05,447 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:47:03,339 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:47:03,415 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:47:03,416 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:47:03,530 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:47:03,646 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:47:03,647 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:47:04,333 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:47:04,402 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:47:04,406 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:47:04,931 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:47:04,935 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:47:05,369 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:47:05,376 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:47:05,424 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:49:04,452 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:49:04,535 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:49:04,543 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:49:05,011 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:49:05,016 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:49:05,435 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:49:05,444 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:49:05,511 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:51:04,545 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:51:04,612 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:51:04,617 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:51:05,073 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:51:05,078 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:51:05,501 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:51:05,508 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:51:05,565 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:53:04,642 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:53:04,719 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:53:04,740 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:53:05,192 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:53:05,197 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:53:05,569 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:53:05,575 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:53:05,630 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:55:03,484 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:55:03,534 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:55:03,534 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:55:03,634 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 13:55:03,704 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 13:55:03,705 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 13:55:04,628 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:55:04,694 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:55:04,700 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:55:05,171 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:55:05,177 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:55:05,631 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:55:05,637 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:55:05,701 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:57:04,708 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:57:04,800 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:57:04,814 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:57:05,508 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:57:05,525 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:57:06,572 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:57:06,588 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:57:06,643 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:59:04,832 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:59:04,913 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 13:59:04,922 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:59:05,380 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:59:05,384 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 13:59:05,726 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 13:59:05,731 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 13:59:05,771 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:01:04,902 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:01:04,976 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:01:04,982 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:01:05,364 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:01:05,371 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:01:05,712 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:01:05,718 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:01:05,776 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:03:03,564 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:03:03,631 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:03:03,631 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:03:03,780 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:03:03,855 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:03:03,856 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:03:04,911 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:03:04,973 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:03:04,977 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:03:05,415 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:03:05,421 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:03:05,766 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:03:05,772 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:03:05,809 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:05:04,983 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:05:05,134 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:05:05,139 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:05:05,525 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:05:05,529 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:05:05,890 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:05:05,896 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:05:05,933 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:07:05,115 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:07:05,226 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:07:05,231 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:07:05,703 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:07:05,708 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:07:06,093 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:07:06,099 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:07:06,147 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:09:05,244 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:09:05,321 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:09:05,329 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:09:05,708 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:09:05,713 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:09:06,093 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:09:06,099 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:09:06,138 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:11:03,672 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:11:03,735 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:11:03,736 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:11:03,901 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:11:03,949 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:11:03,950 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:11:05,205 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:11:05,259 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:11:05,267 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:11:05,669 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:11:05,673 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:11:06,025 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:11:06,031 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:11:06,100 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:13:05,317 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:13:05,366 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:13:05,370 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:13:05,893 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:13:05,900 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:13:06,305 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:13:06,310 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:13:06,345 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:15:05,448 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:15:05,568 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:15:05,587 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:15:06,029 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:15:06,034 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:15:06,417 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:15:06,423 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:15:06,487 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:17:05,559 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:17:05,613 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:17:05,617 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:17:06,023 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:17:06,028 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:17:06,403 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:17:06,409 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:17:06,442 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:19:03,752 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:19:03,863 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:19:03,864 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:19:04,012 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:19:04,061 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:19:04,062 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:19:05,553 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:19:05,597 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:19:05,602 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:19:05,985 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:19:05,989 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:19:06,356 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:19:06,362 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:19:06,399 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:21:05,673 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:21:05,732 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:21:05,740 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:21:06,229 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:21:06,244 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:21:06,583 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:21:06,588 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:21:06,632 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:23:05,745 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:23:05,792 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:23:05,796 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:23:06,231 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:23:06,235 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:23:06,620 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:23:06,625 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:23:06,669 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:25:05,882 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:25:05,953 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:25:05,957 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:25:06,335 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:25:06,340 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:25:06,723 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:25:06,729 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:25:06,776 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:27:03,859 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:27:03,947 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:27:03,948 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:27:04,115 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:27:04,200 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:27:04,201 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:27:05,846 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:27:05,892 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:27:05,896 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:27:06,308 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:27:06,314 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:27:06,706 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:27:06,712 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:27:06,778 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:29:05,962 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:29:06,034 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:29:06,039 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:29:06,426 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:29:06,430 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:29:06,911 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:29:06,916 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:29:06,979 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:31:06,066 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:31:06,139 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:31:06,149 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:31:06,639 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:31:06,644 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:31:07,024 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:31:07,031 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:31:07,069 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:33:06,172 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:33:06,236 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:33:06,242 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:33:06,646 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:33:06,654 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:33:07,070 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:33:07,076 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:33:07,128 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:35:03,965 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:35:04,053 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:35:04,055 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:35:04,210 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:35:04,278 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:35:04,278 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:35:06,163 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:35:06,232 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:35:06,238 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:35:06,641 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:35:06,646 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:35:07,058 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:35:07,063 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:35:07,129 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:37:06,288 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:37:06,336 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:37:06,342 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:37:06,698 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:37:06,703 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:37:07,117 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:37:07,122 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:37:07,161 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:39:06,409 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:39:06,455 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:39:06,462 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:39:06,847 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:39:06,852 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:39:07,250 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:39:07,256 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:39:07,304 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:41:06,448 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:41:06,541 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:41:06,550 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:41:07,036 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:41:07,044 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:41:07,481 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:41:07,487 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:41:07,535 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:43:04,024 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:43:04,066 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:43:04,067 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:43:04,294 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:43:04,370 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:43:04,371 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:43:06,468 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:43:06,518 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:43:06,524 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:43:06,915 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:43:06,919 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:43:07,270 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:43:07,279 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:43:07,314 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:45:06,590 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:45:06,641 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:45:06,646 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:45:07,040 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:45:07,045 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:45:07,539 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:45:07,545 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:45:07,583 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:47:06,724 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:47:06,816 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:47:06,821 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:47:07,185 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:47:07,190 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:47:07,594 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:47:07,600 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:47:07,648 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:49:06,834 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:49:06,947 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:49:06,953 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:49:07,328 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:49:07,333 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:49:07,705 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:49:07,710 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:49:07,750 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:51:04,155 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:51:04,241 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:51:04,241 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:51:04,422 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:51:04,489 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:51:04,490 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:51:06,830 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:51:06,882 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:51:06,887 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:51:07,279 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:51:07,285 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:51:07,658 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:51:07,665 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:51:07,708 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:53:06,948 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:53:07,040 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:53:07,044 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:53:07,436 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:53:07,440 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:53:07,858 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:53:07,863 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:53:07,897 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:55:07,073 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:55:07,227 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:55:07,231 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:55:07,609 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:55:07,613 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:55:07,979 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:55:07,984 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:55:08,027 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:57:07,179 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:57:07,250 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:57:07,254 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:57:07,636 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:57:07,644 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:57:08,038 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:57:08,044 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:57:08,084 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:59:04,279 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:59:04,376 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:59:04,378 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:59:04,532 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 14:59:04,613 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 14:59:04,614 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 14:59:07,151 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:59:07,220 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 14:59:07,244 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:59:07,659 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:59:07,663 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 14:59:08,022 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 14:59:08,029 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 14:59:08,095 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:01:07,265 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:01:07,322 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:01:07,332 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:01:07,775 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:01:07,792 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:01:08,166 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:01:08,173 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:01:08,216 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:03:07,351 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:03:07,426 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:03:07,430 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:03:07,856 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:03:07,861 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:03:08,249 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:03:08,255 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:03:08,296 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:05:07,443 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:05:07,551 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:05:07,557 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:05:07,964 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:05:07,968 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:05:08,330 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:05:08,336 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:05:08,370 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:07:04,370 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:07:04,446 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:07:04,446 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:07:04,642 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:07:04,744 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:07:04,745 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:07:07,453 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:07:07,523 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:07:07,534 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:07:07,980 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:07:07,986 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:07:08,400 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:07:08,405 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:07:08,450 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:09:07,554 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:09:07,604 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:09:07,609 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:09:08,003 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:09:08,009 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:09:08,488 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:09:08,495 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:09:08,539 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:11:07,660 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:11:07,730 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:11:07,736 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:11:08,161 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:11:08,166 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:11:08,553 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:11:08,559 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:11:08,605 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:13:07,752 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:13:07,818 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:13:07,862 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:13:08,261 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:13:08,265 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:13:08,632 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:13:08,643 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:13:08,708 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:15:04,476 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:15:04,543 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:15:04,544 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:15:04,739 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:15:04,817 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:15:04,824 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:15:07,769 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:15:07,858 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:15:07,863 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:15:08,230 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:15:08,235 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:15:08,594 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:15:08,599 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:15:08,641 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:17:07,865 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:17:07,932 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:17:07,948 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:17:08,312 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:17:08,318 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:17:08,682 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:17:08,687 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:17:08,722 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:19:07,930 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:19:08,014 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:19:08,022 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:19:08,581 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:19:08,600 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:19:09,205 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:19:09,230 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:19:09,307 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:21:08,092 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:21:08,147 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:21:08,154 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:21:08,539 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:21:08,543 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:21:08,916 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:21:08,922 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:21:08,962 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:23:04,558 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:23:04,622 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:23:04,624 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:23:04,886 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:23:04,965 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:23:04,966 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:23:08,056 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:23:08,136 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:23:08,166 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:23:08,643 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:23:08,648 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:23:09,019 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:23:09,024 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:23:09,091 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:25:08,161 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:25:08,213 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:25:08,223 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:25:08,614 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:25:08,618 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:25:09,019 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:25:09,025 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:25:09,091 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:27:08,259 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:27:08,311 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:27:08,318 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:27:08,725 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:27:08,730 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:27:09,172 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:27:09,178 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:27:09,239 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:29:08,377 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:29:08,448 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:29:08,465 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:29:08,862 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:29:08,868 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:29:09,245 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:29:09,252 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:29:09,296 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:31:04,723 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:31:04,867 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:31:04,869 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:31:04,995 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:31:05,083 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:31:05,085 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:31:08,393 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:31:08,462 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:31:08,489 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:31:08,868 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:31:08,874 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:31:09,275 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:31:09,282 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:31:09,328 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:33:08,466 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:33:08,528 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:33:08,532 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:33:08,894 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:33:08,899 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:33:09,256 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:33:09,262 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:33:09,307 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:35:08,547 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:35:08,626 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:35:08,660 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:35:09,092 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:35:09,108 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:35:09,538 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:35:09,545 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:35:09,582 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:37:08,670 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:37:08,740 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:37:08,756 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:37:09,125 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:37:09,129 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:37:09,587 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:37:09,593 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:37:09,636 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:39:04,760 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:39:04,812 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:39:04,813 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:39:05,070 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:39:05,155 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:39:05,157 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:39:08,640 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:39:08,689 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:39:08,694 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:39:09,072 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:39:09,078 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:39:09,424 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:39:09,429 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:39:09,478 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:41:08,753 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:41:08,833 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:41:08,837 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:41:09,200 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:41:09,205 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:41:09,529 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:41:09,534 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:41:09,574 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:43:08,860 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:43:08,907 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:43:08,914 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:43:09,301 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:43:09,324 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:43:09,676 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:43:09,681 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:43:09,719 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:45:08,983 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:45:09,129 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:45:09,133 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:45:09,481 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:45:09,486 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:45:09,837 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:45:09,842 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:45:09,879 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:47:04,874 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:47:04,949 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:47:04,950 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:47:05,197 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:47:05,281 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:47:05,282 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:47:08,979 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:47:09,028 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:47:09,032 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:47:09,467 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:47:09,471 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:47:09,807 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:47:09,813 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:47:09,863 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:49:09,044 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:49:09,134 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:49:09,143 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:49:09,468 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:49:09,473 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:49:09,820 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:49:09,825 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:49:09,867 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:51:09,138 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:51:09,208 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:51:09,212 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:51:09,587 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:51:09,593 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:51:09,955 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:51:09,961 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:51:10,011 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:53:09,254 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:53:09,304 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:53:09,313 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:53:09,772 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:53:09,776 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:53:10,122 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:53:10,128 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:53:10,167 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:55:04,960 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:55:05,006 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:55:05,007 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:55:05,274 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 15:55:05,338 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 15:55:05,339 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 15:55:09,246 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:55:09,302 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:55:09,306 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:55:09,737 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:55:09,742 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:55:10,091 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:55:10,097 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:55:10,128 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:57:09,365 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:57:09,426 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:57:09,458 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:57:09,846 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:57:09,850 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:57:10,201 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:57:10,206 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:57:10,243 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:59:09,473 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:59:09,525 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 15:59:09,532 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:59:09,922 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:59:09,926 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 15:59:10,279 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 15:59:10,285 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 15:59:10,351 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:01:09,594 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:01:09,644 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:01:09,649 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:01:10,083 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:01:10,088 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:01:10,436 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:01:10,442 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:01:10,492 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:03:05,070 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:03:05,122 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:03:05,123 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:03:05,406 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:03:05,492 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:03:05,492 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:03:09,600 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:03:09,651 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:03:09,659 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:03:10,016 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:03:10,020 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:03:10,395 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:03:10,401 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:03:10,442 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:05:09,687 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:05:09,738 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:05:09,753 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:05:10,282 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:05:10,292 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:05:10,764 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:05:10,773 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:05:10,828 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:07:09,761 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:07:09,841 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:07:09,879 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:07:10,402 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:07:10,411 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:07:10,855 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:07:10,863 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:07:10,898 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:09:09,857 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:09:09,912 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:09:09,917 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:09:10,369 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:09:10,375 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:09:10,762 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:09:10,768 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:09:10,813 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:11:05,214 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:11:05,443 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:11:05,444 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:11:05,504 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:11:05,672 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:11:05,673 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:11:09,911 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:11:10,075 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:11:10,097 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:11:11,436 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:11:11,443 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:11:12,603 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:11:12,638 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:11:13,015 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:13:10,082 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:13:10,284 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:13:10,313 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:13:11,834 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:13:11,867 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:13:13,102 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:13:13,161 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:13:13,351 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:15:10,234 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:15:10,282 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:15:10,289 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:15:10,631 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:15:10,635 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:15:10,977 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:15:10,982 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:15:11,026 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:17:10,297 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:17:10,370 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:17:10,380 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:17:10,754 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:17:10,758 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:17:11,222 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:17:11,228 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:17:11,277 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:19:05,309 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:19:05,389 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:19:05,389 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:19:05,620 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:19:05,703 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:19:05,704 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:19:10,292 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:19:10,365 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:19:10,376 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:19:10,822 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:19:10,826 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:19:11,186 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:19:11,192 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:19:11,238 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:21:10,337 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:21:10,431 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:21:10,438 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:21:10,814 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:21:10,818 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:21:11,193 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:21:11,198 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:21:11,234 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:23:10,453 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:23:10,508 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:23:10,514 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:23:10,899 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:23:10,904 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:23:11,254 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:23:11,260 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:23:11,313 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:25:10,567 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:25:10,654 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:25:10,663 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:25:11,060 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:25:11,066 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:25:11,502 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:25:11,508 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:25:11,575 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:27:05,381 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:27:05,441 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:27:05,442 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:27:05,708 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:27:05,788 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:27:05,789 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:27:10,553 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:27:10,651 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:27:10,658 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:27:11,098 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:27:11,104 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:27:11,601 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:27:11,615 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:27:11,685 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:29:10,708 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:29:10,784 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:29:10,789 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:29:11,147 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:29:11,151 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:29:11,529 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:29:11,535 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:29:11,581 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:31:10,812 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:31:10,884 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:31:10,888 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:31:11,229 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:31:11,233 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:31:11,586 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:31:11,591 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:31:11,660 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:33:10,923 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:33:10,996 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:33:11,009 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:33:11,387 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:33:11,391 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:33:11,757 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:33:11,762 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:33:11,827 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:35:05,597 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:35:05,638 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:35:05,638 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:35:05,837 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:35:05,910 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:35:05,910 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:35:10,911 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:35:10,972 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:35:10,976 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:35:11,434 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:35:11,438 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:35:11,795 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:35:11,802 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:35:11,846 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:36:03,219 INFO: -- Celery task [投标上限定时任务] 开始 --
+2016-02-29 16:36:03,307 INFO: -- Celery task 项目:写字楼抵押诚信借款2, id:47 最大投资额 从:500000.00 调整为:500000.00 --
+2016-02-29 16:36:03,332 INFO: -- Celery task [投标上限定时任务] 结束 --
+2016-02-29 16:37:11,013 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:37:11,070 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:37:11,074 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:37:11,436 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:37:11,441 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:37:11,833 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:37:11,838 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:37:11,879 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:38:10,373 INFO: -- Celery task [自动投标] 开始 --
+2016-02-29 16:38:10,441 INFO: 自动投标列表: []
+2016-02-29 16:38:10,463 INFO: -- Celery task [自动投标] 结束 --
+2016-02-29 16:39:11,131 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:39:11,217 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:39:11,236 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:39:11,647 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:39:11,653 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:39:11,997 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:39:12,004 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:39:12,047 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:41:11,264 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:41:11,355 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:41:11,363 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:41:11,710 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:41:11,714 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:41:12,053 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:41:12,059 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:41:12,103 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:43:05,710 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:43:05,764 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:43:05,765 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:43:05,951 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:43:06,025 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:43:06,026 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:43:11,214 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:43:11,288 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:43:11,295 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:43:11,943 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:43:11,953 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:43:12,641 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:43:12,659 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:43:12,714 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:45:11,293 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:45:11,355 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:45:11,361 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:45:11,713 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:45:11,720 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:45:12,085 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:45:12,090 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:45:12,129 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:47:11,404 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:47:11,483 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:47:11,492 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:47:11,887 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:47:11,892 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:47:12,302 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:47:12,309 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:47:12,362 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:49:11,531 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:49:11,595 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:49:11,607 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:49:11,911 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:49:11,916 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:49:12,265 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:49:12,271 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:49:12,311 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:51:05,820 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:51:05,870 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:51:05,870 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:51:06,092 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:51:06,165 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:51:06,165 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:51:11,539 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:51:11,590 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:51:11,596 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:51:12,034 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:51:12,038 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:51:12,409 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:51:12,422 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:51:12,461 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:53:11,593 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:53:11,706 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:53:11,716 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:53:12,115 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:53:12,119 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:53:12,502 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:53:12,507 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:53:12,573 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:55:11,774 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:55:11,845 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:55:11,849 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:55:12,209 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:55:12,213 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:55:12,608 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:55:12,614 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:55:12,675 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:57:11,906 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:57:11,967 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:57:11,974 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:57:12,365 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:57:12,369 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:57:12,719 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:57:12,725 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:57:12,776 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:59:05,956 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:59:06,024 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:59:06,025 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:59:06,214 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 16:59:06,266 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 16:59:06,266 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 16:59:11,867 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:59:11,929 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 16:59:11,933 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:59:12,328 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:59:12,333 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 16:59:12,744 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 16:59:12,749 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 16:59:12,794 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:01:11,995 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:01:12,057 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:01:12,069 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:01:12,440 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:01:12,444 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:01:12,830 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:01:12,835 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:01:12,874 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:03:12,071 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:03:12,132 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:03:12,137 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:03:12,533 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:03:12,538 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:03:12,958 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:03:12,964 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:03:13,007 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:05:12,173 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:05:12,587 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:05:12,625 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:05:12,668 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:05:12,672 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:05:13,047 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:05:13,052 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:05:13,099 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:07:06,020 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:07:06,098 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:07:06,098 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:07:06,317 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:07:06,400 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:07:06,400 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:07:12,216 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:07:12,275 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:07:12,291 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:07:12,812 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:07:12,818 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:07:13,373 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:07:13,386 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:07:13,433 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:09:12,293 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:09:12,357 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:09:12,366 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:09:12,851 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:09:12,856 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:09:13,341 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:09:13,353 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:09:13,401 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:11:12,397 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:11:12,481 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:11:12,489 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:11:13,024 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:11:13,029 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:11:13,553 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:11:13,560 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:11:13,621 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:13:12,457 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:13:12,545 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:13:12,560 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:13:13,058 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:13:13,062 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:13:13,563 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:13:13,577 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:13:13,655 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:15:06,099 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:15:06,171 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:15:06,172 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:15:06,402 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:15:06,483 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:15:06,483 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:15:12,462 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:15:12,532 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:15:12,544 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:15:13,041 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:15:13,045 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:15:13,498 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:15:13,512 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:15:13,575 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:17:12,561 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:17:12,637 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:17:12,711 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:17:13,306 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:17:13,312 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:17:13,818 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:17:13,834 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:17:13,892 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:19:12,787 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:19:12,876 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:19:12,881 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:19:13,353 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:19:13,361 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:19:13,815 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:19:13,826 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:19:13,878 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:21:12,899 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:21:12,963 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:21:12,968 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:21:13,464 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:21:13,468 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:21:13,951 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:21:13,960 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:21:14,012 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:23:06,218 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:23:06,273 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:23:06,273 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:23:06,525 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:23:06,604 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:23:06,605 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:23:12,924 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:23:12,975 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:23:12,980 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:23:13,423 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:23:13,429 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:23:13,836 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:23:13,841 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:23:13,881 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:25:12,997 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:25:13,069 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:25:13,073 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:25:13,669 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:25:13,673 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:25:14,291 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:25:14,309 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:25:14,364 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:27:13,085 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:27:13,147 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:27:13,151 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:27:13,513 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:27:13,518 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:27:13,886 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:27:13,892 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:27:13,960 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:29:13,193 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:29:13,258 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:29:13,262 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:29:13,639 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:29:13,643 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:29:13,999 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:29:14,004 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:29:14,069 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:31:06,304 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:31:06,380 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:31:06,381 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:31:06,631 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:31:06,691 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:31:06,691 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:31:13,228 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:31:13,272 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:31:13,277 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:31:13,644 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:31:13,649 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:31:14,017 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:31:14,023 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:31:14,060 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:33:13,316 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:33:13,380 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:33:13,390 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:33:13,750 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:33:13,754 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:33:14,202 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:33:14,207 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:33:14,255 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:35:13,418 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:35:13,471 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:35:13,475 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:35:13,824 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:35:13,828 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:35:14,171 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:35:14,176 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:35:14,240 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:37:13,566 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:37:13,634 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:37:13,638 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:37:13,986 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:37:13,989 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:37:14,334 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:37:14,341 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:37:14,387 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:39:06,422 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:39:06,483 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:39:06,484 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:39:06,728 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:39:06,774 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:39:06,774 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:39:13,528 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:39:13,582 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:39:13,587 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:39:13,931 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:39:13,936 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:39:14,252 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:39:14,257 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:39:14,316 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:41:13,628 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:41:13,680 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:41:13,684 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:41:14,021 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:41:14,025 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:41:14,364 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:41:14,370 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:41:14,410 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:43:13,714 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:43:13,806 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:43:13,817 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:43:14,219 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:43:14,225 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:43:14,592 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:43:14,599 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:43:14,632 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:45:13,845 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:45:13,924 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:45:13,930 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:45:14,274 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:45:14,278 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:45:14,641 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:45:14,646 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:45:14,685 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:47:06,565 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:47:06,630 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:47:06,631 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:47:06,867 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:47:06,944 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:47:06,945 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:47:13,845 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:47:14,205 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:47:14,210 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:47:14,256 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:47:14,259 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:47:14,612 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:47:14,618 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:47:14,686 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:49:13,914 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:49:13,997 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:49:14,001 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:49:14,427 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:49:14,433 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:49:14,775 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:49:14,780 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:49:14,837 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:51:13,996 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:51:14,322 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:51:14,327 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:51:14,392 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:51:14,398 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:51:14,469 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:51:14,473 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:51:14,920 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:53:14,065 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:53:14,108 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:53:14,112 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:53:14,561 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:53:14,569 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:53:14,890 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:53:14,897 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:53:14,934 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:55:06,627 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:55:06,759 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:55:06,759 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:55:06,948 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 17:55:07,007 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 17:55:07,008 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 17:55:14,099 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:55:14,150 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:55:14,157 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:55:14,516 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:55:14,520 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:55:14,937 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:55:14,943 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:55:14,978 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:57:14,205 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:57:14,253 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:57:14,256 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:57:14,610 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:57:14,614 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:57:14,974 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:57:14,979 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:57:15,031 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:59:14,316 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:59:14,406 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 17:59:14,415 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:59:14,799 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:59:14,805 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 17:59:15,210 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 17:59:15,215 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 17:59:15,293 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 18:01:14,421 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 18:01:14,471 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 18:01:14,475 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 18:01:14,863 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 18:01:14,866 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 18:01:15,429 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 18:01:15,436 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 18:01:15,571 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 18:03:06,741 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 18:03:06,811 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 18:03:06,812 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 18:03:07,056 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-02-29 18:03:07,129 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-02-29 18:03:07,130 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-02-29 18:03:14,431 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 18:03:14,480 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-02-29 18:03:14,484 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 18:03:14,857 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 18:03:14,861 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-02-29 18:03:15,260 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-02-29 18:03:15,265 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-02-29 18:03:15,309 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:49:26,010 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 08:49:26,111 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 08:49:26,112 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 08:49:26,118 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 08:49:26,184 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 08:49:26,185 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 08:49:26,191 INFO: -- Celery task [用户等级检查] 开始 --
+2016-03-01 08:49:26,532 INFO: -- Celery task [用户等级检查] 结束 --
+2016-03-01 08:49:26,537 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:49:26,886 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:49:26,891 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:49:26,934 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:49:26,938 INFO: -- Celery task [用户等级检查] 开始 --
+2016-03-01 08:49:27,308 INFO: -- Celery task [用户等级检查] 结束 --
+2016-03-01 08:49:27,315 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:49:27,354 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:49:27,359 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:49:27,702 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:51:26,179 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:51:26,220 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:51:26,226 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:51:26,603 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:51:26,609 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:51:27,032 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:51:27,037 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:51:27,076 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:53:26,415 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:53:26,476 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:53:26,481 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:53:26,817 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:53:26,821 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:53:27,184 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:53:27,190 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:53:27,238 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:55:26,459 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:55:26,538 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:55:26,544 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:55:26,927 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:55:26,932 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:55:27,315 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:55:27,320 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:55:27,389 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:57:26,081 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 08:57:26,125 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 08:57:26,125 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 08:57:26,131 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 08:57:26,186 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 08:57:26,187 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 08:57:26,452 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:57:26,502 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:57:26,511 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:57:26,982 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:57:26,986 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:57:27,343 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:57:27,348 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:57:27,396 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:59:26,562 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:59:26,640 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 08:59:26,647 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:59:27,038 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:59:27,044 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 08:59:27,423 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 08:59:27,429 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 08:59:27,510 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:00:00,130 INFO: [学生还款提醒 还款计划检查] 开始 =========== 
+2016-03-01 09:00:08,550 INFO: [学生还款提醒 还款计划检查] 结束 =========== 
+2016-03-01 09:00:08,563 INFO: [学生还款提醒 还款计划检查] 开始 =========== 
+2016-03-01 09:00:09,690 INFO: [学生还款提醒 还款计划检查] 结束 =========== 
+2016-03-01 09:01:26,667 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:01:27,075 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:01:27,081 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:01:27,127 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:01:27,136 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:01:27,188 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:01:27,193 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:01:27,608 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:03:26,766 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:03:27,232 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:03:27,242 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:03:27,327 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:03:27,332 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:03:27,410 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:03:27,414 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:03:27,896 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:05:26,176 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:05:26,252 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:05:26,252 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:05:26,269 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:05:26,345 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:05:26,346 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:05:26,769 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:05:27,131 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:05:27,137 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:05:27,177 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:05:27,182 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:05:27,221 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:05:27,226 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:05:27,559 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:07:26,887 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:07:27,315 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:07:27,324 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:07:27,370 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:07:27,381 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:07:27,438 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:07:27,447 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:07:27,855 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:09:26,987 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:09:27,437 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:09:27,443 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:09:27,509 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:09:27,515 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:09:27,558 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:09:27,562 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:09:27,924 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:11:27,065 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:11:27,502 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:11:27,509 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:11:27,554 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:11:27,659 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:11:27,751 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:11:27,763 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:11:28,187 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:13:26,219 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:13:26,269 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:13:26,269 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:13:26,277 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:13:26,331 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:13:26,331 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:13:27,064 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:13:27,497 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:13:27,534 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:13:27,577 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:13:27,584 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:13:27,655 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:13:27,662 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:13:28,085 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:15:27,168 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:15:27,615 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:15:27,621 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:15:27,689 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:15:27,696 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:15:27,765 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:15:27,770 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:15:28,193 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:17:27,271 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:17:27,765 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:17:27,771 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:17:27,839 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:17:27,845 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:17:27,918 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:17:27,922 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:17:28,357 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:19:27,396 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:19:27,835 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:19:27,842 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:19:27,883 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:19:27,891 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:19:27,940 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:19:27,944 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:19:28,345 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:21:26,358 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:21:26,440 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:21:26,441 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:21:26,449 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:21:26,505 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:21:26,505 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:21:27,364 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:21:27,786 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:21:27,792 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:21:27,829 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:21:27,834 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:21:27,902 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:21:27,906 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:21:28,282 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:23:27,464 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:23:27,863 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:23:27,868 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:23:27,942 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:23:27,950 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:23:28,005 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:23:28,012 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:23:28,382 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:25:27,572 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:25:27,976 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:25:27,982 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:25:28,025 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:25:28,030 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:25:28,085 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:25:28,090 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:25:28,518 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:27:27,694 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:27:28,110 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:27:28,115 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:27:28,160 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:27:28,166 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:27:28,207 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:27:28,212 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:27:28,602 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:29:26,433 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:29:26,502 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:29:26,502 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:29:26,512 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:29:26,589 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:29:26,590 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:29:27,672 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:29:28,070 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:29:28,075 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:29:28,118 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:29:28,123 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:29:28,242 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:29:28,249 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:29:28,595 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:31:27,775 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:31:28,185 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:31:28,193 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:31:28,243 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:31:28,251 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:31:28,292 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:31:28,299 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:31:28,710 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:33:27,880 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:33:28,278 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:33:28,283 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:33:28,324 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:33:28,330 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:33:28,369 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:33:28,374 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:33:28,707 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:35:28,005 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:35:28,523 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:35:28,529 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:35:28,602 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:35:28,623 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:35:28,679 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:35:28,689 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:35:29,179 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:37:26,530 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:37:26,605 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:37:26,606 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:37:26,614 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:37:26,688 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:37:26,688 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:37:27,987 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:37:28,426 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:37:28,432 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:37:28,496 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:37:28,503 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:37:28,551 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:37:28,556 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:37:28,933 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:39:28,099 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:39:29,711 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:39:29,791 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:39:29,902 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:39:29,971 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:39:30,179 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:39:30,183 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:39:31,864 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:41:28,197 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:41:28,718 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:41:28,728 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:41:28,773 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:41:28,786 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:41:28,834 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:41:28,850 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:41:29,308 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:43:28,371 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:43:28,841 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:43:28,847 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:43:28,893 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:43:28,899 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:43:28,970 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:43:28,974 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:43:29,336 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:45:26,619 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:45:26,675 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:45:26,675 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:45:26,681 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:45:26,759 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:45:26,759 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:45:28,363 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:45:28,790 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:45:28,796 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:45:28,840 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:45:28,845 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:45:28,897 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:45:28,901 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:45:29,251 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:47:28,481 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:47:28,811 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:47:28,817 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:47:28,858 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:47:28,864 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:47:28,932 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:47:28,936 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:47:29,318 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:49:28,561 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:49:28,960 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:49:28,967 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:49:29,001 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:49:29,007 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:49:29,050 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:49:29,055 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:49:29,387 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:51:28,670 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:51:29,077 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:51:29,083 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:51:29,132 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:51:29,142 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:51:29,182 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:51:29,187 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:51:29,659 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:53:26,723 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:53:26,803 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:53:26,804 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:53:26,823 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 09:53:26,906 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 09:53:26,907 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 09:53:28,660 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:53:29,016 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:53:29,022 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:53:29,059 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:53:29,065 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:53:29,134 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:53:29,138 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:53:29,494 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:55:28,770 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:55:29,170 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:55:29,177 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:55:29,219 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:55:29,225 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:55:29,271 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:55:29,276 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:55:29,678 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:57:28,982 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:57:29,464 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:57:29,473 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:57:29,542 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:57:29,546 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:57:29,989 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:57:29,996 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:57:30,048 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:59:29,060 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:59:29,123 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 09:59:29,127 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:59:29,498 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:59:29,503 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 09:59:29,890 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 09:59:29,896 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 09:59:29,959 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:01:26,819 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 10:01:26,869 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 10:01:26,869 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 10:01:26,899 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 10:01:26,946 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 10:01:26,946 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 10:01:29,057 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:01:29,120 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:01:29,126 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:01:29,616 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:01:29,620 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:01:29,981 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:01:29,986 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:01:30,037 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:03:29,172 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:03:29,241 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:03:29,246 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:03:29,624 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:03:29,629 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:03:29,995 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:03:30,004 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:03:30,042 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:05:29,254 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:05:29,337 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:05:29,346 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:05:30,003 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:05:30,012 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:05:30,484 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:05:30,491 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:05:30,544 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:07:29,335 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:07:29,419 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:07:29,424 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:07:29,874 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:07:29,882 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:07:30,319 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:07:30,335 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:07:30,387 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:09:26,916 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 10:09:27,011 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 10:09:27,011 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 10:09:27,018 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 10:09:27,065 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 10:09:27,065 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 10:09:29,355 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:09:29,423 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:09:29,428 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:09:29,869 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:09:29,873 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:09:30,235 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:09:30,241 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:09:30,277 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:11:29,443 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:11:29,513 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:11:29,518 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:11:29,894 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:11:29,898 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:11:30,258 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:11:30,265 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:11:30,297 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:13:29,504 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:13:29,574 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:13:29,579 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:13:29,975 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:13:29,980 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:13:30,444 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:13:30,451 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:13:30,487 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:15:29,544 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:15:29,615 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:15:29,619 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:15:30,001 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:15:30,006 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:15:30,417 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:15:30,429 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:15:30,476 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:17:26,990 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 10:17:27,049 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 10:17:27,049 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 10:17:27,090 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 10:17:27,124 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 10:17:27,124 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 10:17:29,553 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:17:29,605 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:17:29,613 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:17:30,067 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:17:30,071 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:17:30,439 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:17:30,446 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:17:30,511 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:19:29,661 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:19:29,746 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:19:29,757 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:19:30,194 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:19:30,199 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:19:30,693 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:19:30,703 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:19:30,766 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:21:29,805 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:21:29,896 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:21:29,906 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:21:30,351 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:21:30,356 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:21:30,773 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:21:30,783 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:21:30,822 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:23:29,910 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:23:29,959 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:23:29,964 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:23:30,369 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:23:30,375 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:23:30,742 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:23:30,748 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:23:30,813 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:25:27,132 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 10:25:27,572 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 10:25:27,574 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 10:25:27,602 INFO: -- Celery task [Inspect Auto Repay Flow] 开始 --
+2016-03-01 10:25:27,721 INFO: [Inspect Auto Repay Flow] Plans:[]
+2016-03-01 10:25:27,722 INFO: -- Celery task [Inspect Auto Repay Flow] 结束 --
+2016-03-01 10:25:29,998 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:25:30,446 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:25:30,465 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:25:32,721 INFO: -- Celery task [首次记录时间检查] 结束 --
+2016-03-01 10:25:32,731 INFO: -- Celery task [Inspect Overdue Transferring Investments] 开始 --
+2016-03-01 10:25:33,105 INFO: -- Celery task [Inspect Overdue Transferring Investments] 结束 --
+2016-03-01 10:25:33,110 INFO: -- Celery task [首次记录时间检查] 开始 --
+2016-03-01 10:25:34,300 INFO: -- Celery task [首次记录时间检查] 结束 --

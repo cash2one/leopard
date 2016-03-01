@@ -1,0 +1,102 @@
+<!--right-->
+<div class="main-wrap" ng-controller="redPacketCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;红包管理
+            <span>可用于中宝财富交易的现金红包，红包总额达到100元以上时才能兑现
+            </span>
+        </div>
+        <div class="span10 bank-cardAdd">
+            <div class="red-cardTop">
+                我的红包
+            </div>
+            <div tabset class="red-tab">
+                <div tab heading="未使用" class="red-none">
+                    <div class="red" ng-repeat="packet in redPacketData.list | filter: redPacketData.unenable" tooltip="{{ packet.description ? packet.description: packet.type.description }}">
+                        <ul>
+                            <li ng-if="packet.invest_amount != null" ng-bind=" '需投资' + (packet.invest_amount) + '元' "></li>
+                            <li ng-if="packet.invest_amount == null" ng-bind="packet.type.name"></li>
+
+                            <li class="red-big" ng-bind="packet.amount | currency: '￥'"></li>
+                            <li ng-if="packet.expires_at == null" ng-bind="'发放日: ' + (packet.added_at | date: 'yyyy-MM-dd')"></li>
+                            <li ng-if="packet.expires_at" ng-bind="'到期日: ' + (packet.expires_at | date: 'yyyy-MM-dd')"></li>
+                            <li><a href="javascript:;" class="red-button" ng-click="useRedPacket(packet.id)">使用</a></li>
+                        </ul>
+                    </div>
+                    <div class="red" ng-repeat="packet in redPacketData.list | filter: redPacketData.unuse" tooltip="{{ packet.description ? packet.description: packet.type.description }}">
+                        <ul>
+                            <li ng-if="packet.name" ng-bind="packet.name"></li>
+                            <li ng-if="packet.name == null" ng-bind="packet.type.name"></li>
+                            <li class="red-big" ng-bind="packet.amount | currency: '￥'"></li>
+                            <li ng-if="packet.expires_at == null" ng-bind="'发放日: ' + (packet.added_at | date: 'yyyy-MM-dd')"></li>
+                            <li ng-if="packet.expires_at" ng-bind="'到期日: ' + (packet.expires_at | date: 'yyyy-MM-dd')"></li>
+                            <li><a href="javascript:;" class="red-button" ng-click="useRedPacket(packet.id)">使用</a></li>
+                        </ul>
+                    </div>
+                    <div class="use-button">
+                        <input class="red-exchange" type="text" ng-model="redPacketCodeValue" />
+                        <input type="button" ng-click="useCodeRedPacket()" value="兑换" class="button"/>
+                        <input type="button" ng-click="useAllPacket()" value="使用所有红包" class="button red-button"/>
+                    </div>
+                </div>
+                <div tab select="alertMe()">
+                    <div tab-heading>
+                        已使用
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>金额</th>
+                                <th>需投资金额</th>
+                                <th>发放时间</th>
+                                <th>到期时间</th>
+                                <th>备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="packet in redPacketData.list | filter: redPacketData.used">
+                                <td ng-if="packet.name" ng-bind="packet.name"></td>
+                                <td ng-if="packet.name == null" ng-bind="packet.type.name"></td>
+                                <td ng-bind="packet.amount | currency: '￥'"></td>
+                                <td ng-bind="!packet.invest_amount ? '-' : (packet.invest_amount | currency: '￥')"></td>
+                                <td ng-bind="packet.added_at | date: 'yyyy-MM-dd'"></td>
+                                <td ng-bind="!packet.expires_at ? '-' : (packet.expires_at | date: 'yyyy-MM-dd') "></td>
+                                <td ng-if="packet.description" ng-bind="packet.description"></td>
+                                <td ng-if="packet.description == null" ng-bind="packet.type.description"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div tab>
+                    <div tab-heading>
+                        已过期
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>金额</th>
+                                <th>需投资金额</th>
+                                <th>发放时间</th>
+                                <th>到期时间</th>
+                                <th>备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="packet in redPacketData.list | filter: redPacketData.overdue">
+                                <td ng-if="packet.name" ng-bind="packet.name"></td>
+                                <td ng-if="packet.name == null" ng-bind="packet.type.name"></td>
+                                <td ng-bind="packet.amount | currency: '￥'"></td>
+                                <td ng-bind="!packet.invest_amount ? '-' : (packet.invest_amount | currency: '￥')"></td>
+                                <td ng-bind="packet.added_at | date: 'yyyy-MM-dd'"></td>
+                                <td ng-bind="!packet.expires_at ? '-' : (packet.expires_at | date: 'yyyy-MM-dd') "></td>
+                                <td ng-if="packet.description" ng-bind="packet.description"></td>
+                                <td ng-if="packet.description == null" ng-bind="packet.type.description"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

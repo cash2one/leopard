@@ -1,0 +1,60 @@
+<!--right-->
+<div  class="main-wrap" ng-controller="borrowingCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;借款记录
+        </div>
+        <div data-filter-produce="filterConfig"></div>
+        <div class="span10">
+            <table class="table table-hover table-bordered integration-table">
+            <thead>
+                <tr class="red-cardTop">
+                    <th>项目名称</th>
+                    <th>金额</th>
+                    <th>已借资金</th>
+                    <th>期数</th>
+                    <th>年化收益率</th>
+                    <th>状态</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="li in listData.list">
+                    <td ng-if="li.category == 100">
+                        <a target="_blank" ng-href="/#!/invest/{{ li.id }}" ng-bind="li.name | limitTo: 8" tooltip="{{ li.name }}"></a>
+                    </td>
+                    <td ng-if="li.category == 200">
+                        <a target="_blank" ng-href="/#!/invest/student/{{ li.id }}" ng-bind="li.name | limitTo: 8" tooltip="{{ li.name }}"></a>
+                    </td>
+
+                    <td ng-bind="(li.amount | currency: '') + ' 元'"></td>
+                    <td ng-bind="(li.borrowed_amount | currency: '') + ' 元'"></td>
+                    <td ng-bind="li.periods + (li.nper_type==100?'月': '天')"></td>
+                    <td ng-bind="(li.rate*(li.nper_type==100?12:365) | number: '2') + '%'"></td>
+                    <td ng-bind="li.status | statusFilter: 'lend'"></td>
+                    <td><span tooltip="{{ li.added_at | date:'yyyy-MM-dd HH:mm:ss' }}" ng-bind="li.added_at | date:'yyyy-MM-dd'"></span></td>
+                    <td>
+                        <a href="javascript:;" ng-click="showPlan(li)" ng-if="li.status == 400">提前还款</a>
+                        <span ng-if="li.status != 400">--</span>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div data-pagination-produce="paginationConf" class="pull-right"></div>
+        <script type="text/ng-template" id="plans_modal.html">
+            <div class="modal-header"><h4 ng-bind="'对 ' + planData.project.name + ' 进行提前还款'"></h4></div>
+            <div class="modal-body">
+                <span class="text-error">* </span>您选择提前全额还款后无需支付后续各期利息，但必须支付当前期利息及剩余本金。<br/>
+                <span class="text-error">* </span>若需提前全额还款，请输入交易密码
+                <input type="password" ng-model="planData.tradePass" class="input-small" />
+                后点击全额还款。
+
+            </div>
+            <div class="modal-footer">
+                <input type="button" ng-click="ok()" class="btn btn-danger" value="提前全额还款"/>
+                <input type="button" ng-click="cancel()" class="btn btn-primary" value="关闭"/>
+            </div>
+        </script>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+<!--right-->
+<div class="main-wrap" ng-controller="bankcardCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;银行卡管理
+        </div>
+        <div class="span4 bank-card" ng-repeat="card in bankcardData.list">
+            <div class="bank-logo">
+                <ul class="bank">
+                    <li ng-class="getBankClass(card.bank.split(':')[0])"><a href="javascript:;"></a></li>
+                </ul>
+                <span></span>
+            </div>
+            <table class="bank-table">
+                <tbody>
+                <tr>
+                    <td class="bank-td">卡号</td>
+                    <td>&nbsp;</td>
+                    <td ng-bind="card.card"></td>
+                </tr>
+                <tr>
+                    <td class="bank-td">持卡人</td>
+                    <td>&nbsp;</td>
+                    <td ng-bind="accountData.user.realname"></td>
+                </tr>
+                <tr>
+                    <td class="bank-td">开户行</td>
+                    <td>&nbsp;</td>
+                    <td ng-bind="card.bank.split(':')[1]"></td>
+                </tr>
+                </tbody>
+            </table>
+            <a href="javascript:;" class="button" ng-click="openModal(card.id)">删除银行卡</a>
+        </div>
+
+        <div class="span4 bank-cardAdd" ng-if="bankcardData.maxNumber > bankcardData.list.length">
+            <div class="bank-cardTop">
+                <img src="../images/plus.png" height="24" width="24">
+                添加一张银行卡
+            </div>
+            <form data-form-produce="formControls.conf">
+                <div class="bank-cardMiddle">
+                    <table>
+                        <tr>
+                            <td class="bank-td">持卡人</td>
+                            <td>&nbsp;</td>
+                            <td class="text-left" ng-bind="accountData.user.realname"></td>
+                        </tr>
+                        <tr>
+                            <td class="bank-td">账户类型</td>
+                            <td>&nbsp;</td>
+                            <td class="text-left">储蓄卡</td>
+                        </tr>
+                        <tr>
+                            <td class="bank-td">银行卡号</td>
+                            <td>&nbsp;</td>
+                            <td><input type="text" placeholder="请输入银行卡号" data-input-produce="formControls.bankNum" ng-model="formControls.models.bankNum" data-bank-number/></td>
+                        </tr>
+                        <tr>
+                            <td class="bank-td">银行名称</td>
+                            <td>&nbsp;</td>
+                            <td><input type="text" placeholder="请输入银行名称" data-input-produce="formControls.bankName" ng-model="formControls.models.bankName" /></td>
+                        </tr>
+                        <tr>
+                            <td class="bank-td">开户行</td>
+                            <td>&nbsp;</td>
+                            <td><input type="text" placeholder="请填写开户行" data-input-produce="formControls.bankOpen" ng-model="formControls.models.bankOpen" /></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bank-cardTop back-card back-cardbottom">
+                    <button type="button" class="button bank-btn" ng-click="resetModels()">
+                    <i class="icon-repeat"></i>&nbsp;重填</button>
+                    <button type="submit" class="button bank-btn">
+                    <i class="icon-ok"></i>&nbsp;添加</button>
+                </div>
+            </form>
+        </div>
+        <script type="text/ng-template" id="remove_bankcard_modal.html">
+            <div class="modal-header"><h4>删除银行卡确认</h4></div>
+            <div class="modal-body">
+                <p>您确定删除此银行卡吗？</p>
+                <span class="text-error">*</span> 交易密码：<input type="password" class="input-medium" ng-model="removeInfo.tradePass" />
+            </div>
+            <div class="modal-footer">
+                <input type="submit" ng-click="ok()" class="btn btn-primary" value="确定"/>
+                <input type="button" ng-click="cancel()" class="btn btn-danger" value="取消"/>
+            </div>
+        </script>
+    </div>
+</div>

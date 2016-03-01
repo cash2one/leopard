@@ -1,0 +1,73 @@
+IP: 114.215.149.100
+MOBILE_HOST: http://m.zhongbaodai.com
+HOST: https://www.zhongbaodai.com
+CHARSET: utf-8
+PLATFORM: zbcf
+
+CORPORATION: 中宝财富
+CORPORATION_FULLNAME: 中泉宝泰
+CORPORATION_TITLE: 真正的安全理财平台
+CORPORATION_ICP: 沪ICP备13041338号
+CORPORATION_TEL: 400-001-6788
+CORPORATION_ADDRESS: 山东省济南市历下区明湖东路787-71号
+CORPORATION_POSTCODE: 250000
+CORPORATION_CITY: 山东济南
+META_DESCRIPTION: 中宝财富官网，理财有保障，投资产品15%+高额奖励，100元起投门槛低，1至3个月灵活短周期，丰富的投资奖励，推荐好友有好礼，风控安全可靠有担保，2013年上线至今从未逾期，系上海中泉宝泰互联网金融信息服务有限公司旗下品牌，低风险高收益典范。
+
+REGISTER_IDENTIFYING_CODE_ENABLE: false
+ACTIVATION_EMAIL_ENABLE: true
+LOGIN_IDENTIFYING_CODE_ENABLE: false
+BANKCARD_MOSAIC: true
+BANKCARD_NUMBER_LIMIT: 3
+PREPAYMENT_TYPE: [prepayment_all]
+FINAPPLICATION_METHOD: [average_captial_plus_interest]
+
+SMS_PHONE_CODE_GAP_IP: 3
+SMS_PHONE_CODE_GAP_PHONE: 15
+SMS_PLATFORM: leopard.comps.sms.platforms.mobset
+SMS_SIGNATURE: 中宝财富
+SMS_VAILD_TIME_VALUE: 900
+SMS_VALID_TIME_EXPLAIN: 15分钟
+SMS_SIGN_MESSAGE: 【中宝财富】
+SMS_SERVICE_PHONE: 客服热线 400-001-6788
+SMS_CODE_ALLOWED_KEYWORD: [current_phone, change_phone, email_change, withdraw, password, trade_password, register, retrieve_password]
+SMS_CODE_ALLOWED_KEYWORD_STR:
+    current_phone: 更换手机操作
+    change_phone: 更换手机操作
+    email_change: 更换邮箱操作
+    retrieve_password: 找回密码
+    withdraw: 提现操作
+    trade_password: 修改交易密码操作
+    password: 忘记密码操作
+    register: 注册操作
+SMS_CODE_ALLOWED_KEYWORD_AUTHENTICATE:
+    current_phone: true
+    retrieve_password: false
+    change_phone: true
+    email_change: true
+    withdraw: true
+    trade_password: true
+    password: false
+    register: false
+BEARER_TOKEN_PLATFORM: [wechat]
+
+PROJECT_CERTIFY:
+    income: 收入证明
+    idcard: 身份证
+    household: 户口本
+    credit_reporting: 征信报告
+    house_property_card: 房产证
+    vehicle_license: 行驶证
+    guarantee_contract: 担保合同
+    counter_guarantee_contract: 反担保合同
+    business_license: 营业执照
+    tax_registration_certificate: 税务登记证
+    bank_account_license: 银行开户许可
+    organization_code_certificate: 组织机构代码证
+    mortgaged_property_certification: 抵押物认证
+    field_certification: 实地认证
+
+PROJECT_CERTIFY_LIST: [income, idcard, household, credit_reporting, house_property_card, vehicle_license, guarantee_contract, counter_guarantee_contract, business_license, tax_registration_certificate, bank_account_license, organization_code_certificate, mortgaged_property_certification, field_certification]
+
+BANNER_FOLDER: media/banner
+FIREND_LINK_FOLDER: media/firend

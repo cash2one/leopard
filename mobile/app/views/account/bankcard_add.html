@@ -1,0 +1,34 @@
+<div class="modal">
+  <div class="bar bar-header bar-light">
+    <h1 class="title">添加银行卡</h1>
+    <button class="button button-clear button-positive" ng-click="addModal.hide()">关闭</button>
+  </div>
+  <ion-content class="has-header">
+    <form class="list" form-produce="formControls.conf">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          账户类型
+        </div>
+        <select disabled="disabled">
+          <option>借记卡</option>
+        </select>
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="银行卡号" input-produce="formControls.number" ng-model="formControls.models.number">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="银行名称" input-produce="formControls.bank" ng-model="formControls.models.bank">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="开户行" input-produce="formControls.opened" ng-model="formControls.models.opened">
+      </label>
+      <div class="padding">
+        <button class="button button-positive button-block">
+          添加银行卡
+        </button>
+        <button type="button" class="button button-dark button-block button-clear" ng-click="addModal.hide()">取消</button>
+      </div>
+    </form>
+    <div style="height: 40px"></div>
+  </ion-content>
+</div>

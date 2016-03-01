@@ -1,0 +1,38 @@
+<!--right-->
+<div  class="main-wrap" ng-controller="simpleListCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;申请书列表
+        </div>
+        <div data-filter-produce="filterConfig"></div>
+        <div class="span10">
+            <table class="table table-hover table-bordered integration-table">
+                <thead>
+                <tr class="red-cardTop">
+                    <th>项目名称</th>
+                    <th>金额</th>
+                    <th>年化收益率</th>
+                    <th>期数</th>
+                    <th>担保机构</th>
+                    <th>状态</th>
+                    <th>创建时间</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="li in listData.list">
+                    <td>
+                        <a target="_blank" ng-href="/#!/invest/{{ li.project.id }}" ng-bind="li.name | limitTo: 8" tooltip="{{ li.name }}" ng-if="li.project.id != 0 && li.project.status != 599"></a>
+                        <span ng-bind="li.name | limitTo: 8" tooltip="{{ li.name }}" ng-if="li.project.id == 0 || li.project.status == 599"></span>
+                    </td>
+                    <td ng-bind="li.amount | currency: '￥'"></td>
+                    <td ng-bind="(li.rate*(li.nper_type==100?12:365) | number: '2') + '%'"></td>
+                    <td ng-bind="li.periods + (li.nper_type==100?'月': '天')"></td>
+                    <td ng-bind="li.guarantee || '{{ platformConfig.name }}风控部门'"></td>
+                    <td ng-bind="li.status | statusFilter: 'apply'"></td>
+                    <td><span tooltip="{{ li.added_at | date:'yyyy-MM-dd HH:mm:ss' }}" ng-bind="li.added_at | date:'yyyy-MM-dd'"></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div data-pagination-produce="paginationConf" class="pull-right"></div>
+    </div>
+</div>

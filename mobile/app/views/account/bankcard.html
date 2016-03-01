@@ -1,0 +1,38 @@
+<ion-view title="银行卡管理">
+  <ion-nav-buttons side="right">
+      <button class="button button-clear icon ion-ios7-plus-empty" ng-click="addModal.show()"></button>
+  </ion-nav-buttons>
+  <ion-content>
+    <button class="button button-positive button-block" ng-click="addModal.show()">
+      添加银行卡
+    </button>
+    <ion-list can-swipe="true">
+      <div class="item item-divider">
+        银行卡管理
+      </div>
+      <ion-item ng-repeat="bankcard in bankcardData.list">
+        <h2 ng-bind="bankcard.card"></h2>
+        <p ng-bind="bankcard.bank"></p>
+        <ion-option-button class="button-assertive" ng-click="removeBankcard(bankcard.id, null, $index)">
+          删除
+        </ion-option-button>
+
+      </ion-item>
+    </ion-list>
+    <ion-list can-swipe="true" ng-if="depositBankcardData.list.length">
+       <div class="item item-divider">手机端充值银行卡管理</div>
+      <ion-item ng-repeat="bankcard in depositBankcardData.list">
+        <h2 ng-bind=" '*********' + bankcard.card_no"></h2>
+        <p ng-bind="bankcard.bank_name + ':  ' + (bankcard.card_type | status: 'card_type')"></p>
+        <ion-option-button class="button-assertive" ng-click="removeBankcard(bankcard.no_agree, 'YintongAuthentication', $index)">
+          删除
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+    <p class='muted'> 提示：左滑可删除银行卡！</p>
+    <h2 class="text-center" ng-if="!bankcardData.list">
+      <i class="icon ion-loading-d icon-refreshing"></i>
+    </h2>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

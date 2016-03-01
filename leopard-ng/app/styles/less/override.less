@@ -1,0 +1,100 @@
+// 覆写fancybox的图片资源路径
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url('../images/fancybox_sprite.png');
+}
+.fancybox-overlay {
+    background: url('../images/fancybox_overlay.png');
+}
+#fancybox-loading div {
+    background: url('../images/fancybox_loading.gif') center center no-repeat;
+}
+.fancybox-nav {
+    background: transparent url('../images/blank.gif'); /* helps IE */
+}
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5){
+
+    #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+        background-image: url('../images/fancybox_sprite@2x.png');
+        background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
+    }
+
+    #fancybox-loading div {
+        background-image: url('../images/fancybox_loading@2x.gif');
+        background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
+    }
+}
+// 覆写fancybox的图片资源路径 - end
+
+@light-color: #d0d5d9;
+@background-bj:#f0f4f7;
+//字体主色调
+//立即投标按钮背景颜色
+@text-color-4:#336699;
+@color:#fff;
+//button
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+.progress{
+	width:190px;
+	height: 16px;
+	display: inline-block;
+	margin-bottom: 0px;
+}
+.button{
+	background-color: @text-color-4;
+	color:@color;
+	padding: 4px 20px;
+	.border-radius;
+	&:hover{
+		background-color: @light-color;
+		color: @text-color-4;
+		text-decoration: none;
+	}
+}
+.login-btn{
+	background-color: @text-color-4;
+	color:@color;
+	padding: 4px 20px;
+	.border-radius;
+	border:1px solid @text-color-4;
+	&:hover{
+		background-color: @light-color;
+		color: @text-color-4;
+		text-decoration: none;
+		border:1px solid @light-color;
+	}
+}
+.nav {
+ 	padding-left: 10px;
+}
+.nav-tabs{
+	padding-bottom: 10px;
+}
+.nav-tabs > li > a,
+.nav-pills > li > a {
+  margin-left: 10px;
+  padding: 8px 20px;
+}
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  	border: 1px solid #ddd;
+  	background-color: @text-color-4;
+	color:@color;
+	padding: 8px 20px;
+	.border-radius;
+
+}
+.profile-input{
+	width:90px;
+}
+//tooltip样式
+.tooltip{
+	z-index: 10000;
+}

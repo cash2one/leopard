@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block content %}
+{% include 'top_nav.html' %}
+<ul>
+    {% for project in projects %}
+    <li>
+        <p class="project-title">
+            <a rel="nofollow" href="/invest/{{ project.id }}">{{project.name}}</a>
+            {% if project.vaild_type == 100 %}
+                <span class="label label-info">定时标</span>
+            {% endif %}
+        </p>
+        <a class="project-btn pull-right" class="
+            {% if project.status == 400 %}
+                repayment-btn
+            {% endif %}
+            {% if project.status == 500 %}
+                complete-btn
+            {% endif %}
+            {% if project.status == 300 %}
+                check-btn
+            {% endif %}
+        " href="/invest/{{ project.id }}"></a>
+        <div class="project-table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th width="16%"></th>
+                    <th width="20%" class="text-right">项目总金额</th>
+                    <th width="13%">年化收益率</th>
+                    <th width="10%">期数<i class="icon-question-sign" tooltip="1期即1个月"></i></th>
+                    <th width="23%" class="text-left">项目进度</th>
+                    <th width="18%" class="text-left">还款方式</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="text-center">
+                        {% if project.guarantee.logo %}
+                            <img src="{{ project.guarantee.logo }}" alt="guarantee-logo" class="icon-project-guarantee" />
+                        {% endif %}
+                        {% if not project.guarantee.logo %}
+                            <i class="icon-archive icon-project-guarantee"></i>
+                        {% endif %}
+                        {% if project.guarantee_id %}
+                            <a href="/guarantee_info/{{ project.guarantee_id }}" tooltip="* 此项目由{{ project.guarantee.name }}进行担保">{{ project.guarantee.name }}</a>
+                        {% endif %}
+                        {% if not project.guarantee_id %}
+                            <span ng-if="!project.guarantee_id">风控团队 审核</span>
+                        {% endif %}
+                        {% if project.guarantee_id %}
+                            <span ng-if="project.guarantee_id">担保</span>
+                        {% endif %}
+                    </td>
+                    <td class="project-attr text-right">
+                        <b>{{ project.amount }}</b>元
+                    </td>
+                    <td class="project-attr text-center">
+                        <b>{{ project.rate * 12 }}</b>%
+                    </td>
+                    <td class="project-attr text-center">
+                        <b>{{ project.periods }}</b>期
+                    </td>
+                    <td class="project-attr">
+                        <progress data-percent="project.progress" class="progress-striped
+                            {% if project.progress != 100 %}
+                                active
+                            {% elif project.progress < 50 %}
+                                progress-info
+                            {% elif project.progress >= 50 and project.progress < 75 %}
+                                progress-success
+                            {% elif project.progress >= 75 and project.progress < 100 %}
+                                progress-warning
+                            {% elif project.progress == 100 %}
+                                progress-danger
+                            {% endif %}
+                        "></progress>
+                       {{ project.progress|float * 100}}%
+                    </td>
+                    <td class="project-attr">{{ project.repaymentmethod.name }}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

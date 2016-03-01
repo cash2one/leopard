@@ -1,0 +1,46 @@
+<ion-view title="账户提现">
+  <ion-content>
+    <form class="list list-inset" form-produce="formControls.conf">
+      <div class="item item-input item-select">
+          <span class="input-label">选择银行卡:</span>
+         <select ng-model="bankcardData.bankcard" selected input-produce="formControls.bankcard" ng-options="card as (card.bank.split(':')[0] + ' ' + card.card) for card in bankcardData.bankcardList">
+         </select>
+      </div>
+
+      <label class="item item-input hide">
+         <input type="text" input-produce="formControls.bankcard" ng-model="bankcardData.bankcard.id" />
+      </label>
+      <div class="item item-text-wrap">
+           
+        <div class="col">
+          可用余额:
+          <span ng-bind="(accountData.account.available_amount | currency: '')  + '元'"></span>
+          </span>
+        </div>
+        <div class="col">
+          该卡可以提现金额:
+          <span ng-bind="((accountData.account.available_amount + bankcardData.bankcard.need_amount - accountData.account.bankcard_need_amount) | currency: '') +  '元' " ng-model="formControls.amount.max">
+          </span>
+        </div>
+
+
+      </div>
+      <div class="item item-input item-button-inset">
+        <input type="text" placeholder="手机验证码" phone-produce="formControls.phoneCode" ng-model="formControls.models.phoneCode" phone-send="#sms-send">
+        <button id="sms-send" type="button" class="button button-clear button-small">发送验证码</button>
+      </div>
+       <label class="item item-input">
+        <input type="text" placeholder="提现金额" input-produce="formControls.amount" ng-model="formControls.models.amount" ng-max="2000">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="交易密码" input-produce="formControls.tradePass" ng-model="formControls.models.tradePass">
+      </label>
+      <button class="button button-positive button-block">提现申请</button>
+      <a class="button button-clear button-positive" href="#/truffle/account/bankcard">银行卡管理</a>
+      <h2 class="text-center" ng-if="!bankcardData.bankcardList.length">
+        <i class="icon ion-loading-d icon-refreshing"></i>
+      </h2>
+    </form>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

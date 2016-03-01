@@ -1,0 +1,35 @@
+<!--right-->
+<div  class="main-wrap" ng-controller="simpleListCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;学仕贷申请书列表
+        </div>
+        <div data-filter-produce="filterConfig"></div>
+        <div class="span10">
+            <table class="table table-hover table-bordered integration-table">
+                <thead>
+                <tr class="red-cardTop">
+                    <th>申请书编号</th>
+                    <th>金额</th>
+                    <th>年化收益率</th>
+                    <th>期数</th>
+                    <th>状态</th>
+                    <th>创建时间</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="li in listData.list">
+                    <td>
+                        <span ng-bind="li.uid"></span>
+                    </td>
+                    <td ng-bind="li.amount | currency: '￥'"></td>
+                    <td ng-bind="(li.rate | number: '2') + '%'"></td>
+                    <td ng-bind="li.periods + '月'"></td>
+                    <td ng-bind="li.status | statusFilter: 'student'"></td>
+                    <td><span tooltip="{{ li.added_at | date:'yyyy-MM-dd HH:mm:ss' }}" ng-bind="li.added_at | date:'yyyy-MM-dd'"></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div data-pagination-produce="paginationConf" class="pull-right"></div>
+    </div>
+</div>

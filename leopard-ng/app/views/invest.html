@@ -1,0 +1,78 @@
+<div class="invest-middle">
+    <div class="list-tab-container">
+        <div class="container">
+            <ul class="list-tab" data-match-navbar>
+                <li data-match-route="/invest" class="active"><a href="/#!/invest" >中小微借贷</a></li>
+                <li data-match-route="/invest/student" class="active"><a href="/#!/invest/student" >学仕贷</a></li>
+                <li data-match-route="/assignment" ><a href="/#!/assignment">债权转让市场</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="project-list">
+            <li ng-repeat="project in listData.list">
+            	<span  ng-if="project.grade > 0 && !listData.isStudent && listData.isInvest" class="vip-icon">
+            		<em ng-bind="project.grade | statusFilter: 'vip-status'">
+            			
+            		</em>
+            	</span>
+            <!-- 	<span class="vip-pic">
+            		
+            	</span> -->
+                <div class="project-table-container">
+                    <table>
+                    	<tbody>
+
+                            <tr>
+                                <td colspan="3">
+                                    <span class="invest-liu" ng-bind="(listData.isStudent?'学': project.type) | limitTo: 1" tooltip="{{ (listData.isStudent?'学仕贷': project.type) }}"></span>&nbsp;
+                                    <a ng-href="/#!/{{ listData.isInvest?listData.isStudent?'invest/student':'invest': 'assignment' }}/{{ project.id }}" ng-bind="project.name"></a>
+                                    <strong class="text-error" ng-bind="'(奖励金额: ' + (project.invest_award | number: 1) + ' %)'" ng-if="project.invest_award && project.invest_award != '0.0'"></strong>
+                                </td>
+
+                                <td ng-if="project.status != 200 && listData.isInvest || project.status != 300 && !listData.isInvest" class="text-left" rowspan="3">
+                                    <img src="../images/complete.png" height="102" width="104">
+                                </td>
+                                <td ng-if="project.status == 200 && !project.remain_bid_time > 0 &&  listData.isInvest || project.status == 300 && !listData.isInvest " class="text-left" rowspan="2">
+                                    <a ng-href="/#!/{{ listData.isInvest?listData.isStudent?'invest/student': 'invest': 'assignment' }}/{{ project.id }}" class="button">立即投标</a>
+                                </td>
+                                <td ng-if="project.remain_bid_time > 0 && project.status == 200 &&  listData.isInvest || project.status == 300 && !listData.isInvest ">
+                                    <a ng-href="/#!/{{ listData.isInvest?listData.isStudent?'invest/student': 'invest': 'assignment' }}/{{ project.id }}" class="button-start">即将开始···</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-right" style="width:40%;">借款金额：
+                                <span ng-bind="project.amount"></span>元 </td>
+                                <td style="width:20%;" ng-bind="'年利率：' + (project.rate*(project.nper_type==100?12:365) | number: 2) + '%'"></td>
+                                <td style="width:20%;">担保机构：<a ng-href="/#!/guarantee_info/{{ project.guarantee_id }}" ng-bind="project.guarantee.name || project.guarantee_name"></a></td>
+                            </tr>
+
+                            <tr>
+                                <td class="project-attr">
+                                    项目进度：
+                                    <strong>
+                                        <div data-progress percent="project.progress*100" class="progress-success progress-striped active">
+                                        </div>&nbsp;{{ project.progress*100 | number: '2' }}%
+                                    </strong>
+                                </td>
+                                <td class="project-attr text-center">
+                                    借款期限：{{ project.periods }}
+                                    <strong ng-bind="project.nper_type==100?'个月': '天'"></strong>
+                                </td>
+                                <td class="project-attr text-center">
+                                    还款方式：{{ project.repaymentmethod.name }}
+                                </td>
+                                <td ng-if="project.status == 200 && listData.isInvest || project.status == 300 && !listData.isInvest" class="project-attr">
+                                    投资100元, 收益约{{ getInterest(project.rate, project.periods, project.repaymentmethod.logic, project.invest_award) | number: 2 }}元
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+        <div data-pagination-produce="paginationConf" class="pull-right"></div>
+    </div>
+</div>

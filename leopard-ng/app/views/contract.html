@@ -1,0 +1,129 @@
+<!-- middle === -->
+<style type="text/css">
+    *{-webkit-margin-before: 0em;-webkit-margin-after: 0em;-webkit-margin-start: 0px;-webkit-margin-end: 0px;}
+    .contract-main{padding: 20px 40px;}
+    .contract-company{text-align:center; auto;font-size:19px;}
+    .contract-name{text-align:center;font-size:32px;}
+    .contract-no{text-align:center;font-size:16px;}
+    .contract-people{line-height:40px;font-weight:bold;font-size:16px;}
+    .contract-people-attr{line-height:22px;font-size:16px;}
+    .contract-first-title{text-align:center;font-size:19px;line-height: 50px;}
+    .contract-second-title{font-size:14px;line-height:28px;text-indent:28px;}
+    .contract-third-title{font-size:13px;line-height:18px;text-indent:26px;padding-left:20px;}
+    .contract-end-time{text-align:right;margin-top:50px;margin-right:100px;font-size:16px;}
+</style>
+<div class="guarantee-middle">
+    <div class="guarantee-container">
+        <div class="container">
+            <div class="lend-box contract-main">
+                <h3 class="contract-company">{{ platformConfig.name }}</h3>
+                <h1 class="contract-name">借款合同</h1>
+                <br clear=all style="page-break-before:always" mce_style="page-break-before:always"> 
+                <p class="contract-people">出借人:已在{{ platformConfig.name }}注册且决定融资给乙方的投资人</p>
+                <p class="contract-people-attr">用户ID: {{ contractData.info.lender.username }}</p>
+                <p class="contract-people-attr">金额: {{ contractData.info.project.amount| currency: '￥' }}</p>
+                <p class="contract-people">甲方(出借人代理、融资居间人):{{ platformConfig.name }}</p>
+                <p class="contract-people-attr">通讯地址:{{ platformConfig.address }}</p>
+                <p class="contract-people-attr">电话: {{ platformConfig.phone }}</p>
+                <p class="contract-people-attr">邮政编码: {{ platformConfig.postCode }}</p>
+                <p class="contract-people">乙方(借款人): {{ contractData.info.borrower.username }}
+                <h3>鉴于:</h3>
+                <p class="contract-second-title">1、甲方是一家在{{ platformConfig.city }}合法成立并有效存续的投资管理有限公司,拥有<a ng-href="{{ platformConfig.domain }}" ng-bind="platformConfig.domain"></a>网站(以下简称“{{ platformConfig.name }}”)的经营权，从事投资咨询、商务信息咨询等相关业务；</p>
+                <p class="contract-second-title">2、乙方为{{ platformConfig.name }}注册用户,并承诺其提供给甲方的信息是完全真实的,且希望以{{ platformConfig.name }}为 媒介的方式成立融资关系;</p>
+                <p class="contract-second-title">3、甲方系已在{{ platformConfig.name }}注册的全部投资人的委托代理人,代表投资人全权处理相关融资事宜；</p>
+                <p class="contract-second-title">4、乙方有融资需求且同意接受以甲方作为出借人（出借人即已在{{ platformConfig.name }}注册且决定融资给乙方的投资人）的代理人并全权处理融资事宜的方式成立融资关系。甲方因而亦是系接受出借人委托，为了简化合同签署等程序而代表出借人与借款人签订融资协议及相关文件，代表出借人全权处理与借款人之间融资事宜的借款代理人, 其委托代理权限包括但不限于签署融资合同及相关担保合同、支付融资、代收取融资本金、利息和罚息(如适用)、违约金(如适用)、及采取一切甲方认为对投资人有利或可能为投资人减少损失的一切事宜或行为等等。</p>
+                <p class="contract-second-title">为明确权利义务，经协商一致，特订立本合同。</p>
+                <h3 class="contract-first-title">第一条 借款金额、期限及用途</h3>
+                <p class="contract-second-title">1.1 币种：人民币
+                <p class="contract-second-title">1.2 金额(大写)：{{ contractData.upperAmount }}</p>
+                <p class="contract-second-title">1.3 期限：自 {{ contractData.info.project.added_at | date: 'yyyy-MM-dd' }} 至 {{ contractData.info.project.ended_at | date: 'yyyy-MM-dd' }}</p>
+                <h3 class="contract-first-title">第二条 利率及利息的计付</h3>
+                <p class="contract-second-title">2.1 本合同项下，正常利息采用月利率，本合同项下的月利率为：月利率=年利率/12；日利率=年利率/360。</p>
+                <p class="contract-second-title">2.2 本合同签订后、放款前，如遇中国人民银行调整法定利率的，借款人将按相应利率档次执行调整后的利率。</p>
+                <p class="contract-second-title">2.3 本合同项下借款实际发放后，遇中国人民银行调整法定利率的，自法定利率调整日的次日起，按相应利率档次执行调整后的利率。借款人在本合同利率调整日当日还款的，该期借款仍执行调整前利率；借款人在本合同利率调整日后还款的，该期借款按相应利率档次执行调整后的利率。</p>
+                <p class="contract-second-title">2.4 利息的计算：</p>
+                <p class="contract-third-title">2.4.1 借款人还息额＝借款金额×借款月数×月利率。</p>
+                <p class="contract-third-title">2.4.2 提前偿还借款的利息计算见本合同第五条。</p>
+                <p class="contract-third-title">2.4.3 逾期偿还借款的利息计算见本合同第六条。</p>
+                <h3 class="contract-first-title">第三条 借款的支付</h3>
+                <p class="contract-second-title">3.1 出借人在同意向借款人出借相应款项（即在“{{ platformConfig.name }}”借款人所开设的借款标上投标时），甲方则将该款项从出借人在{{ platformConfig.name }}合作的第三方支付平台的独立的资金账户(以下简称“出借人资金账户”)划付至借款人在{{ platformConfig.name }}合作的第三方支付平台的独立的资金账户(以下简称“借款人资金账户”)。待满标后，甲方公司财务部复审确认借款人证件、借款合同、借款金额、借款期限无误后，将标内的资金划付至借款人指定的银行账户。甲方在执行此操作时有权扣除借款方应支付于甲方的融资管理费（融资管理费以网站公布金额计算）。</p>
+                <p class="contract-second-title">3.2 在下列条件全部符合前,甲方有权拒绝放款：</p>
+                <p class="contract-third-title">（1）借款人已办妥有关的政府许可、批准、登记等法定手续及借款人要求办理的其他手续，且前述许可、批准或登记等手续持续有效；</p>
+                <p class="contract-third-title">（2）本合同项下担保合同（如有）已生效并持续有效；</p>
+                <p class="contract-third-title">（3）借款人的经营和财务状况未发生重大不利变化；</p>
+                <p class="contract-third-title">（4）借款人没有违反本合同的约定。</p>
+                <p class="contract-second-title">3.3 实际的放款日（即计息日）以银行转账凭证的记载为准。</p>
+                <p class="contract-second-title">3.3 借款人死亡、丧失民事行为能力或经人民法院宣告失踪、死亡的，应由借款人的合法继承人或财产代管人在借款人财产范围内继续履行已借款项的还款义务，若借款人无继承人或财产代管人，或继承人、财产代管人拒绝或者怠于履行借款合同的，甲方有权代理出借人处分抵押物和质押权利，追究保证人连带责任。</p>
+                <h3 class="contract-first-title">第四条 借款本金和利息的偿付</h3>
+                <p class="contract-second-title">4.1 借款到期之日，借款方应按合同约定将本金、利息打入“借款人资金账户”。甲方将乙方应付的本金、利息从“借款人资金账户”按照届时出借人所持债权的比例划付至“出借人资金账户”,甲方在执行此操作时有权扣除借款人应支付于甲方的利息管理费（利息管理费以网站公布金额计算）。
+                <h3 class="contract-first-title">第五条 提前到期和提前偿还</h3>
+                <p class="contract-second-title">5.1 借款人与出借人同意，若借款人出现以下任何一种情况，则本协议项下的全部借款自动提前到期，借款人在收到甲方发出的借款提前到期通知后，应立即清偿全部本金、利息、及根据本协议产生的其他全部费用：</p>
+                <p class="contract-third-title">（1）借款人因任何原因逾期支付任何一期还款超过30天的；</p>
+                <p class="contract-third-title">（2）借款人的工作单位、职务或住所变更后，未在30天内通知甲方的；</p>
+                <p class="contract-third-title">（3）借款人发生有违本协议第 七 条其陈述、保证与承诺行为的情形。</p>
+                <p class="contract-second-title">借款因上述原因提前到期时，超过一天不到一个月的利息按一个月利息计算。</p>
+                <p class="contract-second-title">5.2 借款人与出借人同意，借款人有权提前清偿全部或部分借款而不承担违约责任，提前偿还时，超过一天不到一个月的利息按一个月利息计算。</p>
+                <h3 class="contract-first-title">第六条 逾期还款</h3>
+                <p class="contract-second-title">6.1 若借款人逾期未还款，借款人除应向出借人支付正常约定利息以外，还应每天向甲方支付逾期罚息（罚息金额以网站公布利率计算）。</p>
+                <p class="contract-second-title">6.2 借款人与出借人同意，甲方有权在借款人逾期还款时对借款人进行违约提醒及催收工作,包括但不限于通过短信通知、电话通知、发律师函、上门催收、对乙方提起诉讼等方式。甲方有权自己进行违约提醒及催收工作,亦有权将该等工作委托给其他方进行。</p>
+                <p class="contract-second-title">6.3 甲方根据本协议对借款人进行违约提醒及催收工作时,可在其认为必要时进行上门催收提醒,即甲方派出人员至乙方披露的住所地或经常居住地(联系地址)处催收和进行违约提醒,同时向借款方发送催收通知单,借款方应当签收,乙方不签收的,不影响上门催收提醒工作的进行。甲方或其委托的其他方采取违约提醒及催收工作时产生的一切实际费用(包括但不限于快递费、交通费、食宿费等)由乙方承担。</p>
+                <p class="contract-second-title">6.4 借款人与出借人同意，因借款人逾期还款造成出借人因此支付的主张债权的费用(包括但不限于律师费、诉讼费、公证费、执行费、拍卖费等)由借款人承担。</p>
+                <p class="contract-second-title">6.5 借款人承诺,若其工作单位、职务、住址、联系电话发生变化,应提前3日以书面形式通知甲方。</p>
+                <p class="contract-second-title">6.6 借款人同意并授权甲方网站：如借款人逾期未偿还任何一期还款，甲方有权采取以下措施中的一项或几项，由此产生的法律后果由借款人承担：</p>
+                <p class="contract-third-title">（1）将借款人的有关身份资料及其他个人信息通过甲方网站的“逾期黑名单”等栏目对外公布；</p>
+                <p class="contract-third-title">（2）如果借款人逾期还款超过15天,或借款人在逾期还款后出现逃避、拒绝沟通或拒绝承认欠款事实等恶意行为,甲方有权将借款人的有关身份资料及其他个人信息正式备案在“不良信用记录”,列入全国个人信用评级体系的黑名单(“不良信用记录”数据将为银行、电信、担保公司、人才中心等有关机构提供个人不良信用信息)；甲方不承担任何法律责任。</p>
+                <p class="contract-third-title">（3）如果借款人逾期还款超过30天,或借款人在逾期还款后出现逃避、拒绝沟通或拒绝承认欠款事实等恶意行为,甲方有权将借款人违约失信的相关信息及借款人其他信息向媒体、用人单位、公安机关 、检查机关、司法机关披露,甲方不承担任何责任。</p>
+                <p class="contract-second-title">6.7 在本协议有效期间,出借方、甲方对借款人的任何违约或延误行为给予任何宽容、宽限或延缓行使权利均不损害、影响或限制出借方和甲方依本协议和有关法律规定作为债权人应享有的一切权利，亦不能解释为出借方和甲方对任何违反本协议行为的许可,更不能视为出借方和甲方放弃对现有或将来违约行为采取行动的权利。</p>
+                <p class="contract-second-title">6.8 甲方网站对逾期仍未还款的借款人收取逾期罚息、采取多种方式进行催收并追偿催收费，将借款人的相关信息对外公开或列入“不良信用记录”或采取法律措施等各项行为，均只是甲方网站根据本协议为出借人提供的一种服务，该等服务的法律后果均由借款人和出借人自行承担，并不表示甲方网站对该等借款本息之清偿承担任何担保责任或追收责任。</p>
+                <p class="contract-second-title">6.9 如借款人出现逾期,甲方向VIP用户出借人当天垫付本息、向非VIP用户当天垫付本金后即可取得出借人在本协议项下的债权，由甲方向借款人追收未偿付的借款本金、利息、逾期罚息、融资管理费及其他相关债权及主张债权费用。</p>
+                <p class="contract-second-title">6.10 坏账风险由甲方合作商承担。但是，甲方合作商作为独立的营利性组织机构也有可能在某些情况下拒绝受让出借人在本协议项下的债权，在这种情况下，借款本息不能完全收回的风险由出借人自行承担。</p>
+                <h3 class="contract-first-title">第七条 借款人的陈述、保证与承诺</h3>
+                <p class="contract-second-title">7.1 借款人是依法设立并合法存续的民事主体，具备所有必要的权利能力，能以自身名义履行本合同的义务并承担民事责任。</p>
+                <p class="contract-second-title">7.2 签署和履行本合同是借款人真实的意思表示，并经过所有必须的同意、批准及授权，不存在任何法律上的瑕疵。</p>
+                <p class="contract-second-title">7.3 借款人在签署和履行本合同过程中向借款人提供的全部文件、报表、资料及信息是真实、准确、完整和有效的，未向借款人隐瞒可能影响其财务状况和还款能力的任何信息。</p>
+                <p class="contract-second-title">7.4 借款人保证按照本合同约定按时归还本金、利息（包括复利、逾期及挪用罚息）、融资管理费及其他应付的费用，承担法律规定或本合同约定的其他义务。</p>
+                <p class="contract-second-title">7.5 借款人承诺不将本合同项下借款挪作他用。</p>
+                <p class="contract-second-title">7.6 借款人承诺由其承担本合同项下的费用支出，包括但不限于公证费、鉴定费、评估费、登记费、保险费等。</p>
+                <p class="contract-second-title">7.7 借款人承诺遵循在办理借款业务时应遵守的相关约定，包括但不限于配合借款代理人对借款使用情况和借款人经营情况的监督检查，及时提供借款人要求的一切财务报表、其他资料及信息，并保证所提供文件、资料和信息是真实、完整、准确的。</p>
+                <p class="contract-second-title">7.8 借款人承诺在下列事项发生或可能发生之日起五个工作日内书面通知出借代理人，出借代理人有权根据事项具体情况决定是否要求借款人追加担保或直接收回全部借款：</p>
+                <p class="contract-third-title">（1）生产经营发生严重困难、财务状况恶化或发生重大诉讼、仲裁事件；</p>
+                <p class="contract-third-title">（2）甲方、甲方股东、甲方法定代表人或主要管理人员涉及违法活动或主要资产被采取了财产保全等强制措施；</p>
+                <p class="contract-third-title">（3）出售、赠与、出租、出借、转移、抵押、质押或以其他方式处分重要资产、资产的全部或大部分，对其财务状况或履行本合同项下义务的能力产生重大不利影响;</p>
+                <p class="contract-third-title">（4）歇业、停业整顿、解散、关闭、破产、注销登记、被吊销营业执照；</p>
+                <p class="contract-third-title">（5）其他足以影响甲方经营活动和乙方贷款安全的重大事件或违约事件。</p>
+                <p class="contract-second-title">7.9 甲方有下列情形之一时，应提前10日书面通知乙方，如乙方认为可能对本合同履行造成重大影响的，甲方应取得乙方书面同意后方可进行：</p>
+                <p class="contract-third-title">（1）经营体制、资本结构、产权形式及主营业务发生重大变化，包括但不限于承包、租赁、股份制改造、联营、合并、兼并、分立、合资(合作)、资产转让、申请停业整顿 、申请解散、申请破产；</p>
+                <p class="contract-third-title">（2）保证人为第三人债务提供保证担保或以其主要资产为自身或第三人债务设定抵押 、质押担保，可能影响其履行本合同项下保证责任的；</p>
+                <p class="contract-third-title">（3） 出售、赠与、出借、转移、抵（质）押及其他方式处分价值超过净资产10%的重要资产；</p>
+                <p class="contract-third-title">（4）分红超过当年税后净利润的30%或者超过全部未分配利润的20%；</p>
+                <p class="contract-third-title">（5）合同生效后新增对外投超过净资产的20%；</p>
+                <p class="contract-third-title">（6）更改与银行的债务条款，提前清偿其他长期债务；</p>
+                <p class="contract-third-title">（7）偿还甲方股东债务；</p>
+                <p class="contract-third-title">（8）向银行申请授信，或向三方提供担保，涉及债务金额超过净资产的20%。</p>
+                <p class="contract-third-title">（9）修改章程，变更企业名称、法定代表人（负责人）、住所、通讯地址或营业范围等工商登记事项，作出对财务、人事有重大影响的决定；</p>
+                <p class="contract-third-title">（10）签署对其经营和财务状况有重大影响的合同。</p>
+                <h3 class="contract-first-title">第八条 违约及违约责任</h3>
+                <p class="contract-second-title">8.1 若借款人逾期未还款，借款人除应向出借人支付正常约定利息以外，还应每天向出借人支付逾期罚息（罚息以网站公布利息为准）。</p>
+                <p class="contract-second-title">8.2 借款人未按时足额偿还借款本金、支付利息的，应当承担借款人为实现债权而支付的催收费、诉讼费（或仲裁费）、保全费、公告费、执行费、律师费、差旅费及其他费用。</p>
+                <p class="contract-second-title">8.3 借款人有逃避借款人监督、拖欠借款本金及利息、恶意逃废债等行为时，借款人有权将该种行为向有关单位通报，并在新闻媒体、征信平台上予以公告。</p>
+                <h3 class="contract-first-title">第九条 争议解决</h3>
+                <p class="contract-second-title">9.1 本协议的签订、履行、终止、解释均适用中华人民共和国法律。</p>
+                <p class="contract-second-title">9.2 各方就本协议项下条款的解释和履行发生争议时,各方应通过友好协商解决,若协商不成,任何一方均可向甲方所在地人民法院提起诉讼,各方一致同意由甲方所在地人民法院管辖。</p>
+                <p class="contract-second-title">9.3 除各方发生争议的事项外,各方仍应当本着善意的原则按照本协议的规定继续履行各自的义务。</p>
+                <h3 class="contract-first-title">第十条 特别条款</h3>
+                <p class="contract-second-title">10.1 借款人保证，借款人的借款用于合法用途，不将所借款项用于任何违法活动(包括但不限于赌博、吸毒、贩毒、卖淫嫖娼等)及一切高风险投资(如证券期货、彩票等)。如借款人违反前述保证或有违反前述保证的嫌疑，则出借人有权采取下列措施：</p>
+                <p class="contract-third-title">（1）宣布提前收回全部借款；</p>
+                <p class="contract-third-title">（2）出借人向公安等有关行政机关举报,追回此款并追究借款人的刑事责任，出借人和借款人均同意并授权本网站采取前述措施。 </p>
+                <p class="contract-second-title">10.2 甲方网站“{{ platformConfig.name }}”仅作为网友之间小额资金互助平台,借款人和出借人均不得利用本网站平台进行信用卡套现和其他洗钱等不正当交易行为,否则出借人、借款人和/或甲方网站有权向公安等有关行政机关举报,追究其相关法律责任。</p>
+                <h3 class="contract-first-title">第十一条 其他条款</h3>
+                <p class="contract-second-title">11.1 本协议采用电子文本形式制成,并通过站内信的形式发送至协议各方电子信箱。</p>
+                <p class="contract-second-title">11.2 本协议自借款人在本网站发布的借款标的审核成功之日即本协议题头标明的签订日起生效,借款人、出借人、甲方各执一份,并具同等法律效力。</p>
+                <p class="contract-second-title">11.3 借款人、出借人在履行本协议过程中，应遵守甲方“{{ platformConfig.name }}”网站的各项规定。</p>
+                <p class="contract-second-title">11.4 出借人、借款人同意、授权或认可，“{{ platformConfig.name }}”网站作为网络借款的中间平台根据本协议的规定和本网站的其他规定行使各项权利、发出各项通知或采取各项措施，一切法律后果和风险均由借款人或出借人承担。</p>
+                <p class="contract-second-title">11.5 甲方拥有对本协议的最终解释权。</p>
+                <h4 class="contract-end-time">{{TIME}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- middle === -->

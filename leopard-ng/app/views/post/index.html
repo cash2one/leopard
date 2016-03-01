@@ -1,0 +1,17 @@
+<div class="invest-middle">
+	<div class="container">
+		<div class="row post">
+			<div class="span3">
+    			<div class="post-ul">
+        			<span class="post-zhongbao" ng-bind="postData.title"></span>
+        			<ul>
+        				<li ng-repeat="nav in postData.navs" ng-class="{'active': nav.url == postData.type}">
+                            <a ng-href="/#!/post/{{ postData.category }}/{{ nav.url }}" ng-bind="nav.name"></a>
+                        </li>
+        			</ul>
+    			</div>
+			</div>
+			<div class="span9" ng-include="postData.template"></div>
+		</div>
+	</div>
+</div>

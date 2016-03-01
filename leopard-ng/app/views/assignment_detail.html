@@ -1,0 +1,171 @@
+<div class="invest-middle">
+    <div class="container project-top-container">
+        <div class="row">
+            <div class="span12 ditail-sapn">
+                <div class="detail-title">
+                    <span class="detail-di" ng-bind="'转'"
+                        tooltip="{{ assignment.info.type }}"></span>
+                    <p class="detail-number" ng-if="assignment.info.id != ''">
+                        项目编号：{{ assignment.info.id }}
+                        <span ng-bind="assignment.info.name"></span>
+                    </p>
+                    <p class="detail-number" ng-if="assignment.info.uid == ''">
+                        <span ng-bind="assignment.info.name"></span>
+                    </p>
+                    <a href="/#!/assignment" class="detail-back">
+                        返回转让列表
+                    </a>
+                </div>
+            </div>
+            <div class="span8">
+                <div class="project-info-box">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span ng-bind="assignment.info.amount | currency: ''" ng-if="assignment.isInvest"></span>
+                                    <span ng-bind="assignment.info.remain_periods_capital | currency: ''" ng-if="!assignment.isInvest"></span> 元</th>
+                                <th><span ng-bind="(assignment.info.rate*(assignment.info.nper_type==100?12:365)) | number: 2"></span>%</th>
+                                <th><span ng-bind="assignment.info.periods"></span>期</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="amount">转让金额</td>
+                                <td>年化收益</td>
+                                <td>期数(1期即1<strong ng-bind="assignment.info.nper_type==100?'个月':'天'"></strong>)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="tender-info">此项目由
+                        <a ng-href="/#!/guarantee_info/{{ assignment.project.guarantee_id }}" ng-bind="assignment.project.guarantee.name || assignment.project.guarantee" ng-if="assignment.project.guarantee_id"></a>
+                        <span ng-if="assignment.project.guarantee_id">进行担保，并由</span>
+
+                        <span> {{ platformConfig.name }} 风控团队控制抵押物
+                            <a href="javascript:;" class="text-warning" tooltip-html-unsafe="{{ assignment.project.controls.split(' ').join('<br/>') }}">
+                            抵押清单
+                            </a>
+                            。
+                        </span>
+                        <span ng-if="assignment.info.invest_award != '0.0'" ng-bind=
+                        "'原项目投标奖励金额比例为 '" class="text-error"></span>
+                        <span ng-if="assignment.info.invest_award != '0.0'" ng-bind=
+                        "(assignment.info.invest_award | number: 2) + '%'" class="text-error text-big"></span>
+                        <span ng-if="assignment.info.discount > 0" ng-bind="'贴现金额为 '" class="text-error"></span>
+                        <span ng-if="assignment.info.discount > 0" ng-bind="(assignment.info.discount | number: 2) + '元'" class="text-error"></span>
+                    </p>
+                    <table class="project-min-info project-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong ng-if="assignment.isInvest">
+                                    项目进度：
+                                    <div data-progress percent="assignment.info.progress*100" class="progress-success progress-striped active">
+                                    </div>&nbsp;{{ assignment.info.progress*100 | number: '2' }} %
+                                    </strong>
+                                    <a ng-href="/#!/invest/{{ assignment.project.id }}"  target="_blank">查看原始项目>> </a>
+                                </td>
+                                
+                                <td>预期利息:<span > {{ assignment.info.transfer_interest }} 元</span></td>
+                                <td>投标奖励:<span > {{ assignment.info.transfer_invest_award }} 元</span></td>
+                            </tr>
+                            <tr>
+                                
+                                <td tooltip="{{ assignment.info.transfering_start_time | date: 'yyyy-MM-dd HH:mm:ss' }}">发起时间：{{ assignment.info.transfering_start_time | date: 'yyyy-MM-dd' }}</td>
+                                <td tooltip="{{ assignment.info.expiration_time | date: 'yyyy-MM-dd HH:mm:ss' }}">到期时间:{{ assignment.info.expiration_time | date: 'yyyy-MM-dd' }}</td>
+                                <td>还款方式：{{ assignment.project.repaymentmethod.name }}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="detail-guarantee">
+                        &nbsp;&nbsp;<a ng-href="/#!/post/help/assignment">查看债权转让规则>></a>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="project-tender-box">
+                    <form novalidate="novalidate" data-form-produce="projectDetailControls.conf">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p ng-if="assignment.info.status == 400">可投金额<span ng-bind=" '0' | currency: ''"></span>元</p>
+                                        <p ng-if="assignment.info.status != 400">可投金额<span ng-bind="(assignment.info.amount - assignment.info.borrowed_amount) | currency: ''"></span>元</p>
+                                        <p>账户余额<span ng-bind="(assignment.user.available_amount || 0) | currency: ''"></span>元</p>
+                                        <p ng-if="assignment.info.status == 400">预期收益<span ng-bind="'0' | currency: ''"></span>元</p>
+                                        <p ng-if="assignment.info.status != 400" tooltip='逾期收益为投标奖励、预期利息、贴现金额的总和'>预期收益<span ng-bind="(assignment.info.transfer_expected_return) | currency: ''"></span>元</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- the form group just for invest project -->
+                                    <td class="tender-input" ng-if="project.isInvest">
+                                        <p ng-if="assignment.info.status == 200">请输入您的投资金额进行投资</p>
+                                        <p ng-if="assignment.info.status == 300">此项目已进入审核阶段，请选择其他项目投资</p>
+                                        <p ng-if="assignment.info.status == 400">此项目已进入还款阶段，请选择其他项目投资</p>
+                                        <p ng-if="assignment.info.status == 500">此项目已完成，请选择其他项目投资</p>
+                                        <p ng-if="assignment.info.status == 600">此项目已完成，请选择其他项目投资</p>
+                                        <div class="input-append">
+                                            <input type="text" placeholder="请输入金额" ng-model="projectDetailControls.models.investAmount" data-input-produce="projectDetailControls.investAmount" ng-disabled="assignment.info.status!=200"/>
+                                            <span class="add-on">元</span>
+                                        </div>
+                                    </td>
+                                    <!-- the form group just for assignment project -->
+                                    <td class="tender-input">
+                                        <p ng-if="assignment.info.status == 300">若您满意此转让项目，请点击立即认购</p>
+                                        <p ng-if="assignment.info.status == 400">此项目已进入完成转让，请选择其他项目投资</p>
+                                        <div class="input-append">
+                                            <input type="text" ng-disabled="assignment.info.status!=200" ng-model="projectDetailControls.models.investAmount"/>
+                                            <span class="add-on">元</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="project-prompt">
+
+                                    <!-- the form group just for assignment project -->
+                                    <td class="text-center" ng-if="!assignment.isInvest">
+                                        <button type="button" ng-click="openModal()" class="login-btn button" ng-if="assignment.info.status==300">立即认购</button>
+                                        <button type="button" class="login-btn button" ng-if="assignment.info.status!=300" disabled="disabled">不可认购</button>
+                                        &nbsp;&nbsp;<a ng-if="assignment.info.status==300" ng-href="/#!/transfer_contract/{{assignment.info.id}}" target="_blank">查看合同</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <script type="text/ng-template" id="invest_project_modal.html">
+                        <div class="modal-header"><h4><span ng-bind="'债权转让认购'"></span>确认</h4></div>
+                        <div class="modal-body">
+                            <div>
+                                认购后将不可撤销，您确定认购名为
+                                <span class="text-error" ng-bind="assignment.info.name"></span> 的项目吗？</br>
+                                <span class="text-error">*</span> 转让本金：<span class="text-error"> {{ assignment.info.remain_periods_capital }} 元</span></br>
+                                <span class="text-error">*</span> 贴现金额：<span class="text-error"> {{ assignment.info.discount }} 元</span>
+                                <i class="icon-question-sign" tooltip="债权出让人转让给您的贴现金额"></i></br>
+                                <span class="text-error">*</span> 预期转让利息：<span class="text-error"> {{ assignment.info.transfer_interest }} 元</span>
+                                <i class="icon-question-sign" tooltip="债权出让人转让给您的预期利息金额"></i></br> 
+                                <span class="text-error">*</span> 预期转让投标奖励：<span class="text-error"> {{ assignment.info.transfer_invest_award }} 元</span> 
+                                <i class="icon-question-sign" tooltip="债权出让人转让给您的投标奖励金额"></i></br>
+                            </div>
+
+                            <p ng-if="invest.config">
+                                <span class="text-error">*</span>
+                                请输入您的交易密码：
+                                <input type="password" class="input-medium" ng-model="invest.tradePass"/>
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" ng-click="ok()" class="btn btn-primary" value="确定"/>
+                            <input type="button" ng-click="cancel()" class="btn btn-danger" value="取消"/>
+                        </div>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+</div>

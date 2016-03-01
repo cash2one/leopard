@@ -1,0 +1,24 @@
+{
+  "name": "leopardng",
+  "version": "0.0.1",
+  "dependencies": {
+    "fife": "^0.2.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {},
+  "description": "The New Leopard System",
+  "directories": {},
+  "repository": {
+    "type": "git",
+    "url": "https://PeachScript@bitbucket.org/PeachScript/new_leopard.git"
+  },
+  "keywords": [
+    "P2P",
+    "Onlien",
+    "Finance"
+  ],
+  "author": "Chouxiang Hangzhou CO.LTD.",
+  "license": "ISC"
+}

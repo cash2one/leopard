@@ -1,0 +1,70 @@
+<div class="invest-middle">
+    <div class="list-tab-container">
+        <div class="container">
+            <ul class="list-tab" data-match-navbar>
+                <li data-match-route="/invest" class="active"><a href="/#!/invest" >中小微借贷</a></li>
+                <li data-match-route="/invest/student" class="active"><a href="/#!/invest/student" >学仕贷</a></li>
+                <li data-match-route="/assignment" ><a href="/#!/assignment">债权转让市场</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="project-list">
+            <li ng-repeat="assignment in listData.list">
+                <div class="project-table-container">
+                    <table>
+                      <tbody>
+
+                            <tr>
+                                <td colspan="3">
+                                    <span class="invest-liu" ng-bind="('转') | limitTo: 1"></span>&nbsp;
+                                    <a ng-href="/#!/assignment/{{ assignment.id }}" ng-bind="assignment.project.name"></a>
+                                    <strong class="text-error" ng-bind="'(原项目奖励金额: ' + (assignment.project.invest_award * 100 | number: 2) + ' %)'" ng-if="assignment.project.invest_award && assignment.project.invest_award != '0.0'"></strong>
+                                    <strong class="text-error" ng-bind="'(贴现金额: ' + (assignment.discount | number: 2) + ' 元)'" ng-if="assignment.discount && assignment.discount != '0.0'"></strong>
+                                </td>
+
+                                <td ng-if="assignment.status != 200 && listData.isInvest || assignment.status != 300 && !listData.isInvest" class="text-left" rowspan="3">
+                                    <img src="../images/rotate.png" height="102" width="104">
+                                </td>
+                                <td ng-if="assignment.status == 200 && listData.isInvest || assignment.status == 300 && !listData.isInvest" class="text-left" rowspan="2">
+                                    <a ng-href="/#!/assignment/{{ assignment.id }}"  class="button">立即投标</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-right" style="width:40%;">转让金额：
+                                <span ng-bind="assignment.remain_periods_capital"></span>元 </td>
+                                <td style="width:20%;" ng-bind="'年利率：' + (assignment.project.rate*(assignment.project.nper_type==100?12:365) | number: 2) + '%'"></td>
+                                 <td class="project-attr text-center">
+                                    还款方式：{{ assignment.project.repaymentmethod.name }}
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="project-attr">
+                                    项目进度：
+                                    <strong ng-if="assignment.status != 200 && listData.isInvest || assignment.status != 300 && !listData.isInvest" >
+                                        转让已完成   
+                                    </strong>
+                                    <strong ng-if="assignment.status == 200 && listData.isInvest || assignment.status == 300 && !listData.isInvest">
+                                        正在转让中
+                                    </strong>
+                                </td>
+                                <td class="project-attr text-center" tooltip="{{ assignment.transfering_start_time | date: 'yyyy-MM-dd HH:mm:ss' }}">
+                                    发布时间: {{assignment.transfering_start_time| date: 'yyyy-MM-dd'}}
+                                </td>
+                                <td style="width:20%;" tooltip="{{assignment.expiration_time| date: 'yyyy-MM-dd HH:mm:ss'}}"> 到期时间: {{assignment.expiration_time| date: 'yyyy-MM-dd'}}</td>
+                               
+                                <td ng-if="assignment.project.status == 200 && listData.isInvest || assignment.project.status == 300" class="project-attr">
+                                    投资100元, 收益约{{ getInterest(assignment.project.rate, assignment.project.periods, assignment.project.repaymentmethod.logic, assignment.project.invest_award) | number: 2 }}元
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+        <div data-pagination-produce="paginationConf" class="pull-right"></div>
+    </div>
+</div>

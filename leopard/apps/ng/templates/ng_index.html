@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"/>
+        <meta name="renderer" content="webkit"/>
+        <meta name="description" content="中宝财富官网，理财有保障，投资产品15%+高额奖励，100元起投门槛低，1至3个月灵活短周期，丰富的投资奖励，推荐好友有好礼，风控安全可靠有担保，2013年上线至今从未逾期，系上海中泉宝泰互联网金融信息服务有限公司旗下品牌，低风险高收益典范。"/>
+        <meta name="keywords" content="中宝财富、中泉宝泰、上海中泉宝泰互联网金融信息服务有限公司、学仕贷、p2p理财、网络理财、个人理财、投资理财、P2P理财、互联网金融、投资理财、债权转让、理财计划、网络贷款、网贷、小额贷款"/>
+        <title>中宝财富 - 专业P2P网络投资理财借贷平台！闲钱投资,个人理财,线上理财,企业财富管理,资金周转,综合性网络贷款服务。让理财融资简单快乐起来！</title>
+        <link rel="stylesheet" type="text/css" href="/styles/zhongbao.css" />
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+        <script type="text/javascript">
+            window.onload = function(){
+                $('.gz_icon_2').hover(function(){
+                    $('.gz_qr2').toggle()
+                })
+            }
+        </script>
+    </head>
+    <body ng-controller="baseCtrl">
+    	<!-- Nav-top=== -->
+        <div class="nav-top">
+            <div class="container">
+                <div class="row">
+                    <div class="span5 visible-desktop visible-tablet">
+                        <span class="index-service"><img src="/images/mobile.png" height="27" width="27">&nbsp;QQ官方群：</span>
+                        <span class="index-phone">310271739</span>
+                    </div>
+                    <div class="span7 nav-logn">
+                        <ul id="aid">
+                            <li><a href="/#!/newlib">新手上路</a></li>
+                            <li>|</li>
+                            <li><a href="javascript:;" data-folding="#on-line">在线客服</a></li>
+                            <li>|</li>
+                            <li><a href="/#!/mall/index" >宝币商城</a></li>
+                            <li>|</li>
+                            <li>
+                                <a href="/#!/register" ng-if="!CURRENT_USER_ID">注 册</a>
+                                <a href="javascript:;" ng-click="logout()" ng-if="CURRENT_USER_ID">安全退出</a>
+                            </li>
+                            <li>|</li>
+                            <li ng-class="{'admin': CURRENT_USER_ID}">
+                                <a href="/#!/login" ng-if="!CURRENT_USER_ID">登 录</a>
+                                <span ng-if="CURRENT_USER_ID">您好, <a href="/#!/account/dashboard" ng-bind="CURRENT_USER_NAME"></a></span>
+                            </li>
+                        </ul>
+                        <ul id="on-line" style="display:none;">
+                            <li>工作时间:(9:00 ~ 22:00)</li>
+                            <li>中宝财富官群：310271739</li>
+                            <li>糖宝理财： <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1627394581&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息">1627394581</a></li>
+                            <li>楽宝理财： <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2418806390&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息">2418806390</a></li>
+                            <li>小宝理财： <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1284794337&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息">1284794337</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar=== -->
+        <div class="nav-main">
+            <div class="container">
+                <div class="row">
+                    <div class="span4 logo">
+                        <a href="/#!/"><img src="/images/logo.png" height="53" width="317"></a>
+                    </div>
+                    <div class="span8">
+                        <!-- Navbar==== -->
+                        <div class="nav-collapse collapse">
+                            <ul class="nav nav-right" data-match-navbar="true">
+                                <li ng-repeat="nav in navbarUrl" data-match-route="{{ '{{' }} nav.pattern {{ '}}' }}">
+                                <a ng-href="/#!{{ '{{' }} nav.link {{ '}}' }}" ng-bind="nav.name"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- middle === -->
+        <div data-ng-view>
+            
+        </div>
+        <!-- middle === -->
+     <footer class="footer bottom1" data-toggle-route='{"match": ["/login", "/register", "/forget", "/generalize"], "show": false}'>
+        <div class="bottom_container">
+           <div class="bottom_content">
+               <ul class="bottom_content_a">
+                   <li>友情链接：</li>
+                            {% for link in FRIENDLINKS %}
+                    <li><a href='{{ link.link }}' target="_blank" >{{ link.name }}</a></li>
+                            {% endfor %}
+               </ul>
+           </div>
+           <div class="bottom_left">
+               <ul class="bottom_content_b">
+                   <li ng-repeat="nav in bottomNavbar">
+                       <a ng-href="{{ '{{' }} nav.link {{ '}}' }}" ng-bind="nav.name"></a>
+                   </li>
+               </ul> 
+               <div class="customer service">
+                  <p class="online">
+                     <span class="online_a"></span>
+                     <span class="online_b">在线客服</span>
+                  </p>
+                  <ul class="online_time">
+                      <li>工作时间:(9:00 ~ 22:00)</li>
+                      <li>中宝理财：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2418806390&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息">2418806390</a></li>
+                      <li>大宝理财：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1627394581&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息">1627394581</a></li>
+                      <li>小宝理财：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1284794337&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息">1284794337</a></li>
+                  </ul>
+               </div>
+               
+           </div>
+           <div class="bottom_right">
+               <div class="bottom_right_a">
+                   <p class="bottom_phone">
+                      <span class="phone_icon"></span>
+                      <span class="bottom_number">400-001-6788</span>
+                   </p>
+                   <p class="bottom_hours">(24小时全天服务)</p>
+                   <p class="bottom_qq">
+                      <span class="qq_icon"></span>
+                      <span class="qq_number">310271739（官群）</span>
+                   </p>
+                   <div class="bottom_gz">
+                      <span class="gz_our">关注我们：</span>
+                      <a href="http://weibo.com/u/3656095522/home?topnav=1&amp;wvr=5" target="_blank" title="中宝新浪微博"><span class="gz_icon_1"></span></a>
+                      <span class="gz_icon_2" ></span>
+                      <a href="http://t.qq.com/zhongbaocaifu?preview" target="_blank" title="中宝腾讯微博"><span class="gz_icon_3"></span></a>
+                   </div>
+               </div>
+               <div class="bottom_right_b">
+                   <div class="bottom_Qr">
+                       <span class="Qr_a"></span>
+                       <span class="Qr_b"></span>
+                   </div>
+                   <div class="bottom_wx">
+                        <span class="wx_a">（微信服务号）</span>
+                        <span class="wx_b">（微信订阅号）</span>
+                   </div>
+               </div>
+           </div>
+           <div class="bottom_rz">
+                <div class="rz_left">
+                     <ul class="authenticate">
+                         <li class="xl-xin">
+                         <a href="https://ss.knet.cn/verifyseal.dll?sn=e14031131011547229jxxf000000&comefrom=trust" target="_blank" title="#"></a></li>
+                         <li class="tx-wb">
+                         <a href="https://www.sgs.gov.cn/shaic/" target="_blank" title="#"></a></li>
+                         <li class="xl-wb">
+                         <a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.zhongbaodai.com&amp;lang=zh_cn" target="_blank"></a></li>
+                         <li class="wx" id="div-img">
+                         <a href="http://www.miitbeian.gov.cn/" title="#" target="_blank"></a></li>
+                         <li class="qy-not">
+                         <a href="http://www.shjbzx.cn/" title="#" target="_blank"></a></li>
+                    </ul>           
+                </div>
+                <p>CopyRight © 2013 {{ '{{' }} platformConfig.fullName {{ '}}' }} 品牌所有 <a href="http://www.miitbeian.gov.cn/" ng-bind="platformConfig.ICP"></a><script src="https://s4.cnzz.com/z_stat.php?id=1256400292&web_id=1256400292 
+" language="JavaScript"></script>
+                </p>
+           </div>
+       </div>
+   </footer>
+       <script data-main="scripts/require.config" src="/bower_components/requirejs/require.js"></script>        
+    </body>
+</html>
+

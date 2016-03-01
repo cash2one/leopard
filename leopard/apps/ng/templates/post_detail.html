@@ -1,0 +1,20 @@
+<p class="user-right-title" ng-bind="postInfo.nowNav.name"></p>
+<div class="user-right-add-box post-detail-box">
+    <h4 class="post-title text-center text-error" ng-bind="postInfo.postTitle"></h4>
+    <small ng-bind="'发表时间：' + (postInfo.addedAt | date: 'yyyy-MM-dd HH:mm:ss')"></small>
+    <p ng-bind-html="postInfo.text"></p>
+    <div class="well well-small">
+        <!-- JiaThis Button BEGIN -->
+        <div class="jiathis_style_24x24">
+            <a class="jiathis_button_qzone"></a>
+            <a class="jiathis_button_tsina"></a>
+            <a class="jiathis_button_tqq"></a>
+            <a class="jiathis_button_weixin"></a>
+            <a class="jiathis_button_renren"></a>
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+            <a class="jiathis_counter_style"></a>
+        </div>
+        <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365834982491181" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
+    </div>
+</div>

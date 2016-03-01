@@ -1,0 +1,36 @@
+{
+  "name": "leopard-ng",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.2.16",
+    "requirejs": "~2.1.11",
+    "jquery": "1.10.2",
+    "angular-route": "~1.2.16",
+    "font-awesome": "3.2.1",
+    "angular-ui-bootstrap": "0.8.0",
+    "bootstrap": "2.3.2",
+    "morris.js": "~0.5.0",
+    "zeroclipboard": "2.0.0-beta.5",
+    "angular-cookies": "1.2.16",
+    "fancybox": "~2.1.5"
+  },
+  "authors": [
+    "Chouxiang Hangzhou CO.LTD."
+  ],
+  "description": "The New Leopard System",
+  "keywords": [
+    "P2P",
+    "Online",
+    "Finance"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.dogabyte.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,11 @@
+TMP_FOLDER: media/tmp/
+IMAGE_FOLDER: media/posts/
+AVATAR_FOLDER: media/avatar/
+CARD_FOLDER: media/card/
+AUTHENTICATION_FOLDER: media/authentication/
+GUARANTEE_FOLDER: media/guarantee_logos/
+IDENTIFYING_CODE_TYPES: !!set {'register', 'login', 'admin_login', 'retrieve_password'}
+IDENTIFYING_CODE_CHARS: ABCDEFGHIJKMNPQRSTUVWXY23456789
+AVATAR_ALLOWED_EXTENSIONS: !!set {'png', 'jpg', 'jpeg', 'gif'}
+AVATAR_MAX_IMAGE_SIZE: 3000000
+ACTIVATION_EMAIL_TEMPLATE: activation_email.html

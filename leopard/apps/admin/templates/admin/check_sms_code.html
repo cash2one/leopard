@@ -1,0 +1,50 @@
+{% extends 'admin/master.html' %}
+{% import 'admin/static.html' as admin_static with context %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block body %}
+
+<div class="panel panel-default">
+    <form role="form" class="form-horizontal" method="POST" action="">
+        <div class="form-group">
+            <label for="phone" class="col-sm-2 control-label">手机号码</label>
+            <div class="col-sm-2">
+                <input type="phone" class="form-control" id="phone" name="phone" placeholder="输入手机号码">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">查询</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<br>
+
+{% if search %}
+<div style="position: relative; padding: 45px 15px 15px; margin: 0 -15px 15px; border-color: #e5e5e5 #eee #eee; border-style: solid; border-width: 1px 0;">
+    <table class="table table-bordered">
+        <caption>当前查询手机号码: {{ phone }}</caption>
+        <thead>
+            <tr>
+                <th>操作</th>
+                <th>验证码</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+            <tr>
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% endblock %}

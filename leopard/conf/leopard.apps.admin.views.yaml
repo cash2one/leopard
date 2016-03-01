@@ -1,0 +1,1898 @@
+UserView:
+  constructor:
+    model: !!python/name:leopard.orm.User
+    name: 用户模块
+    category: 用户管理
+    endpoint: user
+    icon: user
+    order: 100
+  can_delete: false
+  can_create: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_list: [username, realname, email, phone, card, gift_points, available_amount, active_amount, deposit_amount, income_amount, repaying_amount, is_active, is_bane, is_borrower, last_login_at, added_at, login_counter, level]
+  column_exclude_list: [added_at]
+  column_searchable_list: [username, realname, phone, card, email]
+  column_filters: [username, email, realname, phone, is_borrower, is_sync, added_at]
+  form_columns: [username, realname, email, phone, active_amount, deposit_amount, income_amount, icq, card, gift_points, is_active, is_bane, last_login_ip, login_counter, is_staff, is_borrower, experience_amount, is_sync, invite_code, friend_invest_award_level, level]
+  form_readonly_columns: [username, realname, active_amount, deposit_amount, income_amount, email, gift_points,  is_active, added_at, login_counter, last_login_ip, card, icq, experience_amount]
+  column_exclude_list: [_password, _trading_password, _permissions, server, inveted, avatar, address, is_super, is_staff, is_vip, is_bane, current_login_ip, last_login_ip, vip_start_time, vip_end_time]
+  form_widget_args:
+    server:
+      style: 'width: 140px;'
+    phone:
+      style: 'max-width: 300px;'
+  column_labels:
+    server: 客服
+    inveted: 推荐人
+    experience_amount: 注册体验金
+    username: 用户名
+    email: 邮箱
+    address: 籍贯
+    age: 年龄
+    sex: 性别
+    education: 教育情况
+    marital_status: 婚姻状况
+    phone: 手机号
+    card: 身份证
+    available_amount: 可用金额
+    active_amount: 活动资金
+    deposit_amount: 普通资金
+    income_amount: 回款资金
+    repaying_amount: 待收金额
+    realname: 姓名
+    certify_level: 信用等级
+    description: 描述
+    last_login_at: 最后登录时间
+    is_borrower: 是否为借款人
+    login_counter: 登录次数
+    icq: ICQ
+    last_login_at: 上次登录时间
+    gift_points: 商城宝币
+    is_active: 是否激活
+    is_bane: 是否冻结
+    is_staff: 是否为职员
+    _permissions: 权限
+    is_guarantee: 是否为担保机构
+    last_login_ip: 上次登录IP
+    added_at: 注册时间
+    is_sync: 是否同步
+    invite_code: 邀请码
+    friend_invest_award_level: 邀请奖励等级
+    level: 等级
+  column_formatters:
+    last_login_at: !!python/name:leopard.comps.admin.formatters.date
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    available_amount: !!python/name:leopard.comps.admin.formatters.money
+    phone: !!python/name:leopard.comps.admin.formatters.phone
+    card: !!python/name:leopard.comps.admin.formatters.card
+    gift_points: !!python/name:leopard.comps.admin.formatters.commission
+  column_choices:
+    friend_invest_award_level:
+     &friend_invest_award_level_choices
+     -  ['', 默认等级]
+     -  ['A', 等级A]
+     -  ['B', 等级B]
+  form_args:
+    friend_invest_award_level:
+      coerce: !!python/name:str
+      choices: *friend_invest_award_level_choices
+
+
+SpecialRemindView:
+  constructor:
+    model: !!python/name:leopard.orm.User
+    name: 用户特殊信息查询
+    category: 用户管理
+    endpoint: remind
+    icon: user
+    order: 101
+  can_delete: false
+  can_create: false
+  column_searchable_list: [username, realname]
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    first_investment: !!python/name:leopard.comps.admin.formatters.date
+    first_top_up: !!python/name:leopard.comps.admin.formatters.date
+    birth_day: !!python/name:leopard.comps.admin.formatters.birth_day
+  column_list: [username, realname, sex, first_investment, birth_day, first_top_up, added_at]
+  form_columns: [username, realname, sex, first_investment, birth_day, first_top_up, added_at]
+  column_labels:
+    id: 编号
+    username: 用户名
+    realname: 真实姓名
+    sex: 性别
+    birth_day: 生日
+    first_investment: 首次投资
+    first_top_up: 首次充值
+    added_at: 注册时间
+
+BankcardView:
+  constructor:
+    model: !!python/name:leopard.orm.Bankcard
+    name: 用户银行卡管理
+    category: 用户管理
+    endpoint: bankcard
+    icon: credit-card
+    order: 102
+  can_create: false
+  can_edit: false
+  column_searchable_list: [card, bank]
+  column_labels:
+    user: 用户
+    card: 卡号
+    bank: 银行名称
+    is_show: 是否显示
+    need_amount: 需提现金额
+
+FriendInviteView:
+  constructor:
+    model: !!python/name:leopard.orm.User
+    name: 好友邀请
+    category: 用户管理
+    endpoint: friend_invite
+    icon: user
+    order: 103
+  can_delete: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_list: [username, realname, invited, email, phone, card, is_active, added_at]
+  column_searchable_list: [username, realname, phone, card, email]
+  form_columns: [username, realname, invited, email, phone, card, is_active, added_at]
+  form_readonly_columns: [username, realname, active_amount, deposit_amount, income_amount, email, gift_points,  is_active, added_at, login_counter, last_login_ip, card, icq, experience_amount]
+  column_exclude_list: [_password, _trading_password, _permissions, server, avatar, address, is_super, is_staff, is_vip, is_bane, current_login_ip, last_login_ip, vip_start_time, vip_end_time]
+  form_widget_args:
+    server:
+      style: 'width: 140px;'
+    phone:
+      style: 'max-width: 300px;'
+  column_labels:
+    server: 客服
+    invited: 推荐人
+    username: 用户名
+    email: 邮箱
+    address: 籍贯
+    age: 年龄
+    sex: 性别
+    education: 教育情况
+    marital_status: 婚姻状况
+    phone: 手机号
+    card: 身份证
+    realname: 姓名
+    certify_level: 信用等级
+    icq: ICQ
+    is_active: 是否激活
+    last_login_ip: 上次登录IP
+    added_at: 注册时间
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    invited: !!python/name:leopard.comps.admin.formatters.user
+
+
+BorrowerView:
+  constructor:
+    model: !!python/name:leopard.orm.User
+    name: 用户借款情况
+    category: 用户管理
+    endpoint: borrower
+    icon: user
+    order: 104
+  can_delete: false
+  can_create: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_list: [username, realname, applyingtimes,applytime, refusetimes, curloantimes, curloanmodey, curwaitpaymone, alllocaltime, alllocanmodey, allrepaymoney]
+  column_exclude_list: [added_at]
+  column_searchable_list: [username, realname]
+  form_columns: [username, realname, email, phone, active_amount, deposit_amount, income_amount, icq, card, gift_points, is_active, is_bane, last_login_ip, login_counter, is_staff, is_borrower, experience_amount, is_sync]
+  column_labels:
+    username: 用户名
+    realname: 姓名
+    card: 身份证
+    applyingtimes: 当前申请中借款次数
+    applytime: 累计借款申请次数
+    refusetimes: 累计借款驳回次数
+    curloantimes: 当前成功借款笔数
+    curloanmodey: 当前成功借款总额
+    curwaitpaymone: 当前待还本息总额
+    alllocaltime: 累计成功借款笔数
+    alllocanmodey: 累计成功借款总额
+    allrepaymoney: 累计还款本息总额
+
+
+AutomaticView:
+  constructor:
+    model: !!python/name:leopard.orm.AutoInvestment
+    name: 自动投标
+    category: 用户管理
+    endpoint: automatic
+    icon:  cloud
+    order: 105
+  can_delete: false
+  can_create: false
+  column_default_sort: !!python/tuple [id, true]
+  column_list: [user, is_open, min_rate, max_rate, min_periods, max_periods, min_amount, max_amount, reserve_amount, sort_rownum]
+  form_readonly_columns: [user, min_rate, max_rate, min_periods, max_periods, min_amount, max_amount, reserve_amount]
+  # column_searchable_list: [username, realname]
+  form_columns: [user, is_open]
+  column_labels:
+    user: 用户名
+    sort_rownum: 队列排行
+    is_open: 是否开启
+    min_rate: 最小利率
+    max_rate: 最大利率
+    min_periods: 最小期数
+    max_periods: 最大期数
+    min_amount: 最小投资
+    max_amount: 最大投资
+    reserve_amount: 预留金额
+  column_formatters:
+    user: !!python/name:leopard.comps.admin.formatters.user
+
+
+UserLevelView:
+  constructor:
+    model: !!python/name:leopard.orm.UserLevel
+    name: 等级权限
+    category: 用户管理
+    endpoint: userlevel
+    icon: road
+    order: 106
+  can_delete: false
+  column_list: [name, is_special, is_income_reward, is_invest_reward, is_friend_reward, is_first_deposit_reward, is_first_invest_reward, is_show, is_auto_adjust, level_amount, description]
+  form_columns: [name, is_special, is_income_reward, is_invest_reward, is_friend_reward, is_first_deposit_reward, is_first_invest_reward, is_show, is_auto_adjust, level_amount, description]
+  column_labels:
+    name: 名称
+    is_special: 特级用户
+    is_income_reward: 续投奖励
+    is_invest_reward: 投标奖励
+    is_friend_reward: 邀请奖励
+    is_first_deposit_reward: 首次充值奖励
+    is_first_invest_reward: 首次投资奖励
+    is_show: 是否开启
+    is_auto_adjust: 自动调整
+    level_amount: 需满足金额
+    description: 描述
+
+
+UserLevelLogView:
+  constructor:
+    model: !!python/name:leopard.orm.UserLevelLog
+    name: 等级调整记录
+    category: 用户管理
+    endpoint: userlevellog
+    icon: pencil
+    order: 107
+  can_delete: false
+  can_create: false
+  can_edit: false
+  column_list: [user, level, is_auto_adjust, description, added_at]
+  column_labels:
+    user: 用户
+    level: 等级
+    is_auto_adjust: 自动调整
+    description: 描述
+    added_at: 调整时间
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+
+
+ManuallySMSView:
+  constructor:
+    name: 用户短信发送
+    category: 短信管理
+    endpoint: manually_send_sms
+    icon: envelope-o
+    order: 200
+
+
+CheckSMSCodeView:
+  constructor:
+    name: 手机验证码查询
+    category: 短信管理
+    endpoint: check_sms_code
+    icon: envelope-o
+    order: 201
+
+
+RedPacketTypeView:
+  constructor:
+    model: !!python/name:leopard.orm.RedPacketType
+    name: 红包类型管理
+    category: 红包管理
+    endpoint: redpacket_type
+    icon: user
+    order: 300
+  column_searchable_list: [name]
+  column_labels:
+    name: 名称
+    valid: 有效时间
+    is_show: 是否显示
+    description: 描述
+    logic: 逻辑
+    redpackets: 红包
+    invest_amount: 投资金额要求(代码红包)
+  column_exclude_list: [logic]
+  form_excluded_columns: [redpackets, logic]
+
+
+RedPacketView:
+  constructor:
+    model: !!python/name:leopard.orm.RedPacket
+    name: 红包发放
+    category: 红包管理
+    endpoint: redpacket
+    icon: user
+    order: 301
+  can_delete: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_searchable_list: [name]
+  column_labels:
+    user: 用户
+    type: 类型
+    name: 名称
+    amount: 金额
+    added_at: 时间
+    is_use: 是否使用
+    never_expire: 不过期
+    is_show: 是否显示
+    expires_at: 到期时间
+    invest_amount: 投资要求金额
+    description: 描述
+    is_available: 是否可用
+    use_at: 使用时间
+  column_list: [id, user, type, name, amount, invest_amount, is_use, is_available, is_show, added_at, expires_at, use_at]
+  form_readonly_columns: [user, type]
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    expires_at: !!python/name:leopard.comps.admin.formatters.date
+    use_at: !!python/name:leopard.comps.admin.formatters.date
+  form_excluded_columns: [is_use, added_at, never_expire, invest_amount, expires_at, use_at]
+  form_widget_args:
+    user:
+      style: 'min-width:180px;'
+    type:
+      style: 'min-width:180px;'
+
+CodeRedPacketView:
+  constructor:
+    model: !!python/name:leopard.orm.CodeRedPacket
+    name: 代码红包发放
+    category: 红包管理
+    endpoint: code_redpacket
+    icon: user
+    order: 302
+  can_delete: false
+  can_edit: false
+  column_filters: [enabled, added_at, expires_at]
+  column_default_sort: !!python/tuple [added_at, true]
+  column_list: [name, amount, invest_amount, code, logic, enabled, valid, description, added_at, expires_at]
+  form_excluded_columns: [code, enabled, logs, added_at, expires_at]
+  column_searchable_list: [name]
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    expires_at: !!python/name:leopard.comps.admin.formatters.date
+  column_labels:
+    name: 名称
+    amount: 金额
+    invest_amount: 投资要求金额
+    code: 代码
+    valid: 有效期(天)
+    enabled: 是否可用
+    added_at: 创建时间
+    logic: 类型
+    description: 描述
+    expires_at: 到期时间
+  column_choices:
+    logic:
+      - [single, 单次使用]
+      - [reuse, 重复使用]
+
+CodeRedPacketLogView:
+  constructor:
+    model: !!python/name:leopard.orm.CodeRedPacketLog
+    name: 代码红包兑换记录
+    category: 红包管理
+    endpoint: code_redpacket_log
+    icon: user
+    order: 303
+  can_delete: false
+  can_edit: false
+  can_create: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_list: [redpacket, code, user, added_at]
+  column_searchable_list: [code]
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+  column_labels:
+    redpacket: 对应红包
+    code: 兑换码
+    user: 兑换用户
+    added_at: 创建时间
+
+PostView:
+  constructor:
+    model: !!python/name:leopard.orm.Post
+    name: 信息发布
+    endpoint: post
+    icon: book
+    order: 400
+  column_filters: [title, type, added_at]
+  create_template: admin/post_create.html
+  edit_template: admin/post_edit.html
+  column_searchable_list: [title]
+  column_exclude_list: [content, extra]
+  form_columns: [title, type, is_active, content, priority]
+  column_default_sort: !!python/tuple [added_at, true]
+  column_labels:
+    &postview_labels
+    title: 标题
+    content: 内容
+    type: 类型
+    added_at: 时间
+    is_active: 是否显示
+    extra: 扩展
+    figure: 配图
+    priority: 排序
+  column_choices:
+    type:
+      &postview_type_choices
+      - [0, 公司简介]
+      - [1, 管理团队]
+      - [2, 联系我们]
+      - [3, 合作伙伴]
+      - [4, 办公环境]
+      - [5, 公司证件]
+      - [6, 人才招聘]
+      - [7, 专家团队]
+      - [8, 员工风采]
+      - [10, 安全保障]
+      - [11, 逾期垫付流程]
+      - [12, 风险拨备制度]
+      - [13, 担保机构]
+      - [14, 政策法规]
+      - [20, 法律法规]
+      - [21, 政策导向]
+      - [22, 服务条款]
+      - [23, 网站声明]
+      - [30, 关于中宝财富]
+      - [31, 关于注册登录]
+      - [32, 关于充值提现]
+      - [33, 关于利息费用]
+      - [34, 关于安全认证]
+      - [35, 关于债权转让]
+      - [36, 关于宝币商城]
+      - [40, 新手上路]
+      - [41, 平台原理]
+      - [42, 网站规则]
+      - [43, 模式介绍]
+      - [50, 网站公告]
+      - [51, 媒体报道]
+      - [52, 热门项目]
+      - [53, 发标预告]
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+  form_widget_args:
+    title:
+      style: 'max-width: 250px;'
+    type:
+      style: 'max-width: 250px;'
+  form_args:
+    type:
+      coerce: !!python/name:int
+      choices: *postview_type_choices
+
+
+ApplicationView:
+  constructor:
+    model: !!python/name:leopard.orm.Application
+    name: 申请中的项目
+    category: 风险管理
+    endpoint: application
+    icon: tasks
+    order: 500
+  can_create: false
+  column_list: [name, user, amount, repay_method, status, guarantee, periods, nper_type, rate, added_at]
+  form_readonly_columns: [name, user, amount, repay_method, status, periods, rate, nper_type, added_at, description]
+  column_default_sort: !!python/tuple [added_at, true]
+  column_searchable_list: [name]
+  column_choices:
+    nper_type:
+      - [100, 月标]
+      - [200, 天标]
+    status:
+      &applicationview_status_choices
+      - [100, 担保机构审核中]
+      - [199, 担保机构审核失败]
+      - [200, 风控部门审核中]
+      - [299, 风控部门审核失败]
+      - [300, 项目已成功发布]
+  column_exclude_list: [extra]
+  form_excluded_columns: [auditor, project]
+  form_widget_args:
+    guarantee:
+      style: 'max-width: 250px;'
+    user:
+      style: 'max-width: 250px;'
+    repay_method:
+      style: 'max-width: 250px;'
+    name:
+      style: 'max-width: 250px;'
+    style:
+      style: 'max-width: 250px;'
+    status:
+      style: 'max-width: 250px;'
+  column_labels:
+    &applicationview_labels
+    user: 申请人
+    name: 标题
+    repay_method: 还款方式
+    auditor: 审核人
+    amount: 金额
+    status: 状态
+    description: 描述
+    rate: 利率
+    periods: 期数
+    nper_type: 类型
+    added_at: 申请时间
+    extra: 扩展
+    guarantee: 担保机构
+    added_ip: IP
+    project: 项目
+  column_formatters:
+    &applicationview_formatters
+    user: !!python/name:leopard.comps.admin.formatters.user
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    rate: !!python/name:leopard.comps.admin.formatters.rate
+    amount: !!python/name:leopard.comps.admin.formatters.amount
+
+
+HistoryFailApplicationView:
+  constructor:
+    model: !!python/name:leopard.orm.Application
+    name: 审核失败的项目
+    category: 风险管理
+    endpoint: fail_application
+    order: 501
+    icon: tasks
+  can_create: false
+  can_edit: false
+  column_list: [name, user, amount, status, guarantee, periods, rate, added_at]
+  column_searchable_list: [name]
+  column_choices:
+    status: *applicationview_status_choices
+  column_default_sort: !!python/tuple [added_at, true]
+  column_exclude_list: [extra]
+  column_labels: *applicationview_labels
+  column_formatters: *applicationview_formatters
+
+
+HistorySuccessApplicationView:
+  constructor:
+    model: !!python/name:leopard.orm.Application
+    name: 审核成功的项目
+    category: 风险管理
+    endpoint: success_application
+    order: 502
+    icon: tasks
+  can_create: false
+  can_delete: false
+  can_edit: false
+  column_list: [name, user, amount, status, guarantee, periods, rate, added_at]
+  column_searchable_list: [name]
+  column_choices:
+    status: *applicationview_status_choices
+  column_default_sort: !!python/tuple [added_at, true]
+  column_exclude_list: [extra]
+  column_labels: *applicationview_labels
+  column_formatters: *applicationview_formatters
+
+
+FinApplicationView:
+  constructor:
+    model: !!python/name:leopard.orm.FinApplication
+    name: 学仕贷申请书
+    category: 风险管理
+    endpoint: finapplication
+    icon: tasks
+    order: 503
+  can_create: false
+  can_delete: false
+  column_list: [uid, user, realname, amount, periods, status, added_at]
+  form_readonly_columns: [uid, auditor, added_at, added_ip, status, loan_use_for, realname, idcard, school_name, student_code, address, school_address, mobile, tel, dad, dad_phone, dad_unit, dad_unit_address, mum, mum_unit, mum_unit_address, mum_unit_phone, coacher, coacher_address, pluses, user, repay_method, project, coacher_unit_address, coacher_phone, edu_system, edu_passwd, qq, wechat, composite_rank, class_size, dad_unit_phone, mum_phone, roommate, roommate_phone, schoolmate, schoolmate_phone, plans]
+  column_searchable_list: [realname,idcard]
+  column_labels:
+    &finapplicationview_labels
+    uid: 编号
+    rate: 利率
+    status: 审核状态
+    added_at: 申请时间
+    end_at: 结束时间
+    auditor: 审核人
+    amount: 申请金额
+    periods: 贷款期限
+    loan_use_for: 贷款用途
+    realname: 姓名
+    idcard: 身份证号码
+    school_name: 学校名称
+    school_address: 学校地址
+    address: 家庭地址
+    edu_system: 学制
+    edu_passwd: 学信网验证码
+    student_code: 学号
+    qq: QQ号
+    wechat: 微信号
+    mobile: 手机
+    tel: 家庭固话
+    composite_rank: 综合成绩排名
+    class_size: 班级人数
+    pluses: 加分项
+    dad: 父亲姓名
+    dad_phone: 父亲电话
+    dad_unit: 父亲单位名称
+    dad_unit_address: 父亲单位地址
+    dad_unit_phone: 父亲单位固话
+    mum: 母亲姓名
+    mum_phone: 母亲电话
+    mum_unit: 母亲单位名称
+    mum_unit_phone: 母亲单位固话
+    mum_unit_address: 母亲单位地址
+    roommate: 大学舍友姓名
+    roommate_phone: 大学舍友电话
+    coacher: 大学辅导员姓名
+    coacher_phone: 大学辅导员电话
+    schoolmate: 大学同学姓名
+    schoolmate_phone: 大学同学电话
+    user: 用户名
+    repay_method: 还款方式
+    project: 理财计划
+  column_choices:
+    status:
+      &finapplicationview_status_choices
+      - [100, 审核中]
+      - [200, 通过]
+      - [299, 失败]
+  column_formatters:
+    &finapplicationview_formatters
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    end_at: !!python/name:leopard.comps.admin.formatters.date
+    amount: !!python/name:leopard.comps.admin.formatters.amount
+
+
+FinMobileApplicationView:
+  constructor:
+    model: !!python/name:leopard.orm.FinMobileApplication
+    name: 微信学仕贷借款申请
+    category: 风险管理
+    endpoint: finmobileapplication
+    icon: tasks
+    order: 504
+  can_create: false
+  can_delete: false
+  column_list: [user, name, amount, term, added_at]
+  form_readonly_columns: [user, name, idcard, school, grade, phone, amount, term, added_at]
+  column_searchable_list: [idcard,name]
+  column_labels:
+    user: 用户名
+    name: 姓名
+    idcard: 身份证号码
+    school: 学校
+    grade: 年级
+    phone: 手机
+    amount: 借款金额
+    term: 借款期限
+    added_at: 添加时间
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+
+
+HistoryFailFinApplicationView:
+  constructor:
+    model: !!python/name:leopard.orm.FinApplication
+    name: 学士贷申请书 - 审核失败
+    category: 风险管理
+    endpoint: fail_finapplication
+    order: 505
+    icon: tasks
+  can_create: false
+  can_edit: false
+  column_list: [uid, user, realname, amount, periods, status, added_at, end_at]
+  column_searchable_list: [realname]
+  column_choices:
+    status: *finapplicationview_status_choices
+  column_default_sort: !!python/tuple [added_at, true]
+  column_exclude_list: [extra]
+  column_labels: *finapplicationview_labels
+  column_formatters: *finapplicationview_formatters
+
+
+HistorySuccessFinApplicationView:
+  constructor:
+    model: !!python/name:leopard.orm.FinApplication
+    name: 学士贷申请书 - 审核通过
+    category: 风险管理
+    endpoint: success_finapplication
+    order: 506
+    icon: tasks
+  can_create: false
+  can_delete: false
+  can_edit: false
+  column_list: [uid, user, realname, amount, periods, status, added_at, end_at]
+  column_searchable_list: [realname, idcard]
+  column_choices:
+    status: *finapplicationview_status_choices
+  column_default_sort: !!python/tuple [added_at, true]
+  column_exclude_list: [extra]
+  column_labels: *finapplicationview_labels
+  column_formatters: *finapplicationview_formatters
+
+
+RiskControlView:
+  constructor:
+    model: !!python/name:leopard.orm.RiskControl
+    name: 风控信息管理
+    category: 项目管理
+    endpoint: risk_controls
+    icon: list-alt
+    order: 600
+  create_template: admin/post_create.html
+  column_searchable_list: [title, content]
+  column_list: [title, content, priority, is_show, projects]
+  edit_template: admin/post_edit.html
+  column_list: [title, content, is_show, priority]
+  can_delete: false
+  column_labels:
+    title: 标题
+    content: 内容
+    priority: 排序
+    is_show: 是否显示
+    projects: 项目
+
+
+ProjectSpecView:
+  constructor:
+    model: !!python/name:leopard.orm.ProjectSpec
+    name: 项目特点信息管理
+    category: 项目管理
+    endpoint: project_spec
+    icon: list-alt
+    order: 601
+  can_delete: false
+  column_list: [title, desc, priority, is_show, projects]
+  column_searchable_list: [title]
+  column_labels:
+    title: 标题
+    desc: 内容
+    priority: 排序
+    is_show: 是否显示
+    projects: 项目
+
+
+ProjectTypeView:
+  constructor:
+    model: !!python/name:leopard.orm.ProjectType
+    name: 项目类型
+    category: 项目管理
+    icon: list-alt
+    order: 602
+  can_delete: false
+  column_searchable_list: [name]
+  column_labels:
+    name: 类型名称
+    description: 描述
+    is_show: 是否显示
+    logic: 逻辑
+    type: 类型
+  column_list: [name, is_show, description]
+  form_columns: [name, logic, is_show, description]
+  form_readonly_columns: [logic]
+
+
+ProjectPublishView:
+  constructor:
+    model: !!python/name:leopard.orm.Project
+    name: 项目发布
+    category: 项目管理
+    endpoint: project_publish
+    icon: list-alt
+    order: 603
+  can_delete: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_searchable_list: [name]
+  column_list: [uid, user, guarantee, application, repaymentmethod, type, nper_type, name, status, invest_award, password, is_show, amount, borrowed_amount, rate, min_lend_amount, max_lend_amount, periods, bid_at, login_show, grade, added_at]
+  column_exclude_list: [description, added_ip, images, payment_from, use_of_funds, controls, guaranty, guarantee_info, asset_description]
+  form_columns: [uid, application, type, name, password, invest_award, bid_at, description, use_of_funds, payment_from, min_lend_amount, max_lend_amount, controls, guaranty, guarantee_info, asset_description, risk_controls, specs, use_project_attestation, income, idcard, household, credit_reporting, house_property_card, vehicle_license, guarantee_contract, counter_guarantee_contract, business_license, tax_registration_certificate, bank_account_license, organization_code_certificate, mortgaged_property_certification, field_certification, project_level_show, project_level_allow, login_show, grade]
+  form_readonly_columns: [uid, application, type, password, description, use_of_funds, payment_from, min_lend_amount, max_lend_amount, controls, guaranty, guarantee_info, asset_description]
+  form_widget_args:
+    guarantee:
+      style: 'max-width: 250px;'
+    application:
+      style: 'max-width: 250px;'
+    name:
+      style: 'max-width: 250px;'
+    min_lend_amount:
+      style: 'max-width: 250px;'
+    asset_description:
+      style: 'width: 60%; height: 150px;'
+    guarantee_info:
+      style: 'width: 60%; height: 150px;'
+    guaranty:
+      style: 'width: 60%; height: 150px;'
+    description:
+      style: 'width: 60%; height: 150px;'
+    use_of_funds:
+      style: 'width: 60%; height: 150px;'
+    payment_from:
+      style: 'width: 60%; height: 150px;'
+    type:
+      style: 'width: 140px;'
+    controls:
+      style: 'width: 60%; height: 150px;'
+  column_formatters:
+    invest_award: !!python/name:leopard.comps.admin.formatters.invest_award
+    user: !!python/name:leopard.comps.admin.formatters.user
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    bid_at: !!python/name:leopard.comps.admin.formatters.date
+    amount: !!python/name:leopard.comps.admin.formatters.amount
+    rate: !!python/name:leopard.comps.admin.formatters.rate
+    borrowed_amount: !!python/name:leopard.comps.admin.formatters.money
+    min_lend_amount: !!python/name:leopard.comps.admin.formatters.money
+    max_lend_amount: !!python/name:leopard.comps.admin.formatters.money
+    application: !!python/name:leopard.comps.admin.formatters.application
+  column_labels:
+    &projectview_labels
+    uid: 项目编号
+    amount: 借款本金
+    borrowed_amount: 已借资金
+    max_lend_amount: 最大投资金额
+    min_lend_amount: 最小投资金额
+    lend_unit: 每份金额
+    periods: 借款期数
+    user: 发布人
+    invest_award: 投资奖励
+    name: 项目
+    password: 定向密码
+    status: 状态
+    rate: 年化率
+    extra: 扩展
+    type: 标种
+    is_show: 是否显示
+    images: 图片
+    category: 项目类别
+    controls: 风控手段
+    guarantee: 担保机构
+    investments: 投资记录
+    added_at: 发标时间
+    added_ip: 发标IP
+    quantity: 份数
+    description: 项目介绍
+    application: 申请书
+    controls: 风控手段
+    repaymentmethod: 还款方式
+    use_of_funds: 资金用途
+    payment_from: 还款来源
+    guaranty: 抵押物
+    nper_type: 项目类型
+    guarantee_info: 担保意见
+    asset_description: 资产说明
+    finapplication: 学仕贷申请书
+    risk_controls: 风控信息
+    specs: 项目特点
+    use_project_attestation: 使用项目认证信息
+    project_level_show: 可看用户
+    project_level_allow: 可投用户
+    login_show: 登录可看
+    grade: 等级
+    income: 收入证明
+    idcard: 实名认证
+    household: 户口本
+    credit_reporting: 征信报告
+    house_property_card: 房产证
+    vehicle_license: 行驶证
+    guarantee_contract: 担保合同
+    counter_guarantee_contract: 反担保合同
+    business_license: 营业执照
+    tax_registration_certificate: 税务登记证
+    bank_account_license: 银行开户许可
+    organization_code_certificate: 组织机构代码证
+    mortgaged_property_certification: 抵押物认证
+    field_certification: 实地认证
+    bid_at: 可投时间
+  column_choices:
+    nper_type:
+      &nper_type_choices
+      - [100, 月标]
+      - [200, 天标]
+    type:
+      - [100, 正常标]
+      - [200, 转让标]
+    status:
+      &project_status
+      - [0, 待发布]
+      - [100, 自动投标]
+      - [200, 投标中]
+      - [300, 满标处理中]
+      - [400, 还款中]
+      - [500, 已完成]
+      - [599, 流标]
+      - [600, 提前全额还款]
+      - [699, 逾期未满标]
+      - [404, 已删除]
+    grade:
+      &project_grade
+      - [0, 普通]
+      - [1, VIP]
+      - [2, SVIP]
+      - [3, 特级]
+  form_args:
+    grade:
+      coerce: !!python/name:int
+      choices: *project_grade
+
+ProjectView:
+  constructor:
+    model: !!python/name:leopard.orm.Project
+    name: 项目记录
+    category: 项目管理
+    endpoint: project
+    icon: list-alt
+    order: 604
+  can_delete: false
+  can_create: false
+  can_edit: true
+  column_default_sort: !!python/tuple [added_at, true]
+  column_searchable_list: [name]
+  column_list: [uid, user, guarantee, application, repaymentmethod, type, nper_type, name, status, invest_award, password, is_show, amount, borrowed_amount, rate, min_lend_amount, max_lend_amount, periods, added_at]
+  column_exclude_list: [description, added_ip, images, payment_from, use_of_funds, controls, guaranty, guarantee_info, asset_description]
+  form_columns: [uid, application, type, name, password, invest_award, description, use_of_funds, payment_from, min_lend_amount, max_lend_amount, controls, guaranty, guarantee_info, asset_description,risk_controls, specs, use_project_attestation, income, idcard, household, credit_reporting, house_property_card, vehicle_license, guarantee_contract, counter_guarantee_contract, business_license, tax_registration_certificate, bank_account_license, organization_code_certificate, mortgaged_property_certification, field_certification]
+  form_readonly_columns: [uid, application, type, password, invest_award, use_of_funds, payment_from, min_lend_amount, max_lend_amount, controls, guaranty, guarantee_info, asset_description]
+  form_widget_args:
+    guarantee:
+      style: 'max-width: 250px;'
+    application:
+      style: 'max-width: 250px;'
+    name:
+      style: 'max-width: 250px;'
+    min_lend_amount:
+      style: 'max-width: 250px;'
+    asset_description:
+      style: 'width: 60%; height: 150px;'
+    guarantee_info:
+      style: 'width: 60%; height: 150px;'
+    guaranty:
+      style: 'width: 60%; height: 150px;'
+    description:
+      style: 'width: 60%; height: 150px;'
+    use_of_funds:
+      style: 'width: 60%; height: 150px;'
+    payment_from:
+      style: 'width: 60%; height: 150px;'
+    type:
+      style: 'width: 140px;'
+    controls:
+      style: 'width: 60%; height: 150px;'
+  column_formatters:
+    invest_award: !!python/name:leopard.comps.admin.formatters.invest_award
+    user: !!python/name:leopard.comps.admin.formatters.user
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    amount: !!python/name:leopard.comps.admin.formatters.amount
+    rate: !!python/name:leopard.comps.admin.formatters.rate
+    borrowed_amount: !!python/name:leopard.comps.admin.formatters.money
+    min_lend_amount: !!python/name:leopard.comps.admin.formatters.money
+    max_lend_amount: !!python/name:leopard.comps.admin.formatters.money
+    application: !!python/name:leopard.comps.admin.formatters.application
+  column_labels:
+    *projectview_labels
+  column_choices:
+    nper_type:
+      *nper_type_choices
+    type:
+      - [100, 正常标]
+      - [200, 转让标]
+    status:
+      *project_status
+
+FinProjectPublishView:
+  constructor:
+    model: !!python/name:leopard.orm.Project
+    name: 学仕贷发布
+    order: 605
+    category: 项目管理
+    endpoint: finprojectpublish
+    icon: list-alt
+  can_delete: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_searchable_list: [name]
+  column_list: [user, repaymentmethod, category, type, name, status, invest_award, is_show, amount, borrowed_amount, rate, min_lend_amount, max_lend_amount, periods, added_at]
+  column_exclude_list: [application, description, added_ip, images, payment_from, use_of_funds, controls, guaranty, guarantee_info, asset_description]
+  form_columns: [finapplication, type, name, periods, rate, description, use_of_funds, payment_from, min_lend_amount, max_lend_amount, controls, guaranty, guarantee_info, asset_description]
+  form_readonly_columns: [finapplication, rate, type, password, invest_award, description, use_of_funds, payment_from, min_lend_amount, max_lend_amount, controls, guaranty, guarantee_info, asset_description]
+  column_formatters:
+    invest_award: !!python/name:leopard.comps.admin.formatters.invest_award
+    user: !!python/name:leopard.comps.admin.formatters.user
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    amount: !!python/name:leopard.comps.admin.formatters.amount
+    rate: !!python/name:leopard.comps.admin.formatters.rate
+    borrowed_amount: !!python/name:leopard.comps.admin.formatters.money
+    min_lend_amount: !!python/name:leopard.comps.admin.formatters.money
+    max_lend_amount: !!python/name:leopard.comps.admin.formatters.money
+    application: !!python/name:leopard.comps.admin.formatters.application
+  column_labels:
+    *projectview_labels
+  column_choices:
+    nper_type: *nper_type_choices
+    category:
+      - [100, 普通项目]
+      - [200, 学仕贷项目]
+    type:
+      - [100, 正常标]
+      - [200, 转让标]
+    status: *project_status
+
+
+FinProjectView:
+  constructor:
+    model: !!python/name:leopard.orm.Project
+    name: 学仕贷
+    order: 606
+    category: 项目管理
+    endpoint: finproject
+    icon: list-alt
+  can_delete: false
+  can_create: false
+  can_edit: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_searchable_list: [name]
+  column_list: [user, repaymentmethod, category, type, name, status, invest_award, password, is_show, amount, borrowed_amount, rate, min_lend_amount, max_lend_amount, periods, added_at]
+  column_exclude_list: [application, description, added_ip, images, payment_from, use_of_funds, controls, guaranty, guarantee_info, asset_description]
+  form_columns: [finapplication, type, name, periods, rate, description, use_of_funds, payment_from, min_lend_amount, max_lend_amount, controls, guaranty, guarantee_info, asset_description]
+  form_readonly_columns: [finapplication, type, password, periods, rate, invest_award, description, use_of_funds, payment_from, min_lend_amount, max_lend_amount, controls, guaranty, guarantee_info, asset_description]
+  column_formatters:
+    invest_award: !!python/name:leopard.comps.admin.formatters.invest_award
+    user: !!python/name:leopard.comps.admin.formatters.user
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    amount: !!python/name:leopard.comps.admin.formatters.amount
+    rate: !!python/name:leopard.comps.admin.formatters.rate
+    borrowed_amount: !!python/name:leopard.comps.admin.formatters.money
+    min_lend_amount: !!python/name:leopard.comps.admin.formatters.money
+    max_lend_amount: !!python/name:leopard.comps.admin.formatters.money
+    application: !!python/name:leopard.comps.admin.formatters.application
+  column_labels:
+    amount: 借款本金
+    borrowed_amount: 已借资金
+    max_lend_amount: 最大投资金额
+    min_lend_amount: 最小投资金额
+    lend_unit: 每份金额
+    periods: 借款期数
+    user: 发布人
+    invest_award: 投资奖励
+    name: 项目
+    password: 定向密码
+    status: 状态
+    rate: 年化率
+    extra: 扩展
+    type: 标种
+    is_show: 是否显示
+    images: 图片
+    category: 项目类别
+    controls: 风控手段
+    guarantee: 担保机构
+    investments: 投资记录
+    repayments: 还款记录
+    added_at: 发标时间
+    added_ip: 发标IP
+    quantity: 份数
+    description: 项目介绍
+    application: 申请书
+    controls: 风控手段
+    repaymentmethod: 还款方式
+    use_of_funds: 资金用途
+    payment_from: 还款来源
+    guaranty: 抵押物
+    nper_type: 项目类型
+    guarantee_info: 担保意见
+    asset_description: 资产说明
+    finapplication: 学仕贷申请书
+  column_choices:
+    nper_type: *nper_type_choices
+    category:
+      - [100, 普通项目]
+      - [200, 学仕贷项目]
+    type:
+      - [100, 正常标]
+      - [200, 转让标]
+    status: *project_status
+
+
+InvestmentView:
+  constructor:
+    model: !!python/name:leopard.orm.Investment
+    name: 投资记录
+    category: 项目管理
+    endpoint: investment
+    icon: refresh
+    order: 607
+  can_delete: false
+  can_create: false
+  can_edit: false
+  column_list: [user, project, status, amount, interest, commission, return_amount, rate, periods, added_at, processed_at]
+  column_exclude_list: [extra, description, added_ip, transfering_start_time, transfering_end_time, transfering_remain_periods]
+  column_default_sort: !!python/tuple [added_at, true]
+  column_choices:
+    status:
+      - [100, 投资未生效]
+      - [200, 投资生效]
+      - [299, 投资失败]
+      - [300, 转让中]
+      - [400, 已转让]
+      - [500, 提前全额还款]
+  column_labels:
+    user: 用户
+    project: 项目
+    status: 状态
+    amount: 金额
+    interest: 利息
+    description: 描述
+    extra: 扩展
+    added_at: 时间
+    added_ip: IP
+    previous: 原始投资信息
+    return_amount: 已还金额
+    next: 债权转让信息
+    repayment: 还款记录
+    periods: 期数
+    rate: 利率
+    plans: 还款计划
+    processed_at: 生效时间
+    commission: 手续费
+    transfering_remain_periods: 债权转让剩余期数
+    transfering_start_time: 债权转让开始时间
+    transfering_end_time: 债权转让结束时间
+  form_columns: [user, project, previous, status, description, amount, interest, commission, return_amount, added_at, periods, rate, next, transfering_start_time, transfering_end_time, processed_at, repayment, plans]
+  column_formatters:
+    user: !!python/name:leopard.comps.admin.formatters.user
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    processed_at: !!python/name:leopard.comps.admin.formatters.date
+    project: !!python/name:leopard.comps.admin.formatters.project
+    amount: !!python/name:leopard.comps.admin.formatters.money
+    return_amount: !!python/name:leopard.comps.admin.formatters.money
+    interest: !!python/name:leopard.comps.admin.formatters.money
+    rate: !!python/name:leopard.comps.admin.formatters.rate
+    repayment: !!python/name:leopard.comps.admin.formatters.repayment
+    plans: !!python/name:leopard.comps.admin.formatters.plans
+    commission: !!python/name:leopard.comps.admin.formatters.commission
+
+RepaymentView:
+  constructor:
+    model: !!python/name:leopard.orm.Repayment
+    name: 还款记录
+    category: 项目管理
+    endpoint: repayment
+    icon: repeat
+    order: 608
+  column_choices:
+    status:
+      - [100, 投标中]
+      - [200, 还款中]
+      - [300, 还款成功]
+      - [399, 还款失败]
+      - [400, 提前全额还款]
+      - [500, 已转让]
+  column_list: [user, project, status, amount, interest, repaid_amount, rate, periods, added_at]
+  form_columns: [user, project, investment, status, amount, interest, description]
+  column_exclude_list: [extra, investment, description, processed_at]
+  column_default_sort: !!python/tuple [added_at, true]
+  form_widget_args:
+    status:
+      style: 'width:100px;'
+  column_labels:
+    user: 用户
+    project: 项目
+    status: 状态
+    description: 描述
+    amount: 金额
+    interest: 利息
+    deadline: 截止时间
+    extra: 扩展
+    added_at: 提交时间
+    processed_at: 审核时间
+    investment: 投资记录
+    repaid_amount: 已还金额
+    periods: 期数
+    rate: 利率
+  column_formatters:
+    user: !!python/name:leopard.comps.admin.formatters.user
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    deadline: !!python/name:leopard.comps.admin.formatters.date
+    project: !!python/name:leopard.comps.admin.formatters.project
+    amount: !!python/name:leopard.comps.admin.formatters.money
+    interest: !!python/name:leopard.comps.admin.formatters.money
+    rate: !!python/name:leopard.comps.admin.formatters.rate
+    repaid_amount: !!python/name:leopard.comps.admin.formatters.money
+
+
+PlansView:
+  constructor:
+    model: !!python/name:leopard.orm.Plan
+    name: 还款计划
+    category: 项目管理
+    endpoint: plan
+    icon: repeat
+    order: 609
+  column_labels:
+    investment_id: 投资记录编号
+    borrowed: 借款人
+    tender: 投资人
+    period: 期数
+    amount: 金额
+    interest: 利息
+    status: 状态
+    is_advance: 是否垫付
+    plan_time: 计划时间
+    executed_time: 还款时间
+  column_list: [id, investment_id, borrowed, tender, period, amount, interest, status, plan_time, is_advance, executed_time]
+  form_excluded_columns: [investment]
+  column_formatters:
+    borrowed: !!python/name:leopard.comps.admin.formatters.plan_borrowed
+    tender: !!python/name:leopard.comps.admin.formatters.plan_tender
+    amount: !!python/name:leopard.comps.admin.formatters.money
+    plan_time: !!python/name:leopard.comps.admin.formatters.date
+    executed_time: !!python/name:leopard.comps.admin.formatters.date
+    interest: !!python/name:leopard.comps.admin.formatters.money
+  column_choices:
+    status:
+      - [100, 还款中]
+      - [200, 还款成功]
+      - [299, 还款失败]
+      - [300, 提前全额还款]
+      - [400, 提前全额还款成功]
+
+
+ProjectRepayView:
+  constructor:
+    model: !!python/name:leopard.orm.ProjectPlan
+    name: 学仕贷 - 还款记录
+    category: 项目管理
+    endpoint: project_repayment
+    icon: repeat
+    order: 610
+  can_delete: false
+  can_create: false
+  can_edit: false
+  column_exclude_list: [remain_amount]
+  column_labels:
+    id: 编号
+    project: 项目
+    period: 期数
+    status: 状态
+    user: 借款人
+    amount_interest: 本息
+    amount: 本金
+    interest: 利息
+    plan_time: 应还时间
+    executed_time: 实还时间
+  column_formatters:
+    user: !!python/name:leopard.comps.admin.formatters.user
+    plan_time: !!python/name:leopard.comps.admin.formatters.date
+    executed_time: !!python/name:leopard.comps.admin.formatters.date
+    project: !!python/name:leopard.comps.admin.formatters.project
+    amount: !!python/name:leopard.comps.admin.formatters.money
+    interest: !!python/name:leopard.comps.admin.formatters.money
+    remain_amount: !!python/name:leopard.comps.admin.formatters.money
+    amount_interest: !!python/name:leopard.comps.admin.formatters.money
+  column_choices:
+    status:
+      - [100, 还款中]
+      - [200, 还款成功]
+      - [300, 提前还款]
+
+
+FinApplicationPlansView:
+  constructor:
+    model: !!python/name:leopard.orm.FinApplicationPlan
+    name: 学仕贷 - 还款计划
+    category: 项目管理
+    endpoint: finapplication_plan
+    icon: repeat
+    order: 611
+  column_labels:
+    application_uid: 申请书编号
+    borrowed: 借款人
+    period: 期数
+    amount: 金额
+    interest: 利息
+    status: 状态
+    plan_time: 计划时间
+    executed_time: 还款时间
+  column_list: [application_uid, borrowed, period, amount, interest, status, plan_time, executed_time]
+  column_formatters:
+    application_uid: !!python/name:leopard.comps.admin.formatters.finapplication_plan_uid
+    borrowed: !!python/name:leopard.comps.admin.formatters.finapplication_plan_borrowed
+    amount: !!python/name:leopard.comps.admin.formatters.money
+    plan_time: !!python/name:leopard.comps.admin.formatters.date
+    executed_time: !!python/name:leopard.comps.admin.formatters.date
+    interest: !!python/name:leopard.comps.admin.formatters.money
+  column_choices:
+    status:
+      - [100, 还款中]
+      - [200, 还款成功]
+      - [299, 还款失败]
+
+
+DepositView:
+  constructor:
+    model: !!python/name:leopard.orm.Deposit
+    name: 充值记录
+    category: 财务管理
+    endpoint: deposit
+    order: 700
+    icon: credit-card
+  can_create: false
+  can_edit: false
+  column_choices:
+    status:
+      - [100, 充值中]
+      - [300, 充值成功]
+      - [399, 充值失败]
+  column_list: [user, realname, platform, amount, status, platform_order, added_at, processed_at]
+  column_exclude_list: [description, extra]
+  column_default_sort: !!python/tuple [added_at, true]
+  column_searchable_list: [platform_order]
+  column_labels:
+    amount: 金额
+    status: 状态
+    description: 描述
+    extra: 扩展
+    commission: 手续费
+    user: 用户
+    realname: 真实姓名
+    added_at: 申请时间
+    processed_at: 审核时间
+    platform_order: 订单号
+    platform: 平台
+    comment: 流水号
+  column_formatters:
+    user: !!python/name:leopard.comps.admin.formatters.user
+    realname: !!python/name:leopard.comps.admin.formatters.realname
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    processed_at: !!python/name:leopard.comps.admin.formatters.date
+    amount: !!python/name:leopard.comps.admin.formatters.money
+    comment: !!python/name:leopard.comps.admin.formatters.card
+    platform_order: !!python/name:leopard.comps.admin.formatters.card
+    commission: !!python/name:leopard.comps.admin.formatters.commission
+
+
+WithdrawView:
+  constructor:
+    model: !!python/name:leopard.orm.Withdraw
+    name: 提现记录
+    category: 财务管理
+    endpoint: withdraw
+    icon: retweet
+    order: 701
+  can_create: false
+  can_edit: false
+  column_choices:
+    status:
+      - [100, 提现中]
+      - [200, 提现开始]
+      - [300, 提现成功]
+      - [399, 提现失败]
+  column_list: [user, realname, amount, commission, status, description, added_at, processed_at]
+  column_default_sort: !!python/tuple [added_at, true]
+  column_labels:
+    amount: 金额
+    status: 状态
+    description: 描述
+    extra: 扩展
+    user: 用户
+    order_number: 订单号
+    realname: 姓名
+    commission: 手续费
+    added_at: 提交时间
+    description: 银行卡信息
+    processed_at: 审核时间
+    platform_order: 订单号
+  column_formatters:
+    user: !!python/name:leopard.comps.admin.formatters.user
+    realname: !!python/name:leopard.comps.admin.formatters.realname
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    processed_at: !!python/name:leopard.comps.admin.formatters.date
+    amount: !!python/name:leopard.comps.admin.formatters.money
+    commission: !!python/name:leopard.comps.admin.formatters.commission
+
+
+LogView:
+  constructor:
+    model: !!python/name:leopard.orm.Log
+    name: 资金记录
+    category: 财务管理
+    endpoint: log
+    icon: money
+    order: 702
+  can_create: false
+  can_edit: false
+  column_searchable_list: [description]
+  column_list: [user, amount, available_amount, active_amount, deposit_amount, income_amount, blocked_amount, description, added_at]
+  column_exclude_list: [extra]
+  column_default_sort: !!python/tuple [added_at, true]
+  column_labels:
+    user: 用户
+    amount: 金额
+    available_amount: 可用资金
+    active_amount: 活动资金
+    deposit_amount: 普通资金
+    income_amount: 回款资金
+    description: 描述
+    extra: 扩展
+    added_at: 时间
+    rate: 利率
+    blocked_amount: 冻结资金
+    guarded_amount: 站岗资金
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    amount: !!python/name:leopard.comps.admin.formatters.money
+    available_amount: !!python/name:leopard.comps.admin.formatters.money
+    blocked_amount: !!python/name:leopard.comps.admin.formatters.money
+    guarded_amount: !!python/name:leopard.comps.admin.formatters.money
+
+
+AuthenticationView:
+  constructor:
+    model: !!python/name:leopard.orm.Authentication
+    name: 用户实名认证
+    category: 认证管理
+    endpoint: authentication
+    order: 800
+    icon: briefcase
+  column_list: [user, type, status]
+  form_columns: [user, type, message, is_pass]
+  column_labels:
+    user: 用户
+    type: 类型
+    status: 是否通过
+    fields: 字段
+    message: 评论
+  column_formatters:
+    status: !!python/name:leopard.comps.admin.formatters.bit_status
+    fields: !!python/name:leopard.comps.admin.formatters.auth_field
+  form_widget_args:
+    is_pass:
+      style: 'list-style: none; float:left;'
+
+
+AuthView:
+  constructor:
+    model: !!python/name:leopard.orm.User
+    name: 用户认证管理
+    category: 认证管理
+    endpoint: auth
+    order: 801
+    icon: briefcase
+  can_create: false
+  can_delete: false
+  column_list: [username]
+  form_columns: [username, auths]
+  form_readonly_columns: [username]
+  column_labels:
+    username: 用户名
+  column_searchable_list: [username]
+  form_widget_args:
+    auths:
+      class: 'authview'
+
+
+RealNameAuthView:
+  constructor:
+    model: !!python/name:leopard.orm.RealnameAuth
+    name: 第三方实名认证
+    category: 认证管理
+    endpoint: third_auth
+    order: 805
+    icon: briefcase
+  can_create: false
+  can_delete: false
+  can_edit: false
+  column_list: [user, realname, idcard, result, added_at]
+  form_columns: [user, realname, idcard, result, added_at]
+  form_readonly_columns: [user, realname, idcard, result, added_at]
+  column_labels:
+    user: 用户
+    realname: 真实姓名
+    result: 结果
+    added_at: 添加时间
+    idcard: 身份证
+  column_searchable_list: [realname, idcard]
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+  form_widget_args:
+    auths:
+      class: 'realnameauthview'
+
+PCBannerView:
+  constructor:
+    model: !!python/name:leopard.orm.Banner
+    name: Web的Banner管理
+    category: 系统管理
+    endpoint: webbanner
+    icon: picture-o
+    order: 900
+  column_list: [src, location, link, is_show, priority]
+  form_columns: [src, location, link, is_show, priority]
+  column_labels:
+    src: 图片
+    location: 显示位置
+    link: 超链接
+    is_show: 是否显示
+    priority: 排序
+  column_formatters:
+    src: !!python/name:leopard.comps.admin.formatters.banner
+    location: !!python/name:leopard.comps.admin.formatters.banner_location
+
+WechatBannerView:
+  constructor:
+    model: !!python/name:leopard.orm.Banner
+    name: 微信Banner管理
+    category: 系统管理
+    endpoint: wechatbanner
+    icon: picture-o
+    order: 901
+  column_list: [src, location, link, is_show, priority]
+  form_columns: [src, location, link, is_show, priority]
+  column_labels:
+    src: 图片
+    location: 显示位置
+    link: 超链接
+    is_show: 是否显示
+    priority: 排序
+  column_formatters:
+    src: !!python/name:leopard.comps.admin.formatters.banner
+    location: !!python/name:leopard.comps.admin.formatters.banner_location
+
+
+StudentApplyBannerView:
+  constructor:
+    model: !!python/name:leopard.orm.Banner
+    name: 学仕贷Banner管理
+    category: 系统管理
+    endpoint: studentapplybanner
+    icon: picture-o
+    order: 902
+  column_list: [src, location, link, is_show, priority]
+  form_columns: [src, location, link, is_show, priority]
+  column_labels:
+    src: 图片
+    location: 显示位置
+    link: 超链接
+    is_show: 是否显示
+    priority: 排序
+  column_formatters:
+    src: !!python/name:leopard.comps.admin.formatters.banner
+    location: !!python/name:leopard.comps.admin.formatters.banner_location
+
+
+FirendLinkView:
+  constructor:
+    model: !!python/name:leopard.orm.FirendLink
+    name: 友情链接添加
+    category: 系统管理
+    endpoint: firend_link
+    icon: external-link
+    order: 903
+  column_list: [name, img, link, is_show, priority, logic]
+  form_columns: [name, img, link, is_show, priority, logic]
+  column_searchable_list: [name]
+  column_labels:
+    name: 友情链接名
+    img: 图片
+    link: 超链接
+    is_show: 是否显示
+    priority: 排序
+  column_formatters:
+    img: !!python/name:leopard.comps.admin.formatters.banner
+    logic: !!python/name:leopard.comps.admin.formatters.firend_link_logic
+
+
+DepositPlatformView:
+  constructor:
+    model: !!python/name:leopard.orm.DepositPlatform
+    name: 充值平台管理
+    endpoint: deposit_platform
+    icon: tag
+    order: 904
+  can_delete: false
+  column_list: [name, is_show, priority, is_pc, is_mobile]
+  form_columns: [name, priority, description, _dataset, is_show, is_pc, is_mobile]
+  form_readonly_columns: [logic, innerHTML]
+  column_searchable_list: [name]
+  form_widget_args:
+    description:
+      style: 'height: 250px;'
+  column_labels:
+    name: 名称
+    description: 描述
+    innerHTML: html
+    _dataset: 数据集
+    is_show: 是否显示
+    is_pc: PC端
+    is_mobile: 无线端
+    logic: 逻辑
+    dataset: 数据集
+    priority: 排序
+
+
+ConfigView:
+  constructor:
+    model: !!python/name:leopard.orm.Config
+    name: 参数配置
+    category: 系统管理
+    endpoint: config
+    icon: cogs
+    order: 905
+  can_create: false
+  can_delete: false
+  column_list: [name, value]
+  form_widget_args:
+    value:
+      style: 'width: 80%; height: 250px;'
+    name:
+      style: 'max-width: 40%;'
+  form_columns: [name, value]
+  column_searchable_list: [name]
+  column_labels:
+    key: 键
+    value: 值
+    name: 名称
+    description: 描述
+
+
+MessageView:
+  constructor:
+    model: !!python/name:leopard.orm.Message
+    name: 系统消息管理
+    category: 系统管理
+    endpoint: message
+    icon: envelope
+    order: 906
+  can_edit: false
+  column_list: [title, content, to_user, is_read, added_at]
+  column_exclude_list: [content, to_user_show]
+  column_default_sort: !!python/tuple [added_at, true]
+  column_searchable_list: [title, content]
+  column_labels:
+    to_user: 收件人
+    title: 标题
+    content: 内容
+    is_read: 是否已读
+    added_at: 时间
+  column_formatters:
+    title: !!python/name:leopard.comps.admin.formatters.title
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+  form_widget_args:
+    select_user:
+      style: 'max-width: 300px;'
+    title:
+      style: 'max-width:300px;'
+    content:
+      style: 'min-height:300px;'
+    status: 期数
+
+
+GroupView:
+  constructor:
+    model: !!python/name:leopard.orm.Group
+    name: 权限组管理
+    category: 权限管理
+    endpoint: group
+    icon: group
+    order: 1000
+  create_template: admin/group_create.html
+  edit_template: admin/group_edit.html
+  form_columns: [name, description, permission_unit]
+  column_list: [name, description]
+  column_searchable_list: [name]
+  column_labels:
+    name: 名称
+    description: 描述
+    users: 用户
+  column_formatters:
+    users: !!python/name:leopard.comps.admin.formatters.group_users
+  form_widget_args:
+    permission_unit:
+      class: 'permission_unit'
+
+
+UserPermissionView:
+  constructor:
+    model: !!python/name:leopard.orm.User
+    name: 用户权限划分
+    category: 权限管理
+    endpoint: user_permission
+    icon: cog
+    order: 1001
+  can_create: false
+  can_delete: false
+  form_readonly_columns: [username]
+  column_list: [username, groups]
+  column_filters: [username, is_staff]
+  column_searchable_list: [username]
+  form_columns: [username, groups]
+  column_labels:
+    groups: 组
+    username: 用户名
+    is_staff: 是否为职员
+  column_formatters:
+    users: !!python/name:leopard.comps.admin.formatters.group_users
+    groups: !!python/name:leopard.comps.admin.formatters.groups
+
+
+SourceWebsiteView:
+  constructor:
+    model: !!python/name:leopard.orm.SourceWebsite
+    name: 推广网站管理
+    category: 推广管理
+    endpoint: sourcewebsite
+    icon: external-link
+    order: 1101
+  column_list: [name, puthin, key, total_user, password, added_at]
+  form_columns: [name, puthin, key, password]
+  column_searchable_list: [name, puthin]
+  column_labels:
+    name: 用户
+    puthin: 联盟编码
+    key: keys密钥
+    password: 查询码 
+    total_user: 注册用户总数
+    added_at: 注册时间
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+
+
+SourceUserView:
+  constructor:
+    model: !!python/name:leopard.orm.User
+    name: 推广用户
+    category: 推广管理
+    endpoint: sourceuser
+    icon: user
+    order: 1102
+  can_delete: false
+  can_create: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_list: [source_website, source_code, username, realname, phone,login_counter, current_login_ip, added_at]
+  column_exclude_list: [added_at]
+  column_searchable_list: [username, realname, phone]
+  form_columns: [username, realname, phone, source_code, source_website, added_at]
+  column_labels:
+    username: 用户名
+    realname: 姓名
+    phone: 手机号
+    card: 身份证
+    source_code: 推广子码
+    source_website: 推广来源
+    current_login_ip: 现登录ip
+    login_counter: 登录次数
+    added_at: 注册时间
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+
+CommoditysView:
+  constructor:
+    model: !!python/name:leopard.orm.Commodity
+    name: 商品信息
+    category: 商城管理
+    icon: qrcode
+    endpoint: commodity
+    order: 1201
+  can_delete: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_list: [name, price, number, category, type, priority, is_show, added_at]
+  column_exclude_list: [added_at]
+  form_columns: [name, slogan, promotion, amount, invest_amount, valid, price, number, category, type, priority, is_show, src, details]
+  form_readonly_columns: [added_at]
+  create_template: admin/commodity_create.html
+  edit_template: admin/commodity_edit.html
+  column_labels:
+    name: 名称
+    slogan: 标语
+    promotion: 推广
+    price: 单价
+    number: 库存
+    category: 分类
+    type: 类型
+    priority: 优先级
+    is_show: 是否显示
+    src: 图片链接
+    details: 商品介绍
+    amount: 商品金额（虚拟）
+    invest_amount: 投资金额（虚拟）
+    valid: 有效期（天）（虚拟）
+    added_at: 添加时间
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    src: !!python/name:leopard.comps.admin.formatters.banner
+  column_choices:
+    type:
+      &commodity_type_choices
+      - [100, 虚拟]
+      - [200, 实物]
+    category:
+      &commodity_category_choices
+      - [1, 代码红包]
+      - [2, 礼物商品]
+  form_args:
+    category:
+      coerce: !!python/name:int
+      choices: *commodity_category_choices
+    type:
+      coerce: !!python/name:int
+      choices: *commodity_type_choices
+
+
+CommodityOrderView:
+  constructor: 
+    model: !!python/name:leopard.orm.CommodityOrder
+    name: 订单信息
+    category: 商城管理
+    icon: tasks
+    endpoint: commodity_order
+    order: 1202
+  # can_create: false
+  column_default_sort: !!python/tuple [added_at, true]
+  column_list: [user, commodity, status,amount, number,addressee, phone, address, description, order_number, added_at, process_at]
+  form_columns: [user, commodity, status,amount, number,addressee, phone, address, description, order_number,added_at, process_at]
+  form_readonly_columns: [user, added_at, commodity, amount, number]
+  column_labels:
+    user: 用户名称
+    commodity: 商品
+    status: 状态
+    amount: 宝币
+    number: 数量
+    address: 地址
+    addressee: 收件人
+    phone: 电话
+    description: 描述
+    order_number: 快递信息
+    added_at: 购买时间
+    process_at: 处理时间
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    process_at: !!python/name:leopard.comps.admin.formatters.date
+    user: !!python/name:leopard.comps.admin.formatters.user
+  column_choices:
+    status:
+      &commodityorder_status_choicess
+      - [100, 待付款]
+      - [200, 已付款]
+      - [299, 付款失败]
+      - [300, 已发货]
+      - [400, 交易成功]
+      - [499, 交易失败]
+      - [500, 已删订单]
+      - [600, 取消订单]
+  form_args:
+    status:
+      coerce: !!python/name:int
+      choices: *commodityorder_status_choicess
+
+
+GiftPointView:
+  constructor:
+    model: !!python/name:leopard.orm.GiftPoint
+    name: 宝币记录
+    category: 商城管理
+    icon: align-justify
+    endpoint: gift_points
+    order: 1203
+  column_default_sort: !!python/tuple [added_at, true]
+  column_list: [user, points, description, toatl, added_at]
+  column_searchable_list: [description]
+  can_create: false
+  can_delete: false
+  can_edit: false
+  column_labels:
+    user: 用户
+    points: 宝币变动
+    toatl: 当前宝币
+    description: 变动描述
+    added_at: 操作时间
+  column_formatters:
+    added_at: !!python/name:leopard.comps.admin.formatters.date
+    user: !!python/name:leopard.comps.admin.formatters.user

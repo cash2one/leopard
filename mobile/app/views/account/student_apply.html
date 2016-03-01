@@ -1,0 +1,20 @@
+<ion-view view-title="学仕贷申请记录">
+  <ion-content>
+    <div class="list">
+      <div class="item row">
+        <div class="col">姓名</div>
+        <div class="col col-45">时间</div>
+      </div>
+      <div class="item row" ng-repeat="obj in ApplyData.list">
+        <div class="col" ng-bind="obj.name"></div>
+        <div class="col col-45" ng-bind="obj.added_at | date: 'yyyy-MM-dd'"></div>
+      </div>
+      <div class="item text-center" ng-if="!ApplyData.list.length">
+        <p>暂无相关记录</p>
+      </div>
+    </div>
+    <ion-infinite-scroll on-infinite="loadData()" distance="1%" ng-if="!ApplyData.isOver">
+    </ion-infinite-scroll>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

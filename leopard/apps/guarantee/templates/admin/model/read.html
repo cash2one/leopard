@@ -1,0 +1,27 @@
+{% extends 'admin/master.html' %}
+{% import 'admin/lib.html' as lib with context %}
+{% import 'admin/static.html' as admin_static with context %}
+
+{% block body %}
+  <div class="navbar content-navbar navbar-default navbar-xs">
+  <div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+      <li>
+          <a href="{{ return_url }}"><i class="fa fa-list fw"></i>&nbsp;{{ _gettext('List') }}</a>
+      </li>
+      <li class="active">
+          <a href="javascript:void(0)"><i class="fa fa-search fw"></i>&nbsp;{{ _gettext('查看') }}</a>
+      </li>
+	</ul>
+  </div>
+  </div>
+  {% call lib.form_tag(form) %}
+       <div class="panel panel-default">
+      {{ lib.render_form_readonly_fields(form, form_leopard=form_leopard) }}
+      </div>
+  {% endcall %}
+{% endblock %}
+
+{% block tail %}
+  {{ super() }}
+{% endblock %}

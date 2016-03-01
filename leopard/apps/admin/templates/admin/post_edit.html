@@ -1,0 +1,14 @@
+{% extends 'admin/model/edit.html' %}
+
+{% block tail %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='ckeditor/ckeditor.js') }}" type="text/javascript"></script>
+    <script type="text/javascript">
+        CKEDITOR.replace( 'content', {
+            filebrowserUploadUrl: '{{ url_for('admin.index') }}post_image_upload',
+            toolbar: 'Custom',
+            uiColor: '#EEEEEE',
+            allowedContent: true
+        });
+    </script>
+{% endblock %}

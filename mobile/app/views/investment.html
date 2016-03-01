@@ -1,0 +1,80 @@
+<ion-view view-title="投资">
+  <ion-content>
+    <!--Switching-->
+    <div class="item tabs tabs-secondary tabs-icon-left">
+      <a class="tab-item" ui-sref="truffle.investment.student" ng-class="{'assertive': projectData.isStudent}">
+        <i class="icon ion-android-contacts"></i>
+        学仕贷
+      </a>
+      <a class="tab-item" ui-sref="truffle.investment" ng-class="{'assertive': !projectData.isStudent}">
+        <i class="icon ion-social-usd"></i>
+        中小微借贷
+      </a>
+    </div>
+
+    <h2 class="text-center" ng-if="!projectData.list">
+      <i class="icon ion-loading-d icon-refreshing"></i>
+    </h2>
+    <!--Switching-->
+    <!-- project entity -->
+    <a ui-sref=".project({id: project.id})" class="investment-card" ng-repeat="project in projectData.list">
+      <div class="card">
+        <div class="row investment-border">
+          <div class="col col-90" >
+            <span ng-bind="project.name">
+            </span>
+            <span class="jiang" ng-if="project.invest_award > 0">
+              奖励
+          <span ng-bind="(project.invest_award * 1.0 * 100 | number: 1) + ' %'"></span>
+            </span>
+          </div>
+          <div class="col">
+          	<span class="vip-bj" ng-if="project.grade > 0">
+          	  <em ng-bind="project.grade | status: 'vip-status'">
+              </em>
+          	</span>
+            <span class="investment-pu" ng-if="project.has_password">密</span>
+          </div>
+        </div>
+        <div class="row investment-main">
+          <div class="col col-90">
+            <p class="investment-money">
+              <span class="investment-apr" ng-bind="project.rate * 12 | number: 1"></span>
+              %
+            </p>
+            <p class="investment-money">
+              <span ng-bind="project.periods"></span>
+              {{ project.nper_type == 100?'个月': '天' }}
+            </p>
+            <p class="investment-money">
+              <span ng-bind="project.amount | currency: ''"></span>
+              元
+            </p>
+          </div>
+          <div class="col">
+            <span class="investment-pu" ng-bind="project.type.substring(0, 1)"></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-80">
+            <div class="investment-progress">
+              <span ng-style="{width: project.progress * 100 + '%'}"></span>
+            </div>
+          </div>
+          <div class="col" ng-bind="(project.progress * 100 | number: 0) + '%'">
+          </div>
+        </div>
+        <div class="row investment-border investment-repayment">
+          <div class="col">
+            <span>{{ project.repaymentmethod.name }}</span>
+            <span class="investment-point"></span>
+          </div>
+        </div>
+      </div>
+    </a>
+    <!-- project entity end -->
+    <ion-infinite-scroll on-infinite="loadData()" distance="1%" ng-if="!projectData.isOver">
+    </ion-infinite-scroll>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

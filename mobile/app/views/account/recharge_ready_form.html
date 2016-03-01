@@ -1,0 +1,24 @@
+<div class="modal">
+  <div class="bar bar-header bar-light">
+    <h1 class="title">正在跳转到支付页面...</h1>
+    <button class="button button-clear button-positive" ng-click="rechargeModal.hide()">关闭</button>
+  </div>
+  <ion-content class="has-header">
+    <form id="recharge-form" name="recharge-form" method="post" action="{{ rechargeForm.models.action }}">
+      <input  type="text" name="req_data" value="{{ rechargeForm.models.value }}" />
+      <div class="padding">
+        <button class="button button-positive button-block">
+          5秒后自动跳转到支付页面
+        </button>
+      </div>
+    </form>
+    <div ng-if="rechargeForm.models.action">
+      <script>
+        setTimeout(function() { 
+          document.getElementById('recharge-form').submit(); 
+        }, 3500);
+        
+      </script>
+    </div>
+  </ion-content>
+</div>

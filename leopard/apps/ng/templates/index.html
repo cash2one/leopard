@@ -1,0 +1,351 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="index-banner ng-scope" data-banner-show="bannerConfig">
+    <div class="container index-box ng-scope">
+        <div id="loginbox">
+            <div class="index-bj"></div>
+            <h4>
+                中宝财富年化收益率
+            </h4>
+            <p class="index-yields">
+                最高收益
+            </p>
+            <h3 class="index-highest">15%</h3>
+            <div class="index-botton">
+                <span>
+                    <a href="/#!/register" rel="nofollow" class="button-pill button-primary">
+                        申请加入中宝财富
+                    </a>
+                </span>
+            </div>
+            <p class="index-login">
+            已有账号？
+                <a href="/#!/login" rel="nofollow">
+                    立即登录
+                </a>
+            </p>
+        </div>
+    </div>
+    <ul id="banner-list" >
+        {% for banner in BANNERS %}
+            <li >
+                <a href="{{ banner.link }}" rel="nofollow"><img alt="banner_pic" src="{{ banner.src }}"></a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="index-statistic ng-scope">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="index-issuing">
+                    <span class="index-trailer">
+                        发标预告
+                    </span>
+                    <span class="index-name">
+                        <a rel="nofollow"
+                            href="/#!/post/trend/advance/{{trailer.id}}">{{
+                        trailer.title}}</a>
+                    </span>
+                    <span>
+                        <a href="/#!/post/trend/advance" rel="nofollow">>
+                            更多
+                        </a>
+                    </span>
+                </div>
+                <div class="index-slogan">
+                    <ul class="index-summary">
+                        <li class="index-mode">
+                            <a href="/#!/security"  rel="nofollow">
+                                <span></span>
+                                <p>
+                                    <b>P2C+O2O模式</b>
+                                </p>
+                                <p>
+                                    投资金额门槛低<br>
+                                    资金流向随时查
+                                </p>
+                            </a>
+                        </li>
+                        <li class="index-repo">
+                            <a  rel="nofollow" href="/#!/repo">
+                                <span></span>
+                                <p>
+                                    <b>云风控安全保障</b>
+                                </p>
+                                <p>
+                                    专业风控体系<br>
+                                    资深管理团队
+                                </p>
+                            </a>
+                        </li>
+                        <li class="index-mechanism">
+                            <a  rel="nofollow" href="/#!/mechanism">
+                                <span></span>
+                                <p>
+                                    <b>中小微借款服务</b>
+                                </p>
+                                <p>
+                                    借款类型多样化<br>
+                                    资料齐全放贷快
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="index-statistics">
+                        <li class="statistics-times ng-binding">
+                            截止{{today}}
+                        </li>
+                        <li>
+                           融资总额<br>
+                           <span>{{turnover}}</span> 元
+                        </li>
+                        <li>
+                            待收总金额<br>
+                           <span>{{gross_income}}</span> 元
+                        </li>
+                        <li>
+                            累计为客户赚取收益<br>
+                           <span>{{users_income}}</span> 元
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-controller="homeCtrl" class="ng-scope">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="middle-title">
+                    <div class="index-theme">
+                        &nbsp;学仕贷
+                        <a rel="nofollow" href="/#!/invest/student">更多</a>
+                    </div>
+                    <ul class="index-project">
+
+                        {% for project in finprojects %}
+                        <li>
+                            <div class="project-title">
+                                <div class="project-theme" style="text-overflow:ellipsis;">
+                                    <a rel="nofollow" href="/#!/invest/student/{{project.id}}">{{project.name}}</a>
+                                </div>
+                            </div>
+                            <p class="project-attr">
+                                <span class="text-info">{{project.repaymentmethod.name}}</span>
+                            </p>
+                            <p class="project-attr">
+                                <span class="money">项目总金额</span>
+                            </p>
+                            <p class="project-value"><b>{{ project.amount }}</b>元</p>
+                            <p class="project-attr">
+                                项目进度
+                                <span class="project-percent">
+                                    {{ project.process }}%
+                                </span>
+                            </p>
+                            <p class="project-attr">
+                                <div class="progress-striped active index-bar
+                                    progress ng-isolate-scope" percent="{{project.progress*100}}"></div>
+                            </p>
+                            <ul class="project-apr">
+                                <li>
+                                    <p class="project-orange">
+                                        <em class="ng-binding">{{project.rate * 12 if project.nper_type==100 else project.rate * 365 }}</em>%
+                                    </p>
+                                    <p>年利率</p>
+                                </li>
+                                <li>
+                                    <p class="project-orange" >{{ project.invest_award|float * 100 | round(2, 'floor') }}%</p>
+                                    <p>奖励</p>
+                                </li>
+                                <li class="project-none">
+                                    <p class="project-orange">
+                                        <em >{{project.periods}}</em>期
+                                        (<strong>{{'月' if project.nper_type==100 else '天' }}</strong>)
+                                    </p>
+                                    <p>期限</p>
+                                </li>
+                            </ul>
+                            <p class="project-attr project-small">
+                                <a rel="nofollow" href="javascript:;"
+                                    class="text-warning ng-scope ng-binding" tooltip="{{ project.controls }}">
+                                    *  <i class="icon-lock"></i> 中宝财富风控团队抵押清单
+                                </a>
+                            </p>
+                            <p class="project-title-one">
+                                <a rel="nofollow" class="btn-project ng-scope" href="/#!/invest/student/{{project.id}}">{{ '立即投标' if project.status == 200 else '查看项目'}}</a>
+                            </p>
+                        </li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+                <div class="middle-title">
+                    <div class="index-theme">
+                        &nbsp;宝利丰出借计划
+                    </div>
+                    <div class="index-financing">
+                        <div class="financing-left">
+
+                        </div>
+                        <div class="financing-right">
+                            <div class="financing-baolifeng">
+                                宝利丰出借计划
+                                <a rel="nofollow" href="/#!/bao-li-feng">什么是宝利丰出借计划？</a>
+                            </div>
+                            <ul class="financing-annualized">
+                                <li>
+                                    <p class="financing-size">
+                                        16%
+                                    </p>
+                                    <p>
+                                        年化收益率
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="financing-size">
+                                        24
+                                    </p>
+                                    <p>
+                                        项目期限(月)
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="financing-bottom">
+                                <div class="financing-btn">
+                                    <a rel="nofollow" class="button" href="/#!/bao-li-feng">立即投标</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-title">
+                    <div class="index-theme">
+                        &nbsp;中小微服务
+                        <a rel="nofollow" href="/#!/invest">更多</a>
+                    </div>
+                    <ul class="index-project">
+
+                        {% for project in projects %}
+                        <li>
+                            <div class="project-title">
+                                <div class="project-theme" style="text-overflow:ellipsis;">
+                                    <a rel="nofollow" href="/#!/invest/{{project.id}}">{{project.name}}</a>
+                                </div>
+                            </div>
+                            <p class="project-attr">
+                                <span class="text-info">{{project.repaymentmethod.name}}</span>
+                            </p>
+                            <p class="project-attr">
+                                <span class="money">项目总金额</span>
+                            </p>
+                            <p class="project-value"><b>{{ project.amount }}</b>元</p>
+                            <p class="project-attr">
+                                项目进度
+                                <span class="project-percent">
+                                    {{ project.progress|int * 100 }}%
+                                </span>
+                            </p>
+                            <p class="project-attr">
+                                <div class="progress-striped active index-bar progress ng-isolate-scope" percent="{{project.progress|int*100}}">
+                                    <div class="bar" style="width: {{ project.progress|int * 100 }}%;"></div>
+                                </div>
+                            </p>
+                            <ul class="project-apr">
+                                <li>
+                                    <p class="project-orange">
+                                        <em class="ng-binding">{{project.rate * 12 if project.nper_type==100 else project.rate * 365 }}</em>%
+                                    </p>
+                                    <p>年利率</p>
+                                </li>
+                                <li>
+                                    <p class="project-orange" >{{ project.invest_award|float * 100 | round(2, 'floor') }}%</p>
+                                    <p>奖励</p>
+                                </li>
+                                <li class="project-none">
+                                    <p class="project-orange">
+                                        <em >{{project.periods}}</em>期
+                                        (<strong>{{'月' if project.nper_type==100 else '天' }}</strong>)
+                                    </p>
+                                    <p>期限</p>
+                                </li>
+                            </ul>
+                            <p class="project-attr project-small">
+                                <a rel="nofollow" href="javascript:;"
+                                    class="text-warning ng-scope ng-binding" tooltip="{{ project.controls }}">
+                                    *  <i class="icon-lock"></i> 中宝财富风控团队抵押清单
+                                </a>
+                            </p>
+                            <p class="project-title-one">
+                                <a rel="nofollow" class="btn-project ng-scope" href="/#!/invest/{{project.id}}">{{ '立即投标' if project.status == 200 else '查看项目'}}</a>
+                            </p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="index-news">
+                    <div class="news-left">
+                        <a href="#video-box" data-fancy-box="">
+                            <img src="../images/play.png">
+                        </a>
+                        <div id="video-box">
+                            <embed src="https://www.zhongbaodai.com/media/bcloud.swf" allowfullscreen="true" quality="high" width="640" height="360" align="middle" allowscriptaccess="always" flashvars="uu=e3824a8b0e&amp;vu=73d885c83a&amp;auto_play=1&amp;gpcflag=1&amp;width=640&amp;height=360" type="application/x-shockwave-flash">
+                        </div>
+                        <a href="#!/post/trend/notice">
+                            <img src="../images/news.png">
+                        </a>
+                        <a href="#!/post/trend/report">
+                            <img src="../images/media.png">
+                        </a>
+                        <a href="#!/post/about/partner">
+                            <img src="../images/cooperation.png">
+                        </a>
+                    </div>
+                    <div class="news-right">
+                        <ul>
+                            <li>
+                                中宝财富是一个擅于分析数据、富有创新精神的运营团队
+                            </li>
+                            <li>
+                                十年金融行业经验
+                            </li>
+                            <li>
+                                在长期收集各行业发展数据、分析处理各种非结构性信息的基础上
+                            </li>
+                            <li>
+                                成功建立量化的风险评估模型
+                            </li>
+                            <li>
+                                并在实践中不断丰富具有独立知识产权的“云风控”安全体系
+                            </li>
+                            <li>
+                                &nbsp;
+                            </li>
+                            <li>
+                                在这大浪淘沙之际
+                            </li>
+                            <li>
+                                中宝财富愿以最专业的行业知识，最科学的信用风险价值评估方法
+                            </li>
+                            <li>
+                                为您构建最合理的投融资组合
+                            </li>
+                            <li>
+                                并实现借款人、投资人、平台三方共赢的局面
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+

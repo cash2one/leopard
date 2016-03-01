@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <div class="container">
+        <div class="login-container register-container">
+            <div class="entrance-box">
+                <div class="middle-title">
+                    <a class="middle-more" href="/#/login">已有账号？立即登录>></a>
+                    <span class="middle-title-name">用户注册</span>
+                </div>
+                <form class="form-inline" name="registerForm" novalidate="novalidate" ng-submit="register()">
+                    <table>
+                        <tbody>
+                        <tr ng-if="registerInfo.invitedName">
+                        </tr>
+                        <tr>
+                            <td class="text-right"><strong class="text-error">* </strong>用户名：</td>
+                            <td><input class="input-medium" data-event-blur="checkUser()" name="username" ng-model="registerInfo.username" ng-pattern="/^[a-zA-Z][a-zA-Z0-9]{3,31}$/" type="text" required="required" ng-change="registerForm.username.entered = 1;registerInfo.nameChecked = false" /></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><strong class="text-error">* </strong>密码：</td>
+                            <td><input class="input-medium" name="password" ng-model="registerInfo.password" type="password" required="required" ng-pattern="/^[a-z][a-z0-9]{7,31}$/i" ng-change="registerForm.password.entered = 1"/></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><strong class="text-error">* </strong>确认密码：</td>
+                            <td><input class="input-medium" name="confirmPass" ng-model="registerInfo.confirmPass" type="password" required="required" ng-change="registerForm.confirmPass.entered = 1"/></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right">邮箱：</td>
+                            <td><input class="input-medium" data-event-blur="checkMail()" name="email" ng-model="registerInfo.email" type="email" required="required" ng-change="registerForm.email.entered = 1;registerInfo.emailChecked = false"/></td>
+                        </tr>
+                        <tr ng-if="registerInfo.needPhoneVerify">
+                            <td class="text-right"><strong class="text-error">* </strong>手机号码：</td>
+                            <td>
+                            <div>
+                              <input class="input-small" data-event-blur="checkPhone()" name="phone" type="text" required="required" />
+                              <button class="btn" type="button" click="sendCode()">点击发送验证码</button>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr ng-if="registerInfo.needPhoneVerify && !registerInfo.onlyPhone">
+                            <td class="text-right"><strong class="text-error">* </strong>短信验证码：</td>
+                            <td><input class="input-small" name="code" ng-model="registerInfo.code" type="text" required="required" ng-change="registerForm.code.entered = 1" ng-disabled="!registerInfo.sended" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label for="rule" class="checkbox">
+                                    <input id="rule" name="rule" ng-model="registerInfo.rule" type="checkbox" required="required" ng-change="registerForm.rule.entered = 1"> 我同意
+                                </label> 
+                                <a class="label label-info" target="_blank" href="/#/agreement">{{ SYSTEM_NAME }}用户服务协议</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <p></p>
+                                <input type="submit" value="注册" class="btn btn-danger"/>
+                            </td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block footer%}
+
+<div class="bottom">
+    <div class="container">
+            <p>CopyRight &copy; 2014 {{ SYSTEM_NAME }}投资 版权所有 <a href="http://www.miitbeian.gov.cn/" rel="nofollow">{{ SYSTEM_ICP }}</a></p>
+    </div>
+</div>
+<a href="http://crm2.qq.com/page/portalpage/wpa.php?uin=4000311608&aty=2&a=2&curl=demo.ejdai.cn&ty=1" id="float-server" target="_blank" title="点击与易简贷客服对话">
+    <i class="icon-comments"></i>
+    在线客服
+</a>
+
+{% endblock %}
+

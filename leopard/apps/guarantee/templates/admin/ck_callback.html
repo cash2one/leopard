@@ -1,0 +1,9 @@
+{% if callback==True %}
+    <script type="text/javascript">
+        window.parent.CKEDITOR.tools.callFunction({{ CKFuncNum  }}, "{{ image_path }}", "上传成功");
+    </script>
+{% else %}
+    <script type="text/javascript">
+        window.parent.CKEDITOR.tools.callFunction({{ CKFuncNum  }}, "", "{{ message }}");
+    </script>
+{% endif %}

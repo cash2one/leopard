@@ -1,0 +1,256 @@
+
+<link href="../styles/style.css" rel="stylesheet" type="text/css"/>	
+<!-- middle === -->
+<a class="top" id="top"></a>
+<div class="container registers-one">
+    <div class="row">
+        <div class=" register-user registers">
+            <div class="register-theme">
+                <ul>
+                    <li ng-class="{'current': stepConf[0]}">
+                        <div class="step-one">
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/triangle_two.png" height="26" width="14">
+                    </li>
+                    <li ng-class="{'current': stepConf[1]}">
+                        <div class="step-two">
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src="images/triangle_two.png" height="26" width="14">
+                    </li>
+                    <li ng-class="{'current': stepConf[2]}">
+                        <div class="step-three">
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="login-text">&nbsp;用户注册<span>
+            已有中宝账号<a href="/#!/login">马上登录</a></span></div>
+            <div class="row">
+                <div class="span8 offset2" ng-show="stepConf[0]">
+                    <form class="form-horizontal" data-form-produce="formControls.conf">
+                        <div class="control-group" ng-if="formControls.inviteUsername">
+                            <div class="controls">
+                                您的邀请人是：<span class="text-error" ng-bind="formControls.inviteUsername"></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputEmail">用户名：</label>
+                            <div class="controls">
+                                <input type="text" id="inputEmail" placeholder="请输入用户名" ng-model="formControls.models.username" data-input-produce="formControls.username"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputPassword">密 码：</label>
+                            <div class="controls">
+                                <input type="password" id="inputPassword" placeholder="请输入密码" ng-model="formControls.models.password" data-input-produce="formControls.password"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputPassword">确认密码：
+                            </label>
+                            <div class="controls">
+                                <input type="password" id="inputPassword" placeholder="再次输入密码" ng-model="formControls.models.rePassword" data-input-produce="formControls.rePassword"/>
+                            </div>
+                        </div>
+                        <div class="control-group" ng-if="!formControls.inviteUrlCode">
+                            <label class="control-label" for="inputInvitedCode">邀请码：</label>
+                            <div class="controls">
+                                <input type="text" id="inputInvitedCode" placeholder="邀请码 (选填)" ng-model="formControls.models.inviteCode" data-input-produce="formControls.inviteUserByCode" event-blur="getInvitedUser()"/>
+                            </div>
+                        </div>
+                        <div class="register-group">
+                            <div class="controls ">
+                                <!--<div class="register-one">
+                                    注册前请阅读
+                                <a href="#">《中宝贷网站服务协议》</a></div>-->
+                                <button type="button" class="login-btn login-btn-one" data-form-only-check="goStep(1)">同意注册
+                                </button>
+                            </div>
+                        </div>
+                        <p class="register-suggest">
+                登录密码由应8-32位数字、英文组成且首位必须为字母。</p>
+                    </form>
+
+                </div>
+
+                <!--注册第二步-->
+                <div class="span6 offset2" ng-show="stepConf[1]">
+                    <form class="form-horizontal" data-form-produce="formControls.conf">
+                        <input type="hidden" ng-model="formControls.inviteUrlCode" data-input-produce="formControls.inviteUser" ng-if="formControls.inviteUrlCode"/>
+                        <input type="hidden" ng-model="formControls.models.inviteCode" data-input-produce="formControls.inviteUserByCode" ng-if="!formControls.inviteUrlCode"/>
+                        <input type="hidden" ng-model="formControls.models.username" data-input-produce="formControls.username" />
+                        <input type="hidden" ng-model="formControls.models.password" data-input-produce="formControls.password" />
+
+                         <div class="control-group input-append">
+                            <label class="control-label">图片验证码：</label>
+                            <div class="controls">
+                                <input type="text" class="input-medium" placeholder="请输入图片验证码" data-input-produce="formControls.pvcode" ng-model="formControls.models.pvcode"/>
+                                <img style="cursor: pointer;" ng-src="/service/auth/identifying_code?type=register&cb={{ formControls.current_date }}" alt="identifying_code" ng-click="reload_vcode()">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">手机号码：</label>
+                            <div class="controls">
+                                <input type="text" placeholder="请输入手机号码" data-phone-produce="formControls.phone" data-phone-send="#register-send" ng-model="formControls.models.phone" phone-send-validate="{{ {ver_code: formControls.models.pvcode} }}"/>
+                                <a href="javascript:;" class="button-none" id="register-send">发送验证码</a>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputPassword">短信验证码：
+                            </label>
+                            <div class="controls">
+                                <input class="passward-input" type="text" id="inputPassword" placeholder="验证码" data-input-produce="formControls.phoneCode" ng-model="formControls.models.phoneCode"/>
+                            </div>
+                        </div>
+                        <div class="control-group" ng-show="false" ng-if="formControls.models.urlParams">
+                            <label class="control-label" for="urlParams">url地址参数</label>
+                               <div class="controls">
+                                <input type="text" id="urlParams" ng-model="formControls.models.urlParams" data-input-produce="formControls.urlParams" />
+                            </div>
+                        </div>
+                        <div class="register-group">
+                            <div class="controls">
+                                <button type="submit" class="login-btn">下一步
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--注册第三步-->
+                <div class="span6 offset3" ng-show="stepConf[2]">
+                    <h4>
+                        系统提示
+                    </h4>
+                    <div class="register-success">
+                        <span>
+                            您已注册成功，欢迎加入中宝财富！</br>
+                            请先 <a href="/#!/account/management/profile">进行实名认证</a> 并设置交易密码，以便您能顺利进行投资！
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- middle === -->
+<div class="container">
+
+   <!--02块-->
+       <div class="content_02">
+           <div class="title_02">
+                <img src="../images/1.png" />
+           </div>
+           <div class="main_02">
+                <div class="main_02_01">
+                    <p>  “中宝财富P2P借贷平台” （www.zhongbaodai.com）系上海中泉宝泰互联网金融信息服务有限公司旗下品牌。中宝财富借贷理财平台在P2P的基础上 ，
+                    首创P2C+O2O的经营新模式，
+                    <span>P2C+O2O（person to company+Online to Offline）</span>是新型的理财模式，是P2P网贷的一个新方向。P2C模式是撮合个人与公司或企业的借贷                    模式。其模式是企业发布融资项目，出借人直接针对项目投标，资金由多人筹措而得，它对于解决中小企业的短期、应急贷款具有重要价值。该模式为线                    上线下结合模式，线下与小额贷款公司、投资公司、担保公司、资产回购方合作，发展小微金融理念，助力中小微企业发展。通过强有力的风险控制体系                    、担保公司担保等方式确保线下融资项目的质量和投资客户的资金安全。  
+                    </p>
+                </div>
+                <div class="main_02_02">
+                   <img src="../images/01_pic_07.png"/>
+                </div>
+          </div>
+       </div>
+   <!--03块-->
+       <div class="content_03">
+           <div class="title_03">
+                <img src="../images/2.png" />
+           </div>
+              <div class="main_03">
+                 <ul> 
+                     <li><img src="../images/fengkong.png"/>
+                         <div>
+                              <p>“云风控” 安全保障</p>
+                              <span>旗下风控团队在全国首创了“云风控”风险安全管理系统。“将资金风险降入“零风险时代”。  </span>
+                         </div>
+                     </li>
+                     <li><img src="../images/shouyi.png"/>
+                         <div>
+                              <p>收益高于银行40倍</p>
+                              <span>中宝财富年化收益12%~18%， 种类期限丰富，任您选择，购买即可轻松实现高收益。  </span>
+                         </div>
+                     </li>
+                     <li><img src="../images/money.png"/>
+                         <div>
+                              <p>雄厚的资金实力</p>
+                              <span>公司拥有雄厚的资金实力，全力打造专业资金借贷、银行贷款中介、境外保险代理、金融资本运营的信息咨询和运营管理的综合平台  </span>
+                         </div>
+                     </li>
+                     <li><img src="../images/diya.png"/>
+                         <div>
+                              <p>完善的抵押担保制度</p>
+                              <span>1 严格完善的多重风险把控体系
+                                    <br/>
+                                    2 多方担保机构全额担保
+                                     <br/>
+                                    3 资产足额抵押 
+                              </span>
+                        </div>
+                     </li>
+                 </ul>
+              </div>
+       </div>
+    <!--04块-->
+        <div class="content_04">
+            <div class="title_04">
+                 <img src="../images/3.png"/>
+            </div>
+            <div class="main_04">
+                <ul>
+                    <li class="li_01"><p>汽车质押贷</p><img src="../images/car.png"/></li>
+                    <li class="li_02"><p>房产抵押贷</p><img src="../images/house.png"/></li>
+                    <li class="li_03"><p class="on">企业诚信贷</p><img src="../images/people.png"/></li>
+                    <li class="li_04"><p>银联担保贷</p><img src="../images/safe.png"/></li>
+                    <li class="li_05"><p>学仕贷</p><img src="../images/studen.png"/></li>
+                </ul>            
+             </div>
+                  <div class="bottom_04">
+                       <a href="/#!/invest"><img src="../images/icon_02.jpg"/></a>
+                  </div>
+        </div>
+    <!--05块-->
+    <div class="content_05">
+            <div class="title_05">
+                 <img src="../images/4.png"/>
+            </div>
+            <div class="main_05">
+                <img src="../images/zhuce.png"/>        
+            </div> 
+            <div class="bottom_05">
+                <a href="#top" target="_self"><img src="../images/icon_03.png" /></a>
+            </div>
+   </div>
+<!-- bottom === -->
+<div class="container">
+    <div class="row bottom">
+        <div class="span6">
+            <div class="bottom-phone"><span>客服电话：</span>
+            <span class="bottom-phone-text" ng-bind="platformConfig.phone"></span></div>
+            <div class="bottom-phone">CopyRight © 2013 {{ platformConfig.fullName }} 品牌所有 <a href="http://www.miitbeian.gov.cn/" ng-bind="platformConfig.ICP"></a></div>
+        </div>
+        <div class="span6">
+            <ul class="authenticate">
+                <li class="xl-xin">
+                    <a href="https://ss.knet.cn/verifyseal.dll?sn=e14031131011547229jxxf000000&comefrom=trust" target="_blank" title="#"></a></li>
+                <li class="tx-wb">
+                    <a href="https://www.sgs.gov.cn/shaic/" target="_blank" title="#"></a></li>
+                <li class="xl-wb">
+                    <a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.zhongbaodai.com&amp;lang=zh_cn" target="_blank"></a></li>
+                <li class="wx" id="div-img">
+                    <a href="http://www.miitbeian.gov.cn/" title="#" target="_blank"></a></li>
+                <li class="qy-not">
+                    <a href="http://www.shjbzx.cn/" title="#" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- bottom === -->

@@ -1,0 +1,14 @@
+<ion-view title="{{ postData.config.title || '公告' }}">
+  <ion-content>
+    <div class="list">
+      <a ng-href="{{ postData.baseUrl + notice.id }}" class="item" ng-repeat="notice in postData.list">
+        {{ notice.title }}
+        <span class="item-note" ng-bind="notice.added_at | date: 'yyyy-MM-dd'">
+        </span>
+      </a>
+    </div>
+    <ion-infinite-scroll on-infinite="loadData()" distance="1%" ng-if="!postData.isOver">
+    </ion-infinite-scroll>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

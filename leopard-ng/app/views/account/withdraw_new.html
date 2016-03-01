@@ -1,0 +1,102 @@
+<div class="main-wrap" ng-controller="withdrawCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;提现管理
+        </div>
+        <div class="span9 friends-data">
+            <p>
+                                        注意</br>
+                                        实际到账金额为提现金额减去提现手续费。<!--</br>-->
+                                        单笔提现最高不超过  20万。<!--</br>-->
+                                        单日提现最高不超过  100万。 </br>
+                                        为保障用户资金安全，使用手机端支付的用户需遵循同卡进出的规则。同卡进出是指使用手机端支付的用户，</br>充值的本金提现时须返回到原卡。                      
+            </p>
+        </div>
+        <div class="span9 automatic-link">
+            <form data-form-produce="withdrawControls.conf">
+            <table>
+            <tbody>
+                <tr>
+                    <td class="automatic-off">账户可用余额：</td>
+                    <td>&nbsp;</td>
+                    <td ng-bind="(accountData.user.available_amount | currency: '') + '元'">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">账户真实姓名：</td>
+                    <td>&nbsp;</td>
+                    <td ng-bind="accountData.user.realname">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">优先选择金额：</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="radio" name="amountType" id="amountDeposit" value="0" ng-model="withdrawControls.models.amountType"/>
+                        <label for="amountDeposit" class="label label-info">普通资金</label>
+                        &nbsp;
+                        <input type="radio" name="amountType" id="amountInvest" value="1" ng-model="withdrawControls.models.amountType" />
+                        <label for="amountInvest" class="label label-info">回款资金</label>
+                        <i tooltip="使用回款资金投资可获得续投奖励，而普通资金则没有奖励" class="icon-question-sign text-error"></i>
+                        <input type="hidden" data-input-produce="withdrawControls.amountType" ng-model="withdrawControls.models.amountType" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">提现金额：</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input class="main-input input-small" type="text" data-input-produce="withdrawControls.amount" ng-model="withdrawControls.models.amount" /> 元
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">提现手续费：</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <!-- <span ng-bind="getCommission()"></span>元 -->
+                        0元
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">提现银行卡：</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="text" ng-show="false" data-input-produce="withdrawControls.bankcard" ng-model="bankcardData.bankcard.id" />
+                        <select ng-model="bankcardData.bankcard" ng-options="card as (card.bank.split(':')[0] + ' ' + card.card) for card in bankcardData.bankcardList"></select>
+                        <a  ng-bind=" '最高可提现' + ((accountData.user.available_amount + bankcardData.bankcard.need_amount - accountData.user.bankcard_need_amount) | currency: '') +  '元' "></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">交易密码：</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input class="main-input input-medium" type="password" data-input-produce="withdrawControls.tradePass" ng-model="withdrawControls.models.tradePass" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">已绑定手机号：</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <span ng-bind="accountData.user.phone"></span> <a href="/#!/account/management/profile" class="withdraw-alter">修改手机号</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="automatic-off">短信验证码：</td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input class="main-input profile-input" type="text" id="inputPassword" placeholder="请输入验证码" data-phone-produce="withdrawControls.phoneCode" ng-model="withdrawControls.models.phoneCode" data-phone-send="#withdraw-send">
+                        <button type="button" class="login-btn" id="withdraw-send">发送验证码
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><button type="submit" class="button login-btn">申请提现</button></td>
+                </tr>
+                </tbody>
+            </table>
+            
+            </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,41 @@
+{
+  "name": "truffleMobile",
+  "version": "0.0.1",
+  "description": "P2P app",
+  "main": "none",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@abstack.com:truffle_mobile.git"
+  },
+  "keywords": [
+    "P2P",
+    "APP"
+  ],
+  "author": "Peach",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.3.11",
+    "cheerio": "^0.18.0",
+    "gulp": "^3.8.10",
+    "gulp-connect": "^2.2.0",
+    "gulp-hash-filename": "^1.0.1",
+    "gulp-less": "^1.3.5",
+    "gulp-minify-css": "^0.3.8",
+    "gulp-rename": "^1.2.0",
+    "gulp-requirejs": "^0.1.3",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.1",
+    "karma": "^0.12.24",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-coverage": "^0.2.6",
+    "karma-jasmine": "^0.2.3",
+    "karma-requirejs": "^0.2.2",
+    "q": "^1.1.2"
+  }
+}

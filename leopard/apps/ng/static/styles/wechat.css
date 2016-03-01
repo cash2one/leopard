@@ -1,0 +1,102 @@
+/* CSS Document */
+@charset='utf-8';
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+body,input{
+  font-size:60.5%;
+}
+img { 
+  border:none;
+  max-width: 100%; 
+  height: auto; 
+  width: auto\9; 
+} 
+body{
+  font-size: 12px;
+  background-color: #FFF;
+  width: 100%;
+}
+li{
+  list-style-type: none;
+}
+a{
+  color: #666;
+  text-decoration: none;
+}
+.clear{
+  clear: both;
+  height: 1px;
+  line-height: 1px;
+  font-size: 1px;
+}
+.main{
+  background: url(../img/wechat_bg.jpg) no-repeat;
+}
+.index-ul{
+  padding-top: 144px;
+  text-align: right;
+  margin-right: 60px;
+}
+.index-ul li{
+  line-height: 32px;
+}
+.index-ul li input{
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.btn{
+  padding: 4px 10px;
+  background-color: #3cb0f9;
+  border: 1px solid #3cb0f9;
+  color: #fff;
+  border-radius: 5px;
+  display: inline ;
+}
+.btn-default{
+  padding: 6px 16px;
+  margin-top: 40px;
+}
+@media only screen and (max-width:800px) {
+  .index-ul{
+    margin-right: 60px;
+  }
+  .form-big{
+    width: 160px;
+  }
+  .form-control{
+    width: 74px;
+  }
+}
+@media only screen and (max-width:640px) {
+  .index-ul{
+    margin-right: 20px;
+  }
+  .form-big{
+    width: 160px;
+  }
+  .form-control{
+    width: 74px;
+  }
+}
+@media only screen and (max-width:320px) {
+  .index-ul{
+    margin-right: 10px;
+  }
+  .btn{
+    padding: 4px 6px;
+  }
+  .btn-default{
+    padding: 6px 16px;
+  }
+  .form-big{
+    width: 140px;
+  }
+  .form-control{
+    width: 64px;
+  }
+}

@@ -1,0 +1,67 @@
+<div class="integral-mall-middle">
+    <div class="integral-mall-banner">
+    </div>
+    <div class="container">
+        <div class="mall-name">
+            红包兑换
+        </div>    
+        <ul class="mall-list" >
+            <li ng-repeat="product in homeData.productList | filter: { type:100 }">
+                <div class="mall-tu">
+                    <a href="/#!/mall/index/{{ product.id }}"><img ng-src="{{ product.src }}" /></a>
+                </div>
+                <p class="mall-title" nng-bind="product.name">{{product.name}}</p>
+                <div class="integral">
+                    <i>
+                        <em>{{ product.price }}
+                        </em>宝币
+                    </i>
+                    <a href="/#!/mall/index/{{ product.id }}">立即兑换</a>
+                </div>
+            </li>
+           
+        </ul>
+        <div class="clear"></div>
+        
+        <div class="mall-name">
+            礼物兑换
+        </div>
+       <ul class="mall-list">
+            <li  ng-repeat="product in homeData.productList | filter: { type:200 }">
+                <div class="mall-tu">
+                    <a href="/#!/mall/index/{{ product.id }}"><img ng-src="{{ product.src }}" /></a>
+                </div>
+                <p class="mall-title" nng-bind="product.name">{{product.name}}</p>
+                <div class="integral">
+                    <i>
+                        <em>{{ product.price }}
+                        </em>宝币
+                    </i>
+                    <a href="/#!/mall/index/{{ product.id }}">立即兑换</a>
+                </div>
+            </li>
+    </div>
+    <div class="integral-mall-bottom">
+        <div class="container use-way">
+            <ul class="use-way-list">
+                <li>
+                    <img src="../../images/images/click.png" />
+                    <p>立即投标</p>
+                </li>
+                <li>
+                    <img src="../../images/images/money.png" />
+                    <p>获取宝币</p>
+                </li>
+                <li>
+                    <img src="../../images/images/change.png" />
+                    <p>开始兑换</p>
+                </li>
+                <li>
+                    <img src="../../images/images/fnish.png" />
+                    <p>兑换完成</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+

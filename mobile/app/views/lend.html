@@ -1,0 +1,59 @@
+<ion-view view-title="投资">
+  <ion-content>
+    <!--Application-->
+    <div class="item tabs tabs-secondary tabs-icon-left">
+      <div class="tab-item">
+        <i class="icon ion-android-contacts"></i>
+        学仕贷借款申请
+      </div>
+    </div>
+    <!--Application-->
+    <form form-produce="formControls.conf">
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">姓名</span>
+        <input type="text" placeholder="请输入您的姓名" ng-model="formControls.models.realname" name="realname" input-produce="formControls.realname">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">身份证号</span>
+        <input type="text" placeholder="请输入您的身份证号" ng-model="formControls.models.idcard" name="idcard" input-produce="formControls.idcard">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">学校名称</span>
+        <input type="text" placeholder="请输入您的学校名称" ng-model="formControls.models.schoolName" name="schoolName" input-produce="formControls.schoolName">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">现读年级</span>
+        <input type="text" placeholder="请输入您的现读年级" ng-model="formControls.models.grade" name="grade" input-produce="formControls.grade">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">联系电话</span>
+        <input type="text" placeholder="请输入您的联系电话" ng-model="formControls.models.mobile" name="mobile" input-produce="formControls.mobile">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">借款额度</span>
+        <input type="text" placeholder="请输入您想要的借款额度" ng-model="formControls.models.amount" name="amount" input-produce="formControls.amount">
+      </label>
+      <label class="item item-input item-select">
+        <div class="input-label">
+          借款期限
+        </div>
+
+        <select ng-model="formControls.models.periods" name="periods" input-produce="formControls.periods">
+            <option value="6">6个月</option>
+            <option value="12">12个月</option>
+            <option value="18">18个月</option>
+            <option value="24">24个月</option>
+        </select>
+            
+      </label>
+    </div>
+    <div class="content padding">
+      <button class="button button-block button-energized">
+        提交
+      </button>
+    </div>
+    </form>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

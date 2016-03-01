@@ -1,0 +1,323 @@
+body{
+	background-color: @light-color;
+}
+a.item-note{
+	text-decoration: none;
+}
+.funds-size{
+	font-size: @large-font;
+}
+.total-funds{
+	border-bottom: 1px solid @orange-shallow;
+}
+.home-size{
+	font-size: 10pt;
+	color: @font-color*2;
+}
+.home-amount{
+	border-right: 1px solid @orange-shallow;
+}
+.item-divider{
+	border-bottom: 1px solid @light-color;
+}
+.home-item{
+	border: 1px dashed @light-color;
+}
+.logs-border{
+	border-bottom: 1px solid @light-color;
+}
+//investment
+.investment-progress{
+	margin-top: 8px;
+	width: 100%;
+	height: 4px;
+	background-color: @light-color;
+	span{
+		width: 80%;
+		height: 4px;
+		display: block;
+		background-color: @blue-color;
+	}
+}
+a.investment-card{
+	text-decoration: none;
+	color: @font-color;
+	.card{
+		font-size: @xsmall-font;
+		.investment-point{
+			width: 8px;
+			height: 8px;
+			display: block;
+			background-color: @blue-color;
+			.border-radius(50px);
+			margin-top: 6px;
+			margin-right: 4px;
+		}
+		.investment-border{
+			border-bottom: 1px solid @light-color;
+			.jiang{
+				color: @orange-color;
+			}
+			.investment-pu{
+				width: 24px;
+				height: 24px;
+				line-height: 22px;
+				text-align: center;
+				display: block;
+				border: 1px solid @orange-color;
+				.border-radius(50px);
+				color: @orange-color;
+			}
+		}
+		.investment-repayment{
+			border-top: 1px solid @light-color;
+			border-bottom: none;
+			text-align: right;
+			span{
+				float: right;
+			}
+		}
+		.investment-main{
+			padding-top: 20px;
+			.investment-money{
+				float: left;
+				margin-right: 8px;
+				color: @font-color*3;
+				span{
+					font-size: @large-font;
+					margin-right: 0px;
+					padding-right: 0px;
+					color: @font-color;
+				}
+				.investment-apr{
+					font-size: @xlarge-font;
+				}
+			}
+			.investment-pu{
+				width: 24px;
+				height: 24px;
+				line-height: 22px;
+				text-align: center;
+				display: block;
+				border: 1px solid @blue-color;
+				.border-radius(50px);
+				color: @blue-color;
+			}
+		}
+	}
+}
+//item
+h4.account-name{
+	margin-bottom: 0px;
+}
+.account-authenticate{
+	.active{
+		color: #ff7f6f;
+	}
+}
+.account-home{
+	padding-bottom: 10px;
+	background-color: #f1f1f1;
+	padding-top: 6px;
+	.account-total{
+		font-size: @small-font;
+		border-bottom: 1px solid #3bc6bf;
+		display: block;
+		padding-top: 12px;
+		padding-bottom: 36px;
+		>span{
+			display: block;
+			float: left;
+			line-height: @xlarge-font;
+			color: @font-color*2;
+		}
+		.account-digital{
+			font-size: @large-font;
+			margin-left: 4px;
+			color: #ff7f6f;
+		}
+	}
+	.account-balance{
+		font-size: @xsmall-font;
+		color: @font-color*2;
+		span{
+			font-size: @large-font;
+			display: block;
+			color: #ff7f6f;
+		}
+	}
+}
+.account-row{
+	padding: 0px;
+	border-bottom: 1px solid @light-color;
+	.account-border{
+		border-right: 1px solid @light-color;
+	}
+	a.account-a{
+		height: 52px;
+		line-height: 52px;
+		border: 0px;
+		color: @font-color;
+		text-decoration: none;
+		font-size: @small-font;
+		> span{
+			width: 28px;
+			height: 28px;
+			display: block;
+			float: left;
+			margin-top: 12px;
+			text-align: center;
+			line-height: 28px;
+			margin-right: 10px;
+			margin-left: 4px;
+			.border-radius(3px);
+			i{
+				color: @color;
+				font-size: 16pt;
+			}
+		}
+		.color-password{
+			background-color: #ff7f6f;
+		}
+		.color-bank{
+			background-color: #ffc46f;
+		}
+		.color-invite{
+			background-color: #76d3d6;
+		}
+		.color-status{
+			background-color: #8acd33;
+		}
+		.color-money{
+			background-color: #ff9125;
+		}
+		.color-red{
+			background-color: #3bc6bf;
+		}
+		.color-record{
+			background-color: #41c8fa;
+		}
+	}
+}
+//project
+.project-mark{
+	background-color: @blue-color;
+	color: @color;
+	.border-radius(50px);
+	padding: 4px 5px;
+	margin-right: 26px;
+}
+.item .badge+.badge{
+	margin-right: 0px;
+}
+.item .badge{
+	right: 10px;
+}
+.project-funds{
+	padding: 10pt;
+	padding-left: 20pt;
+	border-bottom: 1px solid @light-color;
+	font-size: @small-font;
+	>li{
+		line-height: 24pt;
+		color: @font-color*2;
+		span{
+			color: @orange-color;
+		}
+	}
+}
+.student-project{
+	li{
+		border-bottom: 1px dashed @light-color;
+		p{
+			color: @font-color;
+			line-height: 14pt;
+			text-indent: 2em;
+		}
+	}
+}
+.project-border{
+	border-top: 1px solid @light-color;
+	.project-money{
+		color: @font-color;
+	}
+	.project-record{
+		padding-left: 10pt;
+		border-top: 1px solid @light-color;
+		border-bottom: 1px solid @light-color;
+		line-height: 32pt;
+		a{
+			text-decoration: none;
+			color: @blue-color;
+		}
+	}
+}
+.project-bordernone{
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+//project-record
+.record-button{
+	margin-top: 20px;
+}
+
+.i-vip{
+    height: 25px;
+    width: 65px;
+    top: 8px;
+    display:inline-block;
+    position: relative;
+    background: url(../../images/vip-bj.png) no-repeat;
+    em{
+        color: @color;
+        left: 25px;
+        top:3px;
+//      font-weight: 600;
+        font-size: 12px;
+        position: absolute;
+    }
+}
+//.vip-bj{
+//  display: block;
+//  width: 40px;
+//  height: 40px;
+//  background-color: #005F8D;
+//  padding:10px 5px;
+//  border-radius: 5px;
+//  color: @color;
+//  float: left;
+//}
+.vip-bj{
+    position: relative;
+    top: 0;
+    float: right;
+    // margin: -21px;
+    em{
+        position: absolute;
+        top: 6px;
+        right: 3px;
+        color: #fff;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        float: right;
+    }
+}
+.vip-bj:after{
+    -webkit-border-radius: 3px 0 0 0;
+    -moz-border-radius: 3px 0 0 0;
+    -o-border-radius: 3px 0 0 0;
+    -ms-border-radius: 3px 0 0 0;
+    border-radius: 3px 0 0 0;
+    border-color:#dd4c34 #dd4c34 transparent transparent  ;
+    border-style: solid dashed dashed solid;
+    border-width: 25px;
+    display: block;
+    content: " ";
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    width: 0;
+}

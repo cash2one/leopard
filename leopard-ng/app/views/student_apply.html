@@ -1,0 +1,248 @@
+<div class="invest-middle">
+    <div class="container">
+        <div class="span12">
+            <div class="student-banner">
+                <img src="../images/loan_banner.jpg" height="349" width="1150">
+            </div>
+            <div>
+                <img src="../images/process_banner.jpg" height="58" width="1150">
+            </div>
+            <div class="studtent-background">
+                <p class="student-title">
+                    学仕贷贷款申请表
+                </p>
+                <h5>
+                    *填写说明：
+                </h5>
+                <ul class="student-text">
+                    <li>
+                        1.本表适用于持有二代身份证的中国公民，港澳台除外。
+                    </li>
+                    <li>
+                        2.申请金额为借款人能获得贷款的最高金额，我公司有权根据客户资质降低贷款金额，以最终审批金额为准。
+                    </li>
+                    <li>
+                        3.本申请表所填的各项信息是能否获批贷款及核定金额的重要依据，请务必仔细，严谨，如实填写
+                    </li>
+                </ul>
+                <h5>
+                    贷款事项
+                </h5>
+                <form class="form-horizontal" form-produce="lendApplyControls.conf">
+                    <div class="student-text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="span9 offset2">
+                                    <div class="control-group">
+                                        <label class="control-label">申请金额</label>
+                                        <div class="controls" ng-click="promptUser()">
+                                            <input type="text" class="student-normal" placeholder="请输入您需要贷款的人民币金额" ng-model="lendApplyControls.models.amount" input-produce="lendApplyControls.amount" ng-disabled="!CURRENT_USER_ID">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">贷款期限</label>
+                                        <div class="controls">
+                                            <select class="student-time" class="input-small" ng-model="lendApplyControls.models.periods" input-produce="lendApplyControls.periods" ng-disabled="!CURRENT_USER_ID">
+                                                <option value="6">6个月</option>
+                                                <option value="12">12个月</option>
+                                                <option value="18">18个月</option>
+                                                <option value="24">24个月</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">贷款用途</label>
+                                        <div class="controls" ng-click="promptUser()">
+                                            <input class="student-normal" type="text" placeholder="请输入您的贷款用途" ng-model="lendApplyControls.models.loanUseFor" input-produce="lendApplyControls.loanUseFor" ng-disabled="!CURRENT_USER_ID">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">还款方式</label>
+                                        <div class="controls">
+                                            <select class="student-time" class="input-small" disabled="disabled">
+                                                <option checked>等本等息</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="span4">
+                                <h5>
+                                    贷款申请必须要提交的材料：
+                                </h5>
+                                <ul class="student-material">
+                                    <li>
+                                        1.生活照一张
+                                    </li>
+                                    <li>
+                                        2.身份证正反面电子版
+                                    </li>
+                                    <li>
+                                        3.学仕贷个人简历说明表（可在下载表格中下载）
+                                    </li>
+                                    <li>
+                                        4.银行近半年流水清单、支付宝交易记录清单
+                                    </li>
+                                    <li>
+                                        5.最近通话记录详单（营业厅官网查询）
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span8">
+                                <h5>
+                                    贷款申请选择提交的材料（即为加分项，风控人员可根据材料酌情提高个人贷款额度）
+                                </h5>
+                                <ul class="student-material">
+                                    <li>
+                                        1.大学期间获奖证书
+                                    </li>
+                                    <li>
+                                        2.芝麻信用评分截图
+                                    </li>
+                                    <li>
+                                        3.若为山东大学的学生，可提供山东大学本科生奖勤助贷管理系统的用户ID和密码
+                                    </li>
+                                    <li>
+                                        4.四六级证书及其他能力证书
+                                    </li>
+                                    <li>
+                                        5.奖学金证书
+                                    </li>
+                                    <li>
+                                        6.高考录取通知书
+                                    </li>
+                                    <li>
+                                        7.勤工俭学证明
+                                    </li>
+                                    <li>
+                                        8.其他可作为还款能力证明的材料
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span12">
+                                <ul>
+                                    <li>
+                                        以上材料在贷款申请的时候均以电子版压缩包的形式上传至我公司官方邮箱：zbw@zhongbao988.com
+                                    </li>
+                                    <li>
+                                        相关材料电子版下载方式可查看可查看网站公告中相关流程。例如：支付宝交易记录清单、学信网学籍在线验证、最近通话记录详单。
+                                    </li>
+                                    <li>
+                                        &nbsp;
+                                    </li>
+                                    <li>
+                                        如有疑问可关注我公司官方微信服务号：zbw988 ，询问微信客服：学仕贷。
+                                    </li>
+                                </ul>
+                                <div class="student-table">
+                                    <a href="/documents/中宝e贷学仕贷申请表.doc" target="_blank" class="button student-btn">
+                                        点击下载表格
+                                    </a>
+                                </div>
+                            </div>
+                            <script type="text/ng-template" id="agreement.html">
+                                <div class="agreement">
+                                    <h4>
+                                        中宝财富借款服务申请表申请合约
+                                    </h4>
+                                    <p>
+                                        上海中泉宝泰互联网金融信息服务有限公司（以下简称“甲方”）与个人信用借款申请人（以下简称“乙方”）就乙方向甲方提出申请，甲方向乙方提供借款信息咨询服务、协助办理相关手续等服务达成一致，签订如下条约，以兹信守。
+                                    </p>
+                                    <h5>
+                                        第一条：资料提供及使用
+                                    </h5>
+                                    <p>
+                                        一、甲方有权要求乙方提供借款所需的相关资料。乙方保证向甲方提供的所有申请资料真实、准确、完整、合法、且有效。
+                                    </p>
+                                    <p>
+                                        二、甲方有权收集、处理、传递应用及保留乙方的个人资料，无论乙方申请成功与否或是否终止，甲方对乙方有相关资料均不予退回但予以保密。
+                                    </p>
+                                    <p>
+                                        三、如甲方出于为乙方提供与借款服务相关的目的，乙方同意甲方将其个人资料及信用状况披露给甲方认为必需的第三方，包括但不限于甲方分支机构、甲方的合作机构及相关资信机构。甲方及必要第三方对乙方的个人信息负有保密义务。
+                                    </p>
+                                    <h5>
+                                        第二条：申请
+                                    </h5>
+                                    <p>
+                                        一、乙方同意并配合甲方的合作机构向任何有关方面了解和查询乙方个人信息资料，包括但不限于乙方的财产、资信、个人信用信息等情况。
+                                    </p>
+                                    <p>
+                                        二、在申请过程中，如甲方需要乙方继续补充提供资料，乙方需要及时提供。
+                                    </p>
+                                    <p>
+                                        三、申请成功后，甲方协助乙方办理协议签署等手续，乙方需要提供本人或共同借款人名下的指定银行的借记卡作为充值提现及还款专用账户，具体银行经咨询甲方工作人员后确定。
+                                    </p>
+                                    <h5>
+                                        第三条：收费
+                                    </h5>
+                                    <p>
+                                        一、在乙方成功申请借款前，甲方不收取任何费用，在乙方成功申请借款后，甲方所收取的费用体现在《中宝财富网站资费说明》中。以下情况除外：乙方无法自行提供申请借款必要资料，需要委托甲方代理。则甲方视具体情况收取相应的费用。
+                                    </p>
+                                    <p>
+                                        二、如乙方在申请成功前，自行给任何人或机构缴纳费用，而给乙方带来的任何损失，由乙方自行承担。由此引起的纠结由乙方自行解决，甲方不负任何责任，乙方不得以纠纷为由拒绝偿还已成功申请的借款。
+                                    </p>
+                                    <h5>
+                                        第四条：信息变更
+                                    </h5>
+                                    <p>
+                                        乙方如发生本人、乙方的家庭及紧急联系人工作单位、居住地址、住所电话、手机号码、电子邮箱的变更，须及时与甲方联系并办理资料变更手续，否则，由此产生的损失由乙方自行承担。
+                                    </p>
+                                    <h5>
+                                        第五条：争议解决
+                                    </h5>
+                                    <p>
+                                       甲方与乙方在履行本合约中发生的争议，由双方协商解决，协商无效提起申诉的，由甲方所在的有管辖权的人民法院管辖。
+                                    </p>
+                                    <h5>
+                                        第六条：其他约定
+                                    </h5>
+                                    <p>
+                                       乙方已全部知悉并了解本合约的各项条款，并自愿遵守本合约的规定。
+                                    </p>
+                                    <h5>
+                                        本人已阅读并了解以上条款，并且自愿遵守合约的规定，无论申请成功与否，本人同意此申请表及所附文件均由上海中泉宝泰互联网金融信息服务有限公司保留。
+                                    </h5>
+                                    <div class="agreement-btn">
+                                        <button type="button" class="button btn-com login-btn" ng-click="close()">
+                                            关闭
+                                        </button>
+                                    </div>
+                                </div>
+                            </script>
+                            <div class="span8 offset4">
+                                <div class="student-width">
+                                    <label class="checkbox">
+                                        <input type="checkbox" ng-model="lendApplyControls.models.agreement" input-produce="lendApplyControls.agreement" value="true">
+                                        我已阅读并同意
+                                    </label>
+                                    <a href="javascript:;" ng-click="showAgreement()">《中宝财富借款服务申请表申请合约》</a>
+                                </div>
+                            </div>
+                            <div class="12">
+                                <div class="student-submit">
+                                    <button class="button student-btn" ng-if="CURRENT_USER_ID">
+                                        提交申请书
+                                    </button>
+                                    <a href="/#!/login?redirectURL=/student-apply" ng-if="!CURRENT_USER_ID">
+                                        <button class="button student-btn">请先登录</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <a ng-if="studentBanner.id > 0" ng-href="{{ studentBanner.link }}" target="_blank"><img ng-src="{{ studentBanner.src }}" height="509" width="1150"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

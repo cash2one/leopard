@@ -1,0 +1,60 @@
+<!--right-->
+<div  class="main-wrap">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;好友邀请
+        </div>
+             <div class="span10 friends-data">
+                 <p>
+                    提示</br>
+                   请把下边的链接地址或者邀请码发送给您的好友，当他成功通过此链接注册中宝财富后，您就成了他的推荐人。</br>
+                   您的好友（被推荐人）在注册后30天内投资，您可获得被推荐人投资金额年化1.2%的奖励，被推荐人可获得投资金额年化0.6%的奖励。</br>
+                   奖励随被推荐人投标利息回款按月以红包形式发放。
+
+
+                 </p>
+             </div>
+                <div class="span10 friends-data">
+
+                 <p>中宝财富平台新版好友邀请注册有2个方法：
+                  </br>
+                      方法一：发送中宝财富平台邀请链接给您的好友，您的好友点击链接进行注册，即可成功被邀请。
+                  </br>
+                      方法二：发送中宝财富平台邀请码给您的好友，您的好友在注册页面录入邀请码，即可成功被邀请。
+                  </br>
+                  <a href="https://www.zhongbaodai.com/#!/post/trend/notice/430">详见公告链接</a>
+                 </p>
+                </div>
+        <div class="span10 friends-link">
+            <span>我的推荐人&nbsp;&nbsp; <font color="red" ng-bind="accountData.user.invited"></font></span>
+            <span>邀请码：<font color="red" ng-bind="accountData.user.invite_code"></font></span>
+            <span>
+            <textarea id="invitation-code" disabled="disabled" readonly ng-bind="accountData.user.friend_invitation_url" style="resize: none;"></textarea>
+            <button type="button" class="login-btn friends-btn" data-clip-board data-clipboard-target="invitation-code">复制链接</button>
+            </span>
+        </div>
+        <div class="span10">
+            <table class="table table-hover table-bordered integration-table">
+            <thead>
+                <tr class="red-cardTop">
+                    <th class="integration-cardTop" colspan="3">
+                        我邀请的用户
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>序号</td>
+                    <td>用户名</td>
+                    <td>注册日期</td>
+                </tr>
+                <tr ng-repeat="user in accountData.user.next_users">
+                    <td ng-bind="$index + 1"></td>
+                    <td ng-bind="user.username"></td>
+                    <!-- <td ng-bind="user.net_income + '元'"></td> -->
+                    <td ng-bind="user.added_at | date: 'yyyy-MM-dd HH:mm:ss'"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

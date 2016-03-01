@@ -1,0 +1,441 @@
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+<!--banner-->
+<div class="index-banner" data-banner-show="bannerConfig">
+	<div class="container index-box" ng-if="!CURRENT_USER_ID">
+		<!--<div id="loginbox">
+            <div class="index-bj"></div>
+            <h4>
+                中宝财富年化收益率
+            </h4>
+            <p class="index-yields">
+                最高收益
+            </p>
+            <h3 class="index-highest">15%</h3>
+            <div class="index-botton">
+                <span>
+                    <a href="/#!/register" class="button-pill button-primary">
+                        申请加入中宝财富
+                    </a>
+                </span>
+            </div>
+            <p class="index-login">
+            已有账号？
+                <a href="/#!/login">
+                    立即登录
+                </a>
+            </p>
+        </div>-->
+	</div>
+	<ul id="banner-list">
+		<li ng-repeat="banner in bannerConfig" ng-if="banner.src">
+			<a ng-href="{{ banner.link }}"><img ng-src="{{ banner.src }}" alt="banner_pic" /></a>
+		</li>
+	</ul>
+
+	<div class="container banner-container">
+		<ul id="banner-select">
+			<li ng-repeat="banner in bannerConfig" ng-if="banner.src"></li>
+		</ul>
+
+		<div id="banner-load">
+			<span class="success"><i class="icon-spinner icon-spin icon-3x"></i> 加载中，请稍等...</span>
+			<span class="failure"><i class="icon-warning-sign icon-3x"></i> 加载失败，请刷新重试</span>
+		</div>
+
+	</div>
+</div>
+
+<!--main_2-->
+<div class="main_2">
+	<div class="container">
+		<div class="notice">
+			<div class="notice_left">
+				<span class="notice_a">发标预告</span>
+				<span class="notice_b">
+                        <a ng-href="/#!/post/trend/advance/{{ homeData.advanceProject.id }}" ng-bind="homeData.advanceProject.title">
+                        </a>
+                   </span>
+			</div>
+			<div class="notice_right">
+				<span class="right_a"><a href="/#!/post/trend/advance">更多></a></span>
+			</div>
+		</div>
+		<div class="main_2_content">
+
+			<div class="main_2_left">
+				<ul class="index_summery">
+					<li class="index_mode">
+						<a href="/#!/security">
+							<span class="icon_1"></span>
+							<p>
+								<b>P2C+O2O模式</b>
+							</p>
+							<p>
+								投资金额门槛低
+								<br/> 资金流向随时查
+							</p>
+						</a>
+					</li>
+					<li class="index_mode">
+						<a href="/#!/repo">
+							<span class="icon_2"></span>
+							<p>
+								<b>云风控安全保障</b>
+							</p>
+							<p>
+								专业风控体系
+								<br/> 资深管理团队
+							</p>
+						</a>
+					</li>
+					<li class="index_mode">
+						<a href="/#!/mechanism">
+							<span class="icon_3"></span>
+							<p>
+								<b>中小微借款服务</b>
+							</p>
+							<p>
+								借款类型多样化
+								<br/> 资料齐全放贷快
+							</p>
+						</a>
+					</li>
+				</ul>
+				<div class="left_bottom">
+					<div class="bottom_title">
+						<p> 截止{{ homeData.now | date: 'yyyy年MM月dd日' }}</p>
+					</div>
+					<ul>
+						<li>
+							<p>融资总额
+								<br/>
+								<span ng-bind="homeData.platformInfo.turnover | currency: ''">
+
+                                  </span> 元
+							</p>
+						</li>
+						<li>
+							<p>累计为客户赚取收益
+								<br/>
+								<span ng-bind="homeData.platformInfo.users_income | currency: ''">
+
+                                  </span> 元
+						</li>
+						<li>
+							<p>待收总金额
+								<br/>
+								<span ng-bind="homeData.platformInfo.gross_income | currency: ''">
+
+                                  </span> 元
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="main_2_right">
+				<div class="video_top">
+					<div class="video">
+						<a href="/#!/video">
+							<img src="../images/images/video.jpg" />
+						</a>
+					</div>
+					<div class="video_right_top">
+						<p class="right_title">视频浏览</p>
+						<p class="right_title_more"><a href="/#!/video">更多</a></p>
+					</div>
+					<div class="video_list">
+
+						<ul class="list_content">
+							<li class="list_content_row">
+								<span class="video_list_round"></span>
+								<a href="http://video.zhongbaodai.com/video-1.html" class="video_list_text" target="_blank">中宝财富官方视频</a>
+							</li>
+							<li class="list_content_row">
+								<sapn class="video_list_round"></sapn>
+								<a href="http://video.zhongbaodai.com/video-2.html" class="video_list_text" target="_blank">中宝财富CEO杨圣贤接受齐鲁画报专访</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--main_3-->
+<div ng-controller="homeCtrl">
+	<div class="main_3">
+		<div class="main_3_container">
+
+			<div class="main_3_content">
+				<div class="main_3_title">
+					<div class="tab_1">
+						<p class="tab_title">中小微借款</p>
+					</div>
+					<p class="btn_more"><a href="/#!/invest">更多></a></p>
+				</div>
+				<div class="main_3_left">
+
+					<!--content1-->
+
+					<div class="left_content1" ng-repeat="project in homeData.projectList">
+						<!-- <span class="home-vip-pic">
+                    	    <img src="../images/red-vip.png"/>
+                        </span> -->
+                        <span class="home-vip-icon" ng-if="project.grade > 0">
+                        	<em ng-bind="project.grade | statusFilter: 'vip-status'">
+            		        </em>
+                        </span>
+						<div class="content1_title">
+							<div class="title_left">
+								<span class="title_a"><a ng-href="/#!/invest/{{ project.id }}" ng-bind="project.name" ></a>
+                               </span>
+								<span class="title_b" ng-bind="project.repaymentmethod.name">
+                               </span>
+							</div>
+							<div class="title_right">
+								<span class="title_c">* 此项目由<a  ng-bind="platformConfig.name + '风控团队控制抵押物'" ng-if="!project.guarantee.name"></a> <a ng-href="/#!/guarantee_info/{{ project.guarantee.id }}" ng-bind="project.guarantee.name" ng-if="project.guarantee.name"></a></span>
+								<!--<span class="title_d">* <a href="javascript:;" class="text-warning" tooltip-html-unsafe="{{ project.controls.split(' ').join(' <br/>') }}">  <i class="icon-lock"></i> {{ platformConfig.name }}风控团队抵押清单</a></span>-->
+							</div>
+						</div>
+						<div class="content1_list">
+							<table class="main_3_table">
+								<tr>
+									<td width="100" height="31">年利率</td>
+									<td width="100">奖励</td>
+									<td width="115">投资期限</td>
+									<td width="120">项目总金额</td>
+									<td width="140">项目进度</td>
+									<td width="50" class="project-percent">{{ project.progress*100 | number: '2' }}%</td>
+
+								</tr>
+								<tr>
+									<td width="100" height="31" class="year"><em ng-bind="project.rate*(project.nper_type==100?12:365) | number: 2"></em>%</td>
+									<td width="100">
+										<p class="project-orange" ng-bind="(project.invest_award * 1.0 * 100 | number: 1) + ' %'"></p>
+									</td>
+									<td width="115"><em ng-bind="project.periods"></em>期(<strong ng-bind="project.nper_type==100?'月': '天'"></strong>)</td>
+									<td width="120" class="money" ng-bind="project.amount | currency: ''" 元> </td>
+									<td width="200" class="project-attr ">
+										<progress percent="project.progress*100" class="progress-striped active index-bar"></progress>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="main3_btn" ng-if="project.status == 200 && !project.remain_bid_time > 0">
+							<a ng-href="/#!/invest/{{ project.id }}" class="main_3_btn">立即投标</a>
+						</div>
+						<div class="main3_btn" ng-if="project.status == 200 && project.remain_bid_time > 0">
+							<a ng-href="/#!/invest/{{ project.id }}" class="button-home-start">即将开始···</a>
+						</div>
+						<div class="main3_btn" ng-if="project.status != 200">
+							<img src="../images/complete.png" height="70" width="72">
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="main_3_right">
+				<div class="right_top">
+					<p class="right_title">网站公告</p>
+					<p class="right_title_more"><a href="/#!/post/trend/notice">更多></a></p>
+				</div>
+				<ul class="list_content">
+					<li class="list_content_row" ng-repeat="nav in homeData.noticeList" ng-class="{'active': false}">
+						<span class="video_list_round1"></span>
+						<a class="video_list_text" ng-href="/#!/post/trend/notice/{{ nav.id }}" ng-bind="nav.title.length > 12 ? (nav.title | limitTo: 12) + '...' : nav.title"></a>
+						<span class="video_list_time" ng-bind="nav.added_at | date: 'yyyy-MM-dd'"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--banner-->
+	<div class="main-banner">
+		<a href="/#!/account/management/automatic"><div class="main-banner-tu"></div></a>
+		
+	</div>
+	<!--main_4-->
+	<div class="main_4">
+		<div class="main_4_container">
+
+			<div class="main_4_content">
+				<div class="main_4_title">
+					<div class="tab_2">
+						<p>学仕贷</p>
+					</div>
+					<p class="btn_more"><a href="/#!/invest/student">更多></a></p>
+				</div>
+				<div class="main_4_left">
+					<div class="main_4_content1" ng-repeat="project in homeData.studentProjectList">
+						<div class="content4_title">
+							<div class="title_left">
+								<span class="title_a"><a ng-href="/#!/invest/student/{{ project.id }}" ng-bind="project.name" > </a></span>
+								<span class="title_b">按月付息到期还本</span>
+							</div>
+							<div class="title_right">
+								<span class="title_c">
+                                 * 此项目由<a  ng-bind="platformConfig.name + '风控团队控制抵押物'" ng-if="!project.guarantee.name"></a> <a ng-href="/#!/guarantee_info/{{ project.guarantee.id }}" ng-bind="project.guarantee.name" ng-if="project.guarantee.name"></a></span>
+								<!--<span class="title_d">
+								   *<a href="javascript:;" class="text-warning" tooltip-html-unsafe="{{ project.controls.split(' ').join(' <br/>') }}">  <i class="icon-lock"></i> {{ platformConfig.name }}风控团队抵押清单
+								    </a>
+								    </span>-->
+								</span>
+							</div>
+						</div>
+						<div class="content1_list">
+							<table class="main_3_table">
+								<tr>
+									<td width="115" height="31">项目总金额</td>
+									<td width="115">年利率</td>
+									<td width="100">投资期限</td>
+									<td width="100">奖励</td>
+									<td width="135">项目进度</td>
+									<td width="50" class="project-percent">{{ project.progress*100 | number: '2' }}% </td>
+								</tr>
+								<tr>
+									<td width="115" height="31" class="main_4_money">{{ project.amount | currency: '' }}<a ng-if="project.has_password" class="jiang mi" href="javascript:;" tooltip="定向密码标">密</a></td>
+									<td width="115" class="main_4_a"><em ng-bind="project.rate*(project.nper_type==100?12:365) | number: 2"></em>%</td>
+									<td width="100" class="main_4_a"><em ng-bind="project.periods"></em>期 (<strong ng-bind="project.nper_type==100?'月': '天'"></strong>)</td>
+
+									<td width="100" class="main_4_a">0.0%</td>
+									<td width="200" class="project-attr">
+										<progress percent="project.progress*100" class="progress-striped active index-bar"> </progress>
+									</td>
+
+								</tr>
+							</table>
+						</div>
+						<div class="main3_btn">
+							<a ng-href="/#!/invest/student/{{ project.id }}" class="main_3_btn" ng-if="project.status != 200">查看项目</a>
+							<a ng-href="/#!/invest/student/{{ project.id }}" class="main_3_btn" ng-if="project.status == 200">立即投标</a>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="main_5_right">
+				<a href="/#!/june-events"><img src="../images/images/10-pro.jpg" /></a>
+
+			</div>
+		</div>
+	</div>
+	<!--main_5-->
+	<div class="main_5">
+		<div class="main_5_container">
+
+			<div class="main_5_content">
+				<div class="main_5_title">
+					<div class="tab_3">
+						<p>债权转让</p>
+					</div>
+					<p class="btn_more"><a href="/#!/assignment">更多</a></p>
+				</div>
+				<div class="main_5_left">
+					<div class="left_content1" ng-repeat="assignment in homeData.assignmentList">
+						<div class="content1_title">
+							<div class="title_left">
+								<span class="title_a"><a ng-href="/#!/assignment/{{ assignment.id }}" ng-bind="assignment.project.name.length > 10 ? (assignment.project.name | limitTo: 10 )+'...': assignment.project.name" ></a>
+                               </span>
+								<span class="title_b" ng-bind="assignment.project.repaymentmethod.name">
+                               </span>
+								<span ng-if="assignment.discount > 0" ng-bind="'(贴现金额为 '+(assignment.discount | number: 2) + '元)'" class="text-error"></span>
+							</div>
+							<div class="title_right">
+								<span class="title_c">
+                                 * 此项目由<a  ng-bind="platformConfig.name + '风控团队控制抵押物'" ng-if="!signment.project.guarantee.name"></a> <a ng-href="/#!/guarantee_info/{{ signment.project.guarantee.id }}" ng-bind="assignment.project.guarantee.name" ng-if="project.guarantee.name"></a></span>
+								<!--<span class="title_d">* <a href="javascript:;" class="text-warning" tooltip-html-unsafe="{{ assignment.project.controls.split(' ').join(' <br/>') }}">  <i class="icon-lock"></i> {{ platformConfig.name }}风控团队抵押清单-->
+								</a>
+								</span>
+								</span>
+							</div>
+						</div>
+						<div class="content1_list">
+							<table class="main_3_table">
+								<tr>
+									<td width="140">转让金额</td>
+									<td width="130" height="31">年利率</td>
+									<td width="120">投标奖励</td>
+									<td width="125">到期时间</td>
+									<td width="160" class="pro">项目进度</td>
+								</tr>
+								<tr>
+									<td width="140" class="main_4_money" ng-bind="assignment.remain_periods_capital | currency: ''" 元> </td>
+									<td width="130" height="31" class="year"><em ng-bind="assignment.project.rate*(assignment.project.nper_type==100?12:365) | number: 2"></em>%</td>
+									<td width="120" ng-bind="(assignment.transfer_invest_award | number: 2) + '元'" class="main_4_a"></td>
+									<td width="125" ng-bind="assignment.expiration_time| date: 'yyyy-MM-dd'" class="main_4_a">
+									</td>
+									<td width="160" class="project-state ">
+										<strong ng-if="assignment.status != 300 ">
+                                        转让已完成
+                                    </strong>
+										<strong ng-if="assignment.status == 300 ">
+                                        正在转让中
+                                    </strong>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="main3_btn" ng-if="assignment.status == 300">
+							<a ng-href="/#!/assignment/{{ assignment.id }}" class="main_3_btn">立即投标</a>
+						</div>
+						<div class="main3_btn" ng-if="assignment.status != 300">
+							<img src="../images/rotate.png" height="70" width="72">
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="main_4_right">
+				<div class="main4_right_top">
+					<p class="right_title">媒体报道</p>
+					<p class="right_title_more"><a href="/#!/post/trend/report">更多></a></p>
+				</div>
+				<ul class="list_content">
+					<li class="list_content_row" ng-repeat="nav in homeData.reportList" ng-class="{'active': false}">
+						<span class="video_list_round"></span>
+						<a class="video_list_text" ng-href="/#!/post/trend/report/{{ nav.id }}" ng-bind="nav.title.length > 12 ? (nav.title | limitTo: 12) + '...' : nav.title"></a>
+						<span class="video_list_time" ng-bind="nav.added_at | date: 'yyyy-MM-dd'"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="main_6_right">
+
+				<a href="/#!/newlib"><img src="../images/images/10-new.jpg" /></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--合作伙伴-->
+<div class="main_6">
+	<div class="main_6_container">
+		<p class="main_6_title">合作伙伴
+		</p>
+		<div class="main_6_content">
+			<ul class="partner">
+				<li>
+					<a href="http://www.gtzlw.com/gsgk.mvc" target="_blank"><img src="../images/images/logo_03.png" /></a>
+				</li>
+				<li>
+					<a href="http://www.yinlian.cc/" target="_blank"><img src="../images/images/logo_05.png" /></a>
+				</li>
+				<li>
+					<a href="http://www.qiluhuabao.com" target="_blank"><img src="../images/images/logo_07.png" /></a>
+				</li>
+				<li>
+					<a href="http://www.qindaolaw.com/" target="_blank"><img src="../images/images/logo_09.png" /></a>
+				</li>
+				<li>
+					<a href="http://www.sddticc.com/" target="_blank"><img src="../images/images/logo_11.png" /></a>
+				</li>
+				<li>
+					<a href="http://cnlsdream.com/" target="_blank"><img src="../images/images/logo_13.png" /></a>
+				</li>
+				<li>
+					<a href="http://www.yprzfw.com/" target="_blank"><img src="../images/images/logo_15.png" /></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+DISPATCH:
+  leopard.apps.ng:
+    leopard.apps.service: /service
+    leopard.apps.admin: /zqbtad
+    leopard.apps.guarantee: /guarantee
+SHAREDDATA:
+  /media: media
+  /: leopard-ng/app

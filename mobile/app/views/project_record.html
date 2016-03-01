@@ -1,0 +1,22 @@
+<div class="modal">
+  <ion-content>
+    <button class="button button-positive button-block" ng-click="recordModal.hide()">
+      返回项目详情
+    </button>
+    <div class="list">
+      <div class="item row">
+        <div class="col col-33">投资用户</div>
+        <div class="col col-33">金额</div>
+        <div class="col">投资时间</div>
+      </div>
+      <div class="item row" ng-repeat="record in projectData.project.investments">
+        <div class="col col-33" ng-bind="record.user"></div>
+        <div class="col col-33" ng-bind="record.amount | currency: '￥'"></div>
+        <div class="col">
+          <p ng-bind="record.added_at | date: 'yyyy-MM-dd'"></p>
+        </div>
+      </div>
+    </div>
+    <div style="height: 40px"></div>
+  </ion-content>
+</div>

@@ -1,0 +1,72 @@
+<!-- middle === -->
+<div class="container">
+    <div class="row">
+        <div class="span11 login-user">
+            <div class="login-text">&nbsp;用户登录</div>
+            <div class="row">
+                <div class="span7 ">
+                    <form class="form-horizontal" data-form-produce="formControls.conf">
+                        <div class="control-group">
+                            <label class="control-label" for="inputEmail">用户名：</label>
+                            <div class="controls">
+                                <input type="text" id="inputEmail" placeholder="请输入用户名" data-input-produce="formControls.username" ng-model="formControls.name"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputPassword">密 码：</label>
+                            <div class="controls">
+                                <input type="password" id="inputPassword" placeholder="请输入密码" data-input-produce="formControls.password" ng-model="formControls.pass" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputVercode">验证码：</label>
+                            <div class="controls">
+                                <input type="text" class="input-small" id="inputVercode" placeholder="请输入验证码" data-input-produce="formControls.vercode" ng-model="formControls.vcode" />
+                                <img style="cursor: pointer;" ng-src="/service/auth/identifying_code?type=login&cb={{ formControls.current_date }}" alt="identifying_code" ng-click="reload_vcode()">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <label class="checkbox">
+                                    <input type="checkbox" ng-model="formControls.rememberMe" /> 记住我
+                                </label>
+                                    <a href="/#!/forget">忘记密码？</a>
+                                <button class="login-btn">登 录</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="span3 login-right">
+                    <img src="../images/logo.png" height="53" width="202"></br>
+                    <a href="/#!/register">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- middle === -->
+<!-- bottom === -->
+<div class="container">
+    <div class="row bottom">
+        <div class="span6">
+            <div class="bottom-phone"><span>客服电话：</span>
+            <span class="bottom-phone-text" ng-bind="platformConfig.phone"></span></div>
+            <div class="bottom-phone">CopyRight © 2013 {{ platformConfig.fullName }} 品牌所有 <a href="http://www.miitbeian.gov.cn/" ng-bind="platformConfig.ICP"></a></div>
+        </div>
+        <div class="span6">
+            <ul class="authenticate">
+                <li class="xl-xin">
+                    <a href="https://ss.knet.cn/verifyseal.dll?sn=e14031131011547229jxxf000000&comefrom=trust" target="_blank" title="#"></a></li>
+                <li class="tx-wb">
+                    <a href="https://www.sgs.gov.cn/shaic/" target="_blank" title="#"></a></li>
+                <li class="xl-wb">
+                    <a href="https://trustsealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;dn=www.zhongbaodai.com&amp;lang=zh_cn" target="_blank"></a></li>
+                <li class="wx" id="div-img">
+                    <a href="http://www.miitbeian.gov.cn/" title="#" target="_blank"></a></li>
+                <li class="qy-not">
+                    <a href="http://www.shjbzx.cn/" title="#" target="_blank"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- bottom === -->

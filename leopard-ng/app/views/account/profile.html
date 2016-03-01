@@ -1,0 +1,255 @@
+<!--right-->
+<div class="main-wrap" ng-controller="profileCtrl">
+    <div class="account-right">
+        <div class="account-theme">&nbsp;资料修改
+        </div>
+        <div class="account-table">
+            <ul class="date-table">
+                <li class="profile-news"><i class="h1-i icon-sign-blank"></i>&nbsp;个人信息</li>
+                <li class="profile-phone-one">
+                    <span class="profile-middle-1">个人资料</span>
+                    <span class="profile-middle-2">&nbsp;</span>
+                    <span class="profile-modification">
+                    <a href="javascript:;" data-folding="#profile-info">修改</a></span>
+                </li>
+                <li id="profile-info" style="display:none;">
+                <form data-form-produce="profileControls.conf">
+                    <table class="data-main">
+                        <tbody>
+                            <tr>
+                                <td class="profile-password">性别：</td>
+                                <td>
+                                    <label for="male" class="label">男</label>
+                                    <input type="radio" name="sex" id="male" value="男" ng-model="profileControls.models.sex"/>
+                                    &nbsp;
+                                    <label for="female" class="label">女</label>
+                                    <input type="radio" name="sex" id="female" value="女" ng-model="profileControls.models.sex" />
+                                    <input type="hidden" data-input-produce="profileControls.sex" ng-model="profileControls.models.sex" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="profile-password">年龄：</td>
+                                <td>
+                                    <input type="number" data-input-produce="profileControls.age" ng-model="profileControls.models.age" class="input-small"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="profile-password">学历：</td>
+                                <td>
+                                    <select ng-model="profileControls.models.education" class="input-small" data-input-produce="profileControls.education">
+                                        <option value="小学">小学</option>
+                                        <option value="初中">初中</option>
+                                        <option value="高中">高中</option>
+                                        <option value="中专/技校">中专/技校</option>
+                                        <option value="大专">大专</option>
+                                        <option value="本科">本科</option>
+                                        <option value="硕士">硕士</option>
+                                        <option value="博士">博士</option>
+                                        <option value="其他">其他</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="profile-password">婚姻：</td>
+                                <td>
+                                    <select ng-model="profileControls.models.marital" class="input-small" data-input-produce="profileControls.marital">
+                                        <option value="未婚">未婚</option>
+                                        <option value="已婚">已婚</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="profile-password">户籍：</td>
+                                <td>
+                                    <input type="text" data-input-produce="profileControls.address" ng-model="profileControls.models.address" class="input-medium" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>
+                                    <button type="submit" class="login-btn">保存
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                </li>
+                <li class="profile-phone-one">
+                    <span class="profile-middle-1">手机</span>
+                    <span class="profile-middle-2" ng-bind="accountData.user.phone"></span>
+                    <span class="profile-modification">
+                    <a href="javascript:;" data-folding="#profile-phone">修改</a></span>
+                </li>
+                <li id="profile-phone" style="display:none;">
+                <form data-form-produce="phoneControls.conf">
+                    <table class="data-main">
+                        <tbody>
+                            <tr>
+                                <td class="profile-password">验证当前手机：</td>
+                                <td>
+                                    <input class="main-input profile-input" type="text" id="inputPassword" placeholder="请输入验证码" data-phone-produce="phoneControls.currentCode" data-phone-send="#current-send" ng-model="phoneControls.models.currentPhone" />
+                                    <button type="button" class="login-btn" id="current-send">发送验证码
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="profile-password">新手机号码：</td>
+                                <td>
+                                    <input class="main-input" type="text" id="inputPassword" placeholder="请输入新手机号码" data-phone-produce="phoneControls.newPhone" data-phone-send="#new-send" ng-model="phoneControls.models.newPhone" />
+                                    <button type="button" class="login-btn" id="new-send">发送验证码
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="profile-password">新手机验证码：</td>
+                                <td><input class="main-input profile-input" type="text" id="inputPassword" data-input-produce="phoneControls.newCode" placeholder="请输入验证码" ng-model="phoneControls.models.code" /></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>
+                                    <button type="submit" class="login-btn">保存
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                </li>
+                <li class="profile-phone-one">
+                    <span class="profile-middle-1">邮箱</span>
+                    <span class="profile-middle-2" ng-bind="(mailControls.tempMail || '&nbsp;') + (!accountData.user.email&&mailControls.tempMail?'(未激活)': '')"></span>
+                    <span class="profile-modification">
+                    <a href="javascript:;" data-folding="#profile-email" ng-bind="mailControls.editFlag?'修改': '绑定'"></a></span>
+                </li>
+                <li id="profile-email" style="display:none;">
+                    <form data-form-produce="mailControls.conf">
+                        <table class="data-main">
+                            <tbody>
+                                <tr ng-if="mailControls.editFlag">
+                                    <td class="profile-password">手机验证码：</td>
+                                    <td>
+                                        <input class="main-input profile-input" type="text" id="inputPassword" placeholder="请输入验证码" ng-model="mailControls.models.phoneCode" data-phone-produce="mailControls.phoneCode" data-phone-send="#mail-send"/>
+                                        <button type="button" class="login-btn" id="mail-send">发送验证码
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-password">新邮箱：</td>
+                                    <td><input type="text" id="inputPassword" placeholder="请输入新邮箱" ng-model="mailControls.models.email" data-input-produce="mailControls.email"/></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><button type="submit" class="login-btn" ng-bind="mailControls.sendTxt"></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </li>
+                <li class="profile-phone-one profile-phone-two">
+                    <span class="profile-middle-1">实名认证</span>
+                    <span class="profile-middle-2" ng-bind="(realnameControls.isCertify?realnameControls.tempName: realnameControls.tempName? realnameControls.editFlag?'您的身份信息录入有误，请重新输入':'审核中': null) || '&nbsp;'"></span>
+                    <span class="profile-modification">
+                    <a href="javascript:;" data-folding="#profile-approve" ng-bind="realnameControls.isCertify?'查看': '认证'"></a></span>
+                </li>
+                <li id="profile-approve" style="display:none;">
+                    <form data-form-produce="realnameControls.conf">
+                        <table class="data-main">
+                            <tbody>
+                                <tr>
+                                    <td class="profile-password">身份证号码：</td>
+                                    <td>
+                                        <input type="text" id="inputPassword" data-input-produce="realnameControls.idNum" ng-model="realnameControls.models.idNum" ng-if="!realnameControls.isCertify"/>
+                                        <span ng-bind="realnameControls.tempId" ng-if="realnameControls.isCertify"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-password">真实姓名：</td>
+                                    <td>
+                                        <input type="text" id="inputPassword" data-input-produce="realnameControls.realname" ng-model="realnameControls.models.realname" ng-if="!realnameControls.isCertify" />
+                                        <span ng-bind="realnameControls.tempName" ng-if="realnameControls.isCertify"></span>
+                                    </td>
+                                </tr>
+                                <tr ng-if="!realnameControls.isCertify">
+                                    <td>&nbsp;</td>
+                                    <td><button type="submit" class="login-btn">提交申请</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="account-right">
+        <div class="account-table">
+            <ul class="date-table">
+                <li class="profile-news"><i class="h1-i icon-sign-blank"></i>&nbsp;密码修改</li>
+                <li class="profile-phone-one">
+                    <span class="profile-middle-1">登录密码</span>
+                    <span class="profile-middle-2">&nbsp;</span>
+                    <span class="profile-modification">
+                    <a href="javascript:;" data-folding="#profile-entry">修改</a></span>
+                </li>
+                <li id="profile-entry" style="display:none;">
+                    <form data-form-produce="passwordControls.conf">
+                        <table class="data-main">
+                            <tbody>
+                                <tr>
+                                    <td class="profile-password">原密码：</td>
+                                    <td><input type="password" id="inputPassword" placeholder="请输入原密码" ng-model="passwordControls.models.originalPass" data-input-produce="passwordControls.originalPass"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-password">新密码：</td>
+                                    <td><input type="password" id="inputPassword" placeholder="确认新密码" ng-model="passwordControls.models.newPass" data-input-produce="passwordControls.newPass"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-password">确认新密码：</td>
+                                    <td><input type="password" id="inputPassword" placeholder="请输入新密码" ng-model="passwordControls.models.rePass" data-input-produce="passwordControls.rePass"/></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><button type="submit" class="login-btn">保存</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </li>
+                <li class="profile-phone-one profile-phone-two">
+                    <span class="profile-middle-1">交易密码</span>
+                    <span class="profile-middle-2">&nbsp;</span>
+                    <span class="profile-modification">
+                    <a href="javascript:;" data-folding="#profile-password"
+                        ng-bind="accountData.user.trade_password_enable?'修改': '设置'"></a></span>
+                </li>
+                <li id="profile-password" style="display:none;">
+                    <form data-form-produce="tradePassControls.conf">
+                        <table class="data-main">
+                            <tbody>
+                                <tr>
+                                    <td class="profile-password">新密码：</td>
+                                    <td><input type="password" id="inputPassword" placeholder="请输入新密码" ng-model="tradePassControls.models.newPass" data-input-produce="tradePassControls.newPass"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="profile-password">确认新密码：</td>
+                                    <td><input type="password" id="inputPassword" placeholder="确认新密码" ng-model="tradePassControls.models.rePass" data-input-produce="tradePassControls.rePass"/></td>
+                                </tr>
+                                <tr ng-if="accountData.user.trade_password_enable">
+                                    <td class="profile-password">短信验证码：</td>
+                                    <td><input class="main-input profile-input" type="text" id="inputPassword" placeholder="请输入验证码" ng-model="tradePassControls.models.phoneCode" data-phone-produce="tradePassControls.phoneCode" data-phone-send="#trade-pass-send"/>
+                                        <button type="button" id="trade-pass-send" class="login-btn">发送验证码
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><button type="submit" class="login-btn">保存</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

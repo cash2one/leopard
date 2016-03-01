@@ -1,0 +1,337 @@
+<div class="invest-middle">
+    <div class="container project-top-container">
+        <div class="row">
+            <div class="span12 ditail-sapn">
+                <div class="detail-title">
+                    <span class="detail-di" ng-bind="(project.isStudent?'学': project.info.type) | limitTo: 1"
+                        tooltip="{{(project.isStudent?'学仕贷': project.info.type) }}"></span>
+                    <p class="detail-number" ng-if="project.info.uid != ''">
+                        项目编号：{{ project.info.uid }}
+                        <span ng-bind="project.info.name"></span>
+                    </p>
+                    <p class="detail-number" ng-if="project.info.uid == ''">
+                        <span ng-bind="project.info.name"></span>
+                    </p>
+                    <a href="/#!/invest" class="detail-back">
+                        返回列表首页
+                    </a>
+                </div>
+            </div>
+            <div class="span8">
+                <div class="project-info-box">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span ng-bind="project.info.amount | currency: ''" ng-if="project.isInvest"></span>
+                                    <span ng-bind="project.info.remain_periods_capital | currency: ''" ng-if="!project.isInvest"></span> 元</th>
+                                <th><span ng-bind="(project.info.rate*(project.info.nper_type==100?12:365)) | number: 2"></span>%</th>
+                                <th><span ng-bind="project.info.periods"></span>期</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="amount">项目金额</td>
+                                <td>年化收益</td>
+                                <td>期数(1期即1<strong ng-bind="project.info.nper_type==100?'个月':'天'"></strong>)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="tender-info">此项目由
+                        <a ng-href="/#!/guarantee_info/{{ project.info.guarantee_id }}" ng-bind="project.info.guarantee.name || project.info.guarantee" ng-if="project.info.guarantee_id"></a>
+                        <span ng-if="project.info.guarantee_id">进行担保，并由</span>
+
+                        <span> {{ platformConfig.name }} 风控团队控制抵押物
+                            <a href="javascript:;" class="text-warning" tooltip-html-unsafe="{{ project.info.controls.split(' ').join('<br/>') }}">
+                            抵押清单
+                            </a>
+                            。
+                            <span class="text-error" ng-if="project.info.has_password">
+                                此标为定向标，投标时需要输入密码。
+                            </span>
+                        </span>
+                        <span ng-if="project.info.invest_award != '0.0'" ng-bind=
+                        "'投标奖励金额比例为 '" class="text-error"></span>
+                        <span ng-if="project.info.invest_award != '0.0'" ng-bind=
+                        "(project.info.invest_award | number: 2) + '%'" class="text-error text-big"></span></br>
+                        <span ng-if="!project.isInvest && project.info.discount > 0" ng-bind="'贴现金额为 '" class="text-error"></span>
+                        <span ng-if="!project.isInvest && project.info.discount > 0" ng-bind="(project.info.discount | number: 2) + '元'" class="text-error"></span>
+                    </p>
+                    <table class="project-min-info project-table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong ng-if="project.isInvest">
+                                    项目进度：
+                                    <div data-progress percent="project.info.progress*100" class="progress-success progress-striped active">
+                                    </div>&nbsp;{{ project.info.progress*100 | number: '2' }} %
+                                    </strong>
+                                    <a ng-href="/#!/invest/{{ project.project_info.id }}"  target="_blank" ng-if="!project.isInvest">查看原始项目>> </a>
+                                </td>
+                                <td tooltip="{{ project.info.bid_at | date: 'yyyy-MM-dd HH:mm:ss' }}">开标时间：{{ project.info.bid_at | date: 'yyyy-MM-dd' }}</td>
+                                <td>还款方式：{{ project.info.repaymentmethod.name }}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="detail-guarantee">
+                        <ul class="detail-interest">
+                            <li ng-repeat="spec in project.info.filter_specs"
+                            tooltip="{{spec.desc}}">
+                                <span>
+                                </span>
+                                {{ spec.title }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="project-tender-box">
+                   
+                </div>
+                </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="project-content">
+                    <div tabset class="project-tab">
+                        <div tab>
+                            <div tab-heading>
+                                <i class="icon-file-alt icon-large"></i> 借款详情
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="span6">
+                                        <div class="project-description">
+                                            <h4>项目描述</h4>
+                                            <a data-fancy-box href="#project-full-info" class="description-link">
+                                                <ul class="description-list">
+                                                    <li>
+                                                        <span>项目<br/>介绍</span>
+                                                        <pre class="project-pre project-over" ng-bind="(project.info.description | limitTo: 300) + '...[详情]'">
+                                                        </pre>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                            <h4>安全保障</h4>
+                                            <p class="guarantee-name">
+                                                <span ng-if="project.info.guarantee_id">
+                                                    担保机构：
+                                                    <i class="icon-archive icon-large"></i>
+                                                    <a ng-href="/#!/guarantee_info/{{ project.info.guarantee_id }}" ng-bind="project.info.guarantee.full_name"></a>
+                                                </span>
+                                                <span ng-if="!project.info.guarantee_id">
+                                                    风险控制：
+                                                    <i class="icon-archive icon-large"></i>
+                                                    {{ platformConfig.name }}
+                                                    风险控制团队
+                                                </span>
+                                            </p>
+                                            <a data-fancy-box href="#guarantee-full-info" class="description-link">
+                                                <ul class="description-list">
+                                                    <li>
+                                                        <span>抵押类</span>
+                                                        <pre class="project-pre" ng-bind-html="project.info.guaranty">
+                                                        </pre>
+                                                    </li>
+                                                    <li>
+                                                        <span>担保<br/>意见</span>
+                                                        <pre class="project-pre" ng-bind="(project.info.guarantee_info | limitTo: 70) + '...[详情]'">
+                                                        </pre>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                            <div class="description-hidden">
+                                                <div id="project-full-info">
+                                                    <ul class="description-list">
+                                                        <li>
+                                                            <span>项目<br/>介绍</span>
+                                                            <pre class="project-pre project-pre-color" ng-bind="project.info.description">
+                                                            </pre>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div id="guarantee-full-info">
+                                                    <ul class="description-list">
+                                                        <li>
+                                                            <span>抵押类</span>
+                                                            <pre class="project-pre project-pre-color" ng-bind="project.info.guaranty">
+                                                            </pre>
+                                                        </li>
+                                                        <li>
+                                                            <span>担保<br/>意见</span>
+                                                            <pre class="project-pre project-pre-color" ng-bind="project.info.guarantee_info">
+                                                            </pre>
+                                                        </li>
+                                                        <li>
+                                                            <span>资产<br/>说明</span>
+                                                            <pre class="project-pre project-pre-color" ng-bind="project.info.asset_description">
+                                                            </pre>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4>借款人信息</h4>
+                                            <table class="table table-condensed lender-info-table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="attr">用户名：</td>
+                                                        <td ng-bind="project.info.user.username"></td>
+                                                        <td class="attr">性　别：</td>
+                                                        <td ng-bind="project.info.user.sex"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="attr">年　龄：</td>
+                                                        <td ng-bind="project.info.user.age"></td>
+                                                        <td class="attr">学　历：</td>
+                                                        <td ng-bind="project.info.user.education"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="attr">婚　姻：</td>
+                                                        <td ng-bind="project.info.user.marital_status"></td>
+                                                        <td class="attr">户　籍：</td>
+                                                        <td ng-bind="project.info.user.address"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <a data-fancy-box href="#guarantee-full-info" class="description-link">
+                                                <ul class="description-list">
+                                                    <li>
+                                                        <span>资产<br/>说明</span>
+                                                        <p ng-bind="(project.info.asset_description | limitTo: 70) + '...[详情]'">
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="span6">
+                                        <div class="certify-description">
+                                            <div data-fancy-box="project.info.certify">
+                                            <h4>{{ platformConfig.name }}个人认证</h4>
+                                            <div class="certify-container" >
+                                                <a ng-href="{{ project.info.idcard || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-card" ng-class="{'unpass': !project.info.certify.idcard &amp;&amp; !project.info.idcard}" title="身份证">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    身份证
+                                                </a>
+                                                <a ng-href="{{ project.info.household || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-residence" ng-class="{'unpass': !project.info.certify.household &amp;&amp; !project.info.household}" title="户口本">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    户口本
+                                                </a>
+                                                <a ng-href="{{ project.info.income || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-income" ng-class="{'unpass': !project.info.certify.income &amp;&amp; !project.info.income}" title="收入证明">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    收入证明
+                                                </a>
+                                                <a ng-href="{{ project.info.credit_reporting || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-credit" ng-class="{'unpass': !project.info.certify.credit_reporting &amp;&amp; !project.info.credit_reporting}" title="征信报告">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    征信报告
+                                                </a>
+                                                <a ng-href="{{ project.info.house_property_card || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-house" ng-class="{'unpass': !project.info.certify.house_property_card &amp;&amp; !project.info.house_property_card}" title="                                                  ">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    房产证
+                                                </a>
+                                                <a ng-href="{{ project.info.vehicle_license || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-drive" ng-class="{'unpass': !project.info.certify.vehicle_license &amp;&amp; !project.info.vehicle_license}" title="行驶证">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    行驶证
+                                                </a>
+                                                <a ng-href="{{ project.info.guarantee_contract || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-guarantee" ng-class="{'unpass': !project.info.certify.guarantee_contract &amp;&amp; !project.info.guarantee_contract}" title="担保合同">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    担保合同
+                                                </a>
+                                                <a ng-href="{{ project.info.counter_guarantee_contract || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-unguarantee" ng-class="{'unpass': !project.info.certify.counter_guarantee_contract &amp;&amp; !project.info.counter_guarantee_contract}" title="反担保合同">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    反担保合同
+                                                </a>
+                                            </div>
+                                            <h4>{{ platformConfig.name }}企业认证</h4>
+                                            <div class="certify-container enterprise-certify">
+                                                <a ng-href="{{ project.info.business_license || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-business" ng-class="{'unpass': !project.info.certify.business_license &amp;&amp; !project.info.business_license}" title="营业执照">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    营业执照
+                                                </a>
+                                                <a ng-href="{{ project.info.tax_registration_certificate || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-tax" ng-class="{'unpass': !project.info.certify.tax_registration_certificate &amp;&amp; !project.info.tax_registration_certificate}" title="税务登记证">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    税务登记证
+                                                </a>
+                                                <a ng-href="{{ project.info.bank_account_license || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-bank" ng-class="{'unpass': !project.info.certify.bank_account_license &amp;&amp; !project.info.bank_account_license}" title="银行开户许可">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    银行开户许可
+                                                </a>
+                                                <a ng-href="{{ project.info.organization_code_certificate || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-organization" ng-class="{'unpass': !project.info.certify.organization_code_certificate &amp;&amp; !project.info.organization_code_certificate}" title="组织机构代码证">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    组织机构代码证
+                                                </a>
+                                                <a ng-href="{{ project.info.mortgaged_property_certification || 'javascript:;' }}" rel="pro-gallery" class="certify-icon icon-mortgage" ng-class="{'unpass': !project.info.certify.mortgaged_property_certification &amp;&amp; !project.info.mortgaged_property_certification}" title="抵押物认证">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    抵押物认证
+                                                </a>
+                                                <a ng-href="{{
+                                                    project.info.field_certification
+                                                    || 'javascript:;' }}"
+                                                    rel="pro-gallery" class="certify-icon icon-mortgage" ng-class="{'unpass': !project.info.certify.field_certification &amp;&amp; !project.info.field_certification}" title="实地认证">
+                                                    <em></em>
+                                                    <i class="icon-ok-sign"></i>
+                                                    <i class="icon-remove-sign"></i>
+                                                    实地认证
+                                                </a>
+                                            </div>
+                                            </div>
+                                            <h4>相关材料</h4>
+                                            <div class="data-extra-container" data-fancy-box="project.info.relation_images">
+                                                <a ng-href="{{ img.image }}" rel="relative-gallery" title="{{ img.name }}" ng-repeat="img in project.info.relation_images"><img ng-src="{{ img.image }}" alt="data_img"/></a>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div tab>
+                            <div tab-heading>
+                                <i class="icon-tasks icon-large"></i> 风控信息
+                            </div>
+                            <div class="detail-control">
+                                <h4 class="detail-pro">项目风控方案</h4>
+
+                                <div ng-repeat="instance in project.info.filter_risk_controls">
+                                    <h5 class="detail-h5">
+                                        {{ instance.title }}
+                                    </h5>
+                                    <div  ng-bind-html="instance.content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

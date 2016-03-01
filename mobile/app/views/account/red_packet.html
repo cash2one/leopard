@@ -1,0 +1,18 @@
+<ion-view view-title="红包管理">
+  <ion-content>
+    <div class="list">
+      <a href="javascript:;" class="item" ng-repeat="packet in redPacketData.list" ng-click="useRedPacket(packet, $index)">
+        {{ packet.type.name }}
+        <span class="padding-left assertive" ng-bind="packet.amount | currency: '￥'"></span>
+        <span class="item-note" ng-bind="!packet.is_expiry?packet.is_available?packet.is_use?'已使用': '未使用': '未激活': '已过期'">
+        </span>
+      </a>
+      <div class="item text-center" ng-if="!redPacketData.list.length">
+        <p>暂无任何红包</p>
+      </div>
+    </div>
+    <ion-infinite-scroll on-infinite="loadData()" distance="1%" ng-if="!redPacketData.isOver">
+    </ion-infinite-scroll>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>

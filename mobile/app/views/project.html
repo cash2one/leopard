@@ -1,0 +1,109 @@
+<ion-view title="项目详情">
+  <ion-content>
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+    <div class="list padding-top">
+      <div class="item item-divider">
+        <span class="badge project-mark" ng-bind="projectData.project.type.substring(0, 1)"></span>
+        <span class="badge project-mark project-markmi" ng-if="projectData.project.has_password">密</span>
+        {{ projectData.project.name || '　' }}
+      </div>
+      <ul class="project-funds">
+        <li>
+          借款金额
+          <span ng-bind="(projectData.project.amount | currency: '') + '元'"></span>
+        </li>
+        <li>
+          借款利率
+          <span ng-bind="(projectData.project.rate * 12 | number: 1) + '%'"></span>
+        </li>
+        <li>
+          借款期限
+          <span ng-bind="projectData.project.periods + (projectData.project.nper_type == 100?'月': '天')"></span>
+        </li>
+        <li>
+          投标奖励
+          <span ng-bind="(projectData.project.invest_award * 1.0 * 100 | number: 1) + ' %'"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="list project-border">
+      <ul class="project-funds  project-bordernone">
+        <li>
+          可投金额
+          <span class="project-money" ng-bind="((projectData.project.amount - projectData.project.borrowed_amount) | currency: '') + '元'"></span>
+        </li>
+        <li>
+          还款方式
+          <span class="project-money" ng-bind="projectData.project.repaymentmethod.name"></span>
+        </li>
+        <li>
+          担保公司
+          <span class="project-money" ng-bind="projectData.project.guarantee.name || '无'">
+            某某
+          </span>
+        </li>
+      </ul>
+      <div class="row">
+        <div class="col col-80">
+          <div class="investment-progress">
+            <span ng-style="{width: projectData.project.progress * 100 + '%'}"></span>
+          </div>
+        </div>
+        <div class="col" ng-bind="(projectData.project.progress * 100 | number: 0) + '%'"></div>
+      </div>
+      <div class="item item-divider">
+        借款人信息
+      </div>
+      <ul class="project-funds  project-bordernone">
+        <li>
+          用户名:
+          <span class="project-money" ng-bind="projectData.project.user.username">我是借款人</span>
+        </li>
+        <li>
+          性别:
+          <span class="project-money" ng-bind="projectData.project.user.sex">男</span>
+        </li>
+        <li>
+          年龄:
+          <span class="project-money" ng-bind="projectData.project.user.age">22</span>
+        </li>
+        <li>
+          学历:
+          <span class="project-money" ng-bind="projectData.project.user.education">小学</span>
+        </li>
+        <li>
+          婚姻:
+          <span class="project-money" ng-bind="projectData.project.user.marital_status">已婚</span>
+        </li>
+        <li>
+          户籍:
+          <span class="project-money" ng-bind="projectData.project.user.address">。。。</span>
+        </li>
+      </ul>
+      <a href="javascript:;" class="item positive" ng-click="recordModal.show()">
+        查看投标记录>>
+      </a>
+      <form class="item" form-produce="formControls.conf">
+        <label class="item item-input">
+            余额:
+            <span ng-bind="projectData.account.available_amount | currency: ''"
+                class="assertive funds-size">0.0</span>
+            元
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="投标金额" input-produce="formControls.amount" ng-model="formControls.models.amount">
+        </label>
+        <button type="button" class="button button-positive button-block" form-only-check="lendProject(false)" ng-if="CURRENT_USER_ID">
+          优先使用回款资金进行投资
+        </button>
+        <button type="button" class="button button-calm button-block" form-only-check="lendProject(true)" ng-if="CURRENT_USER_ID">
+          优先使用普通资金进行投资
+        </button>
+        <button type="button" class="button button-assertive button-block" ng-click="login()" ng-if="!CURRENT_USER_ID">
+          请先登录
+        </button>
+      </form>
+    </div>
+    <div style="height: 40px"></div>
+  </ion-content>
+</ion-view>
