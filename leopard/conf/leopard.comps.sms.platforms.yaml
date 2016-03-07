@@ -1,5 +1,5 @@
 mobset:
   URL: http://sms3.mobset.com/SDK/Sms_Send.asp
-  GORPID: 301008
-  LOGINNAME: 'Admin'
-  PASSWD: '309529'
+  GORPID: xx
+  LOGINNAME: 'xx'
+  PASSWD: 'xx'
